@@ -3,15 +3,16 @@ layout: base
 title: Homework
 ---
 
-# Homework
+# **Homework**
 
 ---
 
 ## **Friday 7/18/2025**
+---
 
 ### **Kind**
 
-Oxford Phonics World: Student Book 16-17, Workbook Pages 8  
+Oxford Phonics World 1: Student Book 16-17, Workbook Pages 8  
 
 ### **Brave**
 
