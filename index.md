@@ -7,4 +7,5 @@
 #
 layout: home
 ---
-
+## Welcome to the Logan English Academy homepage!
+Daily homework assignments can be found [here](https://www.loganenglishacademy.com/homework.html).
