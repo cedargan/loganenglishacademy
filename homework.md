@@ -1,25 +1,25 @@
-# Weekly Homework Assignments  
+# Homework Assignments  
 📅 Week of July 22–26, 2025
 
 ---
 
-## 📘 Monday – July 22
+## Monday – July 22
 
-### 🔹 Class A  
+### Kind  
 **Book:** *Grammar Magic 2*  
 **Homework:** Complete pages 14–15  
 [📄 Download Worksheet](https://example.com/file1.pdf)
 
 ---
 
-### 🔹 Class B  
+### Brave  
 **Book:** *Reading Adventures*  
 **Homework:** Read Chapter 3 and answer questions  
 [▶️ Watch This Video](https://example.com/video1)
 
 ---
 
-### 🔹 Class C  
+### 🔹 Truth  
 **Book:** *Writing Workshop 1*  
 **Homework:** Write 5 sentences using new vocabulary  
 [📝 View Assignment Guide](https://example.com/guide.pdf)
