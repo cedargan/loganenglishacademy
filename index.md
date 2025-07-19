@@ -7,4 +7,4 @@
 #
 layout: home
 ---
-# Logan English Academy
+
