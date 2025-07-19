@@ -1,3 +1,7 @@
+---
+layout: default
+title: Homework
+---
 # Homework Assignments  
 📅 Week of July 22–26, 2025
 
