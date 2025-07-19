@@ -7,6 +7,66 @@ title: Homework
 
 ---
 
+## **Monday 7/21/2025**
+---
+
+### **Kind**
+
+Oxford Phonics World 1: Student Book , Workbook Pages  
+
+### **Brave**
+
+Beehive 2: Workbook Pages   
+
+Matt's Mistake:  
+Activity Book: 
+
+▶️ [Too Fast Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EghL8NDj_RdPrGPvOhCr9W0B1MYyG25_JJCd89ITjF6EXA?e=RyOgQb)
+
+### **Truth**
+
+Everybody Up 3:   
+
+Little Red Riding Hood:  
+Activity Book: Practice Play  
+Picture Dictionary: Write 8 Words 5x
+
+▶️ [Little Red Riding Hood Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/ElpZV9szgIhAoAOcTsdCKJ8BKTW5yTSXZn_JtUiotLHTmQ?e=1YdQRl)
+
+### **Virtue**
+
+Oxford Discover 3: Workbook Pages 35-36  
+
+Wordlist: Write words 5x, definitions 1x
+
+The Bad House:   
+
+▶️ [The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)
+
+### ​**Patience**
+
+Oxford Discover 4: Workbook Pages 105-108
+
+Vocabulary Workshop:
+
+Wordlist:  Write words 5x, definitions 1x
+
+The Three Musketeers: 
+
+▶️ [The Three Musketeers Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ekq9AL-bn_ZHvErItbdeZ2wBdtYeaP7iJzpK7ONeC2XFqw?e=erwJUa)  
+
+### **Honor**
+
+Oxford Discover 6:   
+
+Wordly Wise:  
+
+The USA: The USA: Chapters 3, 4 Book Activities, Read, Listen, Reading Diary  
+
+▶️ [The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)
+
+---
+
 ## **Friday 7/18/2025**
 ---
 
