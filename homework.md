@@ -7,7 +7,7 @@ title: Homework
 
 ---
 
-### Friday 7/18/2025
+## **Friday 7/18/2025**
 
 ### **Kind**
 
