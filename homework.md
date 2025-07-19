@@ -1,66 +1,67 @@
 ---
-layout: default
+layout: base
 title: Homework
 ---
-# Homework Assignments  
-📅 Week of July 22–26, 2025
+
+# Homework
 
 ---
 
-## Monday – July 22
+### Friday 7/18/2025
 
-### Kind  
-**Book:** *Grammar Magic 2*  
-**Homework:** Complete pages 14–15  
-[📄 Download Worksheet](https://example.com/file1.pdf)
+### **Kind**
 
----
+Oxford Phonics World: Student Book 16-17, Workbook Pages 8  
 
-### Brave  
-**Book:** *Reading Adventures*  
-**Homework:** Read Chapter 3 and answer questions  
-[▶️ Watch This Video](https://example.com/video1)
+### **Brave**
 
----
+Beehive 2: Workbook Pages 10-11  
 
-### 🔹 Truth  
-**Book:** *Writing Workshop 1*  
-**Homework:** Write 5 sentences using new vocabulary  
-[📝 View Assignment Guide](https://example.com/guide.pdf)
+Matt's Mistake:  
+Activity Book: 
 
----
+▶️ [Matt's Mistake Audio](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EYfB6DtFqKNHr-NYAMiTKloBsyzdsg4xWuudseQ65aIOrA)
 
-## 📘 Tuesday – July 23
+### **Truth**
 
-### 🔹 Class A  
-**Book:** *Grammar Magic 2*  
-**Homework:** Complete page 16 and review irregular verbs
+Everybody Up 3: No Homework  
 
-### 🔹 Class B  
-**Book:** *Reading Adventures*  
-**Homework:** Read Chapter 4 aloud and summarize
+Little Red Riding Hood:  
+Activity Book: Practice Play  
+Picture Dictionary: Write 8 Words 5x
 
----
+▶️ [Little Red Riding Hood Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/ElpZV9szgIhAoAOcTsdCKJ8BKTW5yTSXZn_JtUiotLHTmQ?e=1YdQRl)
 
-## 📘 Wednesday – July 24
+### **Virtue**
 
-### 🔹 Class A  
-**Book:** *Phonics World 3*  
-**Homework:** Practice phonics sounds A–E  
-[🔊 Listen to Audio](https://example.com/audio.mp3)
+Oxford Discover 3: Workbook Pages 35-36  
 
----
+Wordlist: Write words 5x, definitions 1x
 
-## 📘 Thursday – July 25
+Lisa's Song: Page 25   
 
-_TBD_
+▶️ [Lisa's Song Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EieSJ2NSg1VCk-ELJYkIQJ8BhUl4-JkFirBfcqLzOB6kuw?e=aN7H2v)
 
----
+### ​**Patience**
 
-## 📘 Friday – July 26
+Oxford Discover 4: Workbook Pages 105-108
 
-_TBD_
+Vocabulary Workshop:
 
----
+Wordlist:  Write words 5x, definitions 1x
 
-*Check back daily for updates!*
+The Three Musketeers: 
+
+▶️ [The Three Musketeers Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ekq9AL-bn_ZHvErItbdeZ2wBdtYeaP7iJzpK7ONeC2XFqw?e=erwJUa)  
+
+### **Honor**
+
+Oxford Discover 6:   
+
+Wordly Wise:  
+
+The USA: The USA: Chapters 3, 4 Book Activities, Read, Listen, Reading Diary  
+
+▶️ [The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)
+
+
