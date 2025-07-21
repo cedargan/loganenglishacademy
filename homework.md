@@ -57,7 +57,7 @@ The Three Musketeers: 
 
 ### **Honor**
 
-Oxford Discover 6:   
+Oxford Discover 6: Pages 35-36
 
 Wordly Wise:  
 
