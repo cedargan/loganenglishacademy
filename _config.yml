@@ -1,7 +1,11 @@
 
 title: Logan English Academy
 
-
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-relative-links
 
 minima:
 
