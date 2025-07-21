@@ -1,17 +1,1 @@
 
-title: Logan English Academy
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-relative-links
-
-minima:
-
-  nav_pages:
-    - "homework.md"
-
-sass:
-  sass_dir: _sass
-  style: compressed
