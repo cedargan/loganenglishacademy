@@ -6,7 +6,6 @@ author:
 description: >
   Logan English Academy
 
-theme: minima
 
 plugins:
   - jekyll-feed
