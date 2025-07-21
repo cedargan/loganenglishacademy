@@ -1,7 +1,14 @@
+
 title: Logan English Academy
-theme: minima
+
 
 
 minima:
+
   nav_pages:
-    - "homework.md"      # The Homework Page
+    - "homework.md"
+
+
+sass:
+  sass_dir: _sass
+  style: compressed
