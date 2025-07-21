@@ -1,10 +1,7 @@
 ---
 layout: page
-title: Clara and Chris Comments
 permalink: /reports/x4vne91k/
 ---
-
-# **LOGAN ENGLISH**
 
 ## Teacher Comments
 
