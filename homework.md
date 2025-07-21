@@ -49,7 +49,7 @@ Oxford Discover 4: Workbook 109-110
 
 Vocabulary Workshop:
 
-Wordlist:  Write words 5x, definitions 1x
+Wordlist: Write words 5x, definitions 1x
 
 The Three Musketeers: 
 
@@ -59,7 +59,7 @@ The Three Musketeers: 
 
 Oxford Discover 6: Pages 35-36
 
-Wordly Wise:  
+Wordly Wise: 
 
 The USA: The USA: Chapters 3, 4 Book Activities, Read, Listen, Reading Diary  
 
