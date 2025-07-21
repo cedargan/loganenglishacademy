@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: base
 title: Teacher Comments
 permalink: /reports/x4vne91k/
 ---
+# Teacher Comments
 
 Name: **Clara**
 
