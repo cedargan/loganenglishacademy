@@ -12,7 +12,7 @@ Name: **Clara**
 
 Class: **Honor**
 
-### Comments:
+#### Comments:
 
 This is where the comments go
 
@@ -21,6 +21,6 @@ Name: **Chris**
 
 Class: **Patience**
 
-### Comments:
+#### Comments:
 
 This is where the comments go
