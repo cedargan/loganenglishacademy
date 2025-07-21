@@ -1,12 +1,10 @@
-title: Your awesome title
+title: Logan English Academy
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: Logan Leeder
+  email: freshevryday@gmail.com
 
 description: >
-  Write an awesome description for your new site here. You can edit this line
-  in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+  Logan English Academy
 
 theme: minima
 
@@ -34,7 +32,7 @@ minima:
   #   the `path` property (as represented via Liquid) of the pages in the order they
   #   should be rendered.
   nav_pages:
-    - about.md
+    - homework.md
 
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: false
