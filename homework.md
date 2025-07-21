@@ -12,26 +12,26 @@ title: Homework
 
 ### **Kind**
 
-Oxford Phonics World 1: Student Book , Workbook Pages  
+Oxford Phonics World 1: Student Book, Workbook Pages  
 
 ### **Brave**
 
 Beehive 2: Workbook Pages   
 
-Matt's Mistake:  
+Too Fast:  
 Activity Book: 
 
 ▶️ [Too Fast Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EghL8NDj_RdPrGPvOhCr9W0B1MYyG25_JJCd89ITjF6EXA?e=RyOgQb)
 
 ### **Truth**
 
-Everybody Up 3:   
+Everybody Up 3: Pages 12-13 
 
-Little Red Riding Hood:  
-Activity Book: Practice Play  
+High Water:  
+Activity Book:   
 Picture Dictionary: Write 8 Words 5x
 
-▶️ [Little Red Riding Hood Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/ElpZV9szgIhAoAOcTsdCKJ8BKTW5yTSXZn_JtUiotLHTmQ?e=1YdQRl)
+▶️ [High Water](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsTrqi7O6nJAgtBODT0CwYEBuf-nhzVCedfxg0M0jLWFog?e=vHgsdd)
 
 ### **Virtue**
 
@@ -45,7 +45,7 @@ The Bad House:
 
 ### ​**Patience**
 
-Oxford Discover 4: Workbook Pages 105-108
+Oxford Discover 4: Workbook 
 
 Vocabulary Workshop:
 
