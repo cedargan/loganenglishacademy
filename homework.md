@@ -39,7 +39,7 @@ Oxford Discover 3: Grammar Book Pages 29-30
 
 Wordlist: Write words 5x, definitions 1x
 
-The Bad House:   
+The Bad House:
 
 ▶️ [The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)
 
@@ -51,7 +51,7 @@ Vocabulary Workshop:
 
 Wordlist: Write words 5x, definitions 1x
 
-The Three Musketeers: 
+The Three Musketeers:
 
 ▶️ [The Three Musketeers Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ekq9AL-bn_ZHvErItbdeZ2wBdtYeaP7iJzpK7ONeC2XFqw?e=erwJUa)  
 
@@ -59,7 +59,7 @@ The Three Musketeers: 
 
 Oxford Discover 6: Pages 35-36
 
-Wordly Wise: 
+Wordly Wise:
 
 The USA: The USA: Chapters 3, 4 Book Activities, Read, Listen, Reading Diary  
 
