@@ -12,7 +12,6 @@ minima:
   nav_pages:
     - "homework.md"
 
-
 sass:
   sass_dir: _sass
   style: compressed
