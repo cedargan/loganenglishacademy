@@ -12,30 +12,30 @@ title: Homework
 
 ### **Kind**
 
-Oxford Phonics World 1: Student Book, Workbook Pages  
+Oxford Phonics World 1: Student Book 16-19, Workbook Pages 8-9
 
 ### **Brave**
 
-Beehive 2: Workbook Pages   
+Beehive 2: Workbook Pages 12-13
 
-Too Fast:  
-Activity Book: 
+Too Fast: Pages 2-5
+Activity Book: 1-3
 
 ▶️ [Too Fast Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EghL8NDj_RdPrGPvOhCr9W0B1MYyG25_JJCd89ITjF6EXA?e=RyOgQb)
 
 ### **Truth**
 
-Everybody Up 3: Pages 12-13 
+Everybody Up 3: Pages 44-45
 
-High Water:  
-Activity Book:   
+High Water: Pages 4-5
+Activity Book: Page 2
 Picture Dictionary: Write 8 Words 5x
 
 ▶️ [High Water](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsTrqi7O6nJAgtBODT0CwYEBuf-nhzVCedfxg0M0jLWFog?e=vHgsdd)
 
 ### **Virtue**
 
-Oxford Discover 3: Workbook Pages 35-36  
+Oxford Discover 3: Grammar Book Pages 29-30  
 
 Wordlist: Write words 5x, definitions 1x
 
