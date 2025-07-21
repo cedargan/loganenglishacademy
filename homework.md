@@ -45,7 +45,7 @@ The Bad House:
 
 ### ​**Patience**
 
-Oxford Discover 4: Workbook 105-106
+Oxford Discover 4: Workbook 109-110
 
 Vocabulary Workshop:
 
