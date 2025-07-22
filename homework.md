@@ -48,7 +48,7 @@ The Bad House:
 
 Oxford Discover 4: 
 
-Vocabulary Workshop:
+Vocabulary Workshop: Pages 164-166
 
 Wordlist: Write words 5x, definitions 1x
 
