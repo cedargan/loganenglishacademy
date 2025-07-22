@@ -8,7 +8,7 @@ permalink: /reports/ah6vbd93/
 
 Name: **Yuri**
 
-Class: **Patience**
+Class: **Truth**
 
 #### Comments:
 
