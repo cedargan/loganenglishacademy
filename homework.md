@@ -12,14 +12,15 @@ title: Homework
 
 ### **Kind**
 
-Oxford Phonics World 1: Student Book , Workbook Pages 
+Oxford Phonics World 1: Student Book Review
 
 ### **Brave**
 
 Beehive 2: No Homework
 
-Too Fast: Pages 2-5
-Activity Book: 1-3
+Too Fast: Pages 6-7
+Activity Book: 4
+Picture Dictionary: 8 words 5 times
 
 ▶️ **[Too Fast Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EghL8NDj_RdPrGPvOhCr9W0B1MYyG25_JJCd89ITjF6EXA?e=RyOgQb)**
 
