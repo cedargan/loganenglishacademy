@@ -1,4 +1,6 @@
 ---
+layout: base
+title: URL Table
 ---
 
 loganenglishacademy.com/reports/
