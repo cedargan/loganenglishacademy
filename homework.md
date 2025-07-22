@@ -5,10 +5,8 @@ title: Homework
 
 # **Homework**
 
----
 
 ## **Tuesday 7/22/2025**
----
 
 ### **Kind**
 
@@ -67,10 +65,8 @@ The USA: The USA:
 ▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
 
 
----
 
 ## **Monday 7/21/2025**
----
 
 ### **Kind**
 
@@ -127,10 +123,8 @@ The USA: The USA: Chapters 3, 4 Book Activities, Read, Listen, Reading Diary
 
 ▶️ [The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)
 
----
 
 ## **Friday 7/18/2025**
----
 
 ### **Kind**
 
