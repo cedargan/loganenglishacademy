@@ -7,8 +7,8 @@ title: Homework
 
 <br>
 ## **Wednesday 7/23/2025**
-<br>
-**Market Day 🎉**
+
+**Market Day 🎉**<br>
 **No Homework**
 <br>
 ## **Tuesday 7/22/2025**
