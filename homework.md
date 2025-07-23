@@ -5,7 +5,6 @@ title: Homework
 
 # **Homework**
 
-<br>
 ## **Wednesday 7/23/2025**
 
 **Market Day 🎉**<br>
