@@ -49,7 +49,7 @@ Vocabulary Workshop:
 
 Wordlist: Write words 5x, definitions 1x
 
-The Three Musketeers: Chapters 6 Book Activities, Read, Listen, Reading Diary
+The Three Musketeers: Chapters 7 Book Activities, Read, Listen, Reading Diary
 
 ▶️ **[The Three Musketeers Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ekq9AL-bn_ZHvErItbdeZ2wBdtYeaP7iJzpK7ONeC2XFqw?e=erwJUa)** 
   
