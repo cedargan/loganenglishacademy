@@ -58,7 +58,7 @@ Oxford Discover 6:
 
 Wordly Wise:
 
-The USA: Chapters 5, 6 Book Activities, Read, Listen, Reading Diary
+The USA: Chapters 3, 4 Book Activities, Read, Listen, Reading Diary
 
 ▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
 
