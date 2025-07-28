@@ -4,7 +4,7 @@ title: Homework
 ---
 
 # **Homework**
-## **Friday 7/25/2025**
+## **Monday 7/25/2025**
 
 ### **Kind**
 
@@ -30,7 +30,6 @@ Read Two Storybooks and Write Reading Diaries
 
 Read Two Storybooks and Write Reading Diaries
 
-<br>
 ## **Friday 7/25/2025**
 
 ### **Kind**
