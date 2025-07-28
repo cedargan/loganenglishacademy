@@ -4,6 +4,9 @@ title: Homework
 ---
 
 # **Homework**
+
+### Have a Wonderful Vacation See You Wednesday, July 29th!
+
 ## **Monday 7/28/2025**
 
 ### **Kind**
