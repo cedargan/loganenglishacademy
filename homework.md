@@ -8,6 +8,33 @@ title: Homework
 
 ### **Kind**
 
+No Homework
+
+### **Brave**
+
+Read Storybook
+  
+### **Truth**
+
+Read Storybook
+  
+### **Virtue**
+
+Read Storybook and Write Reading Diary
+
+### ​**Patience**
+
+Read Two Storybooks and Write Reading Diaries
+
+### **Honor**
+
+Read Two Storybooks and Write Reading Diaries
+
+<br>
+## **Friday 7/25/2025**
+
+### **Kind**
+
 Oxford Phonics World 1: Pages  Workbook Pages
 
 ### **Brave**
