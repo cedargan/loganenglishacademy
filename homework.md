@@ -8,6 +8,66 @@ title: Homework
 
 ### **Kind**
 
+Oxford Phonics World 1: Pages   Workbook Page 
+
+### **Brave**
+
+Beehive 2: Workbook Pages 24-25
+
+Too Fast: Pages 
+Activity Book:
+Picture Dictionary: 8 words 5 times
+
+▶️ **[Too Fast Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EghL8NDj_RdPrGPvOhCr9W0B1MYyG25_JJCd89ITjF6EXA?e=RyOgQb)**
+  
+### **Truth**
+
+Everybody Up 3: Workbooks Pages 54-55
+
+High Water: Pages 
+Activity Book: Page 
+Picture Dictionary: Write 8 Words 5x
+
+▶️ **[High Water](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsTrqi7O6nJAgtBODT0CwYEBuf-nhzVCedfxg0M0jLWFog?e=vHgsdd)**
+  
+### **Virtue**
+
+Oxford Discover 3: Workbook Pages 40-43
+
+Wordlist: Write words 5x, definitions 1x
+
+The Bad House: 
+  
+▶️ **[The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)**
+
+### ​**Patience**
+
+Oxford Discover 4: Grammar Book Pages 63-66
+
+Vocabulary Workshop:
+
+Wordlist: Write words 5x, definitions 1x
+
+The Three Musketeers: 
+
+▶️ **[The Three Musketeers Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ekq9AL-bn_ZHvErItbdeZ2wBdtYeaP7iJzpK7ONeC2XFqw?e=erwJUa)** 
+  
+### **Honor**
+
+Oxford Discover 6: 
+
+Wordly Wise:
+
+The USA: Chapters 5, 6, 7 Book Activities, Read, Listen, Reading Diary
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
+## **Thursday 8/7/2025**
+
+### **Kind**
+
 Oxford Phonics World 1: Pages 30-31  Workbook Page 15
 
 ### **Brave**
