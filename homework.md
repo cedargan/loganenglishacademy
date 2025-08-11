@@ -8,14 +8,14 @@ title: Homework
 
 ### **Kind**
 
-Oxford Phonics World 1: Pages   Workbook Page 
+Oxford Phonics World 1: Pages 32-35  Workbook Page 16-17
 
 ### **Brave**
 
 Beehive 2: Workbook Pages 26-27
 
-Too Fast: Pages 
-Activity Book:
+Too Fast: Pages 14-15
+Activity Book: Page 8
 Picture Dictionary: 8 words 5 times
 
 ▶️ **[Too Fast Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EghL8NDj_RdPrGPvOhCr9W0B1MYyG25_JJCd89ITjF6EXA?e=RyOgQb)**
@@ -24,8 +24,8 @@ Picture Dictionary: 8 words 5 times
 
 Everybody Up 3: Workbooks Pages 56-57
 
-High Water: Pages 
-Activity Book: Page 
+High Water: Pages 14-15
+Activity Book: Page 7
 Picture Dictionary: Write 8 Words 5x
 
 ▶️ **[High Water](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsTrqi7O6nJAgtBODT0CwYEBuf-nhzVCedfxg0M0jLWFog?e=vHgsdd)**
@@ -48,7 +48,7 @@ Vocabulary Workshop:
 
 Wordlist: Write words 5x, definitions 1x
 
-The Three Musketeers: 
+The Three Musketeers: Reread Whole Book
 
 ▶️ **[The Three Musketeers Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ekq9AL-bn_ZHvErItbdeZ2wBdtYeaP7iJzpK7ONeC2XFqw?e=erwJUa)** 
   
@@ -58,7 +58,7 @@ Oxford Discover 6: Workbook Pages 56-57
 
 Wordly Wise:
 
-The USA: Chapters 5, 6, 7 Book Activities, Read, Listen, Reading Diary
+The USA: 
 
 ▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
 
