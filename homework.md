@@ -4,7 +4,7 @@ title: Homework
 ---
 
 # **Homework**
-## **Thursday 8/7/2025**
+## **Friday 8/8/2025**
 
 ### **Kind**
 
