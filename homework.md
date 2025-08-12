@@ -4,6 +4,66 @@ title: Homework
 ---
 
 # **Homework**
+## **Tuesday 8/12/2025**
+
+### **Kind**
+
+Oxford Phonics World 1: Pages 36-39  Workbook Page 18-19
+
+### **Brave**
+
+Beehive 2: 
+
+Too Fast: Pages 16-17
+Activity Book: Page 9
+Picture Dictionary: 8 words 5 times
+
+▶️ **[Too Fast Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EghL8NDj_RdPrGPvOhCr9W0B1MYyG25_JJCd89ITjF6EXA?e=RyOgQb)**
+  
+### **Truth**
+
+Everybody Up 3: 
+
+High Water: Pages 16-17
+Activity Book: Page 9
+Picture Dictionary: Write 8 Words 5x
+
+▶️ **[High Water](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsTrqi7O6nJAgtBODT0CwYEBuf-nhzVCedfxg0M0jLWFog?e=vHgsdd)**
+  
+### **Virtue**
+
+Oxford Discover 3:
+
+Wordlist: Write words 5x, definitions 1x
+
+The Bad House: Chapters 3 Book Activities, Read, Listen, Reading Diary
+  
+▶️ **[The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)**
+
+### ​**Patience**
+
+Oxford Discover 4:
+
+Vocabulary Workshop: Worksheet
+
+Wordlist: Write words 5x, definitions 1x
+
+The Three Musketeers: 
+
+▶️ **[The Three Musketeers Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ekq9AL-bn_ZHvErItbdeZ2wBdtYeaP7iJzpK7ONeC2XFqw?e=erwJUa)** 
+  
+### **Honor**
+
+Oxford Discover 6: Workbook Pages 56-57
+
+Wordly Wise:
+
+The USA: 
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
 ## **Monday 8/11/2025**
 
 ### **Kind**
