@@ -44,7 +44,7 @@ The Bad House: Chapters 4 Book Activities, Read, Listen, Reading Diary
 
 Oxford Discover 4:
 
-Vocabulary Workshop: Page 
+Vocabulary Workshop: Page 174-176
 
 Wordlist: Write words 5x, definitions 1x
 
