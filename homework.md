@@ -4,6 +4,67 @@ title: Homework
 ---
 
 # **Homework**
+## **Thursday 8/21/2025**
+
+### **Kind**
+
+**Oxford Phonics World 1:** Pages 48-50   Workbook Page 24-25
+
+### **Brave**
+
+**Beehive 2:** Workbook Pages 
+
+**Too Fast:** 
+**Activity Book:** Page 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[Too Fast Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EghL8NDj_RdPrGPvOhCr9W0B1MYyG25_JJCd89ITjF6EXA?e=RyOgQb)**
+  
+### **Truth**
+
+**Everybody Up 3:** Workbook Pages 
+
+**High Water:** Pages 
+**Activity Book:** Page 
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[High Water](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsTrqi7O6nJAgtBODT0CwYEBuf-nhzVCedfxg0M0jLWFog?e=vHgsdd)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** 
+
+**Wordlist:** Write words 5x, definitions 1x
+
+**The Bad House:** Chapters 5 Book Activities, Read, Listen, Reading Diary
+  
+▶️ **[The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** Workbook Pages 
+
+**Vocabulary Workshop:** 
+
+**Wordlist:** Write words 5x, definitions 1x
+
+**The Three Musketeers:** Book Activity
+
+▶️ **[The Three Musketeers Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ekq9AL-bn_ZHvErItbdeZ2wBdtYeaP7iJzpK7ONeC2XFqw?e=erwJUa)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+
+**Wordly Wise:**
+
+**The USA:** 
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
+
 ## **Wednesday 8/20/2025**
 
 ### **Kind**
@@ -64,6 +125,7 @@ The USA:
 
 
 <br>
+
 ## **Tuesday 8/19/2025**
 
 ### **Kind**
@@ -124,6 +186,7 @@ The USA:
 
 
 <br>
+
 ## **Monday 8/18/2025**
 
 ### **Kind**
@@ -184,6 +247,7 @@ The USA:
 
 
 <br>
+
 ## **Tuesday 8/12/2025**
 
 ### **Kind**
