@@ -4,15 +4,15 @@ title: Homework
 ---
 
 # **Homework**
-## **Thursday 8/21/2025**
+## **Friday 8/22/2025**
 
 ### **Kind**
 
-**Oxford Phonics World 1:** Pages 48-50   Workbook Page 24-25
+**Oxford Phonics World 1:**
 
 ### **Brave**
 
-**Beehive 2:** Workbook Pages 
+**Beehive 2:** Workbook Pages 34-35
 
 **Too Fast:** 
 **Activity Book:** Page 
@@ -22,10 +22,71 @@ title: Homework
   
 ### **Truth**
 
-**Everybody Up 3:** Workbook Pages 
+**Everybody Up 3:** Workbook Pages 64-65
 
 **High Water:** Pages 
 **Activity Book:** Page 
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[High Water](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsTrqi7O6nJAgtBODT0CwYEBuf-nhzVCedfxg0M0jLWFog?e=vHgsdd)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 48-51
+
+**Wordlist:** Write words 5x, definitions 1x
+
+**The Bad House:** 
+  
+▶️ **[The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** Workbook Pages 122-123
+
+**Vocabulary Workshop:** 
+
+**Wordlist:** Write words 5x, definitions 1x
+
+**The Three Musketeers:** 
+
+▶️ **[The Three Musketeers Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ekq9AL-bn_ZHvErItbdeZ2wBdtYeaP7iJzpK7ONeC2XFqw?e=erwJUa)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+
+**Wordly Wise:**
+
+**The USA:** Chapters 9, 10 Book Activities, Read, Listen, Reading Diary
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
+
+## **Thursday 8/21/2025**
+
+### **Kind**
+
+**Oxford Phonics World 1:** Pages 48-50   Workbook Page 24-25
+
+### **Brave**
+
+**Beehive 2:** Workbook Pages 32-33
+
+**Too Fast:** Rev
+**Activity Book:** 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[Too Fast Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EghL8NDj_RdPrGPvOhCr9W0B1MYyG25_JJCd89ITjF6EXA?e=RyOgQb)**
+  
+### **Truth**
+
+**Everybody Up 3:** No Homework
+
+**High Water:** Pages 44-45
+**Activity Book:** 12-15
 **Picture Dictionary:** Write 8 Words 5x
 
 ▶️ **[High Water](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsTrqi7O6nJAgtBODT0CwYEBuf-nhzVCedfxg0M0jLWFog?e=vHgsdd)**
@@ -42,13 +103,13 @@ title: Homework
 
 ### ​**Patience**
 
-**Oxford Discover 4:** Workbook Pages 
+**Oxford Discover 4:** 
 
 **Vocabulary Workshop:** 
 
 **Wordlist:** Write words 5x, definitions 1x
 
-**The Three Musketeers:** Book Activity
+**The Three Musketeers:** 
 
 ▶️ **[The Three Musketeers Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ekq9AL-bn_ZHvErItbdeZ2wBdtYeaP7iJzpK7ONeC2XFqw?e=erwJUa)** 
   
