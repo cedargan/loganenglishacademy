@@ -4,6 +4,67 @@ title: Homework
 ---
 
 # **Homework**
+## **Wednesday 8/27/2025**
+
+### **Kind**
+
+**Oxford Phonics World 1:**  Pages 56-58, Workbook Page 28-29
+
+### **Brave**
+
+**Beehive 2:** Workbook Pages 40-41
+
+**Mansour and the Donkey:** Pages 4-7
+**Activity Book:** Pages 4-5
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[Mansour and the Donkey Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EmC-_pPhVUlJueA6_q3aPlQBY_0d8XySid6oNGQVPfJnfA?e=fJVeJm)**
+  
+### **Truth**
+
+**Everybody Up 3:** Workbook Pages 70-73
+
+**Aladdin:** Pages 4-5
+**Activity Book:** 4
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Aladdin](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Eoqi6vqvO0NCvdoSdVGL04UB9atbKEpHkYj8gdxtkDqo9w?e=LNC1QI)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 54-55
+
+**Wordlist:** Write words 5x, definitions 1x
+
+**The Bad House:** 
+  
+▶️ **[The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** 
+
+**Vocabulary Workshop:** 
+
+**Wordlist:** Write words 5x, definitions 1x
+
+**The Three Musketeers:** 
+
+▶️ **[Sara Dixon, Teen Detective](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Epo92HAp0FFKuWlC-wuJTesBMP2_AOSiErp3WL3ZSXgTOQ?e=nctebn)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** Workbook Page 62-65
+
+**Wordly Wise:**
+
+**The USA:** 
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
+
 ## **Tuesday 8/26/2025**
 
 ### **Kind**
@@ -32,11 +93,11 @@ title: Homework
   
 ### **Virtue**
 
-**Oxford Discover 3:** Chapters 6 Book Activities, Read, Listen, Reading Diary
+**Oxford Discover 3:** 
 
 **Wordlist:** Write words 5x, definitions 1x
 
-**The Bad House:** 
+**The Bad House:** Chapters 6 Book Activities, Read, Listen, Reading Diary
   
 ▶️ **[The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)**
 
