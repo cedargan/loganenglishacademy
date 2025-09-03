@@ -32,7 +32,7 @@ title: Homework
   
 ### **Virtue**
 
-**Oxford Discover 3:** Memorize Speech
+**Oxford Discover 3:** Memorize Speech (Recite 10 times)
 
 **Wordlist:** Write words 5x, definitions 1x
 
@@ -42,7 +42,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Oxford Discover 4:** Memorize Speech
+**Oxford Discover 4:** Memorize Speech (Recite 10 times)
 
 
 **Vocabulary Workshop:** 
@@ -55,7 +55,7 @@ title: Homework
   
 ### **Honor**
 
-**Oxford Discover 6:** Memorize Speech
+**Oxford Discover 6:** Memorize Speech (Recite 10 times)
 
 
 **Wordly Wise:**
