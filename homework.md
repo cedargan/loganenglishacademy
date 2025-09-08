@@ -4,6 +4,69 @@ title: Homework
 ---
 
 # **Homework**
+## **Monday 9/8/2025**
+
+### **Kind**
+
+**Oxford Phonics World 1:**  Pages 72-73, Workbook Page 36
+
+### **Brave**
+
+**Beehive 2:**
+
+**Mansour and the Donkey:** Listen and Practice (3 pages)
+**Activity Book:** 
+**Picture Dictionary:** 10 words 5 times
+
+▶️ **[Mansour and the Donkey Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EmC-_pPhVUlJueA6_q3aPlQBY_0d8XySid6oNGQVPfJnfA?e=fJVeJm)**
+  
+### **Truth**
+
+**Everybody Up 3:** Memorize Speech and Write 1x
+
+**Aladdin:** Pages 20-21
+**Activity Book:** Practice Play
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Aladdin](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Eoqi6vqvO0NCvdoSdVGL04UB9atbKEpHkYj8gdxtkDqo9w?e=LNC1QI)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 57-58
+
+**Wordlist:** Write words 5x, definitions 1x
+
+**The Bad House:** 
+  
+▶️ **[The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** 
+
+
+**Vocabulary Workshop:** 
+
+**Wordlist:** Write words 5x, definitions 1x
+
+**Sara Dixon, Teen Detective:**  
+
+▶️ **[Sara Dixon, Teen Detective](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Epo92HAp0FFKuWlC-wuJTesBMP2_AOSiErp3WL3ZSXgTOQ?e=nctebn)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+
+
+**Wordly Wise:**
+
+**The USA:** 
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
+
 ## **Thursday 9/4/2025**
 
 ### **Kind**
