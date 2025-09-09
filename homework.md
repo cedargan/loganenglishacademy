@@ -35,7 +35,7 @@ title: Homework
 
 **Wordlist:** Write words 5x, definitions 1x
 
-**The Bad House:** Activity Book Pages 15-18
+**The Bad House:** Read Chapter 7, Activity Book Pages 15-18
   
 ▶️ **[The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)**
 
