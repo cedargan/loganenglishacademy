@@ -3,7 +3,69 @@ layout: base
 title: Homework
 ---
 
-# **Homework**
+# **Homework**## **Tuesday 9/9/2025**
+
+### **Kind**
+
+**Oxford Phonics World 1:**  Pages 74-77, Workbook Page 37-38
+
+### **Brave**
+
+**Beehive 2:**
+
+**The Magpie and the Milk:** No Homework
+**Activity Book:** 
+**Picture Dictionary:** 10 words 5 times
+
+▶️ **[The Magpie and the Milk Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EmC-_pPhVUlJueA6_q3aPlQBY_0d8XySid6oNGQVPfJnfA?e=fJVeJm)**
+  
+### **Truth**
+
+**Everybody Up 3:** Memorize Speech
+
+**The Heron and the Hummingbird:**
+**Activity Book:** 
+**Picture Dictionary:**
+
+▶️ **[The Heron and the Hummingbird](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/ElfHZCsk3_hEnNJB_-1WJAMB6ZiROgksT3D0PemLBN2YPA?e=F90Hld)**
+  
+### **Virtue**
+
+**Oxford Discover 3:**
+
+**Wordlist:** Write words 5x, definitions 1x
+
+**The Bad House:** Activity Book Pages 15-18
+  
+▶️ **[The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** 
+
+
+**Vocabulary Workshop:** 
+
+**Wordlist:** Write words 5x, definitions 1x
+
+**Sara Dixon, Teen Detective:**  
+
+▶️ **[Sara Dixon, Teen Detective](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Epo92HAp0FFKuWlC-wuJTesBMP2_AOSiErp3WL3ZSXgTOQ?e=nctebn)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+
+
+**Wordly Wise:**
+
+**The USA:** 
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
+
 ## **Monday 9/8/2025**
 
 ### **Kind**
