@@ -42,7 +42,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Oxford Discover 4:** Workbook Pages 
+**Oxford Discover 4:** Workbook Pages 130-131
 
 
 **Vocabulary Workshop:** 
@@ -55,7 +55,7 @@ title: Homework
   
 ### **Honor**
 
-**Oxford Discover 6:** 
+**Oxford Discover 6:** Workbook Pages 68-69, Grammar Book Unit 7
 
 
 **Wordly Wise:**
