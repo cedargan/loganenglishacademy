@@ -3,8 +3,8 @@ layout: base
 title: Homework
 ---
 
-# **Homework**## 
-**Wednesday 9/10/2025**
+# **Homework**
+## **Wednesday 9/10/2025**
 
 ### **Kind**
 
@@ -18,7 +18,7 @@ title: Homework
 **Activity Book:** Pages 2-3
 **Picture Dictionary:** 10 words 5 times
 
-▶️ **[The Magpie and the Milk Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EmC-_pPhVUlJueA6_q3aPlQBY_0d8XySid6oNGQVPfJnfA?e=fJVeJm)**
+▶️ **[The Magpie and the Milk Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ej2MXAR4wkVFspXCJbmhngoBXmffu1QF9nER_pKMxHZ5Hw)**
   
 ### **Truth**
 
