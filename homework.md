@@ -4,6 +4,69 @@ title: Homework
 ---
 
 # **Homework**
+## **Friday 9/12/2025**
+
+### **Kind**
+
+**Oxford Phonics World 1:** 
+
+### **Brave**
+
+**Beehive 2:** Workbook Pages 56-57
+
+**The Magpie and the Milk:** 
+**Activity Book:** 
+**Picture Dictionary:** 
+
+▶️ **[The Magpie and the Milk Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ej2MXAR4wkVFspXCJbmhngoBXmffu1QF9nER_pKMxHZ5Hw)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 4-5
+
+**The Heron and the Hummingbird:** 
+**Activity Book:** 
+**Picture Dictionary:**
+
+▶️ **[The Heron and the Hummingbird](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/ElfHZCsk3_hEnNJB_-1WJAMB6ZiROgksT3D0PemLBN2YPA?e=F90Hld)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 63-64
+
+**Wordlist:** 
+
+**The Bad House:** 
+  
+▶️ **[The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** 
+
+
+**Vocabulary Workshop:** Workbook Pages 132-134
+
+**Wordlist:** 
+
+**Sara Dixon, Teen Detective:**  
+
+▶️ **[Sara Dixon, Teen Detective](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Epo92HAp0FFKuWlC-wuJTesBMP2_AOSiErp3WL3ZSXgTOQ?e=nctebn)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+
+
+**Wordly Wise:**
+
+**The USA:** Chapters 15, 16 Book Activities, Read, Listen, Reading Diary
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
+
 ## **Thursday 9/11/2025**
 
 ### **Kind**
