@@ -4,6 +4,69 @@ title: Homework
 ---
 
 # **Homework**
+## **Monday 9/15/2025**
+
+### **Kind**
+
+**Oxford Phonics World 1:** Pages 84-86, Workbook Pages 42-44
+
+### **Brave**
+
+**Beehive 2:** Workbook Pages 58-59
+
+**The Magpie and the Milk:** Pages 8-11
+**Activity Book:** Pages 6-7
+**Picture Dictionary:** Write 5 Words 5x
+
+▶️ **[The Magpie and the Milk Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ej2MXAR4wkVFspXCJbmhngoBXmffu1QF9nER_pKMxHZ5Hw)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 6-7
+
+**The Heron and the Hummingbird:** Pages 6-9
+**Activity Book:** Pages 5-6
+**Picture Dictionary:** 8 Words 5x
+
+▶️ **[The Heron and the Hummingbird](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/ElfHZCsk3_hEnNJB_-1WJAMB6ZiROgksT3D0PemLBN2YPA?e=F90Hld)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 65-66
+
+**Wordlist:** Write Words From 1-10 5x & Definitions
+
+**The Bad House:** 
+  
+▶️ **[The Bad House Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EqOI7rnHjsVMgO2U7umdITQBXVmhU1ihM7Rd0Xd4CO_C_Q?e=uu9uHR)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** Complete Grammar Book Unit 14
+
+
+**Vocabulary Workshop:** Workbook Pages 132-134
+
+**Wordlist:** Write Words From 1-12 5x & Definitions
+
+**Sara Dixon, Teen Detective:**  
+
+▶️ **[Sara Dixon, Teen Detective](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Epo92HAp0FFKuWlC-wuJTesBMP2_AOSiErp3WL3ZSXgTOQ?e=nctebn)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+
+
+**Wordly Wise:**
+
+**The USA:** 
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
+
 ## **Friday 9/12/2025**
 
 ### **Kind**
