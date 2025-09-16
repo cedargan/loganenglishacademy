@@ -4,6 +4,69 @@ title: Homework
 ---
 
 # **Homework**
+## **Tuesday 9/16/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 2:** Workbook Pages 4-7
+
+### **Brave**
+
+**Beehive 2:** Workbook Pages 60-61
+
+**The Magpie and the Milk:** Pages 12-15
+**Activity Book:** Pages 8-9
+**Picture Dictionary:** Write 5 Words 5x
+
+▶️ **[The Magpie and the Milk Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ej2MXAR4wkVFspXCJbmhngoBXmffu1QF9nER_pKMxHZ5Hw)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 8-9
+
+**The Heron and the Hummingbird:** Pages 10-13
+**Activity Book:** Pages 7-8
+**Picture Dictionary:** 8 Words 5x
+
+▶️ **[The Heron and the Hummingbird](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/ElfHZCsk3_hEnNJB_-1WJAMB6ZiROgksT3D0PemLBN2YPA?e=F90Hld)**
+  
+### **Virtue**
+
+**Oxford Discover 3:**
+
+**Wordlist:** Write Words From 11-20 5x & Definitions
+
+**A Machine for the Future:** Chapters 1, 2 Book Activities, Read, Listen
+  
+▶️ **[A Machine for the Future](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EhGc8Umcg8lAtuF6grnraBABH-lqZ-AOFQ9GRNIS0HR9Pw?e=1VedMD)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** 
+
+
+**Vocabulary Workshop:** 
+
+**Wordlist:** Write Words From 13-23 5x & Definitions
+
+**Sara Dixon, Teen Detective:**  Chapters 5, 6 Book Activities, Read, Listen, Reading Diary
+
+▶️ **[Sara Dixon, Teen Detective](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Epo92HAp0FFKuWlC-wuJTesBMP2_AOSiErp3WL3ZSXgTOQ?e=nctebn)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+
+
+**Wordly Wise:**
+
+**The USA:** 
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
+
 ## **Monday 9/15/2025**
 
 ### **Kind**
