@@ -15,8 +15,8 @@ title: Homework
 
 **Beehive 2:** Workbook Pages 64-65
 
-**The Magpie and the Milk:** Pages 16-19
-**Activity Book:** Pages 10-11
+**The Magpie and the Milk:** 
+**Activity Book:** 
 **Picture Dictionary:** Write 5 Words 5x
 
 ▶️ **[The Magpie and the Milk Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Ej2MXAR4wkVFspXCJbmhngoBXmffu1QF9nER_pKMxHZ5Hw)**
