@@ -8,8 +8,7 @@ title: Homework
 
 ### **Kind**
 
-**Spotlight on First Phonics 2:** Workbook Pages 18-19
-**Notebook:** Write Words 5x
+**Spotlight on First Phonics 2:** Workbook Pages 18-19, Write Words 5x
 
 ### **Brave**
 
