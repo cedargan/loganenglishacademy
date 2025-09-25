@@ -4,6 +4,70 @@ title: Homework
 ---
 
 # **Homework**
+## **Thursday 9/25/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 2:** Workbook Pages 18-19
+**Notebook:** Write Words 5x
+
+### **Brave**
+
+**Beehive 2:** Workbook Pages 72-73
+
+**The Magpie and the Milk:** 
+**Activity Book:** 
+**Picture Dictionary:** Write 5 Words 5x
+
+▶️ **[Jack and the Beanstalk](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EojR9RPSRLBDkUqUMh7OIz4BFPcDKc8QXudEEqKqmy1XCQ?e=gGlGDI)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Grammar Book Pages 19-20
+
+**The Heron and the Hummingbird:** 
+**Activity Book:** 
+**Picture Dictionary:** 8 Words 5x
+
+▶️ **[Freetime Around the World](https://youtu.be/1mKXFtLxzb4?si=x5x9wK5OGAeXvmCx)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 
+
+**Wordlist:** 
+
+**A Machine for the Future:** 
+  
+▶️ **[A Machine for the Future](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EhGc8Umcg8lAtuF6grnraBABH-lqZ-AOFQ9GRNIS0HR9Pw?e=1VedMD)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** 
+
+
+**Vocabulary Workshop:** 
+
+**Wordlist:** Write Words From 1-12 5x & Definitions
+
+**Sara Dixon, Teen Detective:**  Chapters 5-6 Read, Listen, Activity B
+
+▶️ **[Sara Dixon, Teen Detective](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Epo92HAp0FFKuWlC-wuJTesBMP2_AOSiErp3WL3ZSXgTOQ?e=nctebn)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** Workbook Pages 80-81, Grammar Book Unit 8
+
+
+**Wordly Wise:**
+
+**The USA:** 
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
+
 ## **Wednesday 9/24/2025**
 
 ### **Kind**
@@ -56,7 +120,7 @@ title: Homework
   
 ### **Honor**
 
-**Oxford Discover 6:** Workbook Pages 74-77
+**Oxford Discover 6:** Workbook Pages 80-81, Grammar Book Unit 8
 
 
 **Wordly Wise:**
