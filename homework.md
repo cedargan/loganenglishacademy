@@ -14,8 +14,8 @@ title: Homework
 
 **Beehive 2:** Write Words 5x (in notebook)
 
-**Jack and the Beanstalk:** 
-**Activity Book:** 
+**Jack and the Beanstalk:** Pages 4-7
+**Activity Book:** 4-5
 **Picture Dictionary:** Write 5 Words 5x
 
 ▶️ **[Jack and the Beanstalk](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EojR9RPSRLBDkUqUMh7OIz4BFPcDKc8QXudEEqKqmy1XCQ?e=gGlGDI)**
@@ -24,8 +24,7 @@ title: Homework
 
 **Oxford Discover 2:** Workbook Pages 24-25
 
-**Freetime Around the World:** 
-**Activity Book:** 
+**Freetime Around the World:** 4-7, 24-25
 **Picture Dictionary:** 8 Words 5x
 
 ▶️ **[Freetime Around the World](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EufhIXLyAj1MgO5L-C6NGBQBiuBuPZCaoDXePArm9WntTg?e=InYY8O)**
@@ -42,7 +41,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Oxford Discover 4:** 
+**Oxford Discover 4:** Workbook Pages 146-147
 
 
 **Vocabulary Workshop:** 
@@ -55,7 +54,7 @@ title: Homework
   
 ### **Honor**
 
-**Oxford Discover 6:** 
+**Oxford Discover 6:** Workbook Pages 82-85
 
 
 **Wordly Wise:**
