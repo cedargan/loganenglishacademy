@@ -4,6 +4,69 @@ title: Homework
 ---
 
 # **Homework**
+## **Monday 9/29/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 2:** Workbook Pages 22-23
+
+### **Brave**
+
+**Beehive 2:** Write Words 5x (in notebook)
+
+**Jack and the Beanstalk:** 
+**Activity Book:** 
+**Picture Dictionary:** Write 5 Words 5x
+
+▶️ **[Jack and the Beanstalk](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EojR9RPSRLBDkUqUMh7OIz4BFPcDKc8QXudEEqKqmy1XCQ?e=gGlGDI)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 24-25
+
+**Freetime Around the World:** 
+**Activity Book:** 
+**Picture Dictionary:** 8 Words 5x
+
+▶️ **[Freetime Around the World](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EufhIXLyAj1MgO5L-C6NGBQBiuBuPZCaoDXePArm9WntTg?e=InYY8O)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 75-77
+
+**Wordlist:** 
+
+**A Machine for the Future:** 
+  
+▶️ **[A Machine for the Future](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EhGc8Umcg8lAtuF6grnraBABH-lqZ-AOFQ9GRNIS0HR9Pw?e=1VedMD)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** 
+
+
+**Vocabulary Workshop:** 
+
+**Wordlist:** Write Words From 1-12 5x & Definitions
+
+**Sara Dixon, Teen Detective:**  
+
+▶️ **[Sara Dixon, Teen Detective](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Epo92HAp0FFKuWlC-wuJTesBMP2_AOSiErp3WL3ZSXgTOQ?e=nctebn)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+
+
+**Wordly Wise:**
+
+**The USA:** 
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
+
 ## **Friday 9/26/2025**
 
 ### **Kind**
