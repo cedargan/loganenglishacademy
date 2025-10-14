@@ -31,7 +31,7 @@ title: Homework
   
 ### **Virtue**
 
-**Oxford Discover 3:** Workbook Pages 
+**Oxford Discover 3:** Workbook Pages 78-81
 
 **Wordlist:** Write word 11-10 5x
 
@@ -41,7 +41,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Oxford Discover 4:** 
+**Oxford Discover 4:** Grammar Book, Writing Assignment 
 
 
 **Vocabulary Workshop:** 
