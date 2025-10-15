@@ -4,7 +4,7 @@ title: Homework
 ---
 
 # **Homework**
-## **Monday 10/15/2025**
+## **Wednesday 10/15/2025**
 
 ### **Kind**
 
@@ -67,7 +67,7 @@ title: Homework
 
 <br>
 
-## **Monday 10/14/2025**
+## **Tuesday 10/14/2025**
 
 ### **Kind**
 
