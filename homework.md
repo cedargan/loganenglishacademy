@@ -4,6 +4,69 @@ title: Homework
 ---
 
 # **Homework**
+## **Monday 10/15/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 2:** Workbook Pages 32-33
+
+### **Brave**
+
+**Beehive 2:** Workbook Pages 86-87
+
+**Jack and the Beanstalk:** Review
+**Activity Book:** Reading practice
+**Picture Dictionary:** Write 5 Words 5x
+
+▶️ **[Jack and the Beanstalk](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EojR9RPSRLBDkUqUMh7OIz4BFPcDKc8QXudEEqKqmy1XCQ?e=gGlGDI)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 32-33
+
+**Freetime Around the World:** 14-15
+**Activity Book:** 34-35
+**Picture Dictionary:** 10 Words 5x
+
+▶️ **[Freetime Around the World](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EufhIXLyAj1MgO5L-C6NGBQBiuBuPZCaoDXePArm9WntTg?e=InYY8O)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 82-83
+
+**Wordlist:** Write word 11-10 5x
+
+**A Pretty Face:**  
+  
+▶️ **[A Pretty Face](https://www.youtube.com/watch?v=EZ092q0CfHk)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** 
+
+
+**Vocabulary Workshop:** 
+
+**Wordlist:** Write Words From 11-20 5x & Definitions
+
+**The Time Machine:**  
+
+▶️ **[The Time Machine](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsBz9mA9EPtMtum9ip6PUNoBeWQO5lUPbM8SgjFixLE0yg?e=atrmLx)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** Workbook Pages 90-93
+
+
+**Wordly Wise:**
+
+**The USA:** 
+
+▶️ **[The USA Audio](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EkIPKduABkxGq7hKxrBRfcMBM-0F8ykkWWNeCUbMk_zCLw?e=DvRcSW)**
+
+
+<br>
+
 ## **Monday 10/14/2025**
 
 ### **Kind**
