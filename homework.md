@@ -8,6 +8,64 @@ title: Homework
 
 ### **Kind**
 
+**Spotlight on First Phonics 2:** Workbook Pages 42-43, Write Words 5x
+
+### **Brave**
+
+**Beehive 2:** Workbook Pages 98-99
+
+**Schools:** 
+**Activity Book:** 
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Schools](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Enyo8Oxq_fVNtVC1bWERUvEBnIsdXHxq8Jg4aDlUmzG8DA?e=i9bYCg)**
+  
+### **Truth**
+
+**Oxford Discover 2:** 40-41
+
+**Freetime Around the World:** 
+**Activity Book:** 
+**Picture Dictionary:** 10 Words 5x
+
+▶️ **[Freetime Around the World](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EufhIXLyAj1MgO5L-C6NGBQBiuBuPZCaoDXePArm9WntTg?e=InYY8O)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 90-91
+
+**Wordlist:** Write word 1-10 5x
+
+**A Pretty Face:**  Chapters 6 Read, Listen, Book Activity
+  
+▶️ **[A Pretty Face](https://www.youtube.com/watch?v=EZ092q0CfHk)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** 
+
+
+**Vocabulary Workshop:** 
+
+**Wordlist:** Write Words From 1-12 5x & Definitions
+
+**The Time Machine:**  Chapters 7 Read, Listen, Book Activity
+
+▶️ **[The Time Machine](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsBz9mA9EPtMtum9ip6PUNoBeWQO5lUPbM8SgjFixLE0yg?e=atrmLx)** 
+  
+### **Honor**
+
+**Oxford Discover 6:**
+
+
+**Wordly Wise:**
+
+**The USA:** 
+
+## **Thursday 10/23/2025**
+
+### **Kind**
+
 **Spotlight on First Phonics 2:** Workbook Pages 40-41
 
 ### **Brave**
@@ -18,7 +76,7 @@ title: Homework
 **Activity Book:** Page 20
 **Picture Dictionary:** Write 8 Words 5x
 
-▶️ **[Schools](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EhTYWXw_hH5Nlo66kEpdGN0Bq2RQO2Q-wNcEwB7FhCrdLQ?e=vbM3Mb)**
+▶️ **[Schools](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Enyo8Oxq_fVNtVC1bWERUvEBnIsdXHxq8Jg4aDlUmzG8DA?e=i9bYCg)**
   
 ### **Truth**
 
