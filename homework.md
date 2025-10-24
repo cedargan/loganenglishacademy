@@ -216,14 +216,14 @@ title: Homework
 
 ### ​**Patience**
 
-**Oxford Discover 4:** 
+**Oxford Discover 4:** Workbook Pages 158-161
 
 
 **Vocabulary Workshop:** 
 
 **Wordlist:** Write Words From 1-12 5x & Definitions
 
-**The Time Machine:**  Chapters 6 Read, Listen, Book Activity
+**The Time Machine:**  
 
 ▶️ **[The Time Machine](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsBz9mA9EPtMtum9ip6PUNoBeWQO5lUPbM8SgjFixLE0yg?e=atrmLx)** 
   
@@ -234,8 +234,10 @@ title: Homework
 
 **Wordly Wise:**
 
-**The USA:** 
+**The Mouse and the Motorcycle:** Chapters 2, 3 Read, Listen, Book Activity
 
+▶️ **[The Mouse and the Motorcycle](https://youtube.com/playlist?list=PLs11A-t4KCbyxX5KfuoF5C4Rnvm191hHF&si=akozmKquqwddn55M)** 
+  
 ## **Thursday 10/16/2025**
 
 ### **Kind**
