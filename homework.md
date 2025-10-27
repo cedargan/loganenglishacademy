@@ -4,7 +4,63 @@ title: Homework
 ---
 
 # **Homework**
-## **Thursday 10/23/2025**
+## **Monday 10/27/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 2:** Workbook Pages 44-45, Write Words 5x
+
+### **Brave**
+
+**Beehive 2:** None
+
+**Schools:** 
+**Activity Book:** 
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Schools](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Enyo8Oxq_fVNtVC1bWERUvEBnIsdXHxq8Jg4aDlUmzG8DA?e=i9bYCg)**
+  
+### **Truth**
+
+**Oxford Discover 2:** 42-43
+
+**Freetime Around the World:** 
+**Activity Book:** 
+**Picture Dictionary:** 10 Words 5x
+
+▶️ **[Freetime Around the World](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EufhIXLyAj1MgO5L-C6NGBQBiuBuPZCaoDXePArm9WntTg?e=InYY8O)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 92-93
+
+**Wordlist:** Write word 1-10 5x
+
+**A Pretty Face:**  
+  
+▶️ **[A Pretty Face](https://www.youtube.com/watch?v=EZ092q0CfHk)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** Grammar Book Unit 17
+
+
+**Wordlist:** Write Words From 1-12 5x & Definitions
+
+**The Time Machine:**  
+
+▶️ **[The Time Machine](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsBz9mA9EPtMtum9ip6PUNoBeWQO5lUPbM8SgjFixLE0yg?e=atrmLx)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** Grammar Book Unit 17
+
+
+**Wordly Wise:**
+
+**The USA:** 
+
+## **Friday 10/23/2025**
 
 ### **Kind**
 
