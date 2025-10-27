@@ -14,8 +14,8 @@ title: Homework
 
 **Beehive 2:** None
 
-**Schools:** 
-**Activity Book:** 
+**Schools:** Pages 6-9
+**Activity Book:** 21-22
 **Picture Dictionary:** Write 8 Words 5x
 
 ▶️ **[Schools](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Enyo8Oxq_fVNtVC1bWERUvEBnIsdXHxq8Jg4aDlUmzG8DA?e=i9bYCg)**
@@ -24,7 +24,7 @@ title: Homework
 
 **Oxford Discover 2:** 42-43
 
-**Freetime Around the World:** 
+**Freetime Around the World:** Review
 **Activity Book:** 
 **Picture Dictionary:** 10 Words 5x
 
@@ -34,7 +34,7 @@ title: Homework
 
 **Oxford Discover 3:** Workbook Pages 92-93
 
-**Wordlist:** Write word 1-10 5x
+**Wordlist:** Write word 11-20 5x
 
 **A Pretty Face:**  
   
@@ -45,7 +45,7 @@ title: Homework
 **Oxford Discover 4:** Grammar Book Unit 17
 
 
-**Wordlist:** Write Words From 1-12 5x & Definitions
+**Wordlist:** Write Words From 13-23 5x & Definitions
 
 **The Time Machine:**  
 
