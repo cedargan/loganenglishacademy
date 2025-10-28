@@ -4,6 +4,63 @@ title: Homework
 ---
 
 # **Homework**
+## **Tuesday 10/28/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 2:** Workbook Pages 46-47
+
+### **Brave**
+
+**Beehive 2:** Workbook Pages 100-101
+
+**Schools:** Pages 10-11
+**Activity Book:** 23
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Schools](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Enyo8Oxq_fVNtVC1bWERUvEBnIsdXHxq8Jg4aDlUmzG8DA?e=i9bYCg)**
+  
+### **Truth**
+
+**Oxford Discover 2:** 42-43
+
+**Freetime Around the World:** Review
+**Activity Book:** 
+**Picture Dictionary:** 10 Words 5x
+
+▶️ **[Freetime Around the World](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EufhIXLyAj1MgO5L-C6NGBQBiuBuPZCaoDXePArm9WntTg?e=InYY8O)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** 
+
+**Wordlist:** Write word 1-10 5x
+
+**A Pretty Face:**  Pages 42-43
+  
+▶️ **[A Pretty Face](https://www.youtube.com/watch?v=EZ092q0CfHk)**
+
+### ​**Patience**
+
+**Oxford Discover 4:** 
+
+**Wordlist:** Write Words From 1-12 5x & Definitions
+
+**The Time Machine:**  Chapters 8 Read, Listen, Book Activity
+
+▶️ **[The Time Machine](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsBz9mA9EPtMtum9ip6PUNoBeWQO5lUPbM8SgjFixLE0yg?e=atrmLx)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** Grammar Book Unit 17
+
+**The Mouse and the Motorcycle:** 
+
+▶️ **[The Mouse and the Motorcycle](https://youtube.com/playlist?list=PLs11A-t4KCbyxX5KfuoF5C4Rnvm191hHF&si=akozmKquqwddn55M)** 
+
+
+<br/>
+
 ## **Monday 10/27/2025**
 
 ### **Kind**
