@@ -42,7 +42,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Oxford Discover 4:** Workbook Pages 
+**Oxford Discover 4:** Workbook Pages 162-163
 
 **Wordlist:** Write Words From 13-24 5x & Definitions
 
@@ -52,7 +52,7 @@ title: Homework
   
 ### **Honor**
 
-**Oxford Discover 6:** 
+**Oxford Discover 6:** Workbook Pages 104-107
 
 **The Mouse and the Motorcycle:** 
 
