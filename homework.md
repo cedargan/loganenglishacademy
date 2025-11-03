@@ -4,6 +4,116 @@ title: Homework
 ---
 
 # **Homework**
+## **Monday 11/3/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 2:** Workbook Pages 52, 54
+
+### **Brave**
+
+**Beehive 2:** Workbook Pages 106-107
+
+**Schools:** Pages 16-17
+**Activity Book:** Page 26
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Schools](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Enyo8Oxq_fVNtVC1bWERUvEBnIsdXHxq8Jg4aDlUmzG8DA?e=i9bYCg)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 46-47
+
+**Volcano Adventure:** Pages 4-7
+**Activity Book:** 2-3
+**Picture Dictionary:** 10 Words 5x
+
+▶️ **[Volcano Advanture](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsluYgwmDUtJsSSbhMeBAWYBF5fxpULqlb_XXRVvPVKwdg?e=NeGhab)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Grammar Book Unit 10 
+
+**Wordly Wise 2:**  
+  
+**Wordlist:** Write word 11-20 5x
+
+### ​**Patience**
+
+**Oxford Discover 4:** Workbook Pages 162-163
+
+**Wordlist:** Write Words From 13-24 5x & Definitions
+
+**Wayside Stories from Wayside School:**  
+
+▶️ **[Wayside Stories from Wayside School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EustM_RGI1xJgz9EQdYZ6HkBKrq4VSj179WG5mld3b7nOw?e=m6hG6G)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** Workbook Pages
+
+**The Mouse and the Motorcycle:** 
+
+▶️ **[The Mouse and the Motorcycle](https://youtube.com/playlist?list=PLs11A-t4KCbyxX5KfuoF5C4Rnvm191hHF&si=akozmKquqwddn55M)** 
+
+
+<br/>
+
+## **Thursday 10/30/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 2:** Workbook Pages 50-51
+
+### **Brave**
+
+**Beehive 2:** Workbook Pages 104-105
+
+**Schools:** 
+**Activity Book:** 
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Schools](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Enyo8Oxq_fVNtVC1bWERUvEBnIsdXHxq8Jg4aDlUmzG8DA?e=i9bYCg)**
+  
+### **Truth**
+
+**Oxford Discover 2:** No Homework
+
+**Freetime Around the World:** 
+**Activity Book:** 
+**Picture Dictionary:** 10 Words 5x
+
+▶️ **[Freetime Around the World](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EufhIXLyAj1MgO5L-C6NGBQBiuBuPZCaoDXePArm9WntTg?e=InYY8O)**
+  
+### **Virtue**
+
+**Oxford Discover 3:**
+
+**Wordly Wise 2:**  
+  
+**Wordlist:** Write word 11-20 5x
+
+### ​**Patience**
+
+**Oxford Discover 4:** Workbook Pages 162-163
+
+**Wordlist:** Write Words From 13-24 5x & Definitions
+
+**The Time Machine:**  
+
+▶️ **[The Time Machine](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsBz9mA9EPtMtum9ip6PUNoBeWQO5lUPbM8SgjFixLE0yg?e=atrmLx)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** Workbook Pages 102-105
+
+**The Mouse and the Motorcycle:** 
+
+▶️ **[The Mouse and the Motorcycle](https://youtube.com/playlist?list=PLs11A-t4KCbyxX5KfuoF5C4Rnvm191hHF&si=akozmKquqwddn55M)** 
+
+
+<br/>
+
 ## **Wednesday 10/29/2025**
 
 ### **Kind**
