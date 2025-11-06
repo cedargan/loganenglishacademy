@@ -14,7 +14,7 @@ title: Homework
 
 **Beehive 2:** 
 
-**Schools:** 
+**Schools:** Pages 28-29
 **Activity Book:**
 **Picture Dictionary:** Write 8 Words 5x
 
@@ -24,8 +24,8 @@ title: Homework
 
 **Oxford Discover 2:** Workbook Pages 52-53
 
-**Volcano Adventure:** Pages 
-**Activity Book:** Page 
+**Volcano Adventure:** Pages 10-11
+**Activity Book:** Page 5
 **Picture Dictionary:** 10 Words 5x
 
 ▶️ **[Volcano Advanture](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsluYgwmDUtJsSSbhMeBAWYBF5fxpULqlb_XXRVvPVKwdg?e=NeGhab)**
@@ -36,7 +36,7 @@ title: Homework
 
 **Wordly Wise 2:** Write Definitions on Pages 3
   
-**Wordlist:** Write word 1-10 5x
+**Wordlist:** Write word 1-20 5x
 
 ### ​**Patience**
 
