@@ -4,6 +4,61 @@ title: Homework
 ---
 
 # **Homework**
+## **Monday 11/10/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 3:** Workbook Pages 14-15
+
+### **Brave**
+
+**Beehive 2:** Pages 114-115
+
+**Schools:** Poster
+**Activity Book:**
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Schools](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/Enyo8Oxq_fVNtVC1bWERUvEBnIsdXHxq8Jg4aDlUmzG8DA?e=i9bYCg)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Grammar Book Pages 37-39
+
+**Volcano Adventure:** Pages 12-14
+**Activity Book:** Pages 6
+**Picture Dictionary:** 10 Words 5x
+
+▶️ **[Volcano Advanture](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsluYgwmDUtJsSSbhMeBAWYBF5fxpULqlb_XXRVvPVKwdg?e=NeGhab)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 103-104
+
+**Wordly Wise 2:** 
+  
+**Wordlist:** Write words 11-20 5x, write definitions
+
+### ​**Patience**
+
+**Oxford Discover 4:** Grammar Book
+
+**Wordlist:** Write Words From 13 to 23 5x & Definitions
+
+**Wayside Stories from Wayside School:**
+
+▶️ **[Wayside Stories from Wayside School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EustM_RGI1xJgz9EQdYZ6HkBKrq4VSj179WG5mld3b7nOw?e=m6hG6G)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** Workboon Pages 110-113
+
+**The Mouse and the Motorcycle:** Chapter 4, 5 Read, Listen
+
+▶️ **[The Mouse and the Motorcycle](https://youtube.com/playlist?list=PLs11A-t4KCbyxX5KfuoF5C4Rnvm191hHF&si=akozmKquqwddn55M)** 
+
+
+<br/>
+
 ## **Friday 11/7/2025**
 
 ### **Kind**
