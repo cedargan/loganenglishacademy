@@ -40,7 +40,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Oxford Discover 4:** Grammar Book
+**Oxford Discover 4:** Workbook Pages 171-173, Writing (pg170)
 
 **Wordlist:** Write Words From 13 to 23 5x & Definitions
 
@@ -52,7 +52,7 @@ title: Homework
 
 **Oxford Discover 6:** Workboon Pages 110-113
 
-**The Mouse and the Motorcycle:** Chapter 4, 5 Read, Listen
+**The Mouse and the Motorcycle:** 
 
 ▶️ **[The Mouse and the Motorcycle](https://youtube.com/playlist?list=PLs11A-t4KCbyxX5KfuoF5C4Rnvm191hHF&si=akozmKquqwddn55M)** 
 
