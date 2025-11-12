@@ -14,8 +14,8 @@ title: Homework
 
 **Beehive 2:** Workbook Pages 118-119
 
-**Monkeys in School:** 
-**Activity Book:**
+**Monkeys in School:** Pages 2-5
+**Activity Book:** 2-3
 **Picture Dictionary:** Write 8 Words 5x
 
 ▶️ **[Monkeys in School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAG5rqXLhLZQ77a_tlVJIO4Ade7A9RF8PuNifDTQtQlF-s?e=Rduu9p)**
@@ -24,8 +24,8 @@ title: Homework
 
 **Oxford Discover 2:** Workbook Pages 58-59
 
-**Volcano Adventure:** Pages 13-14
-**Activity Book:** Pages 7
+**Volcano Adventure:** Pages 15-16
+**Activity Book:** Pages 8
 **Picture Dictionary:** 10 Words 5x
 
 ▶️ **[Volcano Advanture](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsluYgwmDUtJsSSbhMeBAWYBF5fxpULqlb_XXRVvPVKwdg?e=NeGhab)**
