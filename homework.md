@@ -40,7 +40,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Oxford Discover 4:** Writing Book
+**Oxford Discover 4:**
 
 **Wordlist:** Write Words From 1-12 5x & Definitions
 
