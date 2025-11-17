@@ -14,8 +14,8 @@ title: Homework
 
 **Beehive 2:**
 
-**Monkeys in School:** 
-**Activity Book:**
+**Monkeys in School:** Pages 8-9
+**Activity Book:** Page 5
 **Picture Dictionary:** Write 8 Words 5x
 
 ▶️ **[Monkeys in School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAG5rqXLhLZQ77a_tlVJIO4Ade7A9RF8PuNifDTQtQlF-s?e=Rduu9p)**
@@ -24,8 +24,8 @@ title: Homework
 
 **Oxford Discover 2:** Grammar Book Pages 42-43
 
-**Volcano Adventure:** 
-**Activity Book:** 
+**Volcano Adventure:** Pages 20-21
+**Activity Book:** Page 10
 **Picture Dictionary:** 10 Words 5x
 
 ▶️ **[Volcano Advanture](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsluYgwmDUtJsSSbhMeBAWYBF5fxpULqlb_XXRVvPVKwdg?e=NeGhab)**
@@ -36,7 +36,7 @@ title: Homework
 
 **Wordly Wise 2:** 
   
-**Wordlist:** Write words 11-20 5x, write definitions
+**Wordlist:** Write words 1-10 5x, write definitions
 
 ### ​**Patience**
 
@@ -44,15 +44,15 @@ title: Homework
 
 **Wordlist:** Write Words From 1-12 5x & Definitions
 
-**Wayside Stories from Wayside School:** Chapters 6, 7 Listen, Read, Reading Diary, Worksheet
+**Wayside Stories from Wayside School:** 
 
 ▶️ **[Wayside Stories from Wayside School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EustM_RGI1xJgz9EQdYZ6HkBKrq4VSj179WG5mld3b7nOw?e=m6hG6G)** 
   
 ### **Honor**
 
-**Oxford Discover 6:** 
+**Oxford Discover 6:** Workbook Pages 120-121, Writing
 
-**The Mouse and the Motorcycle:** Chapters 6, 7 Listen, Read, Reading Diary
+**The Mouse and the Motorcycle:** 
 
 ▶️ **[The Mouse and the Motorcycle](https://youtube.com/playlist?list=PLs11A-t4KCbyxX5KfuoF5C4Rnvm191hHF&si=akozmKquqwddn55M)** 
 
