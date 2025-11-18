@@ -8,7 +8,7 @@ title: Homework
 
 ### **Kind**
 
-**Spotlight on First Phonics 3:** Workbook Pages 26-27
+**Spotlight on First Phonics 3:** Workbook Pages 26-27, Writing Worksheet
 
 ### **Brave**
 
@@ -24,8 +24,8 @@ title: Homework
 
 **Oxford Discover 2:** Workbook Pages 64-65
 
-**Volcano Adventure:** Pages 20-21
-**Activity Book:** Page 10
+**Volcano Adventure:** Pages 22-23
+**Activity Book:** Page 11
 **Picture Dictionary:** 10 Words 5x
 
 ▶️ **[Volcano Advanture](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsluYgwmDUtJsSSbhMeBAWYBF5fxpULqlb_XXRVvPVKwdg?e=NeGhab)**
@@ -36,21 +36,21 @@ title: Homework
 
 **Wordly Wise 2:** Write Page 23, Pages 25-27
   
-**Wordlist:** Write words 1-10 5x, write definitions
+**Wordlist:** Write words 11-20 5x, write definitions
 
 ### ​**Patience**
 
 **Oxford Discover 4:**
 
-**Wordlist:** Write Words From 1-12 5x & Definitions
+**Wordlist:** Write Words From 13-23 5x & Definitions
 
-**Wayside Stories from Wayside School:** 
+**Wayside Stories from Wayside School:** Chapters 6, 7 Listen, Read, Worksheet
 
 ▶️ **[Wayside Stories from Wayside School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EustM_RGI1xJgz9EQdYZ6HkBKrq4VSj179WG5mld3b7nOw?e=m6hG6G)** 
   
 ### **Honor**
 
-**Oxford Discover 6:** Workbook Pages 120-121, Writing
+**Oxford Discover 6:**
 
 **The Mouse and the Motorcycle:** 
 
