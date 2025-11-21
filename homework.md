@@ -4,6 +4,61 @@ title: Homework
 ---
 
 # **Homework**
+## **Friday 11/21/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 3:** Writing Worksheet 
+
+### **Brave**
+
+**Oxford Discover 1:** Workbook Pages 6-7
+
+**Monkeys in School:** 
+**Activity Book:** 
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Monkeys in School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAG5rqXLhLZQ77a_tlVJIO4Ade7A9RF8PuNifDTQtQlF-s?e=Rduu9p)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 70-71
+
+**Volcano Adventure:** 
+**Activity Book:** 
+**Picture Dictionary:** 10 Words 5x
+
+▶️ **[Volcano Advanture](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsluYgwmDUtJsSSbhMeBAWYBF5fxpULqlb_XXRVvPVKwdg?e=NeGhab)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 111-112
+
+**Wordly Wise 2:**
+  
+**Wordlist:** Write words 5x, write definitions
+
+### ​**Patience**
+
+**Oxford Discover 4:**
+
+**Wordlist:** Write Words 5x & Definitions
+
+**Wayside Stories from Wayside School:** 
+
+▶️ **[Wayside Stories from Wayside School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EustM_RGI1xJgz9EQdYZ6HkBKrq4VSj179WG5mld3b7nOw?e=m6hG6G)** 
+  
+### **Honor**
+
+**Oxford Discover 6:**
+
+**The Mouse and the Motorcycle:** Chapters 10, 11 Listen, Read, Reading Diary
+
+▶️ **[The Mouse and the Motorcycle](https://youtube.com/playlist?list=PLs11A-t4KCbyxX5KfuoF5C4Rnvm191hHF&si=akozmKquqwddn55M)** 
+
+
+<br/>
+
 ## **Thursday 11/20/2025**
 
 ### **Kind**
@@ -14,8 +69,8 @@ title: Homework
 
 **Oxford Discover 1:** Workbook Pages 2-5
 
-**Monkeys in School:** Pages 14-15
-**Activity Book:** Page 8
+**Monkeys in School:** 
+**Activity Book:** 
 **Picture Dictionary:** Write 8 Words 5x
 
 ▶️ **[Monkeys in School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAG5rqXLhLZQ77a_tlVJIO4Ade7A9RF8PuNifDTQtQlF-s?e=Rduu9p)**
