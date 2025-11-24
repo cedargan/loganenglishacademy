@@ -38,8 +38,8 @@ title: Homework
 
 **Oxford Discover 1:** Workbook Pages 6-7
 
-**Monkeys in School:** 
-**Activity Book:** 
+**Monkeys in School:** Pafges 16-17
+**Activity Book:** Page 8
 **Picture Dictionary:** Write 8 Words 5x
 
 ▶️ **[Monkeys in School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAG5rqXLhLZQ77a_tlVJIO4Ade7A9RF8PuNifDTQtQlF-s?e=Rduu9p)**
@@ -48,8 +48,8 @@ title: Homework
 
 **Oxford Discover 2:** Workbook Pages 70-71
 
-**Volcano Adventure:** 
-**Activity Book:** 
+**The Lost City:** Pages 4-5
+**Activity Book:** Page 4
 **Picture Dictionary:** 10 Words 5x
 
 ▶️ **[The Lost City](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EsluYgwmDUtJsSSbhMeBAWYBF5fxpULqlb_XXRVvPVKwdg?e=NeGhab)**
