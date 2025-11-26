@@ -50,7 +50,7 @@ title: Homework
   
 ### **Honor**
 
-**Oxford Discover 6:** Workbook Pages 25-28
+**Oxford Discover 6:** Workbook Pages 26-27
  
 **The Mouse and the Motorcycle:** 
 
