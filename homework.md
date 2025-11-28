@@ -32,7 +32,7 @@ title: Homework
   
 ### **Virtue**
 
-**Oxford Discover 3:** Workbook Pages
+**Oxford Discover 3:** Workbook Pages 116-117
 
 **Wordly Wise 2:** 
   
@@ -40,7 +40,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Starlight 5:** Workbook Pages
+**Starlight 5:** Workbook Pages 8-9
 
 **Wordlist:** Write Words 5x & Definitions
 
@@ -52,7 +52,7 @@ title: Homework
 
 **Oxford Discover 6:**
  
-**The Mouse and the Motorcycle:** 
+**The Mouse and the Motorcycle:** Chapters 8, 9 Listen, Read, Reading Diary
 
 ▶️ **[The Mouse and the Motorcycle](https://youtube.com/playlist?list=PLs11A-t4KCbyxX5KfuoF5C4Rnvm191hHF&si=akozmKquqwddn55M)** 
 
@@ -95,11 +95,11 @@ title: Homework
 
 ### ​**Patience**
 
-**Oxford Discover 4:** Chapters 16, 17 Listen, Read, Reading Diary
+**Starlight 5:** 
 
 **Wordlist:** Write Words 5x & Definitions
 
-**Wayside Stories from Wayside School:** 
+**Wayside Stories from Wayside School:** Chapters 16, 17 Listen, Read, Reading Diary
 
 ▶️ **[Wayside Stories from Wayside School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EustM_RGI1xJgz9EQdYZ6HkBKrq4VSj179WG5mld3b7nOw?e=m6hG6G)** 
   
@@ -150,7 +150,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Oxford Discover 4:** Workbook Pages 6-7
+**Starlight 5:** Workbook Pages 6-7
 
 **Wordlist:** Write Words 5x & Definitions
 
