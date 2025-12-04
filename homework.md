@@ -14,8 +14,8 @@ title: Homework
 
 **Oxford Discover 1:** Workbook Pages 20-23
 
-**Rainforest Rescue:** Pages 8-9
-**Activity Book:**  Pages 5
+**Rainforest Rescue:** Pages 10-11
+**Activity Book:**  Pages 6
 **Picture Dictionary:** Write 8 Words 5x
 
 ▶️ **[Rainforest Rescue](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCwazCLLPlDQ7_Z5EHSYDQbAVfNZhZJM2nm12XPLHQ0E_g?e=Z5VRjx)**
@@ -24,8 +24,8 @@ title: Homework
 
 **Oxford Discover 2:** No Homework
 
-**The Lost City:** Pages 16-17
-**Activity Book:** Page 8
+**The Lost City:** Pages 18-19
+**Activity Book:** Page 9
 **Picture Dictionary:** 8 Words 5x
 
 ▶️ **[The Lost City](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgC5iSB7HK1nS6J35gwQGdmXAbygYANoFivBSkZo08XlqDU?e=4IBxhy)**
