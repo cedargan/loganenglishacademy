@@ -40,7 +40,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Starlight 5:** Workbook Pages 
+**Starlight 5:** Workbook Pages 113-115
 
 **Wordlist:** Write Words 5x & Definitions
 
