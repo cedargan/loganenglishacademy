@@ -44,7 +44,7 @@ title: Homework
 
 **Wordlist:** Write Words 5x & Definitions
 
-**Wayside Stories from Wayside School:** Chapters 23-25 Listen, Read, Worksheets
+**Wayside Stories from Wayside School:** Chapters 23-25 Listen, Read,
 
 ▶️ **[Wayside Stories from Wayside School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EustM_RGI1xJgz9EQdYZ6HkBKrq4VSj179WG5mld3b7nOw?e=m6hG6G)** 
   
