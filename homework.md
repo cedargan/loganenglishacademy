@@ -4,6 +4,61 @@ title: Homework
 ---
 
 # **Homework**
+## **Thursday 12/11/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 3:** Workbook Pages 16-17, Writing Worksheet
+
+### **Brave**
+
+**Oxford Discover 1:** Workbook Pages 30-31
+
+**Rainforest Rescue:** Pages 18-19
+**Activity Book:** Pages 10-11
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Rainforest Rescue](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCwazCLLPlDQ7_Z5EHSYDQbAVfNZhZJM2nm12XPLHQ0E_g?e=Z5VRjx)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Grammar Book Pages 55-57
+
+**The Lost City:** Review
+**Activity Book:** 
+**Picture Dictionary:** 8 Words 5x
+
+▶️ **[The Lost City](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgC5iSB7HK1nS6J35gwQGdmXAbygYANoFivBSkZo08XlqDU?e=4IBxhy)**
+  
+### **Virtue**
+
+**Oxford Discover 3:**
+
+**Wordly Wise 2:** Page 55 (writing), 64
+  
+**Wordlist:** Write words 5x, write definitions
+
+### ​**Patience**
+
+**Starlight 5:**
+
+**Wordlist:** Write Words 5x & Definitions
+
+**Wayside Stories from Wayside School:** Chapters 26-27 Listen, Read, Reading Diary
+
+▶️ **[Wayside Stories from Wayside School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EustM_RGI1xJgz9EQdYZ6HkBKrq4VSj179WG5mld3b7nOw?e=m6hG6G)** 
+  
+### **Honor**
+
+**Oxford Discover 6:**
+ 
+**The Mouse and the Motorcycle:** 
+
+▶️ **[The Mouse and the Motorcycle](https://youtube.com/playlist?list=PLs11A-t4KCbyxX5KfuoF5C4Rnvm191hHF&si=akozmKquqwddn55M)** 
+
+
+<br/>
+
 ## **Wednesday 12/10/2025**
 
 ### **Kind**
@@ -14,8 +69,8 @@ title: Homework
 
 **Oxford Discover 1:** Workbook Pages 30-31
 
-**Rainforest Rescue:** Pages 14-15
-**Activity Book:** Pages 8
+**Rainforest Rescue:** Pages 16-17
+**Activity Book:** Pages 9
 **Picture Dictionary:** Write 8 Words 5x
 
 ▶️ **[Rainforest Rescue](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCwazCLLPlDQ7_Z5EHSYDQbAVfNZhZJM2nm12XPLHQ0E_g?e=Z5VRjx)**
@@ -24,15 +79,15 @@ title: Homework
 
 **Oxford Discover 2:** Workbook Pages 90-91
 
-**The Lost City:** Pages 22-23
-**Activity Book:** Pages 11
+**The Lost City:** Pages 44-45
+**Activity Book:** Pages 12-15
 **Picture Dictionary:** 8 Words 5x
 
 ▶️ **[The Lost City](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgC5iSB7HK1nS6J35gwQGdmXAbygYANoFivBSkZo08XlqDU?e=4IBxhy)**
   
 ### **Virtue**
 
-**Oxford Discover 3:** Workbook Pages 
+**Oxford Discover 3:**
 
 **Wordly Wise 2:** 
   
