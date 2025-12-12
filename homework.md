@@ -40,7 +40,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Starlight 5:** Workbook Pages
+**Starlight 5:** Workbook Pages 18-19
 
 **Wordlist:** Write Words 5x & Definitions
 
@@ -52,9 +52,9 @@ title: Homework
 
 **Oxford Discover 6:**
  
-**The Mouse and the Motorcycle:** 
+**The Lion, the Witch and the Wardrobe:** Chapter 1 listen, read, reading diary
 
-▶️ **[The Mouse and the Motorcycle](https://youtube.com/playlist?list=PLs11A-t4KCbyxX5KfuoF5C4Rnvm191hHF&si=akozmKquqwddn55M)** 
+▶️ **[The Lion, the Witch and the Wardrobe](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQCUr_q2KbjkT5tSWlHMUp4vAa5LnnDeXTwwRvwDw9sUA1g?e=nhN46J)** 
 
 
 <br/>
