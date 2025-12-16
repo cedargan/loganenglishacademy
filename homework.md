@@ -4,6 +4,118 @@ title: Homework
 ---
 
 # **Homework**
+## **Tuesday 12/16/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 3:** Pages 20-21, Writing Worksheet
+
+### **Brave**
+
+**Oxford Discover 1:** Grammar Book Pages 28-30
+
+**Rainforest Rescue:** Rev
+**Activity Book:**
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Rainforest Rescue](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCwazCLLPlDQ7_Z5EHSYDQbAVfNZhZJM2nm12XPLHQ0E_g?e=Z5VRjx)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 96-97
+
+**Goldilocks and the Three Bears:** Pages 2-3
+**Activity Book:** Pages 2-3
+**Picture Dictionary:** 8 Words 5x
+
+▶️ **[Goldilocks and the Three Bears](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCqIz7le3vhRaMSBSAbQlpYAR1wcBAE9_RZpge6DYtlE8Y)**
+  
+### **Virtue**
+
+**The Polar Express:** Memorize
+
+**Oxford Discover 3:** 
+
+**Wordly Wise 2:** 
+  
+**Wordlist:** Write words 5x, write definitions
+
+### ​**Patience**
+
+**Starlight 5:** 
+
+**Wordlist:** Write Words 5x & Definitions
+
+**Wayside Stories from Wayside School:** Chapter 1 listen, read, worksheet
+
+▶️ **[Wayside Stories from Wayside School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EustM_RGI1xJgz9EQdYZ6HkBKrq4VSj179WG5mld3b7nOw?e=m6hG6G)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+ 
+**The Lion, the Witch and the Wardrobe:** 
+
+▶️ **[The Lion, the Witch and the Wardrobe](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQCUr_q2KbjkT5tSWlHMUp4vAa5LnnDeXTwwRvwDw9sUA1g?e=nhN46J)** 
+
+
+<br/>
+
+## **Monday 12/15/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 3:** Pages 18-19
+
+### **Brave**
+
+**Oxford Discover 1:** Workbook Pages 34-35
+
+**Rainforest Rescue:** 
+**Activity Book:**
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Rainforest Rescue](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCwazCLLPlDQ7_Z5EHSYDQbAVfNZhZJM2nm12XPLHQ0E_g?e=Z5VRjx)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 96-97
+
+**The Lost City:** 
+**Activity Book:** 
+**Picture Dictionary:** 8 Words 5x
+
+▶️ **[The Lost City](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgC5iSB7HK1nS6J35gwQGdmXAbygYANoFivBSkZo08XlqDU?e=4IBxhy)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Workbook Pages 128-129
+
+**Wordly Wise 2:** 
+  
+**Wordlist:** Write words 5x, write definitions
+
+### ​**Patience**
+
+**Starlight 5:** Workbook Pages 20-21
+
+**Wordlist:** Write Words 5x & Definitions
+
+**Wayside Stories from Wayside School:** 
+
+▶️ **[Wayside Stories from Wayside School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EustM_RGI1xJgz9EQdYZ6HkBKrq4VSj179WG5mld3b7nOw?e=m6hG6G)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** Workbook Pages 38-41
+ 
+**The Lion, the Witch and the Wardrobe:** 
+
+▶️ **[The Lion, the Witch and the Wardrobe](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQCUr_q2KbjkT5tSWlHMUp4vAa5LnnDeXTwwRvwDw9sUA1g?e=nhN46J)** 
+
+
+<br/>
+
 ## **Friday 12/12/2025**
 
 ### **Kind**
