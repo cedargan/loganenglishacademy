@@ -4,7 +4,7 @@ title: Homework
 ---
 
 # **Homework**
-## **Tuesday 12/16/2025**
+## **Wednesday 12/17/2025**
 
 ### **Kind**
 
@@ -24,8 +24,8 @@ title: Homework
 
 **Oxford Discover 2:** Grammar Book Pages 60-61
 
-**Goldilocks and the Three Bears:** Pages 2-3
-**Activity Book:** Pages 2-3
+**Goldilocks and the Three Bears:** Pages 4-5
+**Activity Book:** Pages 4
 **Picture Dictionary:** 8 Words 5x
 
 ▶️ **[Goldilocks and the Three Bears](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCqIz7le3vhRaMSBSAbQlpYAR1wcBAE9_RZpge6DYtlE8Y)**
@@ -44,7 +44,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Starlight 5:** Workbook Pages
+**Starlight 5:** Workbook Pages 22-23
 
 **Wordlist:** Write Words 5x & Definitions
 
