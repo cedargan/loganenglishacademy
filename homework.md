@@ -4,6 +4,65 @@ title: Homework
 ---
 
 # **Homework**
+## **Mondayday 12/22/2025**
+
+### **Kind**
+
+**Spotlight on First Phonics 3:** Workbook Pages 26-27, Worksheet
+
+### **Brave**
+
+**Oxford Discover 1:** Grammar Book Pages 8-9
+
+**Rumplestiltskin:** Pages 2-7
+**Activity Book:** Pages 2-5
+**Picture Dictionary:** Write 8 Words 5x
+
+▶️ **[Rumplestiltskin](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgBi6gsfE6iNQpC8FyR-q2c1AUVxqxberO8BZws0vLfSrxo?e=i9ce2d)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Grammar Book Pages 4-6
+
+**Goldilocks and the Three Bears:** Pages 10-15
+**Activity Book:** Pages 7-9
+**Picture Dictionary:** 8 Words 5x
+
+▶️ **[Goldilocks and the Three Bears](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCqIz7le3vhRaMSBSAbQlpYAR1wcBAE9_RZpge6DYtlE8Y)**
+  
+### **Virtue**
+
+**The Polar Express:** 
+
+**Oxford Discover 3:** 
+
+**Wordly Wise 2:** 
+  
+**Wordlist:** Write words 5x, write definitions
+
+**[The Polar Express](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQA2uJpKwaheSo_A_JEl5WD8AVvrk7BIRexkIG5aKZRkPLM)**
+
+### ​**Patience**
+
+**Starlight 5:** Read twenty Pages of storybook and complete half a reading diary.
+
+**Wordlist:** 
+
+**Wayside Stories from Wayside School:** Charater Worksheets
+
+▶️ **[Wayside Stories from Wayside School](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/EustM_RGI1xJgz9EQdYZ6HkBKrq4VSj179WG5mld3b7nOw?e=m6hG6G)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+ 
+**The Lion, the Witch and the Wardrobe:** Chapters 4, 5 Listen, Read, Reading Diary
+
+▶️ **[The Lion, the Witch and the Wardrobe](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQCUr_q2KbjkT5tSWlHMUp4vAa5LnnDeXTwwRvwDw9sUA1g?e=nhN46J)** 
+
+
+<br/>
+
 ## **Thursday 12/18/2025**
 
 ### **Kind**
