@@ -44,19 +44,19 @@ title: Homework
 
 ### ​**Patience**
 
-**Starlight 5:** 
+**Starlight 5:** Workbook Pages 26-27
 
 **Wordlist:** 
 
-**Wayside School is Falling Down:** Chapters 1-4 Read, Listen, Reading Diary(2)
+**Wayside School is Falling Down:** 
 
 ▶️ **[Wayside School is Falling Down](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgA2A5tdfxAdT4cvh5rkpIYHAYSHnZTlb7_8Dc2HTP-1WY4?e=xjgg67)** 
   
 ### **Honor**
 
-**Oxford Discover 6:** 
+**Oxford Discover 6:** Workbook Pages 146-149
  
-**The Lion, the Witch and the Wardrobe:** Chapters 6-10 Read, Listen, Reading Diary(4)
+**The Lion, the Witch and the Wardrobe:** 
 
 ▶️ **[The Lion, the Witch and the Wardrobe](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQCUr_q2KbjkT5tSWlHMUp4vAa5LnnDeXTwwRvwDw9sUA1g?e=nhN46J)** 
 
