@@ -14,9 +14,9 @@ title: Homework
 
 **Oxford Discover 1:** Workbook Pages 40-41
 
-**Rumplestiltskin:** 
-**Activity Book:** 
-**Picture Dictionary:** 
+**Rumplestiltskin:** Pages 16-19
+**Activity Book:** Pages 10-11
+**Picture Dictionary:** 8 words 5 times
 
 ▶️ **[Rumplestiltskin](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgBi6gsfE6iNQpC8FyR-q2c1AUVxqxberO8BZws0vLfSrxo?e=i9ce2d)**
   
@@ -24,11 +24,11 @@ title: Homework
 
 **Oxford Discover 2:** Workbook Pages 104-105
 
-**Goldilocks and the Three Bears:** 
-**Activity Book:** 
-**Picture Dictionary:** 
+**How We Make Products:** Pages 3-5
+**Activity Book:** Pages 24-25
+**Picture Dictionary:** 8 words 5 times
 
-▶️ **[Goldilocks and the Three Bears](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCqIz7le3vhRaMSBSAbQlpYAR1wcBAE9_RZpge6DYtlE8Y)**
+▶️ **[How We Make Products](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgBTt7k9VTUdSIGH5OvJEY4jAdo5SF3SyusbE0Yds7hkuZo?e=fLOnzL)**
   
 ### **Virtue**
 
