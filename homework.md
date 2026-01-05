@@ -4,6 +4,65 @@ title: Homework
 ---
 
 # **Homework**
+## **Mondayday 01/05/2026**
+
+### **Kind**
+
+**Spotlight on First Phonics 4:** Writing Worksheet
+
+### **Brave**
+
+**Oxford Discover 1:** Workbook Pages 40-41
+
+**Rumplestiltskin:** 
+**Activity Book:** 
+**Picture Dictionary:** 
+
+▶️ **[Rumplestiltskin](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgBi6gsfE6iNQpC8FyR-q2c1AUVxqxberO8BZws0vLfSrxo?e=i9ce2d)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 104-105
+
+**Goldilocks and the Three Bears:** 
+**Activity Book:** 
+**Picture Dictionary:** 
+
+▶️ **[Goldilocks and the Three Bears](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCqIz7le3vhRaMSBSAbQlpYAR1wcBAE9_RZpge6DYtlE8Y)**
+  
+### **Virtue**
+
+**The Polar Express:** Workbook Pages 130-131
+
+**Oxford Discover 3:** 
+
+**Wordly Wise 2:** 
+  
+**Wordlist:** Write words 5x, write definitions
+
+**[The Polar Express](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQA2uJpKwaheSo_A_JEl5WD8AVvrk7BIRexkIG5aKZRkPLM)**
+
+### ​**Patience**
+
+**Starlight 5:** 
+
+**Wordlist:** 
+
+**Wayside School is Falling Down:** Chapters 1-4 Read, Listen, Reading Diary(2)
+
+▶️ **[Wayside School is Falling Down](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgA2A5tdfxAdT4cvh5rkpIYHAYSHnZTlb7_8Dc2HTP-1WY4?e=xjgg67)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+ 
+**The Lion, the Witch and the Wardrobe:** Chapters 6-10 Read, Listen, Reading Diary(4)
+
+▶️ **[The Lion, the Witch and the Wardrobe](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQCUr_q2KbjkT5tSWlHMUp4vAa5LnnDeXTwwRvwDw9sUA1g?e=nhN46J)** 
+
+
+<br/>
+
 ## **Mondayday 12/23/2025**
 
 ### **Kind**
