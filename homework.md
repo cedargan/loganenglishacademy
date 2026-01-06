@@ -14,18 +14,18 @@ title: Homework
 
 **Oxford Discover 1:** Workbook Pages 42-43
 
-**Wheels:** Pages 
-**Activity Book:** Pages 
+**Rumpelstiltskin:** Pages 20-21; Listen and Read
+**Activity Book:** 
 **Picture Dictionary:** 8 words 5 times
 
-▶️ **[Wheels](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCxCjZr-AbPSaN_Z9ZHM27MAYGNMuOoxXHjGXZ3WkstEBg?e=UDMzC1)**
+▶️ **[Rumpelstiltskin](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgBi6gsfE6iNQpC8FyR-q2c1AUVxqxberO8BZws0vLfSrxo)**
   
 ### **Truth**
 
 **Oxford Discover 2:** Workbook Pages 106-107
 
-**How We Make Products:** Pages 
-**Activity Book:** Pages 
+**How We Make Products:** Pages 6-7
+**Activity Book:** Pages 26-27
 **Picture Dictionary:** 8 words 5 times
 
 ▶️ **[How We Make Products](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgBTt7k9VTUdSIGH5OvJEY4jAdo5SF3SyusbE0Yds7hkuZo?e=fLOnzL)**
@@ -44,17 +44,17 @@ title: Homework
 
 ### ​**Patience**
 
-**Starlight 5:** Workbook Pages 26-27
+**Starlight 5:**
 
 **Wordlist:** 
 
-**Wayside School is Falling Down:** 
+**Wayside School is Falling Down:** Chapters 1-5 Worksheets
 
 ▶️ **[Wayside School is Falling Down](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgA2A5tdfxAdT4cvh5rkpIYHAYSHnZTlb7_8Dc2HTP-1WY4?e=xjgg67)** 
   
 ### **Honor**
 
-**Oxford Discover 6:** Workbook Pages 146-149
+**Oxford Discover 6:** 
  
 **The Lion, the Witch and the Wardrobe:** 
 
