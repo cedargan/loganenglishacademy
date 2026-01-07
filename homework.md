@@ -14,8 +14,8 @@ title: Homework
 
 **Oxford Discover 1:** Grammar Book Page 12
 
-**Wheels:** 
-**Activity Book:** 
+**Wheels:** Pages 3-5
+**Activity Book:** 20
 **Picture Dictionary:** 8 words 5 times
 
 ▶️ **[Wheels](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCxCjZr-AbPSaN_Z9ZHM27MAYGNMuOoxXHjGXZ3WkstEBg?e=UDMzC1)**
@@ -24,8 +24,8 @@ title: Homework
 
 **Oxford Discover 2:** 
 
-**How We Make Products:** Pages 
-**Activity Book:** Pages 
+**How We Make Products:**
+**Activity Book:**
 **Picture Dictionary:** 8 words 5 times
 
 ▶️ **[How We Make Products](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgBTt7k9VTUdSIGH5OvJEY4jAdo5SF3SyusbE0Yds7hkuZo?e=fLOnzL)**
@@ -42,7 +42,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Starlight 5:** Write a whole page diary about a trip.
+**Starlight 5:** Write a one page diary about your dream trip.
 
 **Wordlist:** 
 
@@ -52,7 +52,7 @@ title: Homework
   
 ### **Honor**
 
-**Oxford Discover 6:** 
+**Oxford Discover 6:** Write a one and half page diary about your dream trip.
  
 **The Lion, the Witch and the Wardrobe:** 
 
