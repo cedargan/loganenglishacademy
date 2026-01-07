@@ -52,7 +52,7 @@ title: Homework
   
 ### **Honor**
 
-**Oxford Discover 6:** Write a one and half page diary about your dream trip.
+**Oxford Discover 6:** Unit 15 Test
  
 **The Lion, the Witch and the Wardrobe:** 
 
