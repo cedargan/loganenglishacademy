@@ -4,6 +4,63 @@ title: Homework
 ---
 
 # **Homework**
+## **Wednesday 01/07/2026**
+
+### **Kind**
+
+**Spotlight on First Phonics 4:** Workbook Pages 52-53
+
+### **Brave**
+
+**Oxford Discover 1:** Grammar Book Page 12
+
+**Wheels:** 
+**Activity Book:** 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[Wheels](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCxCjZr-AbPSaN_Z9ZHM27MAYGNMuOoxXHjGXZ3WkstEBg?e=UDMzC1)**
+  
+### **Truth**
+
+**Oxford Discover 2:** 
+
+**How We Make Products:** Pages 
+**Activity Book:** Pages 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[How We Make Products](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgBTt7k9VTUdSIGH5OvJEY4jAdo5SF3SyusbE0Yds7hkuZo?e=fLOnzL)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** Write a half page diary about a trip.
+
+**Wordly Wise 2:** 
+  
+**Wordlist:** Write words 5x, write definitions
+
+**[The Polar Express](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQA2uJpKwaheSo_A_JEl5WD8AVvrk7BIRexkIG5aKZRkPLM)**
+
+### ​**Patience**
+
+**Starlight 5:** Write a whole page diary about a trip.
+
+**Wordlist:** 
+
+**Wayside School is Falling Down:** Chapters 1-5 Worksheets
+
+▶️ **[Wayside School is Falling Down](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgA2A5tdfxAdT4cvh5rkpIYHAYSHnZTlb7_8Dc2HTP-1WY4?e=xjgg67)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+ 
+**The Lion, the Witch and the Wardrobe:** 
+
+▶️ **[The Lion, the Witch and the Wardrobe](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQCUr_q2KbjkT5tSWlHMUp4vAa5LnnDeXTwwRvwDw9sUA1g?e=nhN46J)** 
+
+
+<br/>
+
 ## **Tuesday 01/06/2026**
 
 ### **Kind**
