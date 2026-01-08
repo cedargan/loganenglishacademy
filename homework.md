@@ -46,7 +46,7 @@ title: Homework
 
 **Wordlist:** 
 
-**Wayside School is Falling Down:** 
+**Wayside School is Falling Down:** Chapters 6, 7 Listen, Read, Reading Diary
 
 ▶️ **[Wayside School is Falling Down](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgA2A5tdfxAdT4cvh5rkpIYHAYSHnZTlb7_8Dc2HTP-1WY4?e=xjgg67)** 
   
