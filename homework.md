@@ -32,7 +32,7 @@ title: Homework
   
 ### **Virtue**
 
-**Oxford Discover 3:** Workbook Pages 
+**Oxford Discover 3:** Grammar Book Pages 73-75
 
 **Wordly Wise 2:** 
   
@@ -42,7 +42,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Starlight 5:** 
+**Starlight 5:** Grammar Study Guide
 
 **Wordlist:** 
 
