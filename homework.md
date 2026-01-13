@@ -4,7 +4,64 @@ title: Homework
 ---
 
 # **Homework**
-## **Friday 01/12/2026**
+## **Tuesday 01/13/2026**
+
+### **Kind**
+
+**Spotlight on First Phonics 4:** Workbook Pages 42-43, Writing Worksheet
+
+### **Brave**
+
+**Oxford Discover 1:** Workbook Pages 48-51
+
+**Wheels:** Pages 10-11
+**Activity Book:** Page 23
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[Wheels](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCxCjZr-AbPSaN_Z9ZHM27MAYGNMuOoxXHjGXZ3WkstEBg?e=UDMzC1)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 114-115
+
+**How We Make Products:** Pages 14-15
+**Activity Book:** 32-33
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[How We Make Products](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgBTt7k9VTUdSIGH5OvJEY4jAdo5SF3SyusbE0Yds7hkuZo?e=fLOnzL)**
+  
+### **Virtue**
+
+**Oxford Discover 3:** 
+
+**Wordly Wise 2:** Pages 78-80
+  
+**Wordlist:** Write words 5x, write definitions
+
+**[The Polar Express](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQA2uJpKwaheSo_A_JEl5WD8AVvrk7BIRexkIG5aKZRkPLM)**
+
+### ​**Patience**
+
+**Starlight 5:** 
+
+**Wordlist:** 
+
+**Wayside School is Falling Down:** Chapters 8-10 Listen, Read, Reading Diary
+
+▶️ **[Wayside School is Falling Down](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgA2A5tdfxAdT4cvh5rkpIYHAYSHnZTlb7_8Dc2HTP-1WY4?e=xjgg67)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+ 
+**The Lion, the Witch and the Wardrobe:** 
+
+▶️ **[The Lion, the Witch and the Wardrobe](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQCUr_q2KbjkT5tSWlHMUp4vAa5LnnDeXTwwRvwDw9sUA1g?e=nhN46J)** 
+
+
+<br/>
+
+## **Monday 01/12/2026**
 
 ### **Kind**
 
