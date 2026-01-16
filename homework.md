@@ -8,6 +8,63 @@ title: Homework
 
 ### **Kind**
 
+**Spotlight on First Phonics 4:** 
+
+### **Brave**
+
+**Oxford Discover 1:** Grammar Book Pages 37-38
+
+**Wheels:** 
+**Activity Book:** 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[Wheels](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCxCjZr-AbPSaN_Z9ZHM27MAYGNMuOoxXHjGXZ3WkstEBg?e=UDMzC1)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Grammar Book Pages 69-70
+
+**How We Make Products:** 
+**Activity Book:** 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[How We Make Products](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgBTt7k9VTUdSIGH5OvJEY4jAdo5SF3SyusbE0Yds7hkuZo?e=fLOnzL)**
+  
+### **Virtue**
+
+**Oxford Discover 3:**
+
+**Wordly Wise 2:** 
+  
+**Wordlist:** Write words 5x, write definitions
+
+**[The Polar Express](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQA2uJpKwaheSo_A_JEl5WD8AVvrk7BIRexkIG5aKZRkPLM)**
+
+### ​**Patience**
+
+**Starlight 5:** Workbook Pages 28-29
+
+**Wordlist:** 
+
+**Wayside School is Falling Down:** Chapters 12-13 Listen, Read, Reading Diary
+
+▶️ **[Wayside School is Falling Down](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgA2A5tdfxAdT4cvh5rkpIYHAYSHnZTlb7_8Dc2HTP-1WY4?e=xjgg67)** 
+  
+### **Honor**
+
+**Oxford Discover 6:** 
+ 
+**The Lion, the Witch and the Wardrobe:** Chapters 12-13 Listen, Read, Reading Diary
+
+▶️ **[The Lion, the Witch and the Wardrobe](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQCUr_q2KbjkT5tSWlHMUp4vAa5LnnDeXTwwRvwDw9sUA1g?e=nhN46J)** 
+
+
+<br/>
+
+## **Thursday 01/15/2026**
+
+### **Kind**
+
 **Spotlight on First Phonics 4:** Workbook Pages 46-49; Writing Worksheet
 
 ### **Brave**
