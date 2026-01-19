@@ -52,7 +52,7 @@ title: Homework
   
 ### **Honor**
 
-**Oxford Discover 6:** Workbook Pages 
+**Oxford Discover 6:** Workbook Pages 156-161
  
 **The Lion, the Witch and the Wardrobe:**  
 
