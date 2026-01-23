@@ -32,7 +32,7 @@ title: Homework
   
 ### **Virtue**
 
-**Oxford Discover 3:** Workbook Pages 139-140
+**Oxford Discover 3:** Workbook Pages 138-139
 
 **Wordly Wise 2:** 
   
