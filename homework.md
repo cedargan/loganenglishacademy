@@ -24,8 +24,8 @@ title: Homework
 
 **Oxford Discover 2:** Workbook Pages 126-127
 
-**How We Make Products:** 
-**Activity Book:** 
+**How We Make Products:** Poster
+**Activity Book:** Listen and Practice
 **Picture Dictionary:** 8 words 5 times
 
 ▶️ **[How We Make Products](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgBTt7k9VTUdSIGH5OvJEY4jAdo5SF3SyusbE0Yds7hkuZo?e=fLOnzL)**
