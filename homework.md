@@ -34,7 +34,7 @@ title: Homework
 
 **Oxford Discover 3:** 
 
-**Wordly Wise 2:** 99-102
+**Wordly Wise 2:** Pages 99-102
   
 **Wordlist:** Write words 5x, write definitions
 
@@ -42,17 +42,17 @@ title: Homework
 
 ### ​**Patience**
 
-**Starlight 5:** Workbook Pages 
+**Starlight 5:**
 
 **Wordlist:** 
 
-**Wayside School is Falling Down:** 
+**Wayside School is Falling Down:** Worksheets
 
 ▶️ **[Wayside School is Falling Down](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgA2A5tdfxAdT4cvh5rkpIYHAYSHnZTlb7_8Dc2HTP-1WY4?e=xjgg67)** 
   
 ### **Honor**
 
-**Oxford Discover 6:** Workbook Pages
+**Oxford Discover 6:** 
  
 **The Lion, the Witch and the Wardrobe:**  
 
