@@ -42,11 +42,11 @@ title: Homework
 
 ### ​**Patience**
 
-**Starlight 5:** Workbook Pages
+**Starlight 5:** Workbook Pages 36-37
 
 **Wordlist:** 
 
-**Wayside School is Falling Down:** Chapters 19(3)-22 listen, read, reading diary
+**Wayside School is Falling Down:** 
 
 ▶️ **[Wayside School is Falling Down](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgA2A5tdfxAdT4cvh5rkpIYHAYSHnZTlb7_8Dc2HTP-1WY4?e=xjgg67)** 
   
