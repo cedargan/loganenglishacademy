@@ -32,17 +32,16 @@ title: Homework
   
 ### **Virtue** 
 
-**Oxford Discover 3:** 
+**Oxford Discover 3:** Workbook Pages 143-146
 
-**Wordly Wise 2:** Pages 107
+**Wordly Wise 2:** 
   
 **Wordlist:** Write words 5x, write definitions
 
-**[The Polar Express](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQA2uJpKwaheSo_A_JEl5WD8AVvrk7BIRexkIG5aKZRkPLM)**
 
 ### ​**Patience**
 
-**Starlight 5:** Workbook Pages 36-37
+**Starlight 5:** Workbook Pages 38-39
 
 **Wordlist:** 
 
@@ -50,9 +49,9 @@ title: Homework
 
 ▶️ **[Wayside School is Falling Down](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgA2A5tdfxAdT4cvh5rkpIYHAYSHnZTlb7_8Dc2HTP-1WY4?e=xjgg67)** 
   
-### **Honor**
+### **Honor** 
 
-**Oxford Discover 6:** 
+**Oxford Discover 6:** Workbook Pages 168-169
  
 **The Lion, the Witch and the Wardrobe:**  
 
