@@ -53,7 +53,7 @@ title: Homework
 
 **Oxford Discover 6:** 
  
-**The Lion, the Witch and the Wardrobe:**  Chapters 17, 18 Listen, Read, Reading Diary
+**The Lion, the Witch and the Wardrobe:**  Chapters 15, 16, 17 Listen, Read, Reading Diary
 
 ▶️ **[The Lion, the Witch and the Wardrobe](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQCUr_q2KbjkT5tSWlHMUp4vAa5LnnDeXTwwRvwDw9sUA1g?e=nhN46J)** 
 
