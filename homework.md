@@ -4,6 +4,62 @@ title: Homework
 ---
 
 # **Homework**
+## **Wednesday 2/11/2026**
+
+### **Kind**
+
+**Everybody Up 1:** Workbook Pages 26-27
+
+### **Brave**
+
+**Oxford Discover 1:** Workbook Page 78-79
+
+**Clunk in Space:** Review
+**Activity Book:** Page 11-13
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[Clunk in Space](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgD-lJ_zuuFgR5vQMbwiF2MSAd_9klKuKOvB3FsCFOjhh0g?e=Bobdvl)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 142-143
+
+**A Machine for the Future:** Pages 16-17
+**Activity Book:** Page 8
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[A Machine for the Future](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgARnPFJnIPJQLbheoK562gQAR_pamfgDhUPRkTSEtB0fT8)**
+  
+### **Virtue** 
+
+**Oxford Discover 3:** Workbook Pages 152-153, Grammar Book Unit 16
+
+**Wordly Wise 2:** 
+  
+**Wordlist:** Write words 5x, write definitions
+
+
+### ​**Patience**
+
+**Starlight 5:** Workbook Pages 42-43
+
+**Wordlist:** 
+
+**Wayside School is Falling Down:** Chapters 28-30 Listen, Read, Worksheets
+
+▶️ **[Wayside School is Falling Down](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgA2A5tdfxAdT4cvh5rkpIYHAYSHnZTlb7_8Dc2HTP-1WY4?e=xjgg67)** 
+  
+### **Honor** 
+
+**Oxford Discover 6:** 
+ 
+**The Lion, the Witch and the Wardrobe:**  Chapters 15, 16, 17 Listen, Read, Reading Diary
+
+▶️ **[The Lion, the Witch and the Wardrobe](https://loganenglishacademy-my.sharepoint.com/:u:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IQCUr_q2KbjkT5tSWlHMUp4vAa5LnnDeXTwwRvwDw9sUA1g?e=nhN46J)** 
+
+
+<br/>
+
 ## **Tuesday 2/10/2026**
 
 ### **Kind**
