@@ -14,8 +14,8 @@ title: Homework
 
 **Oxford Discover 1:** Grammar Book Pages 51-52
 
-**Clunk in Space:** Review
-**Activity Book:** Page 11-13
+**Clunk in Space:** 28-29
+**Activity Book:** Page 14-15
 **Picture Dictionary:** 8 words 5 times
 
 ▶️ **[Clunk in Space](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgD-lJ_zuuFgR5vQMbwiF2MSAd_9klKuKOvB3FsCFOjhh0g?e=Bobdvl)**
@@ -24,8 +24,8 @@ title: Homework
 
 **Oxford Discover 2:** Workbook Pages 144-145
 
-**A Machine for the Future:** Pages 16-17
-**Activity Book:** Page 8
+**A Machine for the Future:** Pages 18-19
+**Activity Book:** Page 9
 **Picture Dictionary:** 8 words 5 times
 
 ▶️ **[A Machine for the Future](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgARnPFJnIPJQLbheoK562gQAR_pamfgDhUPRkTSEtB0fT8)**
