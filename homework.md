@@ -8,6 +8,54 @@ title: Homework
 
 ### **Kind**
 
+**Everybody Up 1:** Workbook Pages 30-31
+
+### **Brave**
+
+**Oxford Discover 1:** 
+
+**On Thin Ice:** Pages 30-31
+**Activity Book:** 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[On Thin Ice](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAtGXUKRhCbQIJwPmGujddTAe_1cWGbldQ_igoMTzLlUQA?e=pxF2Kw)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Grammar Book Unit 16
+
+**A Machine for the Future:** Pages 20-21
+**Activity Book:** 10
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[A Machine for the Future](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgARnPFJnIPJQLbheoK562gQAR_pamfgDhUPRkTSEtB0fT8)**
+  
+### **Virtue** 
+
+**Oxford Discover 3:** 
+
+**Wordly Wise 2:** 
+  
+**Wordlist:** Write words 5x, write definitions
+
+
+### ​**Patience**
+
+**Starlight 5:** 
+
+**Wordlist:** 
+
+**Nicholas Nickleby:** Chapter 1 Listen, Read, Book Activities, Page 61
+
+▶️ **[Nicholas Nickleby](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCyYBdjWaeWQLtvdz3j4-NoAX6mX_vUkPN2mwA3MU1Q1FY?e=CCOuKn)** 
+  
+
+<br/>
+
+## **Wednesday 2/12/2026**
+
+### **Kind**
+
 **Everybody Up 1:** Workbook Pages 28-29
 
 ### **Brave**
