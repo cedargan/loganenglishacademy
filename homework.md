@@ -4,7 +4,55 @@ title: Homework
 ---
 
 # **Homework**
-## **Wednesday 2/12/2026**
+## **Friday 2/20/2026**
+
+### **Kind**
+
+**Everybody Up 1:** Workbook Pages 32-33
+
+### **Brave**
+
+**Oxford Discover 1:** Workbook Pages 82-85
+
+**On Thin Ice:** 
+**Activity Book:** 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[On Thin Ice](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAtGXUKRhCbQIJwPmGujddTAe_1cWGbldQ_igoMTzLlUQA?e=pxF2Kw)**
+  
+### **Truth**
+
+**Oxford Discover 2:** 
+
+**A Machine for the Future:** 
+**Activity Book:** 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[A Machine for the Future](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgARnPFJnIPJQLbheoK562gQAR_pamfgDhUPRkTSEtB0fT8)**
+  
+### **Virtue** 
+
+**Oxford Discover 3:** Workbook Pages 156-157
+
+**Wordly Wise 2:** 
+  
+**Wordlist:** Write words 5x, write definitions
+
+
+### ​**Patience**
+
+**Starlight 5:** Workbook Pages 44-45
+
+**Wordlist:** 
+
+**Nicholas Nickleby:** 
+
+▶️ **[Nicholas Nickleby](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCyYBdjWaeWQLtvdz3j4-NoAX6mX_vUkPN2mwA3MU1Q1FY?e=CCOuKn)** 
+  
+
+<br/>
+
+## **Thursday 2/19/2026**
 
 ### **Kind**
 
