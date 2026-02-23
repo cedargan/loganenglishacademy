@@ -14,8 +14,8 @@ title: Homework
 
 **Oxford Discover 1:** Workbook Pages 86-87
 
-**On Thin Ice:** 
-**Activity Book:** 
+**On Thin Ice:** Pages 2-5
+**Activity Book:** Pages 2-3
 **Picture Dictionary:** 8 words 5 times
 
 ▶️ **[On Thin Ice](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAtGXUKRhCbQIJwPmGujddTAe_1cWGbldQ_igoMTzLlUQA?e=pxF2Kw)**
@@ -24,8 +24,8 @@ title: Homework
 
 **Oxford Discover 2:** Workbook Pages 146-147
 
-**A Machine for the Future:** 
-**Activity Book:** 
+**A Machine for the Future:** 22-23
+**Activity Book:** 11
 **Picture Dictionary:** 8 words 5 times
 
 ▶️ **[A Machine for the Future](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgARnPFJnIPJQLbheoK562gQAR_pamfgDhUPRkTSEtB0fT8)**
