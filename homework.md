@@ -12,6 +12,102 @@ title: Homework
 
 ### **Brave**
 
+**Oxford Discover 1:**
+
+**On Thin Ice:** Pages 8-9
+**Activity Book:** Pages 5
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[On Thin Ice](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAtGXUKRhCbQIJwPmGujddTAe_1cWGbldQ_igoMTzLlUQA?e=pxF2Kw)**
+  
+### **Truth**
+
+**Oxford Discover 2:**
+
+**A Machine for the Future:** BOOK REPORT
+**Activity Book:** 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[A Machine for the Future](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgARnPFJnIPJQLbheoK562gQAR_pamfgDhUPRkTSEtB0fT8)**
+  
+### **Virtue** 
+
+**Oxford Discover 3:** 
+
+**Wordly Wise 2:** 
+  
+**Wordlist:** Write words 10x, write definitions
+
+
+### ​**Patience**
+
+**Starlight 5:**
+
+**Wordlist:** 
+
+**Nicholas Nickleby:** 
+
+▶️ **[Nicholas Nickleby](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCyYBdjWaeWQLtvdz3j4-NoAX6mX_vUkPN2mwA3MU1Q1FY?e=CCOuKn)** 
+  
+
+<br/>
+
+## **Tuesday 2/24/2026**
+
+### **Kind**
+
+**Everybody Up 1:** 34-35
+
+### **Brave**
+
+**Oxford Discover 1:** Workbook Pages 88-89
+
+**On Thin Ice:** Pages 6-7
+**Activity Book:** Pages 4
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[On Thin Ice](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAtGXUKRhCbQIJwPmGujddTAe_1cWGbldQ_igoMTzLlUQA?e=pxF2Kw)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 148-149
+
+**A Machine for the Future:** 
+**Activity Book:** 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[A Machine for the Future](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgARnPFJnIPJQLbheoK562gQAR_pamfgDhUPRkTSEtB0fT8)**
+  
+### **Virtue** 
+
+**Oxford Discover 3:**
+
+**Wordly Wise 2:** Pages 121-123
+  
+**Wordlist:** Write words 5x, write definitions
+
+
+### ​**Patience**
+
+**Starlight 5:** 
+
+**Wordlist:** 
+
+**Nicholas Nickleby:** Chapter 2 listen, read, activity, reading diary, page 62 
+
+▶️ **[Nicholas Nickleby](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCyYBdjWaeWQLtvdz3j4-NoAX6mX_vUkPN2mwA3MU1Q1FY?e=CCOuKn)** 
+  
+
+<br/>
+
+## **Monday 2/23/2026**
+
+### **Kind**
+
+**Everybody Up 1:**
+
+### **Brave**
+
 **Oxford Discover 1:** Workbook Pages 86-87
 
 **On Thin Ice:** Pages 2-5
