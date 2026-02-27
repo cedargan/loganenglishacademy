@@ -41,7 +41,7 @@ title: Homework
 
 ### ​**Patience**
 
-**Starlight 5:** Workbook Pages 48-49
+**Starlight 5:** Workbook Pages 48-49, Movie or Book Review
 
 **Wordlist:** 
 
