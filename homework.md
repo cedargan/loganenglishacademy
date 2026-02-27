@@ -41,11 +41,11 @@ title: Homework
 
 ### ​**Patience**
 
-**Starlight 5:**
+**Starlight 5:** Workbook Pages 48-49
 
 **Wordlist:** 
 
-**Nicholas Nickleby:** Chapter 3 listen, read, activity, reading diary, page 63
+**Nicholas Nickleby:** 
 
 ▶️ **[Nicholas Nickleby](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCyYBdjWaeWQLtvdz3j4-NoAX6mX_vUkPN2mwA3MU1Q1FY?e=CCOuKn)** 
   
