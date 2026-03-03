@@ -4,6 +4,54 @@ title: Homework
 ---
 
 # **Homework**
+## **Wednesday 3/3/2026**
+
+### **Kind**
+
+**Everybody Up 1:** Workbook Pages 42-43
+
+### **Brave**
+
+**Oxford Discover 1:** Practice Play 40 minutes
+
+**On Thin Ice:** 12-13
+**Activity Book:** Page 7
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[On Thin Ice](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAtGXUKRhCbQIJwPmGujddTAe_1cWGbldQ_igoMTzLlUQA?e=pxF2Kw)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Grammar Book Pages 87-88
+
+**The Game:** Pages 2-5
+**Activity Book:** Page 2
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[The Game](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCp-Ni23FniT41vkwnMIsclAYcyZO0yOgpZuWXB-yGqsJg?e=D937vq)**
+  
+### **Virtue** 
+
+**Oxford Discover 3:**
+
+**Wordly Wise 2:** Pages 132-134
+  
+**Wordlist:** Write words 10x, write definitions
+
+
+### ​**Patience**
+
+**Starlight 5:** 
+
+**Wordlist:** 
+
+**Nicholas Nickleby:** Chapter 4 Listen, Read, Activity, Reading Diary, Page 64
+
+▶️ **[Nicholas Nickleby](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCyYBdjWaeWQLtvdz3j4-NoAX6mX_vUkPN2mwA3MU1Q1FY?e=CCOuKn)** 
+  
+
+<br/>
+
 ## **Friday 2/27/2026**
 
 ### **Kind**
