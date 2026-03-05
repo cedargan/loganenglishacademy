@@ -4,6 +4,59 @@ title: Homework
 ---
 
 # **Homework**
+## **Thursday 3/5/2026**
+
+### **Kind**
+
+**Everybody Up 1:** Workbook Pages 44-45
+
+**Rosie's Teddy Bear:** 10-11
+**Activity Book:** Pages 7-8
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[Rosie's Teddy Bear](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgDawxpJlzvdSaGGDZ2SpS2tAQ4DX9zwgZfVQvzJ7TXHeh8?e=n2EmuS)**
+### **Brave**
+
+**Oxford Discover 1:** Workbook 92-95
+
+**On Thin Ice:** 16-17
+**Activity Book:** Page 9
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[On Thin Ice](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAtGXUKRhCbQIJwPmGujddTAe_1cWGbldQ_igoMTzLlUQA?e=pxF2Kw)**
+  
+### **Truth**
+
+**Oxford Discover 2:** 154-157
+
+**The Game:** Pages 8-9
+**Activity Book:** Page 4
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[The Game](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCp-Ni23FniT41vkwnMIsclAYcyZO0yOgpZuWXB-yGqsJg?e=D937vq)**
+  
+### **Virtue** 
+
+**Oxford Discover 3:** 
+
+**Wordly Wise 2:** Wordly Wise 140
+  
+**Wordlist:** Write words 10x, write definitions
+
+
+### ​**Patience**
+
+**Starlight 5:** 
+
+**Wordlist:** 
+
+**Nicholas Nickleby:** Chapter 4 listen, read, activity, reading diary, 
+
+▶️ **[Nicholas Nickleby](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCyYBdjWaeWQLtvdz3j4-NoAX6mX_vUkPN2mwA3MU1Q1FY?e=CCOuKn)** 
+  
+
+<br/>
+
 ## **Wednesday 3/4/2026**
 
 ### **Kind**
@@ -98,7 +151,7 @@ title: Homework
 
 **Wordlist:** 
 
-**Nicholas Nickleby:** Chapter 4 Listen, Read, Activity, Reading Diary, Page 64
+**Nicholas Nickleby:** Chapter 5 Listen, Read, Activity, Reading Diary, Page 65
 
 ▶️ **[Nicholas Nickleby](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCyYBdjWaeWQLtvdz3j4-NoAX6mX_vUkPN2mwA3MU1Q1FY?e=CCOuKn)** 
   
@@ -194,7 +247,7 @@ title: Homework
 
 **Wordlist:** 
 
-**Nicholas Nickleby:** Chapter 3 listen, read, activity, reading diary, page 63
+**Nicholas Nickleby:** Chapter 3 listen, read, activity, reading diary, page 64
 
 ▶️ **[Nicholas Nickleby](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCyYBdjWaeWQLtvdz3j4-NoAX6mX_vUkPN2mwA3MU1Q1FY?e=CCOuKn)** 
   
