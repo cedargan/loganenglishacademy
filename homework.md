@@ -4,6 +4,59 @@ title: Homework
 ---
 
 # **Homework**
+## **Friday 3/6/2026**
+
+### **Kind**
+
+**Everybody Up 1:** Workbook Pages 46-47
+
+**Rosie's Teddy Bear:** 
+**Activity Book:** 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[Rosie's Teddy Bear](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgDawxpJlzvdSaGGDZ2SpS2tAQ4DX9zwgZfVQvzJ7TXHeh8?e=n2EmuS)**
+### **Brave**
+
+**Oxford Discover 1:** Workbook 96-97, reading worksheet
+
+**On Thin Ice:** 
+**Activity Book:** 
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[On Thin Ice](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgAtGXUKRhCbQIJwPmGujddTAe_1cWGbldQ_igoMTzLlUQA?e=pxF2Kw)**
+  
+### **Truth**
+
+**Oxford Discover 2:** Workbook Pages 158-159, Reading Worksheet
+
+**The Game:** Pages 8-9
+**Activity Book:** Page 4
+**Picture Dictionary:** 8 words 5 times
+
+▶️ **[The Game](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCp-Ni23FniT41vkwnMIsclAYcyZO0yOgpZuWXB-yGqsJg?e=D937vq)**
+  
+### **Virtue** 
+
+**Oxford Discover 3:** 
+
+**Wordly Wise 2:** Workbook Pages 162-165
+  
+**Wordlist:** Write words 10x, write definitions
+
+
+### ​**Patience**
+
+**Starlight 5:** 
+
+**Wordlist:** 
+
+**Nicholas Nickleby:**
+
+▶️ **[Nicholas Nickleby](https://loganenglishacademy-my.sharepoint.com/:f:/g/personal/logan_loganenglishacademy_onmicrosoft_com/IgCyYBdjWaeWQLtvdz3j4-NoAX6mX_vUkPN2mwA3MU1Q1FY?e=CCOuKn)** 
+  
+
+<br/>
+
 ## **Thursday 3/5/2026**
 
 ### **Kind**
