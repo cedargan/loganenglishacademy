@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #29ABE2;
+      --blue-dark: #1a8fbd;
+      --blue-dim: #e8f7fd;
+      --yellow: #FFE500;
+      --yellow-dark: #c9b500;
+      --text: #1a1a1a;
+      --text-muted: #666;
+      --bg: #f5f7fa;
+      --white: #ffffff;
+      --border: #e0e4ea;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: var(--blue);
+      padding: 0 1.5rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .header-logo img {
+      height: 38px;
+      width: auto;
+    }
+    .header-name {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.2;
+    }
+    .header-name span {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.03em;
+    }
+    .back-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: #fff; }
+
+    /* ── Book banner ── */
+    .banner {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+    .banner-badge {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      background: var(--yellow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 26px;
+    }
+    .banner-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.2;
+    }
+    .banner-author {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .banner-meta {
+      margin-left: auto;
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .meta-num {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--blue);
+      line-height: 1;
+    }
+    .meta-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* ── Chapter list ── */
+    .chapter-list {
+      max-width: 720px;
+      margin: 1.5rem auto;
+      padding: 0 1rem 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .chapter-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .chapter-top {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+    }
+
+    .ch-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: var(--blue-dim);
+      color: var(--blue-dark);
+      font-size: 14px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .ch-title {
+      font-size: 15px;
+      font-weight: 700;
+      flex: 1;
+    }
+
+    .ch-download {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--blue-dark);
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      border: 2px solid var(--blue);
+      background: transparent;
+      transition: all 0.15s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .ch-download:hover {
+      background: var(--blue);
+      color: var(--white);
+    }
+    .ch-download svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
+
+    .ch-player {
+      padding: 0 1.25rem 1rem;
+    }
+    .ch-player audio {
+      width: 100%;
+      height: 40px;
+      border-radius: 8px;
+      display: block;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 13px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+    footer strong { color: var(--blue-dark); }
+
+    @media (max-width: 560px) {
+      .banner { flex-wrap: wrap; }
+      .banner-meta { margin-left: 0; text-align: left; }
+      .header-name span { display: none; }
+      .ch-download span { display: none; }
+      .ch-download { padding: 6px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════
+     CONFIGURATION — only edit this section
+     ════════════════════════════════════════ -->
+<script>
+const CONFIG = {
+
+  // ── Academy info ──────────────────────────────
+  academyName:   'Logan English Academy',
+  academyTagline: 'Reading Library',
+  logoSrc:       '/logo.png',        // path to your logo file
+  homeUrl:       '/',                // where the back button links
+  libraryUrl:    '/reading/',        // where "Reading Library" links
+
+  // ── Book info ─────────────────────────────────
+  bookTitle:  'Hatchet',
+  bookAuthor: 'by Gary Paulsen',
+  bookEmoji:  '🪓',
+
+  // ── Chapters ──────────────────────────────────
+  // Add or remove objects below. One object = one chapter.
+  // 'url' is the full URL or relative path to the audio file.
+  chapters: [
+    { title: 'Chapter 1',  url: 'https://audio.loganenglishacademy.com/Hatchet/01%20Chapter%201.mp3' },
+    { title: 'Chapter 2',  url: 'https://audio.loganenglishacademy.com/Hatchet/02%20Chapter%202.mp3' },
+    { title: 'Chapter 3',  url: 'https://audio.loganenglishacademy.com/Hatchet/03%20Chapter%203.mp3' },
+    { title: 'Chapter 4',  url: 'https://audio.loganenglishacademy.com/Hatchet/04%20Chapter%204.mp3' },
+    { title: 'Chapter 5',  url: 'https://audio.loganenglishacademy.com/Hatchet/05%20Chapter%205.mp3' },
+    { title: 'Chapter 6',  url: 'https://audio.loganenglishacademy.com/Hatchet/06%20Chapter%206.mp3' },
+    { title: 'Chapter 7',  url: 'https://audio.loganenglishacademy.com/Hatchet/07%20Chapter%207.mp3' },
+    { title: 'Chapter 8',  url: 'https://audio.loganenglishacademy.com/Hatchet/08%20Chapter%208.mp3' },
+    { title: 'Chapter 9',  url: 'https://audio.loganenglishacademy.com/Hatchet/09%20Chapter%209.mp3' },
+    { title: 'Chapter 10', url: 'https://audio.loganenglishacademy.com/Hatchet/10%20Chapter%2010.mp3' },
+    { title: 'Chapter 11', url: 'https://audio.loganenglishacademy.com/Hatchet/11%20Chapter%2011.mp3' },
+    { title: 'Chapter 12', url: 'https://audio.loganenglishacademy.com/Hatchet/12%20Chapter%2012.mp3' },
+    { title: 'Chapter 13', url: 'https://audio.loganenglishacademy.com/Hatchet/13%20Chapter%2013.mp3' },
+    { title: 'Chapter 14', url: 'https://audio.loganenglishacademy.com/Hatchet/14%20Chapter%2014.mp3' },
+    { title: 'Chapter 15', url: 'https://audio.loganenglishacademy.com/Hatchet/15%20Chapter%2015.mp3' },
+    { title: 'Chapter 16', url: 'https://audio.loganenglishacademy.com/Hatchet/16%20Chapter%2016.mp3' },
+    { title: 'Chapter 17', url: 'https://audio.loganenglishacademy.com/Hatchet/17%20Chapter%2017.mp3' },
+    { title: 'Chapter 18', url: 'https://audio.loganenglishacademy.com/Hatchet/18%20Chapter%2018.mp3' },
+    { title: 'Chapter 19', url: 'https://audio.loganenglishacademy.com/Hatchet/19%20Chapter%2019.mp3' },
+    { title: 'Epilogue',   url: 'https://audio.loganenglishacademy.com/Hatchet/20%20Epilogue.mp3' },
+  ]
+};
+</script>
+<!-- ════════════════════════════════════════
+     END CONFIGURATION
+     ════════════════════════════════════════ -->
+
+<header class="header">
+  <a class="header-logo" id="home-link" href="#">
+    <img id="logo-img" src="" alt="" />
+    <div class="header-name">
+      <span id="hdr-tagline"></span>
+      <span id="hdr-name"></span>
+    </div>
+  </a>
+  <a class="back-link" id="library-link" href="#">
+    ← Reading Library
+  </a>
+</header>
+
+<div class="banner">
+  <div class="banner-badge" id="book-emoji"></div>
+  <div>
+    <div class="banner-title" id="book-title"></div>
+    <div class="banner-author" id="book-author"></div>
+  </div>
+  <div class="banner-meta">
+    <div class="meta-num" id="chapter-count"></div>
+    <div class="meta-label">Chapters</div>
+  </div>
+</div>
+
+<div class="chapter-list" id="chapter-list"></div>
+
+<footer>
+  <strong id="footer-name"></strong> — Audio files are for enrolled students only.
+</footer>
+
+<script>
+  const C = CONFIG;
+
+  document.title = C.bookTitle + ' Audio — ' + C.academyName;
+  document.getElementById('home-link').href     = C.homeUrl;
+  document.getElementById('library-link').href  = C.libraryUrl;
+  document.getElementById('logo-img').src       = C.logoSrc;
+  document.getElementById('logo-img').alt       = C.academyName + ' logo';
+  document.getElementById('hdr-name').textContent    = C.academyName;
+  document.getElementById('hdr-tagline').textContent = C.academyTagline;
+  document.getElementById('book-emoji').textContent  = C.bookEmoji;
+  document.getElementById('book-title').textContent  = C.bookTitle;
+  document.getElementById('book-author').textContent = C.bookAuthor;
+  document.getElementById('chapter-count').textContent = C.chapters.length;
+  document.getElementById('footer-name').textContent = C.academyName;
+
+  const dlIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13M7 11l5 5 5-5M3 20h18"/></svg>`;
+
+  const list = document.getElementById('chapter-list');
+  C.chapters.forEach((ch, i) => {
+    const card = document.createElement('div');
+    card.className = 'chapter-card';
+    const filename = ch.url.split('/').pop();
+    card.innerHTML = `
+      <div class="chapter-top">
+        <div class="ch-num">${i + 1}</div>
+        <div class="ch-title">${ch.title}</div>
+        <a class="ch-download" href="${ch.url}" download="${decodeURIComponent(filename)}" aria-label="Download ${ch.title}">
+          ${dlIcon}<span>Download</span>
+        </a>
+      </div>
+      <div class="ch-player">
+        <audio controls preload="none" src="${ch.url}" aria-label="${ch.title}"></audio>
+      </div>`;
+    list.appendChild(card);
+  });
+</script>
+
+</body>
+</html>
