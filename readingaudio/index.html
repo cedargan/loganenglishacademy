@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reading Library — Logan English Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --blue:#29ABE2;--blue-dark:#1a8fbd;--blue-dim:#e8f7fd;
+      --yellow:#FFE500;--text:#1a1a1a;--muted:#666;
+      --bg:#f5f7fa;--white:#fff;--border:#e0e4ea;--r:12px;
+    }
+    body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+
+    /* Header */
+    .hdr{background:var(--blue);padding:0 1.5rem;height:64px;display:flex;align-items:center;justify-content:space-between}
+    .hdr-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .hdr-logo img{height:38px;width:auto}
+    .hdr-name{font-size:16px;font-weight:800;color:#fff;line-height:1.2}
+    .hdr-name span{display:block;font-size:11px;font-weight:600;color:rgba(255,255,255,.7)}
+    .hdr-home{font-size:13px;font-weight:600;color:rgba(255,255,255,.85);text-decoration:none}
+    .hdr-home:hover{color:#fff}
+
+    /* Hero */
+    .hero{background:var(--blue);color:#fff;padding:2rem 1.5rem 2.5rem;border-bottom:4px solid var(--yellow)}
+    .hero h1{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;line-height:1.2}
+    .hero p{font-size:15px;color:rgba(255,255,255,.7);margin-top:.375rem}
+    .hero-stats{display:flex;gap:1.5rem;margin-top:1.25rem;flex-wrap:wrap}
+    .hero-stat{background:rgba(255,255,255,.12);border-radius:10px;padding:.625rem 1rem;min-width:80px}
+    .hero-stat-n{font-size:1.5rem;font-weight:800;line-height:1}
+    .hero-stat-l{font-size:11px;font-weight:600;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:.05em}
+
+    /* Search */
+    .search-wrap{max-width:860px;margin:1.5rem auto 0;padding:0 1rem}
+    .search-box{display:flex;align-items:center;gap:10px;background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:.625rem 1rem;transition:border-color .15s}
+    .search-box:focus-within{border-color:var(--blue)}
+    .search-box svg{color:var(--muted);flex-shrink:0;width:18px;height:18px}
+    .search-box input{flex:1;border:none;outline:none;font-family:'Nunito',sans-serif;font-size:15px;color:var(--text);background:transparent}
+    .search-box input::placeholder{color:#aaa}
+
+    /* Main */
+    .main{max-width:860px;margin:1.25rem auto;padding:0 1rem 4rem}
+
+    /* Series block */
+    .series-block{margin-bottom:2rem}
+    .series-hdr{display:flex;align-items:center;gap:.875rem;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:2px solid var(--border)}
+    .series-emoji{font-size:1.75rem;flex-shrink:0}
+    .series-name{font-size:1.1rem;font-weight:800;color:var(--text)}
+    .series-desc{font-size:13px;color:var(--muted);margin-top:1px}
+    .series-count{margin-left:auto;background:var(--blue-dim);color:var(--blue-dark);font-size:12px;font-weight:800;padding:4px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+
+    /* Level label */
+    .level-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:.875rem 0 .5rem;padding-left:2px}
+
+    /* Book grid */
+    .book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:10px}
+    .book-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1rem;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:.5rem;transition:all .15s;cursor:pointer}
+    .book-card:hover{border-color:var(--blue);box-shadow:0 2px 12px rgba(41,171,226,.15);transform:translateY(-1px)}
+    .book-card-top{flex:1}
+    .book-title{font-size:14px;font-weight:700;line-height:1.35;color:var(--text)}
+    .book-card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:.25rem}
+    .track-count{font-size:12px;color:var(--muted);font-weight:600}
+    .arrow{font-size:14px;color:var(--blue);font-weight:800;transition:transform .15s}
+    .book-card:hover .arrow{transform:translateX(3px)}
+
+    /* No results */
+    .no-results{text-align:center;padding:3rem 1rem;color:var(--muted);font-size:15px;display:none}
+
+    /* Footer */
+    footer{text-align:center;padding:1.5rem;font-size:13px;color:var(--muted);border-top:1px solid var(--border)}
+    footer strong{color:var(--blue-dark)}
+
+    @media(max-width:560px){
+      .hero{padding:1.5rem 1.25rem 2rem}
+      .book-grid{grid-template-columns:repeat(auto-fill,minmax(145px,1fr))}
+    }
+  </style>
+</head>
+<body>
+
+<header class="hdr">
+  <a class="hdr-logo" href="/">
+    <img src="logo.png" alt="Logan English Academy"/>
+    <div class="hdr-name">Logan English Academy<span>Reading Library</span></div>
+  </a>
+  <a class="hdr-home" href="/">← Home</a>
+</header>
+
+<div class="hero">
+  <h1>Reading Library</h1>
+  <p>Select a book to listen along chapter by chapter.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="hero-stat-n">123</div><div class="hero-stat-l">Books</div></div>
+    <div class="hero-stat"><div class="hero-stat-n">974</div><div class="hero-stat-l">Audio Tracks</div></div>
+    <div class="hero-stat"><div class="hero-stat-n">4</div><div class="hero-stat-l">Series</div></div>
+  </div>
+</div>
+
+<div class="search-wrap">
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input type="text" id="search" placeholder="Search books..." oninput="filterBooks(this.value)"/>
+  </div>
+</div>
+
+<main class="main" id="main">
+  
+    <div class="series-block" id="s-classics-tales">
+      <div class="series-hdr">
+        <span class="series-emoji">📜</span>
+        <div>
+          <div class="series-name">Classics Tales</div>
+          <div class="series-desc">Classic folk tales and fairy stories at graded reading levels</div>
+        </div>
+        <div class="series-count">18 books</div>
+      </div><div class="level-label">Level 1</div><div class="book-grid">
+          <a class="book-card" href="classics-tales/level-1/lownu-mends-the-sky.html">
+            <div class="book-card-top">
+              <div class="book-title">Lownu Mends The Sky</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-1/mansour-and-the-donkey.html">
+            <div class="book-card-top">
+              <div class="book-title">Mansour And The Donkey</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-1/rumpelstiltskin.html">
+            <div class="book-card-top">
+              <div class="book-title">Rumpelstiltskin</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-1/the-enormous-turnip.html">
+            <div class="book-card-top">
+              <div class="book-title">The Enormous Turnip</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-1/the-lazy-grasshopper.html">
+            <div class="book-card-top">
+              <div class="book-title">The Lazy Grasshopper</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-1/the-little-red-hen.html">
+            <div class="book-card-top">
+              <div class="book-title">The Little Red Hen</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-1/the-magic-cooking-pot.html">
+            <div class="book-card-top">
+              <div class="book-title">The Magic Cooking Pot</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-1/the-magpie-and-the-milk.html">
+            <div class="book-card-top">
+              <div class="book-title">The Magpie And The Milk</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-1/three-billy-goats.html">
+            <div class="book-card-top">
+              <div class="book-title">Three Billy-Goats</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Level 2</div><div class="book-grid">
+          <a class="book-card" href="classics-tales/level-2/jack-and-the-beanstalk.html">
+            <div class="book-card-top">
+              <div class="book-title">Jack And The Beanstalk</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-2/king-arthur-and-the-sword.html">
+            <div class="book-card-top">
+              <div class="book-title">King Arthur And The Sword</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-2/the-ginger-bread-man.html">
+            <div class="book-card-top">
+              <div class="book-title">The Ginger Bread Man</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Level 3</div><div class="book-grid">
+          <a class="book-card" href="classics-tales/level-3/aladdin.html">
+            <div class="book-card-top">
+              <div class="book-title">Aladdin</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-3/goldilocks-and-the-three-bears.html">
+            <div class="book-card-top">
+              <div class="book-title">Goldilocks And The Three Bears</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">11 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-3/little-red-riding-hood.html">
+            <div class="book-card-top">
+              <div class="book-title">Little Red Riding Hood</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-3/mulan.html">
+            <div class="book-card-top">
+              <div class="book-title">Mulan</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="classics-tales/level-3/the-heron-and-the-hummingbird.html">
+            <div class="book-card-top">
+              <div class="book-title">The Heron And The Hummingbird</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Level 4</div><div class="book-grid">
+          <a class="book-card" href="classics-tales/level-4/don-quixote-adventures-of-a-spanish-knight.html">
+            <div class="book-card-top">
+              <div class="book-title">Don Quixote Adventures Of A Spanish Knight</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div></div>
+    <div class="series-block" id="s-dominoes">
+      <div class="series-hdr">
+        <span class="series-emoji">📚</span>
+        <div>
+          <div class="series-name">Dominoes</div>
+          <div class="series-desc">Oxford Dominoes graded readers — Level 1 & 2</div>
+        </div>
+        <div class="series-count">50 books</div>
+      </div><div class="level-label">Level 1</div><div class="book-grid">
+          <a class="book-card" href="dominoes/level-1/football-forever.html">
+            <div class="book-card-top">
+              <div class="book-title">Football Forever</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/frankenstein.html">
+            <div class="book-card-top">
+              <div class="book-title">Frankenstein</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/hamlet.html">
+            <div class="book-card-top">
+              <div class="book-title">Hamlet</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/jakes-parrot.html">
+            <div class="book-card-top">
+              <div class="book-title">Jakes Parrot</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/journey-to-the-west.html">
+            <div class="book-card-top">
+              <div class="book-title">Journey To The West</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/macbeth.html">
+            <div class="book-card-top">
+              <div class="book-title">Macbeth</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/peter-pan.html">
+            <div class="book-card-top">
+              <div class="book-title">Peter Pan</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/pollyanna.html">
+            <div class="book-card-top">
+              <div class="book-title">Pollyanna</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/the-curse-of-the-mummy.html">
+            <div class="book-card-top">
+              <div class="book-title">The Curse Of The Mummy</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/the-jungle-book.html">
+            <div class="book-card-top">
+              <div class="book-title">The Jungle Book</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/the-real-mccoy-and-other-ghost-stories.html">
+            <div class="book-card-top">
+              <div class="book-title">The Real Mccoy And Other Ghost Stories</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/the-swiss-family-robinson.html">
+            <div class="book-card-top">
+              <div class="book-title">The Swiss Family Robinson</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/the-teacher-s-secret-and-other-folk-tales.html">
+            <div class="book-card-top">
+              <div class="book-title">The Teacher'S Secret And Other Folk Tales</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/the-wrong-trousers.html">
+            <div class="book-card-top">
+              <div class="book-title">The Wrong Trousers</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-1/twenty-thousand-leagues-under-the-sea.html">
+            <div class="book-card-top">
+              <div class="book-title">Twenty Thousand Leagues Under The Sea</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Level 2</div><div class="book-grid">
+          <a class="book-card" href="dominoes/level-2/a-close-shave.html">
+            <div class="book-card-top">
+              <div class="book-title">A Close Shave</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">8 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-2/ariadnes-story.html">
+            <div class="book-card-top">
+              <div class="book-title">Ariadnes Story</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">8 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-2/eight-great-american-tales.html">
+            <div class="book-card-top">
+              <div class="book-title">Eight Great American Tales</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">8 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-2/jemma-s-jungle-adventure.html">
+            <div class="book-card-top">
+              <div class="book-title">Jemma’S Jungle Adventure</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">8 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-2/lord-arthur-saviles-crime-and-other-stories.html">
+            <div class="book-card-top">
+              <div class="book-title">Lord Arthur Saviles Crime And Other Stories</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-2/nicholas-nickleby.html">
+            <div class="book-card-top">
+              <div class="book-title">Nicholas Nickleby</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">8 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-2/sara-dixon-teen-detective.html">
+            <div class="book-card-top">
+              <div class="book-title">Sara Dixon Teen Detective</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">8 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-2/the-drive-to-dubai.html">
+            <div class="book-card-top">
+              <div class="book-title">The Drive To Dubai</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">5 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Level 3</div><div class="book-grid">
+          <a class="book-card" href="dominoes/level-3/hard-times.html">
+            <div class="book-card-top">
+              <div class="book-title">Hard Times</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-3/mansfield-park.html">
+            <div class="book-card-top">
+              <div class="book-title">Mansfield Park</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-3/revolution.html">
+            <div class="book-card-top">
+              <div class="book-title">Revolution</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-3/sherlock-holmes-the-sign-of-four.html">
+            <div class="book-card-top">
+              <div class="book-title">Sherlock Holmes The Sign Of Four</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-3/the-count-of-monte-cristo.html">
+            <div class="book-card-top">
+              <div class="book-title">The Count Of Monte Cristo</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-3/the-curious-case-of-benjamin-button.html">
+            <div class="book-card-top">
+              <div class="book-title">The Curious Case Of Benjamin Button</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/level-3/the-secret-agent.html">
+            <div class="book-card-top">
+              <div class="book-title">The Secret Agent</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Quickstarter</div><div class="book-grid">
+          <a class="book-card" href="dominoes/quickstarter/ali-baba-and-the-forty-thieves.html">
+            <div class="book-card-top">
+              <div class="book-title">Ali Baba And The Forty Thieves</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/quickstarter/crying-wolf.html">
+            <div class="book-card-top">
+              <div class="book-title">Crying Wolf</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/quickstarter/lisa-s-song.html">
+            <div class="book-card-top">
+              <div class="book-title">Lisa'S Song</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/quickstarter/merlin.html">
+            <div class="book-card-top">
+              <div class="book-title">Merlin</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/quickstarter/the-little-match-girl.html">
+            <div class="book-card-top">
+              <div class="book-title">The Little Match Girl</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/quickstarter/the-lost-world.html">
+            <div class="book-card-top">
+              <div class="book-title">The Lost World</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">5 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/quickstarter/the-skateboarder.html">
+            <div class="book-card-top">
+              <div class="book-title">The Skateboarder</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/quickstarter/the-sorcerer-s-apprentice.html">
+            <div class="book-card-top">
+              <div class="book-title">The Sorcerer'S Apprentice</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/quickstarter/troy.html">
+            <div class="book-card-top">
+              <div class="book-title">Troy</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/quickstarter/zombie-attack.html">
+            <div class="book-card-top">
+              <div class="book-title">Zombie Attack</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Starter</div><div class="book-grid">
+          <a class="book-card" href="dominoes/starter/around-the-world-in-eighty-day.html">
+            <div class="book-card-top">
+              <div class="book-title">Around The World In Eighty Day</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">7 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/starter/changing-places.html">
+            <div class="book-card-top">
+              <div class="book-title">Changing Places</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/starter/journey-to-the-centre-of-the-earth.html">
+            <div class="book-card-top">
+              <div class="book-title">Journey To The Centre Of The Earth</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/starter/kidnap.html">
+            <div class="book-card-top">
+              <div class="book-title">Kidnap!</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">4 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/starter/rip-van-winkle-the-legend-of-sleepy-hollow.html">
+            <div class="book-card-top">
+              <div class="book-title">Rip Van Winkle & The Legend Of Sleepy Hollow</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/starter/sherlock-holmes-the-speckled-band.html">
+            <div class="book-card-top">
+              <div class="book-title">Sherlock Holmes The Speckled Band</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/starter/the-big-story.html">
+            <div class="book-card-top">
+              <div class="book-title">The Big Story</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/starter/the-happy-prince.html">
+            <div class="book-card-top">
+              <div class="book-title">The Happy Prince</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/starter/the-reigate-puzzle.html">
+            <div class="book-card-top">
+              <div class="book-title">The Reigate Puzzle</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="dominoes/starter/the-tempest.html">
+            <div class="book-card-top">
+              <div class="book-title">The Tempest</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">5 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div></div>
+    <div class="series-block" id="s-readanddiscover">
+      <div class="series-hdr">
+        <span class="series-emoji">🌍</span>
+        <div>
+          <div class="series-name">Readanddiscover</div>
+          <div class="series-desc">Oxford Read and Discover non-fiction readers</div>
+        </div>
+        <div class="series-count">18 books</div>
+      </div><div class="level-label">Level 1</div><div class="book-grid">
+          <a class="book-card" href="readanddiscover/level-1/at-the-beach.html">
+            <div class="book-card-top">
+              <div class="book-title">At The Beach</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">9 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-1/in-the-sky.html">
+            <div class="book-card-top">
+              <div class="book-title">In The Sky</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">9 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-1/schools.html">
+            <div class="book-card-top">
+              <div class="book-title">Schools</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">9 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-1/trees.html">
+            <div class="book-card-top">
+              <div class="book-title">Trees</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-1/wheels.html">
+            <div class="book-card-top">
+              <div class="book-title">Wheels</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">9 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-1/young-animals.html">
+            <div class="book-card-top">
+              <div class="book-title">Young Animals</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">9 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Level 2</div><div class="book-grid">
+          <a class="book-card" href="readanddiscover/level-2/cities.html">
+            <div class="book-card-top">
+              <div class="book-title">Cities</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-2/earth.html">
+            <div class="book-card-top">
+              <div class="book-title">Earth</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-2/jobs.html">
+            <div class="book-card-top">
+              <div class="book-title">Jobs</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Level 3</div><div class="book-grid">
+          <a class="book-card" href="readanddiscover/level-3/amazing-minibeasts.html">
+            <div class="book-card-top">
+              <div class="book-title">Amazing Minibeasts</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">11 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-3/animals-in-the-air.html">
+            <div class="book-card-top">
+              <div class="book-title">Animals In The Air</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">11 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-3/free-time-around-the-world.html">
+            <div class="book-card-top">
+              <div class="book-title">Free Time Around The World</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">12 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-3/how-we-make-products.html">
+            <div class="book-card-top">
+              <div class="book-title">How We Make Products</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">11 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-3/life-in-rainforests.html">
+            <div class="book-card-top">
+              <div class="book-title">Life In Rainforests</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">11 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-3/sound-and-music.html">
+            <div class="book-card-top">
+              <div class="book-title">Sound And Music</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">12 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-3/super-structures.html">
+            <div class="book-card-top">
+              <div class="book-title">Super Structures</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">11 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-3/wonderful-water.html">
+            <div class="book-card-top">
+              <div class="book-title">Wonderful Water</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">11 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readanddiscover/level-3/your-five-senses.html">
+            <div class="book-card-top">
+              <div class="book-title">Your Five Senses</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">12 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div></div>
+    <div class="series-block" id="s-readandimagine">
+      <div class="series-hdr">
+        <span class="series-emoji">🔬</span>
+        <div>
+          <div class="series-name">Readandimagine</div>
+          <div class="series-desc">Oxford Read and Imagine fiction readers</div>
+        </div>
+        <div class="series-count">37 books</div>
+      </div><div class="level-label">Beginner</div><div class="book-grid">
+          <a class="book-card" href="readandimagine/beginner/a-nice-book-audio-us-english.html">
+            <div class="book-card-top">
+              <div class="book-title">A Nice Book Audio Us English</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/beginner/a-rainy-day.html">
+            <div class="book-card-top">
+              <div class="book-title">A Rainy Day</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/beginner/i-can-see-you-us.html">
+            <div class="book-card-top">
+              <div class="book-title">I Can See You US</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/beginner/i-can-see-you-us-english.html">
+            <div class="book-card-top">
+              <div class="book-title">I Can See You Us English</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">12 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/beginner/i-m-sorry.html">
+            <div class="book-card-top">
+              <div class="book-title">I'M Sorry</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/beginner/in-the-snow-us-english.html">
+            <div class="book-card-top">
+              <div class="book-title">In The Snow Us English</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/beginner/it-s-hot.html">
+            <div class="book-card-top">
+              <div class="book-title">It'S Hot</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/beginner/the-cake-machine.html">
+            <div class="book-card-top">
+              <div class="book-title">The Cake Machine</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Level1</div><div class="book-grid">
+          <a class="book-card" href="readandimagine/level1/a-shadow-on-the-park.html">
+            <div class="book-card-top">
+              <div class="book-title">A Shadow On The Park</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level1/danger-in-the-rainforest.html">
+            <div class="book-card-top">
+              <div class="book-title">Danger In The Rainforest</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">5 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level1/fear-at-the-festival.html">
+            <div class="book-card-top">
+              <div class="book-title">Fear At The Festival</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">8 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level1/get-us-out-of-here.html">
+            <div class="book-card-top">
+              <div class="book-title">Get Us Out Of Here</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level1/high-water.html">
+            <div class="book-card-top">
+              <div class="book-title">High Water</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">7 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level1/level3-danger-bugs.html">
+            <div class="book-card-top">
+              <div class="book-title">Level3 Danger Bugs</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">14 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level1/readandimagine3-soccer-in-the-street-all-american.html">
+            <div class="book-card-top">
+              <div class="book-title">Readandimagine3 Soccer In The Street All American</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">9 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level1/the-game.html">
+            <div class="book-card-top">
+              <div class="book-title">The Game</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">7 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Level2</div><div class="book-grid">
+          <a class="book-card" href="readandimagine/level2/readandimagine2-can-you-see-lions.html">
+            <div class="book-card-top">
+              <div class="book-title">Readandimagine2 Can You See Lions</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level2/readandimagine2-clunks-new-job.html">
+            <div class="book-card-top">
+              <div class="book-title">Readandimagine2 Clunks New Job</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level2/readandimagine2-in-the-big-city.html">
+            <div class="book-card-top">
+              <div class="book-title">Readandimagine2 In The Big City</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level2/readandimagine2-the-big-storm.html">
+            <div class="book-card-top">
+              <div class="book-title">Readandimagine2 The Big Storm</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">9 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Level3</div><div class="book-grid">
+          <a class="book-card" href="readandimagine/level3/a-shadow-on-the-park.html">
+            <div class="book-card-top">
+              <div class="book-title">A Shadow On The Park</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level3/danger-in-the-rainforest.html">
+            <div class="book-card-top">
+              <div class="book-title">Danger In The Rainforest</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">5 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level3/fear-at-the-festival.html">
+            <div class="book-card-top">
+              <div class="book-title">Fear At The Festival</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">8 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level3/get-us-out-of-here.html">
+            <div class="book-card-top">
+              <div class="book-title">Get Us Out Of Here</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level3/high-water.html">
+            <div class="book-card-top">
+              <div class="book-title">High Water</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">8 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level3/level3-danger-bugs.html">
+            <div class="book-card-top">
+              <div class="book-title">Level3 Danger Bugs</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level3/readandimagine3-soccer-in-the-street-all-american.html">
+            <div class="book-card-top">
+              <div class="book-title">Readandimagine3 Soccer In The Street All American</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">7 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level3/readandimagine3-the-new-sound-all-american.html">
+            <div class="book-card-top">
+              <div class="book-title">Readandimagine3 The New Sound All American</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">9 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level3/the-game.html">
+            <div class="book-card-top">
+              <div class="book-title">The Game</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">8 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div><div class="level-label">Starter</div><div class="book-grid">
+          <a class="book-card" href="readandimagine/starter/at-the-zoo-us-english.html">
+            <div class="book-card-top">
+              <div class="book-title">At The Zoo Us English</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/starter/clunk-draws-a-picture-us.html">
+            <div class="book-card-top">
+              <div class="book-title">Clunk Draws A Picture Us</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/starter/hello-clunk-us-english.html">
+            <div class="book-card-top">
+              <div class="book-title">Hello Clunk Us English</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/starter/hello-goodbye-us-english.html">
+            <div class="book-card-top">
+              <div class="book-title">Hello Goodbye Us English</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/starter/one-two-three-us-english.html">
+            <div class="book-card-top">
+              <div class="book-title">One Two Three Us English</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/starter/rosies-teddy-bear-us-english.html">
+            <div class="book-card-top">
+              <div class="book-title">Rosies Teddy Bear Us English</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/starter/the-new-dinosaur-audio-us.html">
+            <div class="book-card-top">
+              <div class="book-title">The New Dinosaur Audio Us</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/starter/wheres-my-hat-us.html">
+            <div class="book-card-top">
+              <div class="book-title">Wheres My Hat Us</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">6 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a></div></div>
+  <div class="no-results" id="no-results">No books match your search.</div>
+</main>
+
+<footer>
+  <strong>Logan English Academy</strong> — Audio files are for enrolled students only.
+</footer>
+
+<script>
+function filterBooks(q) {
+  q = q.toLowerCase().trim();
+  const cards = document.querySelectorAll('.book-card');
+  const blocks = document.querySelectorAll('.series-block');
+  let any = false;
+
+  cards.forEach(c => {
+    const match = !q || c.querySelector('.book-title').textContent.toLowerCase().includes(q);
+    c.style.display = match ? '' : 'none';
+    if (match) any = true;
+  });
+
+  // Hide series blocks and level labels if all their cards are hidden
+  blocks.forEach(block => {
+    const grids = block.querySelectorAll('.book-grid');
+    let blockVisible = false;
+    grids.forEach(grid => {
+      const visible = [...grid.querySelectorAll('.book-card')].some(c => c.style.display !== 'none');
+      grid.style.display = visible ? '' : 'none';
+      // Show/hide preceding level label
+      const prev = grid.previousElementSibling;
+      if (prev && prev.classList.contains('level-label')) prev.style.display = visible ? '' : 'none';
+      if (visible) blockVisible = true;
+    });
+    block.style.display = blockVisible ? '' : 'none';
+  });
+
+  document.getElementById('no-results').style.display = any ? 'none' : 'block';
+}
+</script>
+</body>
+</html>
