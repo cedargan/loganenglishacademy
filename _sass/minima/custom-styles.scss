@@ -1,8 +1,134 @@
-// Placeholder to allow defining custom styles that override everything else.
-// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+:root {
+  --bg:           #faf8f5;
+  --card:         #ffffff;
+  --border:       #e8e2d9;
+  --text:         #2d2a26;
+  --muted:        #8a8278;
+  --accent:       #3d6b4f;
+  --accent-light: #eaf2ed;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+// ── Site header ──
+.site-header {
+  background: var(--card);
+  border-bottom: 2px solid var(--border);
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: unset;
+
+  img { height: 40px; }
+
+  .site-name {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  // hide the old Minima site-title
+  .site-title { display: none; }
+
+  nav {
+    margin-left: auto;
+
+    a {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: var(--accent-light);
+      &:hover { background: #d0e8d8; }
+    }
+
+    // hide Minima's hamburger
+    .menu-icon,
+    #nav-trigger,
+    label[for="nav-trigger"] { display: none; }
+  }
+
+  .wrapper {
+    max-width: unset;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+  }
+}
+
+// ── Main content ──
+.page-content {
+  background: var(--bg);
+
+  .wrapper {
+    max-width: 900px;
+    padding: 36px 20px 80px;
+  }
+}
+
+// ── Typography ──
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--text);
+  background: none;
+  padding: 0;
+  margin-bottom: 26px;
+}
+
 h2 {
-   background-color: #0595D4;
-  color: #ffffff;
-  padding: 0.1rem;
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+  background: none;
+  padding: 0;
   border: none;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  &:hover { color: darken(#3d6b4f, 10%); }
+}
+
+// ── Footer ──
+.site-footer {
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 2px solid var(--border);
+  background: var(--bg);
+
+  // hide old Minima footer internals
+  .wrapper,
+  .footer-col-wrapper,
+  .contact-list,
+  .social-links { display: none; }
+
+  // the direct <a> we added
+  & > a {
+    color: var(--accent);
+    text-decoration: none;
+    display: block;
+  }
 }

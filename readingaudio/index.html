@@ -4,77 +4,126 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reading Library — Logan English Academy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Lora:wght@600;700&display=swap" rel="stylesheet"/>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{
-      --blue:#29ABE2;--blue-dark:#1a8fbd;--blue-dim:#e8f7fd;
-      --yellow:#FFE500;--text:#1a1a1a;--muted:#666;
-      --bg:#f5f7fa;--white:#fff;--border:#e0e4ea;--r:12px;
+      --bg:#faf8f5;--card:#ffffff;--border:#e8e2d9;
+      --text:#2d2a26;--muted:#8a8278;
+      --accent:#3d6b4f;--accent-light:#eaf2ed;--r:12px
     }
     body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
 
-    /* Header */
-    .hdr{background:var(--blue);padding:0 1.5rem;height:64px;display:flex;align-items:center;justify-content:space-between}
-    .hdr-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-    .hdr-logo img{height:38px;width:auto}
-    .hdr-name{font-size:16px;font-weight:800;color:#fff;line-height:1.2}
-    .hdr-name span{display:block;font-size:11px;font-weight:600;color:rgba(255,255,255,.7)}
-    .hdr-home{font-size:13px;font-weight:600;color:rgba(255,255,255,.85);text-decoration:none}
-    .hdr-home:hover{color:#fff}
+    /* ── Header (Variant A) ── */
+    .hdr{background:var(--card);border-bottom:2px solid var(--border);padding:14px 28px;display:flex;align-items:center;gap:14px}
+    .hl,.hdr-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .hl img,.hdr-logo img,.header-logo img{height:40px;width:auto}
+    .hn,.hdr-name{font-family:'Lora',serif;font-size:1.1rem;font-weight:700;color:var(--accent);line-height:1.2}
+    .hn span,.hdr-name span{display:none}
+    .bk,.hdr-home{margin-left:auto;font-size:0.9rem;font-weight:700;color:var(--accent);text-decoration:none;padding:6px 14px;border-radius:8px;background:var(--accent-light)}
+    .bk:hover,.hdr-home:hover{background:#d0e8d8}
 
-    /* Hero */
-    .hero{background:var(--blue);color:#fff;padding:2rem 1.5rem 2.5rem;border-bottom:4px solid var(--yellow)}
-    .hero h1{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;line-height:1.2}
-    .hero p{font-size:15px;color:rgba(255,255,255,.7);margin-top:.375rem}
+    /* ── Header (Variant B) ── */
+    .header{background:var(--card);border-bottom:2px solid var(--border);padding:14px 28px;display:flex;align-items:center;gap:14px}
+    .header-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .header-name{font-family:'Lora',serif;font-size:1.1rem;font-weight:700;color:var(--accent);line-height:1.2}
+    .header-name span{display:none}
+    .back-link{margin-left:auto;font-size:0.9rem;font-weight:700;color:var(--accent);text-decoration:none;padding:6px 14px;border-radius:8px;background:var(--accent-light);display:flex;align-items:center;gap:5px;transition:background .15s}
+    .back-link:hover{background:#d0e8d8}
+
+    /* ── Book banner (Variant A) ── */
+    .ban{background:var(--card);border-bottom:2px solid var(--border);padding:1.5rem;display:flex;align-items:center;gap:1.25rem}
+    .bdg{width:52px;height:52px;border-radius:10px;background:var(--accent-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:26px}
+    .bt{font-family:'Lora',serif;font-size:1.35rem;font-weight:700;color:var(--text)}
+    .bs{font-size:14px;color:var(--muted);margin-top:2px}
+    .bm{margin-left:auto;text-align:right;flex-shrink:0}
+    .mn{font-size:1.6rem;font-weight:800;color:var(--accent);line-height:1}
+    .ml{font-size:12px;color:var(--muted);font-weight:600}
+
+    /* ── Book banner (Variant B) ── */
+    .banner{background:var(--card);border-bottom:2px solid var(--border);padding:1.5rem;display:flex;align-items:center;gap:1.25rem}
+    .banner-badge{width:52px;height:52px;border-radius:10px;background:var(--accent-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:26px}
+    .banner-title{font-family:'Lora',serif;font-size:1.35rem;font-weight:700;color:var(--text);line-height:1.2}
+    .banner-author{font-size:14px;color:var(--muted);margin-top:2px}
+    .banner-meta{margin-left:auto;text-align:right;flex-shrink:0}
+    .meta-num{font-size:1.6rem;font-weight:800;color:var(--accent);line-height:1}
+    .meta-label{font-size:12px;color:var(--muted);font-weight:600}
+
+    /* ── Track list (Variant A) ── */
+    .lst{max-width:720px;margin:1.5rem auto;padding:0 1rem 3rem;display:flex;flex-direction:column;gap:10px}
+    .ch{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+    .ct{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem}
+    .cn{width:36px;height:36px;border-radius:8px;background:var(--accent-light);color:var(--accent);font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .cti{font-size:15px;font-weight:700;flex:1;color:var(--text)}
+    .cdl{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--accent);text-decoration:none;padding:6px 14px;border-radius:8px;border:2px solid var(--accent);transition:all .15s;white-space:nowrap;flex-shrink:0}
+    .cdl:hover{background:var(--accent);color:#fff}
+    .cdl svg{width:14px;height:14px}
+    .cp{padding:0 1.25rem 1rem}
+    .cp audio{width:100%;height:40px;border-radius:8px;display:block}
+
+    /* ── Track list (Variant B) ── */
+    .track-list{max-width:720px;margin:1.5rem auto;padding:0 1rem 3rem;display:flex;flex-direction:column;gap:10px}
+    .track-item{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+    .track-top{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem}
+    .track-num{width:36px;height:36px;border-radius:8px;background:var(--accent-light);color:var(--accent);font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .track-title{font-size:15px;font-weight:700;flex:1;color:var(--text)}
+    .download-btn{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--accent);text-decoration:none;padding:6px 14px;border-radius:8px;border:2px solid var(--accent);transition:all .15s;white-space:nowrap;flex-shrink:0}
+    .download-btn:hover{background:var(--accent);color:#fff}
+    .download-btn svg{width:14px;height:14px}
+    .track-player{padding:0 1.25rem 1rem}
+    .track-player audio{width:100%;height:40px;border-radius:8px;display:block}
+
+    /* ── Footer ── */
+    footer{text-align:center;padding:28px 20px;font-size:0.85rem;color:var(--muted);border-top:2px solid var(--border)}
+    footer a{color:var(--accent);text-decoration:none}
+    footer strong{color:var(--accent)}
+
+    /* ── Index page: hero ── */
+    .hero{background:var(--card);border-bottom:2px solid var(--border);padding:2rem 1.5rem 2rem}
+    .hero h1{font-family:'Lora',serif;font-size:clamp(1.6rem,4vw,2.2rem);font-weight:700;color:var(--text);line-height:1.2}
+    .hero p{font-size:15px;color:var(--muted);margin-top:.375rem}
     .hero-stats{display:flex;gap:1.5rem;margin-top:1.25rem;flex-wrap:wrap}
-    .hero-stat{background:rgba(255,255,255,.12);border-radius:10px;padding:.625rem 1rem;min-width:80px}
-    .hero-stat-n{font-size:1.5rem;font-weight:800;line-height:1}
-    .hero-stat-l{font-size:11px;font-weight:600;color:rgba(255,255,255,.65);text-transform:uppercase;letter-spacing:.05em}
+    .hero-stat{background:var(--accent-light);border-radius:10px;padding:.625rem 1rem;min-width:80px}
+    .hero-stat-n{font-size:1.5rem;font-weight:800;line-height:1;color:var(--accent)}
+    .hero-stat-l{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
 
-    /* Search */
+    /* ── Index page: search ── */
     .search-wrap{max-width:860px;margin:1.5rem auto 0;padding:0 1rem}
-    .search-box{display:flex;align-items:center;gap:10px;background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:.625rem 1rem;transition:border-color .15s}
-    .search-box:focus-within{border-color:var(--blue)}
+    .search-box{display:flex;align-items:center;gap:10px;background:var(--card);border:1.5px solid var(--border);border-radius:10px;padding:.625rem 1rem;transition:border-color .15s}
+    .search-box:focus-within{border-color:var(--accent)}
     .search-box svg{color:var(--muted);flex-shrink:0;width:18px;height:18px}
     .search-box input{flex:1;border:none;outline:none;font-family:'Nunito',sans-serif;font-size:15px;color:var(--text);background:transparent}
     .search-box input::placeholder{color:#aaa}
 
-    /* Main */
+    /* ── Index page: grid ── */
     .main{max-width:860px;margin:1.25rem auto;padding:0 1rem 4rem}
-
-    /* Series block */
     .series-block{margin-bottom:2rem}
     .series-hdr{display:flex;align-items:center;gap:.875rem;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:2px solid var(--border)}
     .series-emoji{font-size:1.75rem;flex-shrink:0}
     .series-name{font-size:1.1rem;font-weight:800;color:var(--text)}
     .series-desc{font-size:13px;color:var(--muted);margin-top:1px}
-    .series-count{margin-left:auto;background:var(--blue-dim);color:var(--blue-dark);font-size:12px;font-weight:800;padding:4px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0}
-
-    /* Level label */
-    .level-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:.875rem 0 .5rem;padding-left:2px}
-
-    /* Book grid */
+    .series-count{margin-left:auto;background:var(--accent-light);color:var(--accent);font-size:12px;font-weight:800;padding:4px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+    .level-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:.875rem 0 .5rem;padding-left:2px;cursor:pointer;display:flex;align-items:center;gap:6px;user-select:none}
+    .level-label:hover{color:var(--text)}
+    .level-label .toggle-icon{font-style:normal;font-size:10px;transition:transform .15s}
+    .level-label[data-collapsed="true"] .toggle-icon{transform:rotate(-90deg)}
     .book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:10px}
-    .book-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:1rem;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:.5rem;transition:all .15s;cursor:pointer}
-    .book-card:hover{border-color:var(--blue);box-shadow:0 2px 12px rgba(41,171,226,.15);transform:translateY(-1px)}
+    .book-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1rem;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:.5rem;transition:all .15s;cursor:pointer}
+    .book-card:hover{border-color:var(--accent);box-shadow:0 2px 12px rgba(61,107,79,.15);transform:translateY(-1px)}
     .book-card-top{flex:1}
     .book-title{font-size:14px;font-weight:700;line-height:1.35;color:var(--text)}
     .book-card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:.25rem}
     .track-count{font-size:12px;color:var(--muted);font-weight:600}
-    .arrow{font-size:14px;color:var(--blue);font-weight:800;transition:transform .15s}
+    .arrow{font-size:14px;color:var(--accent);font-weight:800;transition:transform .15s}
     .book-card:hover .arrow{transform:translateX(3px)}
-
-    /* No results */
     .no-results{text-align:center;padding:3rem 1rem;color:var(--muted);font-size:15px;display:none}
 
-    /* Footer */
-    footer{text-align:center;padding:1.5rem;font-size:13px;color:var(--muted);border-top:1px solid var(--border)}
-    footer strong{color:var(--blue-dark)}
-
     @media(max-width:560px){
-      .hero{padding:1.5rem 1.25rem 2rem}
+      .cdl span,.download-btn span{display:none}
+      .cdl,.download-btn{padding:6px 10px}
+      .hero{padding:1.5rem 1.25rem 1.5rem}
       .book-grid{grid-template-columns:repeat(auto-fill,minmax(145px,1fr))}
+      .filter-bar{padding:12px 16px}
     }
   </style>
 </head>
@@ -82,8 +131,8 @@
 
 <header class="hdr">
   <a class="hdr-logo" href="/">
-    <img src="logo.png" alt="Logan English Academy"/>
-    <div class="hdr-name">Logan English Academy<span>Reading Library</span></div>
+    <img src="logo.png" alt="Logan English Academy" onerror="this.style.display='none'"/>
+    <div class="hdr-name">Logan English Academy</div>
   </a>
   <a class="hdr-home" href="/">← Home</a>
 </header>
@@ -97,6 +146,7 @@
     <div class="hero-stat"><div class="hero-stat-n">4</div><div class="hero-stat-l">Series</div></div>
   </div>
 </div>
+
 
 <div class="search-wrap">
   <div class="search-box">
@@ -998,75 +1048,94 @@
               <span class="arrow">&rarr;</span>
             </div>
           </a></div><div class="level-label">Level1</div><div class="book-grid">
-          <a class="book-card" href="readandimagine/level1/a-shadow-on-the-park.html">
+
+          <a class="book-card" href="readandimagine/level1/bens-big-swim.html">
             <div class="book-card-top">
-              <div class="book-title">A Shadow On The Park</div>
+              <div class="book-title">Ben's Big Swim</div>
             </div>
             <div class="book-card-footer">
-              <span class="track-count">6 tracks</span>
+              <span class="track-count">10 tracks</span>
               <span class="arrow">&rarr;</span>
             </div>
           </a>
-          <a class="book-card" href="readandimagine/level1/danger-in-the-rainforest.html">
+          <a class="book-card" href="readandimagine/level1/clunk-in-space.html">
             <div class="book-card-top">
-              <div class="book-title">Danger In The Rainforest</div>
+              <div class="book-title">Clunk in Space</div>
             </div>
             <div class="book-card-footer">
-              <span class="track-count">5 tracks</span>
+              <span class="track-count">10 tracks</span>
               <span class="arrow">&rarr;</span>
             </div>
           </a>
-          <a class="book-card" href="readandimagine/level1/fear-at-the-festival.html">
+          <a class="book-card" href="readandimagine/level1/monkeys-in-school.html">
             <div class="book-card-top">
-              <div class="book-title">Fear At The Festival</div>
+              <div class="book-title">Monkeys in School</div>
             </div>
             <div class="book-card-footer">
-              <span class="track-count">8 tracks</span>
+              <span class="track-count">10 tracks</span>
               <span class="arrow">&rarr;</span>
             </div>
           </a>
-          <a class="book-card" href="readandimagine/level1/get-us-out-of-here.html">
+          <a class="book-card" href="readandimagine/level1/on-thin-ice.html">
             <div class="book-card-top">
-              <div class="book-title">Get Us Out Of Here</div>
+              <div class="book-title">On Thin Ice</div>
             </div>
             <div class="book-card-footer">
-              <span class="track-count">6 tracks</span>
+              <span class="track-count">10 tracks</span>
               <span class="arrow">&rarr;</span>
             </div>
           </a>
-          <a class="book-card" href="readandimagine/level1/high-water.html">
+          <a class="book-card" href="readandimagine/level1/rainforest-rescue.html">
             <div class="book-card-top">
-              <div class="book-title">High Water</div>
+              <div class="book-title">Rainforest Rescue</div>
             </div>
             <div class="book-card-footer">
-              <span class="track-count">7 tracks</span>
+              <span class="track-count">10 tracks</span>
               <span class="arrow">&rarr;</span>
             </div>
           </a>
-          <a class="book-card" href="readandimagine/level1/level3-danger-bugs.html">
+          <a class="book-card" href="readandimagine/level1/robbers-at-the-museum.html">
             <div class="book-card-top">
-              <div class="book-title">Level3 Danger Bugs</div>
+              <div class="book-title">Robbers at the Museum</div>
             </div>
             <div class="book-card-footer">
-              <span class="track-count">14 tracks</span>
+              <span class="track-count">10 tracks</span>
               <span class="arrow">&rarr;</span>
             </div>
           </a>
-          <a class="book-card" href="readandimagine/level1/readandimagine3-soccer-in-the-street-all-american.html">
+          <a class="book-card" href="readandimagine/level1/the-new-glasses.html">
             <div class="book-card-top">
-              <div class="book-title">Readandimagine3 Soccer In The Street All American</div>
+              <div class="book-title">The New Glasses</div>
             </div>
             <div class="book-card-footer">
-              <span class="track-count">9 tracks</span>
+              <span class="track-count">11 tracks</span>
               <span class="arrow">&rarr;</span>
             </div>
           </a>
-          <a class="book-card" href="readandimagine/level1/the-game.html">
+          <a class="book-card" href="readandimagine/level1/the-snow-tigers.html">
             <div class="book-card-top">
-              <div class="book-title">The Game</div>
+              <div class="book-title">The Snow Tigers</div>
             </div>
             <div class="book-card-footer">
-              <span class="track-count">7 tracks</span>
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level1/the-treehouse.html">
+            <div class="book-card-top">
+              <div class="book-title">The Treehouse</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
+              <span class="arrow">&rarr;</span>
+            </div>
+          </a>
+          <a class="book-card" href="readandimagine/level1/too-fast.html">
+            <div class="book-card-top">
+              <div class="book-title">Too Fast</div>
+            </div>
+            <div class="book-card-footer">
+              <span class="track-count">10 tracks</span>
               <span class="arrow">&rarr;</span>
             </div>
           </a></div><div class="level-label">Level2</div><div class="book-grid">
@@ -1267,10 +1336,15 @@
 </footer>
 
 <script>
+function toggleLevel(label) {
+  const collapsed = label.dataset.collapsed === 'true';
+  label.dataset.collapsed = collapsed ? 'false' : 'true';
+  filterBooks(document.getElementById('search').value);
+}
+
 function filterBooks(q) {
   q = q.toLowerCase().trim();
   const cards = document.querySelectorAll('.book-card');
-  const blocks = document.querySelectorAll('.series-block');
   let any = false;
 
   cards.forEach(c => {
@@ -1279,23 +1353,33 @@ function filterBooks(q) {
     if (match) any = true;
   });
 
-  // Hide series blocks and level labels if all their cards are hidden
-  blocks.forEach(block => {
+  document.querySelectorAll('.series-block').forEach(block => {
     const grids = block.querySelectorAll('.book-grid');
     let blockVisible = false;
     grids.forEach(grid => {
-      const visible = [...grid.querySelectorAll('.book-card')].some(c => c.style.display !== 'none');
-      grid.style.display = visible ? '' : 'none';
-      // Show/hide preceding level label
-      const prev = grid.previousElementSibling;
-      if (prev && prev.classList.contains('level-label')) prev.style.display = visible ? '' : 'none';
-      if (visible) blockVisible = true;
+      const label = grid.previousElementSibling;
+      const collapsed = label && label.dataset.collapsed === 'true';
+      const hasMatches = [...grid.querySelectorAll('.book-card')].some(c => c.style.display !== 'none');
+      grid.style.display = (!collapsed && hasMatches) ? '' : 'none';
+      if (label) label.style.display = hasMatches ? '' : 'none';
+      if (hasMatches) blockVisible = true;
     });
     block.style.display = blockVisible ? '' : 'none';
   });
 
   document.getElementById('no-results').style.display = any ? 'none' : 'block';
 }
+
+// Initialise collapsible level labels
+document.querySelectorAll('.level-label').forEach(label => {
+  label.dataset.collapsed = 'true';
+  const icon = document.createElement('span');
+  icon.className = 'toggle-icon';
+  icon.textContent = '▾';
+  label.appendChild(icon);
+  label.addEventListener('click', () => toggleLevel(label));
+});
+filterBooks('');
 </script>
 </body>
 </html>
