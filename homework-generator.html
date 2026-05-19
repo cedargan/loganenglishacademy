@@ -145,7 +145,7 @@
     </div>
     <textarea class="out" id="out" readonly spellcheck="false" wrap="off">Click &ldquo;Generate code&rdquo; to build the day-block.</textarea>
     <div class="hint">
-      Paste this directly below the <code>&lt;!-- FILTER BAR --&gt;</code> block in <code>homework.html</code> (above the most recent day). Empty tasks render as &ldquo;&ndash;&rdquo;. Classes you unchecked are left out entirely.
+      Paste this directly below the <code>&lt;!-- FILTER BAR --&gt;</code> block in <code>homework.html</code> (above the most recent day). Books with empty tasks are omitted from the output. Classes you unchecked are left out entirely.
     </div>
 
     <div class="preview-wrap">
@@ -270,7 +270,7 @@ function renderForm(){
     c.books.forEach((b,i)=>{
       const r=document.createElement('div'); r.className='bk';
       r.innerHTML=`<span class="bn" title="${esc(b.name)}">${esc(b.name)}</span>
-        <input type="text" placeholder="task (blank = –)" value="${esc(st.tasks[i]||'')}" data-task="${c.id}:${i}">`;
+        <input type="text" placeholder="task (blank = omit)" value="${esc(st.tasks[i]||'')}" data-task="${c.id}:${i}">`;
       body.appendChild(r);
     });
     st.extra.forEach((ex,j)=>{
@@ -406,11 +406,12 @@ function buildBlock(){
     out+=`        <div class="card-body">\n`;
     c.books.forEach((b,i)=>{
       const task=(st.tasks[i]||'').trim();
-      out+=`          <div class="assignment"><strong>${b.name}:</strong> ${task||'–'}</div>\n`;
+      if(!task) return;
+      out+=`          <div class="assignment"><strong>${b.name}:</strong> ${task}</div>\n`;
     });
     st.extra.forEach(ex=>{
-      if(!ex.name.trim()) return;
-      out+=`          <div class="assignment"><strong>${ex.name.trim()}:</strong> ${ex.task.trim()||'–'}</div>\n`;
+      if(!ex.name.trim()||!ex.task.trim()) return;
+      out+=`          <div class="assignment"><strong>${ex.name.trim()}:</strong> ${ex.task.trim()}</div>\n`;
     });
     if(st.audio.enabled && (st.audio.url||'').trim()){
       out+=`          <a class="audio-link" href="${st.audio.url.trim()}" target="_blank">▶ ${(st.audio.label||'Listen').trim()}</a>\n`;
@@ -436,8 +437,8 @@ function renderPreview(){
   roster.forEach(c=>{
     const st=dayState[c.id]; if(!st||!st.held) return;
     h+=`<div class="class-card" data-class="${esc(c.id)}"><div class="card-header"><span class="card-dot"></span><span class="card-name">${esc(c.name)}</span></div><div class="card-body">`;
-    c.books.forEach((b,i)=>{ h+=`<div class="assignment"><strong>${esc(b.name)}:</strong> ${esc((st.tasks[i]||'').trim()||'–')}</div>`; });
-    st.extra.forEach(ex=>{ if(ex.name.trim()) h+=`<div class="assignment"><strong>${esc(ex.name.trim())}:</strong> ${esc(ex.task.trim()||'–')}</div>`; });
+    c.books.forEach((b,i)=>{ const tk=(st.tasks[i]||'').trim(); if(tk) h+=`<div class="assignment"><strong>${esc(b.name)}:</strong> ${esc(tk)}</div>`; });
+    st.extra.forEach(ex=>{ if(ex.name.trim()&&ex.task.trim()) h+=`<div class="assignment"><strong>${esc(ex.name.trim())}:</strong> ${esc(ex.task.trim())}</div>`; });
     if(st.audio.enabled&&(st.audio.url||'').trim()) h+=`<a class="audio-link">▶ ${esc((st.audio.label||'Listen').trim())}</a>`;
     h+=`</div></div>`;
   });
