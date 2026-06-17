@@ -199,7 +199,7 @@ const CONFIG = {
   </div>
 </div>
 
-<div class="chapter-list" id="chapter-list"></div>
+<div class="track-list" id="chapter-list"></div>
 
 <footer>
   <strong id="footer-name"></strong> — Audio files are for enrolled students only.
@@ -224,19 +224,19 @@ const CONFIG = {
   const dlIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13M7 11l5 5 5-5M3 20h18"/></svg>`;
 
   const list = document.getElementById('chapter-list');
-  C.chapters.forEach((ch, i) => {
+    C.chapters.forEach((ch, i) => {
     const card = document.createElement('div');
-    card.className = 'chapter-card';
+    card.className = 'track-item';
     const filename = ch.url.split('/').pop();
     card.innerHTML = `
-      <div class="chapter-top">
-        <div class="ch-num">${i + 1}</div>
-        <div class="ch-title">${ch.title}</div>
-        <a class="ch-download" href="${ch.url}" download="${decodeURIComponent(filename)}" aria-label="Download ${ch.title}">
+      <div class="track-top">
+        <div class="track-num">${i + 1}</div>
+        <div class="track-title">${ch.title}</div>
+        <a class="download-btn" href="${ch.url}" download="${decodeURIComponent(filename)}" aria-label="Download ${ch.title}">
           ${dlIcon}<span>Download</span>
         </a>
       </div>
-      <div class="ch-player">
+      <div class="track-player">
         <audio controls preload="none" src="${ch.url}" aria-label="${ch.title}"></audio>
       </div>`;
     list.appendChild(card);
