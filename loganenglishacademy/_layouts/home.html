@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+  {%- include head.html -%}
+
+  <body class="home-page">
+
+    {%- include header.html -%}
+
+    <style>
+      /* ── Homepage-only styles (design tokens match custom-styles.scss) ── */
+      .home-page main { display: block; }
+
+      .home-section-inner {
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* ── Hero ── */
+      .hero {
+        background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+        border-bottom: 2px solid var(--border);
+        padding: 72px 0 76px;
+      }
+      .hero .home-section-inner {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 56px;
+        align-items: center;
+      }
+      .hero-kicker {
+        display: inline-block;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        background: var(--accent-light);
+        border-radius: 99px;
+        padding: 6px 14px;
+        margin-bottom: 18px;
+      }
+      .hero h1 {
+        font-family: 'Lora', serif;
+        font-size: clamp(2.1rem, 4.5vw, 3.1rem);
+        font-weight: 700;
+        line-height: 1.15;
+        color: var(--text);
+        margin: 0 0 18px;
+      }
+      .hero h1 em {
+        font-style: normal;
+        color: var(--accent);
+      }
+      .hero-sub {
+        font-size: 1.08rem;
+        line-height: 1.65;
+        color: var(--muted);
+        max-width: 34em;
+        margin: 0 0 30px;
+      }
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .btn-primary,
+      .btn-ghost {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+        font-size: 0.95rem;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 13px 26px;
+        transition: background 0.15s, color 0.15s;
+      }
+      .btn-primary {
+        background: var(--accent);
+        color: #ffffff;
+        border: 2px solid var(--accent);
+      }
+      .btn-primary:hover { background: #2f5740; border-color: #2f5740; color: #ffffff; }
+      .btn-ghost {
+        background: transparent;
+        color: var(--accent);
+        border: 2px solid var(--accent);
+      }
+      .btn-ghost:hover { background: var(--accent-light); color: var(--accent); }
+
+      /* Hero class-tile mosaic */
+      .hero-panel {
+        background: var(--card);
+        border: 2px solid var(--border);
+        border-radius: 18px;
+        padding: 22px;
+        box-shadow: 0 18px 40px -28px rgba(45, 42, 38, 0.45);
+      }
+      .hero-panel-label {
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 14px;
+      }
+      .hero-tiles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .hero-tile {
+        display: block;
+        border-radius: 12px;
+        padding: 14px 16px;
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        font-size: 1.02rem;
+        color: #ffffff;
+        text-decoration: none;
+        transition: transform 0.15s, box-shadow 0.15s;
+      }
+      .hero-tile:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 22px -12px rgba(45, 42, 38, 0.55);
+      }
+      .hero-tile span {
+        display: block;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: 0.72rem;
+        opacity: 0.9;
+        margin-top: 3px;
+      }
+      .tile-kind     { background: var(--kind, #4a7fcb); }
+      .tile-brave    { background: var(--brave, #c0572a); }
+      .tile-truth    { background: var(--truth, #7a5cbf); }
+      .tile-virtue   { background: var(--virtue, #2e9e7a); }
+      .tile-patience { background: var(--patience, #b88a10); }
+      .tile-honor    { background: var(--honor, #b84c6e); }
+
+      /* ── Section shell ── */
+      .home-section { padding: 68px 0; }
+      .home-section.alt {
+        background: var(--card);
+        border-top: 2px solid var(--border);
+        border-bottom: 2px solid var(--border);
+      }
+      .section-kicker {
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 10px;
+      }
+      .section-title {
+        font-family: 'Lora', serif;
+        font-size: 1.85rem;
+        font-weight: 700;
+        color: var(--text);
+        margin: 0 0 12px;
+      }
+      .section-lede {
+        font-size: 1rem;
+        line-height: 1.65;
+        color: var(--muted);
+        max-width: 44em;
+        margin: 0 0 38px;
+      }
+
+      /* ── Pillars ── */
+      .pillar-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+      .pillar {
+        background: var(--bg);
+        border: 2px solid var(--border);
+        border-radius: 14px;
+        padding: 22px 20px;
+      }
+      .pillar-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        background: var(--accent-light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-bottom: 14px;
+      }
+      .pillar h3 {
+        font-family: 'Lora', serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+        margin: 0 0 8px;
+        color: var(--text);
+      }
+      .pillar p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: var(--muted);
+        margin: 0;
+      }
+
+      /* ── Programs ── */
+      .program-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .program-card {
+        background: var(--card);
+        border: 2px solid var(--border);
+        border-radius: 14px;
+        padding: 22px 20px;
+        border-top-width: 5px;
+      }
+      .program-card.kind     { border-top-color: var(--kind, #4a7fcb); }
+      .program-card.brave    { border-top-color: var(--brave, #c0572a); }
+      .program-card.truth    { border-top-color: var(--truth, #7a5cbf); }
+      .program-card.virtue   { border-top-color: var(--virtue, #2e9e7a); }
+      .program-card.patience { border-top-color: var(--patience, #b88a10); }
+      .program-card.honor    { border-top-color: var(--honor, #b84c6e); }
+      .program-card h3 {
+        font-family: 'Lora', serif;
+        font-size: 1.15rem;
+        font-weight: 700;
+        margin: 0 0 4px;
+        color: var(--text);
+      }
+      .program-stage {
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 10px;
+      }
+      .program-card p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: var(--muted);
+        margin: 0;
+      }
+
+      /* ── Resources ── */
+      .resource-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .resource-card {
+        display: block;
+        text-decoration: none;
+        background: var(--bg);
+        border: 2px solid var(--border);
+        border-radius: 16px;
+        padding: 28px 26px;
+        transition: border-color 0.15s, box-shadow 0.15s;
+      }
+      .resource-card:hover {
+        border-color: var(--accent);
+        box-shadow: 0 14px 30px -24px rgba(45, 42, 38, 0.5);
+      }
+      .resource-card .pillar-icon { margin-bottom: 16px; }
+      .resource-card h3 {
+        font-family: 'Lora', serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--text);
+        margin: 0 0 8px;
+      }
+      .resource-card p {
+        font-size: 0.93rem;
+        line-height: 1.6;
+        color: var(--muted);
+        margin: 0 0 16px;
+      }
+      .resource-cta {
+        font-weight: 800;
+        font-size: 0.9rem;
+        color: var(--accent);
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 900px) {
+        .hero .home-section-inner { grid-template-columns: 1fr; gap: 40px; }
+        .pillar-grid { grid-template-columns: 1fr 1fr; }
+        .program-grid { grid-template-columns: 1fr 1fr; }
+      }
+      @media (max-width: 600px) {
+        .hero { padding: 48px 0 52px; }
+        .home-section { padding: 52px 0; }
+        .pillar-grid,
+        .program-grid,
+        .resource-grid { grid-template-columns: 1fr; }
+        .hero-tiles { grid-template-columns: 1fr 1fr; }
+      }
+    </style>
+
+    <main aria-label="Content">
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="home-section-inner">
+          <div>
+            <span class="hero-kicker">English Academy for Young Learners</span>
+            <h1>Building confident readers, writers, and <em>English speakers</em>.</h1>
+            <p class="hero-sub">
+              Logan English Academy offers structured, book-based English instruction for
+              children — combining trusted course books, graded readers with full audio,
+              and daily homework that families can follow at home.
+            </p>
+            <div class="hero-actions">
+              <a class="btn-primary" href="{{ '/homework.html' | relative_url }}">View Today's Homework</a>
+              <a class="btn-ghost" href="{{ '/readingaudio/' | relative_url }}">Browse the Reading Library</a>
+            </div>
+          </div>
+          <div class="hero-panel">
+            <div class="hero-panel-label">Our Classes</div>
+            <div class="hero-tiles">
+              <a class="hero-tile tile-kind" href="{{ '/homework.html#kind' | relative_url }}">Kind <span>Foundations</span></a>
+              <a class="hero-tile tile-brave" href="{{ '/homework.html#brave' | relative_url }}">Brave <span>Early Readers</span></a>
+              <a class="hero-tile tile-truth" href="{{ '/homework.html#truth' | relative_url }}">Truth <span>Developing</span></a>
+              <a class="hero-tile tile-virtue" href="{{ '/homework.html#virtue' | relative_url }}">Virtue <span>Intermediate</span></a>
+              <a class="hero-tile tile-patience" href="{{ '/homework.html#patience' | relative_url }}">Patience <span>Advanced</span></a>
+              <a class="hero-tile tile-honor" href="{{ '/homework.html#honor' | relative_url }}">Honor <span>Mastery</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pillars -->
+      <section class="home-section alt">
+        <div class="home-section-inner">
+          <div class="section-kicker">Why Logan English Academy</div>
+          <h2 class="section-title">A complete approach to English</h2>
+          <p class="section-lede">
+            Every class follows a clear curriculum, and every student reads real books —
+            with listening, writing, and vocabulary practice built into each week.
+          </p>
+          <div class="pillar-grid">
+            <div class="pillar">
+              <div class="pillar-icon" aria-hidden="true">📚</div>
+              <h3>Book-Based Curriculum</h3>
+              <p>Lessons built on trusted series such as Oxford Discover, Everybody Up, Starlight, and Wordly Wise — matched to each student's level.</p>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon" aria-hidden="true">🎧</div>
+              <h3>Reading with Audio</h3>
+              <p>Students read graded readers and classic novels with full listen-along audio, building fluency, pronunciation, and comprehension together.</p>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon" aria-hidden="true">📝</div>
+              <h3>Daily Homework</h3>
+              <p>Assignments are posted online after every class, so students and parents always know exactly what to practice at home.</p>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon" aria-hidden="true">🌱</div>
+              <h3>Steady Progress</h3>
+              <p>Reading diaries, book reports, presentations, and regular review help each student move up level by level with confidence.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Programs -->
+      <section class="home-section">
+        <div class="home-section-inner">
+          <div class="section-kicker">Programs</div>
+          <h2 class="section-title">Six levels, one clear path</h2>
+          <p class="section-lede">
+            Classes are named for the character we hope to build. Students advance from
+            first words and phonics all the way to reading classic English novels.
+          </p>
+          <div class="program-grid">
+            <div class="program-card kind">
+              <h3>Kind</h3>
+              <div class="program-stage">Level 1 · Foundations</div>
+              <p>First vocabulary, phonics, and everyday English through songs, stories, and picture dictionaries.</p>
+            </div>
+            <div class="program-card brave">
+              <h3>Brave</h3>
+              <div class="program-stage">Level 2 · Early Readers</div>
+              <p>Beginning readers start their first story books with audio support, plus core grammar and writing practice.</p>
+            </div>
+            <div class="program-card truth">
+              <h3>Truth</h3>
+              <div class="program-stage">Level 3 · Developing</div>
+              <p>Growing readers expand grammar and vocabulary while reading non-fiction and fiction readers every week.</p>
+            </div>
+            <div class="program-card virtue">
+              <h3>Virtue</h3>
+              <div class="program-stage">Level 4 · Intermediate</div>
+              <p>Students strengthen academic vocabulary and writing, working through longer texts and word-study books.</p>
+            </div>
+            <div class="program-card patience">
+              <h3>Patience</h3>
+              <div class="program-stage">Level 5 · Advanced</div>
+              <p>Confident readers take on chapter books and novel studies with reading diaries, reviews, and discussion.</p>
+            </div>
+            <div class="program-card honor">
+              <h3>Honor</h3>
+              <div class="program-stage">Level 6 · Mastery</div>
+              <p>Our highest level reads classic English literature and tackles advanced grammar, writing, and presentations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resources -->
+      <section class="home-section alt">
+        <div class="home-section-inner">
+          <div class="section-kicker">For Students &amp; Parents</div>
+          <h2 class="section-title">Everything you need, online</h2>
+          <p class="section-lede">
+            Homework and reading materials are always available — at school or at home.
+          </p>
+          <div class="resource-grid">
+            <a class="resource-card" href="{{ '/homework.html' | relative_url }}">
+              <div class="pillar-icon" aria-hidden="true">🗓️</div>
+              <h3>Homework Board</h3>
+              <p>Daily assignments for every class, posted after each lesson with page numbers and links to reading materials.</p>
+              <span class="resource-cta">Check homework&nbsp;&rarr;</span>
+            </a>
+            <a class="resource-card" href="{{ '/readingaudio/' | relative_url }}">
+              <div class="pillar-icon" aria-hidden="true">🎧</div>
+              <h3>Reading Library</h3>
+              <p>Listen-along audio for our graded readers and novels, so students can read and listen anywhere.</p>
+              <span class="resource-cta">Open the library&nbsp;&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    {%- include footer.html -%}
+
+    {%- include sub-footer.html -%}
+
+  </body>
+
+</html>

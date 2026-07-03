@@ -1,0 +1,29 @@
+title: Logan English Academy
+author:
+  name: Logan Leeder
+  email: freshevryday@gmail.com
+
+description: >
+  Structured, book-based English instruction for young learners — daily
+  homework postings, graded readers with audio, and a clear path from
+  first words to classic novels.
+
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+sass:
+  quiet_deps: true
+  silence_deprecations: [import]
+
+minima:
+  # Minima skin selection. Available skins are:
+  #   Available skins:
+  #     * classic            Default, light color scheme.
+  #     * dark               Dark variant of the classic skin.
+  #     * auto               Adaptive skin based on the default classic and dark skins.
+  #     * solarized-light    Light variant of solarized color scheme.
+  #     * solarized-dark     Dark variant of solarized color scheme.
+  #     * solarized          Adaptive skin for solarized color scheme skins.
+  skin: classic

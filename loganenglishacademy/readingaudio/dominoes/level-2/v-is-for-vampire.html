@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V is for Vampire Audio — Logan English Academy</title>
+<meta name="description" content="Listen-along audio for V is for Vampire — read and listen chapter by chapter at Logan English Academy&#x27;s Reading Library.">
+<link rel="icon" type="image/png" href="/assets/images/logo80px.png">
+<meta name="theme-color" content="#3d6b4f">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Logan English Academy">
+<meta property="og:title" content="V is for Vampire — Logan English Academy">
+<meta property="og:description" content="Listen-along audio for V is for Vampire — read and listen chapter by chapter at Logan English Academy&#x27;s Reading Library.">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+      --bg:#faf8f5; --card:#ffffff; --border:#e8e2d9; --text:#2d2a26; --muted:#6e6659;
+      --accent:#3d6b4f; --accent-light:#eaf2ed; --r:12px;
+      /* legacy aliases mapped to the site palette for consistency */
+      --blue:#3d6b4f; --blue-dark:#2f5740; --blue-dim:#eaf2ed;
+      --white:#ffffff; --radius:12px; --text-muted:#6e6659; --yellow:#eaf2ed;
+    }
+    body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+    .header { background: var(--blue); padding: 0 1.5rem; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+    .header-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .header-logo img { height: 38px; width: auto; }
+    .header-name { font-size: 16px; font-weight: 800; color: #fff; line-height: 1.2; }
+    .header-name span { display: block; font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.7); }
+    .back-link { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.85); text-decoration: none; display: flex; align-items: center; gap: 5px; }
+    .back-link:hover { color: #fff; }
+    .banner { background: var(--white); border-bottom: 1px solid var(--border); padding: 1.5rem; display: flex; align-items: center; gap: 1.25rem; }
+    .banner-badge { width: 52px; height: 52px; border-radius: 10px; background: var(--yellow); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 26px; }
+    .banner-title { font-size: 1.35rem; font-weight: 800; }
+    .banner-author { font-size: 14px; color: var(--text-muted); margin-top: 2px; }
+    .banner-meta { margin-left: auto; text-align: right; flex-shrink: 0; }
+    .meta-num { font-size: 1.6rem; font-weight: 800; color: var(--blue); line-height: 1; }
+    .meta-label { font-size: 12px; color: var(--text-muted); font-weight: 600; }
+    .chapter-list { max-width: 720px; margin: 1.5rem auto; padding: 0 1rem 3rem; display: flex; flex-direction: column; gap: 10px; }
+    .chapter-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    .chapter-top { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; }
+    .ch-num { width: 36px; height: 36px; border-radius: 8px; background: var(--blue-dim); color: var(--blue-dark); font-size: 14px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .ch-title { font-size: 15px; font-weight: 700; flex: 1; }
+    .ch-download { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: var(--blue-dark); text-decoration: none; padding: 6px 14px; border-radius: 8px; border: 2px solid var(--blue); transition: all 0.15s; white-space: nowrap; flex-shrink: 0; }
+    .ch-download:hover { background: var(--blue); color: #fff; }
+    .ch-download svg { width: 14px; height: 14px; }
+    .ch-player { padding: 0 1.25rem 1rem; }
+    .ch-player audio { width: 100%; height: 40px; border-radius: 8px; display: block; }
+    footer { text-align: center; padding: 1.5rem; font-size: 13px; color: var(--text-muted); border-top: 1px solid var(--border); }
+    footer strong { color: var(--blue-dark); }
+    @media (max-width: 560px) {
+      .ch-download span { display: none; }
+      .ch-download { padding: 6px 10px; }
+    }
+  
+    /* ── Site chrome: shared site-wide design ── */
+    .site-header{background:var(--card);border-bottom:2px solid var(--border);padding:14px 28px;display:flex;align-items:center;gap:14px}
+    .site-header img{height:40px;width:auto}
+    .site-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .site-name{font-family:'Lora',serif;font-size:1.1rem;font-weight:700;color:var(--accent);line-height:1.2}
+    .site-header nav{margin-left:auto;display:flex;align-items:center;gap:8px}
+    .site-header nav a{font-weight:700;font-size:0.9rem;color:var(--accent);text-decoration:none;padding:6px 14px;border-radius:8px;background:var(--accent-light);transition:background .15s}
+    .site-header nav a:hover{background:#d0e8d8}
+    .site-footer{padding:36px 28px 26px;font-size:.88rem;color:var(--muted);border-top:2px solid var(--border);background:var(--card);text-align:left;margin-top:20px}
+    .site-footer a{color:var(--accent);text-decoration:none}
+    .footer-inner{max-width:720px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:20px}
+    .footer-name{font-family:'Lora',serif;font-size:1.05rem;font-weight:700;color:var(--accent);display:block;margin-bottom:4px}
+    .footer-brand p{margin:0}
+    .footer-brand a{font-weight:700}
+    .footer-nav{display:flex;flex-wrap:wrap;gap:8px}
+    .footer-nav a{font-weight:700;font-size:.85rem;padding:6px 14px;border-radius:8px;background:var(--accent-light);transition:background .15s}
+    .footer-nav a:hover{background:#d0e8d8}
+    .footer-copy{max-width:720px;margin:24px auto 0;padding-top:18px;border-top:1.5px solid var(--border);font-size:.8rem}
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-brand" href="/">
+    <img src="/assets/images/logo80px.png" alt="Logan English Academy Logo" onerror="this.style.display='none'"/>
+    <span class="site-name">Logan English Academy</span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="/homework.html">Homework</a>
+    <a href="/readingaudio/">Reading Library</a>
+  </nav>
+</header>
+
+<div class="banner">
+  <div class="banner-badge">🧛🏻</div>
+  <div>
+    <div class="banner-title">V is for Vampire</div>
+    <div class="banner-author">Lesley Thompson</div>
+  </div>
+  <div class="banner-meta">
+    <div class="meta-num">8</div>
+    <div class="meta-label">Chapters</div>
+  </div>
+</div>
+
+<div class="chapter-list" id="chapter-list"></div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-name">Logan English Academy</span>
+      <p>Book-based English instruction for young learners.</p>
+      <p><a href="mailto:logan@loganenglishacademy.com">logan@loganenglishacademy.com</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/">Home</a>
+      <a href="/homework.html">Homework</a>
+      <a href="/readingaudio/">Reading Library</a>
+    </nav>
+  </div>
+  <div class="footer-copy">&copy; <span id="footer-year">2026</span> Logan English Academy. All rights reserved. Audio files are for enrolled students only.</div>
+</footer>
+<script>var _fy=document.getElementById('footer-year');if(_fy)_fy.textContent=new Date().getFullYear();</script>
+
+<script>
+const chapters = [
+    { title: "dominoes2_v_is_for_vampire_chapter01", url: "https://audio.loganenglishacademy.com/dominoes/Level%202/V%20is%20for%20Vampire/dominoes2_v_is_for_vampire_chapter01.mp3" },
+    { title: "dominoes2_v_is_for_vampire_chapter02", url: "https://audio.loganenglishacademy.com/dominoes/Level%202/V%20is%20for%20Vampire/dominoes2_v_is_for_vampire_chapter02.mp3" },
+    { title: "dominoes2_v_is_for_vampire_chapter03", url: "https://audio.loganenglishacademy.com/dominoes/Level%202/V%20is%20for%20Vampire/dominoes2_v_is_for_vampire_chapter03.mp3" },
+    { title: "dominoes2_v_is_for_vampire_chapter04", url: "https://audio.loganenglishacademy.com/dominoes/Level%202/V%20is%20for%20Vampire/dominoes2_v_is_for_vampire_chapter04.mp3" },
+    { title: "dominoes2_v_is_for_vampire_chapter05", url: "https://audio.loganenglishacademy.com/dominoes/Level%202/V%20is%20for%20Vampire/dominoes2_v_is_for_vampire_chapter05.mp3" },
+    { title: "dominoes2_v_is_for_vampire_chapter06", url: "https://audio.loganenglishacademy.com/dominoes/Level%202/V%20is%20for%20Vampire/dominoes2_v_is_for_vampire_chapter06.mp3" },
+    { title: "dominoes2_v_is_for_vampire_chapter07", url: "https://audio.loganenglishacademy.com/dominoes/Level%202/V%20is%20for%20Vampire/dominoes2_v_is_for_vampire_chapter07.mp3" },
+    { title: "dominoes2_v_is_for_vampire_chapter08", url: "https://audio.loganenglishacademy.com/dominoes/Level%202/V%20is%20for%20Vampire/dominoes2_v_is_for_vampire_chapter08.mp3" }
+];
+const dlIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13M7 11l5 5 5-5M3 20h18"/></svg>`;
+const list = document.getElementById('chapter-list');
+chapters.forEach((ch, i) => {
+  const card = document.createElement('div');
+  card.className = 'chapter-card';
+  const filename = ch.url.split('/').pop();
+  card.innerHTML = `
+    <div class="chapter-top">
+      <div class="ch-num">${i + 1}</div>
+      <div class="ch-title">${ch.title}</div>
+      <a class="ch-download" href="${ch.url}" download="${decodeURIComponent(filename)}">
+        ${dlIcon}<span>Download</span>
+      </a>
+    </div>
+    <div class="ch-player">
+      <audio controls preload="none" src="${ch.url}"></audio>
+    </div>`;
+  list.appendChild(card);
+});
+</script>
+
+</body>
+</html>
