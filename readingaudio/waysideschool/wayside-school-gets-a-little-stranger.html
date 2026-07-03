@@ -4,13 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wayside School Gets a Little Stranger Audio — Logan English Academy</title>
+<meta name="description" content="Listen-along audio for Wayside School Gets a Little Stranger — read and listen chapter by chapter at Logan English Academy&#x27;s Reading Library.">
+<link rel="icon" type="image/png" href="/assets/images/logo80px.png">
+<meta name="theme-color" content="#3d6b4f">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Logan English Academy">
+<meta property="og:title" content="Wayside School Gets a Little Stranger — Logan English Academy">
+<meta property="og:description" content="Listen-along audio for Wayside School Gets a Little Stranger — read and listen chapter by chapter at Logan English Academy&#x27;s Reading Library.">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --blue: #29ABE2; --blue-dark: #1a8fbd; --blue-dim: #e8f7fd;
-      --yellow: #FFE500; --text: #1a1a1a; --text-muted: #666;
-      --bg: #f5f7fa; --white: #ffffff; --border: #e0e4ea; --radius: 12px;
+        :root {
+      --bg:#faf8f5; --card:#ffffff; --border:#e8e2d9; --text:#2d2a26; --muted:#6e6659;
+      --accent:#3d6b4f; --accent-light:#eaf2ed; --r:12px;
+      /* legacy aliases mapped to the site palette for consistency */
+      --blue:#3d6b4f; --blue-dark:#2f5740; --blue-dim:#eaf2ed;
+      --white:#ffffff; --radius:12px; --text-muted:#6e6659; --yellow:#eaf2ed;
     }
     body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
     .header { background: var(--blue); padding: 0 1.5rem; height: 64px; display: flex; align-items: center; justify-content: space-between; }
@@ -43,16 +52,38 @@
       .ch-download span { display: none; }
       .ch-download { padding: 6px 10px; }
     }
+  
+    /* ── Site chrome: shared site-wide design ── */
+    .site-header{background:var(--card);border-bottom:2px solid var(--border);padding:14px 28px;display:flex;align-items:center;gap:14px}
+    .site-header img{height:40px;width:auto}
+    .site-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .site-name{font-family:'Lora',serif;font-size:1.1rem;font-weight:700;color:var(--accent);line-height:1.2}
+    .site-header nav{margin-left:auto;display:flex;align-items:center;gap:8px}
+    .site-header nav a{font-weight:700;font-size:0.9rem;color:var(--accent);text-decoration:none;padding:6px 14px;border-radius:8px;background:var(--accent-light);transition:background .15s}
+    .site-header nav a:hover{background:#d0e8d8}
+    .site-footer{padding:36px 28px 26px;font-size:.88rem;color:var(--muted);border-top:2px solid var(--border);background:var(--card);text-align:left;margin-top:20px}
+    .site-footer a{color:var(--accent);text-decoration:none}
+    .footer-inner{max-width:720px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:20px}
+    .footer-name{font-family:'Lora',serif;font-size:1.05rem;font-weight:700;color:var(--accent);display:block;margin-bottom:4px}
+    .footer-brand p{margin:0}
+    .footer-brand a{font-weight:700}
+    .footer-nav{display:flex;flex-wrap:wrap;gap:8px}
+    .footer-nav a{font-weight:700;font-size:.85rem;padding:6px 14px;border-radius:8px;background:var(--accent-light);transition:background .15s}
+    .footer-nav a:hover{background:#d0e8d8}
+    .footer-copy{max-width:720px;margin:24px auto 0;padding-top:18px;border-top:1.5px solid var(--border);font-size:.8rem}
   </style>
 </head>
 <body>
 
-<header class="header">
-  <a class="header-logo" href="/">
-    <img src="https://www.loganenglishacademy.com/assets/images/logo80px.png" alt="Logan English Academy logo" />
-    <div class="header-name">Logan English Academy<span>Reading Library</span></div>
+<header class="site-header">
+  <a class="site-brand" href="/">
+    <img src="/assets/images/logo80px.png" alt="Logan English Academy Logo" onerror="this.style.display='none'"/>
+    <span class="site-name">Logan English Academy</span>
   </a>
-  <a class="back-link" href="/reading/">← Reading Library</a>
+  <nav aria-label="Primary">
+    <a href="/homework.html">Homework</a>
+    <a href="/readingaudio/">Reading Library</a>
+  </nav>
 </header>
 
 <div class="banner">
@@ -69,9 +100,22 @@
 
 <div class="chapter-list" id="chapter-list"></div>
 
-<footer>
-  <strong>Logan English Academy</strong> — Audio files are for enrolled students only.
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-name">Logan English Academy</span>
+      <p>Book-based English instruction for young learners.</p>
+      <p><a href="mailto:logan@loganenglishacademy.com">logan@loganenglishacademy.com</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/">Home</a>
+      <a href="/homework.html">Homework</a>
+      <a href="/readingaudio/">Reading Library</a>
+    </nav>
+  </div>
+  <div class="footer-copy">&copy; <span id="footer-year">2026</span> Logan English Academy. All rights reserved. Audio files are for enrolled students only.</div>
 </footer>
+<script>var _fy=document.getElementById('footer-year');if(_fy)_fy.textContent=new Date().getFullYear();</script>
 
 <script>
 const chapters = [

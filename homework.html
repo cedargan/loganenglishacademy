@@ -4,6 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Homework | Logan English Academy</title>
+<meta name="description" content="Daily homework assignments for every class at Logan English Academy — posted after each lesson with page numbers and listen-along links.">
+<link rel="icon" type="image/png" href="/assets/images/logo80px.png">
+<meta name="theme-color" content="#3d6b4f">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Logan English Academy">
+<meta property="og:title" content="Homework | Logan English Academy">
+<meta property="og:description" content="Daily homework assignments for every class — posted after each lesson with page numbers and listen-along links.">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Lora:wght@600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -11,7 +18,7 @@
     --card: #ffffff;
     --border: #e8e2d9;
     --text: #2d2a26;
-    --muted: #8a8278;
+    --muted: #6e6659;
     --accent: #3d6b4f;
     --accent-light: #eaf2ed;
 
@@ -42,14 +49,26 @@
     gap: 14px;
   }
   .site-header img { height: 40px; }
+  .site-header .site-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
   .site-header .site-name {
     font-family: 'Lora', serif;
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--accent);
     text-decoration: none;
+    line-height: 1.2;
   }
-  .site-header nav { margin-left: auto; }
+  .site-header nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
   .site-header nav a {
     font-weight: 700;
     font-size: 0.9rem;
@@ -58,7 +77,9 @@
     padding: 6px 14px;
     border-radius: 8px;
     background: var(--accent-light);
+    transition: background 0.15s;
   }
+  .site-header nav a:hover { background: #d0e8d8; }
 
   /* ── Layout ── */
   main {
@@ -67,11 +88,31 @@
     padding: 36px 20px 80px;
   }
 
+  /* ── Page head ── */
+  .page-head { margin-bottom: 30px; }
+  .page-kicker {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-light);
+    border-radius: 99px;
+    padding: 5px 13px;
+    margin-bottom: 14px;
+  }
   h1 {
     font-family: 'Lora', serif;
     font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 26px;
+    margin-bottom: 10px;
+  }
+  .page-lede {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--muted);
+    max-width: 42em;
   }
 
   /* ── Filter bar ── */
@@ -207,38 +248,119 @@
   .audio-link:hover { background: #d0e8d8; }
 
   /* ── Footer ── */
-  footer {
-    text-align: center;
-    padding: 28px 20px;
-    font-size: 0.85rem;
+  .site-footer {
+    padding: 36px 28px 26px;
+    font-size: 0.88rem;
     color: var(--muted);
     border-top: 2px solid var(--border);
+    background: var(--card);
     margin-top: 20px;
   }
-  footer a { color: var(--accent); text-decoration: none; }
+  .site-footer a { color: var(--accent); text-decoration: none; }
+  .footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .footer-name {
+    font-family: 'Lora', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .footer-brand p { margin: 0; }
+  .footer-brand a { font-weight: 700; }
+  .footer-nav { display: flex; flex-wrap: wrap; gap: 8px; }
+  .footer-nav a {
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: var(--accent-light);
+    transition: background 0.15s;
+  }
+  .footer-nav a:hover { background: #d0e8d8; }
+  .footer-copy {
+    max-width: 900px;
+    margin: 24px auto 0;
+    padding-top: 18px;
+    border-top: 1.5px solid var(--border);
+    font-size: 0.8rem;
+  }
+
+  /* ── Scroll fade-in ── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .fade-in.visible {
+    opacity: 1;
+    transform: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  /* ── Earlier-weeks collapse ── */
+  body.collapse-older .day-block.is-older { display: none; }
+  .show-older-wrap { text-align: center; margin: 8px 0 40px; }
+  .show-older-btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: var(--accent);
+    background: var(--accent-light);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    padding: 11px 24px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+  .show-older-btn:hover { background: var(--accent); color: #fff; }
+  .show-older-wrap.hidden { display: none; }
 </style>
 </head>
 <body>
 
 <header class="site-header">
-  <img src="/assets/images/logo80px.png" onerror="this.style.display='none'" alt="Logan English Academy Logo">
-  <a href="/" class="site-name">Logan English Academy</a>
-  <nav><a href="/homework.html">Homework</a></nav>
+  <a href="/" class="site-brand">
+    <img src="/assets/images/logo80px.png" onerror="this.style.display='none'" alt="Logan English Academy Logo">
+    <span class="site-name">Logan English Academy</span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="/homework.html">Homework</a>
+    <a href="/readingaudio/">Reading Library</a>
+  </nav>
 </header>
 
 <main>
-  <h1>Homework</h1>
+  <div class="page-head">
+    <span class="page-kicker">For Students &amp; Parents</span>
+    <h1>Homework Board</h1>
+    <p class="page-lede">Daily assignments for every class, posted after each lesson — with page numbers and listen-along links for assigned readers. Use the filter to see just your class.</p>
+  </div>
 
   <!-- FILTER BAR -->
-  <div class="filter-bar">
+  <div class="filter-bar" role="group" aria-label="Filter homework by class">
     <span class="filter-label">Show class:</span>
-    <button class="filter-btn active" data-class="all">All Classes</button>
-    <button class="filter-btn" data-class="kind">Kind</button>
-    <button class="filter-btn" data-class="brave">Brave</button>
-    <button class="filter-btn" data-class="truth">Truth</button>
-    <button class="filter-btn" data-class="virtue">Virtue</button>
-    <button class="filter-btn" data-class="patience">Patience</button>
-    <button class="filter-btn" data-class="honor">Honor</button>
+    <button class="filter-btn active" data-class="all" aria-pressed="true">All Classes</button>
+    <button class="filter-btn" data-class="kind" aria-pressed="false">Kind</button>
+    <button class="filter-btn" data-class="brave" aria-pressed="false">Brave</button>
+    <button class="filter-btn" data-class="truth" aria-pressed="false">Truth</button>
+    <button class="filter-btn" data-class="virtue" aria-pressed="false">Virtue</button>
+    <button class="filter-btn" data-class="patience" aria-pressed="false">Patience</button>
+    <button class="filter-btn" data-class="honor" aria-pressed="false">Honor</button>
   </div>
 
              <!-- ═══════════════════════════ Thursday 7/2/2026 ═══════════════════════════ -->
@@ -301,6 +423,7 @@
 
     </div>
   </div>
+
 
 
                <!-- ═══════════════════════════ Wednesday 7/1/2026 ═══════════════════════════ -->
@@ -3136,34 +3259,129 @@
 
 </main>
 
-<footer>
-  Logan Leeder &nbsp;·&nbsp; <a href="mailto:logan@loganenglishacademy.com">logan@loganenglishacademy.com</a>
-  &nbsp;·&nbsp; Logan English Academy
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-name">Logan English Academy</span>
+      <p>Book-based English instruction for young learners.</p>
+      <p><a href="mailto:logan@loganenglishacademy.com">logan@loganenglishacademy.com</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/">Home</a>
+      <a href="/homework.html">Homework</a>
+      <a href="/readingaudio/">Reading Library</a>
+    </nav>
+  </div>
+  <div class="footer-copy">&copy; <span id="footer-year">2026</span> Logan English Academy. All rights reserved.</div>
 </footer>
 
-<!-- FILTER SCRIPT -->
+<!-- FILTER + VIEW SCRIPT -->
 <script>
-  const buttons   = document.querySelectorAll('.filter-btn');
-  const cards     = document.querySelectorAll('.class-card');
-  const dayBlocks = document.querySelectorAll('.day-block');
+(function () {
+  const CLASSES = ['all','kind','brave','truth','virtue','patience','honor'];
+  const LATEST = 10; // most recent day-blocks always shown; older ones collapse
+  const buttons   = Array.from(document.querySelectorAll('.filter-btn'));
+  const cards     = Array.from(document.querySelectorAll('.class-card'));
+  const dayBlocks = Array.from(document.querySelectorAll('.day-block'));
+  const body = document.body;
 
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+  let currentClass = 'all';
+  let showOlder = false;
 
-      const selected = btn.dataset.class;
+  // Day-blocks are newest-first in source order — mark the older ones.
+  dayBlocks.forEach((d, i) => { if (i >= LATEST) d.classList.add('is-older'); });
+  const hasOlder = dayBlocks.length > LATEST;
+  if (hasOlder) body.classList.add('collapse-older');
 
-      cards.forEach(card => {
-        card.classList.toggle('hidden', selected !== 'all' && card.dataset.class !== selected);
-      });
-
-      dayBlocks.forEach(day => {
-        const visible = day.querySelectorAll('.class-card:not(.hidden)');
-        day.classList.toggle('day-hidden', visible.length === 0);
-      });
+  // Inject the "show earlier weeks" toggle at the end of <main>.
+  let toggleWrap = null, toggleBtn = null;
+  if (hasOlder) {
+    toggleWrap = document.createElement('div');
+    toggleWrap.className = 'show-older-wrap';
+    toggleBtn = document.createElement('button');
+    toggleBtn.type = 'button';
+    toggleBtn.className = 'show-older-btn';
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    toggleWrap.appendChild(toggleBtn);
+    document.querySelector('main').appendChild(toggleWrap);
+    updateToggleLabel();
+    toggleBtn.addEventListener('click', () => {
+      showOlder = !showOlder;
+      body.classList.toggle('collapse-older', !showOlder);
+      toggleBtn.setAttribute('aria-expanded', String(showOlder));
+      updateToggleLabel();
+      applyView();
+      revealOnScroll();
     });
-  });
+  }
+
+  function updateToggleLabel() {
+    if (!toggleBtn) return;
+    const more = dayBlocks.length - LATEST;
+    toggleBtn.textContent = showOlder ? 'Show fewer' : ('Show earlier weeks (' + more + ' more)');
+  }
+
+  function applyView() {
+    cards.forEach(card => {
+      card.classList.toggle('hidden', currentClass !== 'all' && card.dataset.class !== currentClass);
+    });
+    dayBlocks.forEach(day => {
+      const hasVisibleCard = day.querySelector('.class-card:not(.hidden)') !== null;
+      day.classList.toggle('day-hidden', !hasVisibleCard);
+    });
+    if (toggleWrap) {
+      const olderMatch = dayBlocks.slice(LATEST)
+        .some(d => d.querySelector('.class-card:not(.hidden)') !== null);
+      toggleWrap.classList.toggle('hidden', !olderMatch);
+    }
+  }
+
+  function setFilter(cls, persist) {
+    if (CLASSES.indexOf(cls) === -1) cls = 'all';
+    currentClass = cls;
+    buttons.forEach(b => {
+      const on = b.dataset.class === cls;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', String(on));
+    });
+    if (persist) {
+      try { localStorage.setItem('hwFilter', cls); } catch (e) {}
+      history.replaceState(null, '', cls === 'all' ? location.pathname + location.search : '#' + cls);
+    }
+    applyView();
+  }
+
+  buttons.forEach(btn => btn.addEventListener('click', () => setFilter(btn.dataset.class, true)));
+  window.addEventListener('hashchange', () => setFilter(location.hash.replace('#',''), false));
+
+  // Initial filter: URL hash (e.g. #truth) wins, then the saved preference.
+  let initial = location.hash.replace('#','');
+  if (CLASSES.indexOf(initial) === -1) {
+    try { initial = localStorage.getItem('hwFilter') || 'all'; } catch (e) { initial = 'all'; }
+  }
+  setFilter(initial, false);
+
+  // Footer year.
+  const fy = document.getElementById('footer-year');
+  if (fy) fy.textContent = new Date().getFullYear();
+
+  // Scroll fade-in: reveal sections as they enter the viewport. Elements at or
+  // above the current scroll position are revealed too, so jumping down the
+  // page never leaves earlier sections invisible.
+  const faders = document.querySelectorAll('.page-head, .filter-bar, .day-block');
+  faders.forEach(el => el.classList.add('fade-in'));
+  function revealOnScroll() {
+    const limit = window.innerHeight - 60;
+    faders.forEach(el => {
+      if (!el.classList.contains('visible') && el.getBoundingClientRect().top < limit) {
+        el.classList.add('visible');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealOnScroll, { passive: true });
+  window.addEventListener('resize', revealOnScroll);
+  revealOnScroll();
+})();
 </script>
 
 </body>

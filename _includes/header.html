@@ -1,5 +1,10 @@
 <header class="site-header">
-  <img src="{{ "/assets/images/logo80px.png" | relative_url }}" alt="Logan English Academy Logo" onerror="this.style.display='none'">
-  <a href="{{ '/' | relative_url }}" class="site-name">{{ site.title | escape }}</a>
-  <nav><a href="{{ '/homework.html' | relative_url }}">Homework</a></nav>
+  <a href="{{ '/' | relative_url }}" class="site-brand">
+    <img src="{{ "/assets/images/logo80px.png" | relative_url }}" alt="Logan English Academy Logo" onerror="this.style.display='none'">
+    <span class="site-name">{{ site.title | escape }}</span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="{{ '/homework.html' | relative_url }}">Homework</a>
+    <a href="{{ '/readingaudio/' | relative_url }}">Reading Library</a>
+  </nav>
 </header>

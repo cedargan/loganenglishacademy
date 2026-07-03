@@ -3,9 +3,17 @@
   --card:         #ffffff;
   --border:       #e8e2d9;
   --text:         #2d2a26;
-  --muted:        #8a8278;
+  --muted:        #6e6659;
   --accent:       #3d6b4f;
   --accent-light: #eaf2ed;
+
+  // class colors (shared with homework.html)
+  --kind:     #4a7fcb;
+  --brave:    #c0572a;
+  --truth:    #7a5cbf;
+  --virtue:   #2e9e7a;
+  --patience: #b88a10;
+  --honor:    #b84c6e;
 }
 
 * { box-sizing: border-box; }
@@ -28,12 +36,20 @@ body {
 
   img { height: 40px; }
 
+  .site-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+
   .site-name {
     font-family: 'Lora', serif;
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--accent);
     text-decoration: none;
+    line-height: 1.2;
   }
 
   // hide the old Minima site-title
@@ -41,6 +57,9 @@ body {
 
   nav {
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
     a {
       font-weight: 700;
@@ -112,12 +131,11 @@ a {
 
 // ── Footer ──
 .site-footer {
-  text-align: center;
-  padding: 28px 20px;
-  font-size: 0.85rem;
+  padding: 36px 28px 26px;
+  font-size: 0.88rem;
   color: var(--muted);
   border-top: 2px solid var(--border);
-  background: var(--bg);
+  background: var(--card);
 
   // hide old Minima footer internals
   .wrapper,
@@ -125,10 +143,49 @@ a {
   .contact-list,
   .social-links { display: none; }
 
-  // the direct <a> we added
-  & > a {
+  .footer-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer-name {
+    font-family: 'Lora', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
     color: var(--accent);
-    text-decoration: none;
     display: block;
+    margin-bottom: 4px;
+  }
+
+  .footer-brand p { margin: 0; }
+
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    a {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: var(--accent-light);
+      &:hover { background: #d0e8d8; }
+    }
+  }
+
+  .footer-copy {
+    max-width: 1060px;
+    margin: 24px auto 0;
+    padding-top: 18px;
+    border-top: 1.5px solid var(--border);
+    font-size: 0.8rem;
   }
 }

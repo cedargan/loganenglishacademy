@@ -1,9 +1,8 @@
 ---
-#
-# By default, content added below the "---" mark will appear in the home page
-# between the top bar and the list of recent posts.
-# To change the home page layout, edit the _layouts/home.html file.
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
 layout: home
+title: Logan English Academy
+description: >
+  Structured, book-based English instruction for young learners — with daily
+  homework postings, graded readers with audio, and a clear path from first
+  words to classic novels.
 ---
