@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Race — Logan English Academy</title>
+  <meta name="description" content="Listen-along audio for The Race — read and listen chapter by chapter at Logan English Academy's Reading Library." />
+  <link rel="icon" type="image/png" href="/assets/images/logo80px.png" />
+  <meta name="theme-color" content="#3d6b4f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Logan English Academy" />
+  <meta property="og:title" content="The Race — Logan English Academy" />
+  <meta property="og:description" content="Listen-along audio for The Race — read and listen chapter by chapter at Logan English Academy's Reading Library." />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Lora:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/readingaudio/book.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-brand" href="/">
+    <img src="/assets/images/logo80px.png" alt="Logan English Academy Logo" onerror="this.style.display='none'" />
+    <span class="site-name">Logan English Academy</span>
+  </a>
+  <nav aria-label="Primary">
+    <a href="/homework.html">Homework</a>
+    <a href="/readingaudio/">Reading Library</a>
+  </nav>
+</header>
+
+<div class="banner">
+  <div class="banner-badge" aria-hidden="true">🏃‍♂</div>
+  <div>
+    <div class="banner-title">The Race</div>
+    <div class="banner-author">Paul Shipton</div>
+  </div>
+  <div class="banner-meta">
+    <div class="meta-num">10</div>
+    <div class="meta-label">Chapters</div>
+  </div>
+</div>
+
+<div class="chapter-list" id="chapter-list"></div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-name">Logan English Academy</span>
+      <p>Book-based English instruction for young learners.</p>
+      <p><a href="mailto:logan@loganenglishacademy.com">logan@loganenglishacademy.com</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/">Home</a>
+      <a href="/homework.html">Homework</a>
+      <a href="/readingaudio/">Reading Library</a>
+    </nav>
+  </div>
+  <div class="footer-copy">&copy; <span id="footer-year">2026</span> Logan English Academy. All rights reserved. Audio files are for enrolled students only.</div>
+</footer>
+<script>var _fy=document.getElementById('footer-year');if(_fy)_fy.textContent=new Date().getFullYear();</script>
+
+<script>
+const chapters = [
+    { title: "readandimagine2_the_race_american_01_all", url: "https://audio.loganenglishacademy.com/readandimagine/level2/readandimagine2_the_race/readandimagine2_the_race_american_01_all.mp3" },
+    { title: "readandimagine2_the_race_american_02_pages_2_5", url: "https://audio.loganenglishacademy.com/readandimagine/level2/readandimagine2_the_race/readandimagine2_the_race_american_02_pages_2_5.mp3" },
+    { title: "readandimagine2_the_race_american_03_pages_6_7", url: "https://audio.loganenglishacademy.com/readandimagine/level2/readandimagine2_the_race/readandimagine2_the_race_american_03_pages_6_7.mp3" },
+    { title: "readandimagine2_the_race_american_04_pages_8_9", url: "https://audio.loganenglishacademy.com/readandimagine/level2/readandimagine2_the_race/readandimagine2_the_race_american_04_pages_8_9.mp3" },
+    { title: "readandimagine2_the_race_american_05_pages_10_11", url: "https://audio.loganenglishacademy.com/readandimagine/level2/readandimagine2_the_race/readandimagine2_the_race_american_05_pages_10_11.mp3" },
+    { title: "readandimagine2_the_race_american_06_pages_12_13", url: "https://audio.loganenglishacademy.com/readandimagine/level2/readandimagine2_the_race/readandimagine2_the_race_american_06_pages_12_13.mp3" },
+    { title: "readandimagine2_the_race_american_07_page 14_15", url: "https://audio.loganenglishacademy.com/readandimagine/level2/readandimagine2_the_race/readandimagine2_the_race_american_07_page%2014_15.mp3" },
+    { title: "readandimagine2_the_race_american_08_pages_16_17", url: "https://audio.loganenglishacademy.com/readandimagine/level2/readandimagine2_the_race/readandimagine2_the_race_american_08_pages_16_17.mp3" },
+    { title: "readandimagine2_the_race_american_09_pages_18_19", url: "https://audio.loganenglishacademy.com/readandimagine/level2/readandimagine2_the_race/readandimagine2_the_race_american_09_pages_18_19.mp3" },
+    { title: "readandimagine2_the_race_american_10_picture_dictionary", url: "https://audio.loganenglishacademy.com/readandimagine/level2/readandimagine2_the_race/readandimagine2_the_race_american_10_picture_dictionary.mp3" }
+];
+const dlIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13M7 11l5 5 5-5M3 20h18"/></svg>`;
+const list = document.getElementById('chapter-list');
+chapters.forEach((ch, i) => {
+  const card = document.createElement('div');
+  card.className = 'chapter-card';
+  const filename = ch.url.split('/').pop();
+  card.innerHTML = `
+    <div class="chapter-top">
+      <div class="ch-num">${i + 1}</div>
+      <div class="ch-title">${ch.title}</div>
+      <a class="ch-download" href="${ch.url}" download="${decodeURIComponent(filename)}" aria-label="Download ${ch.title}">
+        ${dlIcon}<span>Download</span>
+      </a>
+    </div>
+    <div class="ch-player">
+      <audio controls preload="none" src="${ch.url}" aria-label="${ch.title}"></audio>
+    </div>`;
+  list.appendChild(card);
+});
+</script>
+
+</body>
+</html>
