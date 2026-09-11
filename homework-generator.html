@@ -47,9 +47,14 @@
   .cls-body{padding:12px 14px;display:flex;flex-direction:column;gap:8px}
   .cls.off .cls-body{display:none}
   .cls.off{opacity:.55}
-  .bk{display:flex;gap:8px;align-items:center}
-  .bk .bn{flex:0 0 38%;font-size:.85rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .bk input{flex:1;padding:7px 10px;font-size:.88rem}
+  .bk{display:flex;gap:8px;align-items:flex-start}
+  .bk .bn{flex:0 0 38%;font-size:.85rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-top:8px}
+  .bk .bk-in{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px}
+  .bk .bk-in input{width:100%;padding:7px 10px;font-size:.88rem}
+  .sugg{align-self:flex-start;max-width:100%;font-family:'Nunito',sans-serif;font-size:.75rem;font-weight:700;color:var(--accent);background:var(--accent-light);border:1px solid transparent;border-radius:7px;padding:3px 9px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:.12s}
+  .sugg:hover{border-color:var(--accent);background:#d9ebe1}
+  .memclr{max-width:45%;font-family:'Nunito',sans-serif;font-size:.72rem;font-weight:700;color:var(--muted);background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:4px 8px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .memclr:hover{color:#c0572a;border-color:#c0572a}
   .bk .x{flex-shrink:0;border:none;background:none;color:var(--muted);font-size:1.1rem;cursor:pointer;padding:0 4px;line-height:1}
   .bk .x:hover{color:#c0572a}
   .audio-row{display:flex;gap:8px;align-items:center;border-top:1px dashed var(--border);padding-top:9px;margin-top:2px}
@@ -127,6 +132,7 @@
   <div class="panel">
     <h2>2. Assignments <span class="tag">uncheck a class to skip it today</span></h2>
     <div class="class-grid" id="classGrid"></div>
+    <div class="hint">Each book remembers the pages you last assigned. A <strong style="color:var(--accent)">↻</strong> suggestion chip offers the next range (e.g. <code>44-45</code> → <code>46-47</code>) or the next chapter — tap it to fill the field, then adjust if needed. Suggestions update when you click <strong>Generate</strong>, so they'll be ready the next time you open this tool.</div>
 
     <details class="roster">
       <summary>⚙ Manage classes &amp; books (rename, add/remove books, set audio links)</summary>
@@ -230,6 +236,43 @@ function save(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(roster)); }
 function slug(s){ return s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')||'class'; }
 function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
+/* ---------- Page auto-advance ----------
+   Given the last task, produce the next one by advancing its page/chapter
+   numbers. Returns null when there is no numeric sequence to advance (e.g.
+   "Worksheet", "None", "Book Report") so no suggestion chip is shown. */
+function advanceTask(s){
+  if(!s) return null;
+  s=String(s);
+  // Reader: leading "Chapter N ..." → bump the chapter (and a trailing "page M" if present)
+  let m=s.match(/^(\s*chapters?\s+)(\d+)/i);
+  if(m){
+    let out=s.slice(0,m[1].length)+(+m[2]+1)+s.slice(m[1].length+m[2].length);
+    out=out.replace(/(page\s+)(\d+)(\s*)$/i,(x,p,n,tail)=>p+(+n+1)+tail);
+    return out;
+  }
+  // Trailing page range "A-B" → next block of the same length ("44-45" → "46-47")
+  m=s.match(/(\d+)\s*[-–]\s*(\d+)(\s*)$/);
+  if(m){
+    const a=+m[1], b=+m[2];
+    if(b<a) return null;
+    const span=b-a+1;
+    return s.slice(0,m.index)+(b+1)+'-'+(b+span)+m[3];
+  }
+  // Trailing single number "Page N" → N+1
+  m=s.match(/(\d+)(\s*)$/);
+  if(m) return s.slice(0,m.index)+(+m[1]+1)+m[2];
+  return null;
+}
+function suggestFor(b){ return (b && b.last) ? advanceTask(b.last) : null; }
+
+// Hide a book's suggestion chip once its task field has content.
+function syncChips(){
+  grid.querySelectorAll('.bk-in').forEach(w=>{
+    const inp=w.querySelector('input[data-task]'), chip=w.querySelector('.sugg');
+    if(inp&&chip) chip.style.display = inp.value.trim()==='' ? '' : 'none';
+  });
+}
+
 /* ---------- Day heading ---------- */
 const DOW=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 function fmtHeading(iso){
@@ -274,8 +317,13 @@ function renderForm(){
     const body=box.querySelector('[data-body]');
     c.books.forEach((b,i)=>{
       const r=document.createElement('div'); r.className='bk';
+      const sug=suggestFor(b);
+      const chip=sug ? `<button type="button" class="sugg" data-sug="${c.id}:${i}" data-sugval="${esc(sug)}" title="Use: ${esc(sug)}">↻ ${esc(sug)}</button>` : '';
       r.innerHTML=`<span class="bn" title="${esc(b.name)}">${esc(b.name)}</span>
-        <input type="text" placeholder="task (blank = omit)" value="${esc(st.tasks[i]||'')}" data-task="${c.id}:${i}">`;
+        <div class="bk-in">
+          <input type="text" placeholder="task (blank = omit)" value="${esc(st.tasks[i]||'')}" data-task="${c.id}:${i}">
+          ${chip}
+        </div>`;
       body.appendChild(r);
     });
     st.extra.forEach((ex,j)=>{
@@ -295,11 +343,12 @@ function renderForm(){
       <input type="url" placeholder="https://…" value="${esc(st.audio.url||'')}" data-auurl="${c.id}">`;
     body.appendChild(ar);
   });
+  syncChips();
 }
 
 grid.addEventListener('input',e=>{
   const t=e.target;
-  if(t.dataset.task!==undefined){const[id,i]=t.dataset.task.split(':');dayState[id].tasks[i]=t.value;}
+  if(t.dataset.task!==undefined){const[id,i]=t.dataset.task.split(':');dayState[id].tasks[i]=t.value;syncChips();}
   else if(t.dataset.exname!==undefined){const[id,j]=t.dataset.exname.split(':');dayState[id].extra[j].name=t.value;}
   else if(t.dataset.extask!==undefined){const[id,j]=t.dataset.extask.split(':');dayState[id].extra[j].task=t.value;}
   else if(t.dataset.aulabel!==undefined){dayState[t.dataset.aulabel].audio.label=t.value;}
@@ -312,7 +361,14 @@ grid.addEventListener('change',e=>{
 });
 grid.addEventListener('click',e=>{
   const t=e.target;
-  if(t.dataset.exadd!==undefined){dayState[t.dataset.exadd].extra.push({name:'',task:''});renderForm();}
+  if(t.dataset.sug!==undefined){
+    const[id,i]=t.dataset.sug.split(':');
+    dayState[id].tasks[i]=t.dataset.sugval;
+    const inp=grid.querySelector(`input[data-task="${id}:${i}"]`);
+    if(inp){ inp.value=t.dataset.sugval; inp.focus(); }
+    syncChips();
+  }
+  else if(t.dataset.exadd!==undefined){dayState[t.dataset.exadd].extra.push({name:'',task:''});renderForm();}
   else if(t.dataset.exdel!==undefined){const[id,j]=t.dataset.exdel.split(':');dayState[id].extra.splice(j,1);renderForm();}
 });
 
@@ -337,7 +393,9 @@ function renderRoster(){
     const bw=d.querySelector(`[data-rbooks="${ci}"]`);
     c.books.forEach((b,bi)=>{
       const r=document.createElement('div'); r.className='rbook';
+      const mem=b.last ? `<button class="memclr" data-rbmemclr="${ci}:${bi}" title="Remembered last task — click to forget">↻ ${esc(b.last)} ✕</button>` : '';
       r.innerHTML=`<input type="text" value="${esc(b.name)}" data-rbname="${ci}:${bi}">
+        ${mem}
         <button class="x" data-rbdel="${ci}:${bi}" title="remove">✕</button>`;
       bw.appendChild(r);
     });
@@ -354,6 +412,7 @@ rosterEditor.addEventListener('input',e=>{
 rosterEditor.addEventListener('click',e=>{
   const t=e.target;
   if(t.dataset.rbadd!==undefined){roster[t.dataset.rbadd].books.push({name:'New Book',task:''});commitRoster();}
+  else if(t.dataset.rbmemclr!==undefined){const[ci,bi]=t.dataset.rbmemclr.split(':');delete roster[ci].books[bi].last;save();renderRoster();renderForm();}
   else if(t.dataset.rbdel!==undefined){const[ci,bi]=t.dataset.rbdel.split(':');roster[ci].books.splice(bi,1);commitRoster();}
   else if(t.dataset.rcdel!==undefined){
     if(confirm('Delete this class from the roster?')){roster.splice(t.dataset.rcdel,1);commitRoster();}
@@ -435,6 +494,21 @@ function generate(){
   if(r.err){ outEl.value='⚠ '+r.err; preview.innerHTML=''; return; }
   outEl.value=r.text;
   renderPreview();
+  learnPages();
+}
+// Remember each held book's page/chapter task so tomorrow's chip advances it.
+// Only sequences that can advance are stored, so "None"/"Worksheet" days keep
+// the previous cursor intact.
+function learnPages(){
+  let changed=false;
+  roster.forEach(c=>{
+    const st=dayState[c.id]; if(!st||!st.held) return;
+    c.books.forEach((b,i)=>{
+      const task=(st.tasks[i]||'').trim();
+      if(task && advanceTask(task)!==null && b.last!==task){ b.last=task; changed=true; }
+    });
+  });
+  if(changed){ save(); renderRoster(); }
 }
 function renderPreview(){
   const heading=headEl.value.trim();
