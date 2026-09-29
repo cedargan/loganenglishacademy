@@ -50,7 +50,15 @@
   .bk{display:flex;gap:8px;align-items:flex-start}
   .bk .bn{flex:0 0 38%;font-size:.85rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-top:8px}
   .bk .bk-in{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px}
-  .bk .bk-in input{width:100%;padding:7px 10px;font-size:.88rem}
+  .bk .bk-row{display:flex;gap:6px;align-items:center}
+  .bk .bk-row input{flex:1;min-width:0;width:100%;padding:7px 10px;font-size:.88rem}
+  .preset{flex-shrink:0;width:112px;-webkit-appearance:none;appearance:none;font-family:'Nunito',sans-serif;font-size:.78rem;font-weight:800;color:var(--accent);background:var(--accent-light);border:1.5px solid transparent;border-radius:9px;padding:8px 10px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .preset:hover,.preset:focus{border-color:var(--accent);outline:none}
+  .ped-section{margin-top:22px;padding-top:16px;border-top:1.5px dashed var(--border)}
+  .ped-title{font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .ped-name{flex:1;font-weight:800;font-size:.95rem}
+  .ped-list{width:100%;font-family:'Nunito',sans-serif;font-size:.85rem;line-height:1.5;padding:8px 10px;border:1.5px solid var(--border);border-radius:9px;background:var(--card);color:var(--text);resize:vertical}
+  .ped-list:focus{outline:none;border-color:var(--accent)}
   .sugg{align-self:flex-start;max-width:100%;font-family:'Nunito',sans-serif;font-size:.75rem;font-weight:700;color:var(--accent);background:var(--accent-light);border:1px solid transparent;border-radius:7px;padding:3px 9px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:.12s}
   .sugg:hover{border-color:var(--accent);background:#d9ebe1}
   .memclr{max-width:45%;font-family:'Nunito',sans-serif;font-size:.72rem;font-weight:700;color:var(--muted);background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:4px 8px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -132,10 +140,10 @@
   <div class="panel">
     <h2>2. Assignments <span class="tag">uncheck a class to skip it today</span></h2>
     <div class="class-grid" id="classGrid"></div>
-    <div class="hint">Each book remembers the pages you last assigned. A <strong style="color:var(--accent)">↻</strong> suggestion chip offers the next range (e.g. <code>44-45</code> → <code>46-47</code>) or the next chapter — tap it to fill the field, then adjust if needed. Suggestions update when you click <strong>Generate</strong>, so they'll be ready the next time you open this tool.</div>
+    <div class="hint">Each book remembers the pages you last assigned. A <strong style="color:var(--accent)">↻</strong> suggestion chip offers the next range (e.g. <code>44-45</code> → <code>46-47</code>) or the next chapter — tap it to fill the field, then adjust if needed. Suggestions update when you click <strong>Generate</strong>, so they'll be ready the next time you open this tool. Picture Dictionary and Wordlist also have a <strong style="color:var(--accent)">Quick pick ▾</strong> dropdown of common tasks — or just type your own.</div>
 
     <details class="roster">
-      <summary>⚙ Manage classes &amp; books (rename, add/remove books, set audio links)</summary>
+      <summary>⚙ Manage classes, books &amp; dropdowns (rename, add/remove books, audio links, quick-pick options)</summary>
       <div id="rosterEditor"></div>
       <div class="row" style="margin-top:14px">
         <button class="btn ghost sm" id="addClassBtn">+ Add class</button>
@@ -143,6 +151,12 @@
         <button class="btn ghost sm" id="importBtn">Import roster</button>
         <button class="btn danger sm" id="resetBtn">Reset to defaults</button>
         <input type="file" id="importFile" accept="application/json" style="display:none">
+      </div>
+
+      <div class="ped-section">
+        <div class="ped-title">Quick-pick dropdowns</div>
+        <div class="hint" style="margin-top:4px">Any book with one of these names gets a <strong>Quick pick ▾</strong> dropdown in every class. Edit the options below — one per line. Update the Wordlist ranges when you start a new unit.</div>
+        <div id="presetEditor"></div>
       </div>
     </details>
   </div>
@@ -235,6 +249,32 @@ function load(){
 function save(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(roster)); }catch(e){} }
 function slug(s){ return s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')||'class'; }
 function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function escAttr(s){ return esc(s).replace(/"/g,'&quot;'); }
+
+/* ---------- Quick-pick dropdowns ----------
+   Any book whose name matches one of these lists gets a "Quick pick" dropdown
+   of common tasks. Editable under "Manage classes, books & dropdowns". */
+const PRESET_KEY = 'lea_homework_presets_v1';
+const DEFAULT_PRESETS = [
+  { name:'Picture Dictionary',
+    options:['Write 3 Words 5x','Write 4 Words 5x','Write 8 Words 5x','Write 10 Words 5x','–'] },
+  { name:'Wordlist',
+    options:['Write Words 1-10 5x; Definitions','Write Words 11-20 5x; Definitions','Write Words 1-12 5x; Definitions','Write Words 13-23 5x; Definitions','–'] }
+];
+let presets = loadPresets();
+function loadPresets(){
+  try{
+    const raw=localStorage.getItem(PRESET_KEY);
+    if(raw){ const p=JSON.parse(raw); if(Array.isArray(p)) return p; }
+  }catch(e){}
+  return structuredClone(DEFAULT_PRESETS);
+}
+function savePresets(){ try{ localStorage.setItem(PRESET_KEY, JSON.stringify(presets)); }catch(e){} }
+function normName(s){ return String(s||'').trim().toLowerCase(); }
+function optionsFor(b){
+  const p=presets.find(x=>normName(x.name)===normName(b&&b.name));
+  return p ? p.options.filter(o=>o.trim()) : [];
+}
 
 /* ---------- Page auto-advance ----------
    Given the last task, produce the next one by advancing its page/chapter
@@ -318,10 +358,17 @@ function renderForm(){
     c.books.forEach((b,i)=>{
       const r=document.createElement('div'); r.className='bk';
       const sug=suggestFor(b);
-      const chip=sug ? `<button type="button" class="sugg" data-sug="${c.id}:${i}" data-sugval="${esc(sug)}" title="Use: ${esc(sug)}">↻ ${esc(sug)}</button>` : '';
-      r.innerHTML=`<span class="bn" title="${esc(b.name)}">${esc(b.name)}</span>
+      const chip=sug ? `<button type="button" class="sugg" data-sug="${c.id}:${i}" data-sugval="${escAttr(sug)}" title="Use: ${escAttr(sug)}">↻ ${esc(sug)}</button>` : '';
+      const opts=optionsFor(b);
+      const pick=opts.length ? `<select class="preset" data-preset="${c.id}:${i}" aria-label="Quick pick a common task for ${escAttr(b.name)}" title="Quick pick a common task">
+            <option value="">Quick pick ▾</option>${opts.map(o=>`<option value="${escAttr(o)}">${esc(o)}</option>`).join('')}
+          </select>` : '';
+      r.innerHTML=`<span class="bn" title="${escAttr(b.name)}">${esc(b.name)}</span>
         <div class="bk-in">
-          <input type="text" placeholder="task (blank = omit)" value="${esc(st.tasks[i]||'')}" data-task="${c.id}:${i}">
+          <div class="bk-row">
+            <input type="text" placeholder="task (blank = omit)" value="${escAttr(st.tasks[i]||'')}" data-task="${c.id}:${i}">
+            ${pick}
+          </div>
           ${chip}
         </div>`;
       body.appendChild(r);
@@ -358,6 +405,15 @@ grid.addEventListener('change',e=>{
   const t=e.target;
   if(t.dataset.held!==undefined){dayState[t.dataset.held].held=t.checked;renderForm();}
   else if(t.dataset.auon!==undefined){dayState[t.dataset.auon].audio.enabled=t.checked;}
+  else if(t.dataset.preset!==undefined){
+    const v=t.value; if(!v) return;
+    const[id,i]=t.dataset.preset.split(':');
+    dayState[id].tasks[i]=v;
+    const inp=grid.querySelector(`input[data-task="${id}:${i}"]`);
+    if(inp) inp.value=v;
+    t.selectedIndex=0;
+    syncChips();
+  }
 });
 grid.addEventListener('click',e=>{
   const t=e.target;
@@ -451,6 +507,41 @@ importFile.onchange=()=>{
   fr.readAsText(f); importFile.value='';
 };
 
+/* ---------- Quick-pick dropdown editor ---------- */
+const presetEditor=document.getElementById('presetEditor');
+function renderPresets(){
+  presetEditor.innerHTML=presets.map((p,pi)=>`
+    <div class="roster-cls">
+      <div class="rh"><span class="ped-name">${esc(p.name)}</span><button class="btn danger sm" data-pdel="${pi}">Remove</button></div>
+      <textarea class="ped-list" data-plist="${pi}" rows="${Math.max(3,p.options.length+1)}" placeholder="One option per line">${esc(p.options.join('\n'))}</textarea>
+    </div>`).join('')+`
+    <div class="row" style="margin-top:10px">
+      <input type="text" id="newPresetName" placeholder="Book name to match, e.g. Activity Book" style="flex:1;min-width:200px">
+      <button class="btn ghost sm" id="addPresetBtn">+ Add dropdown</button>
+    </div>`;
+}
+presetEditor.addEventListener('input',e=>{
+  const t=e.target;
+  if(t.dataset.plist!==undefined){
+    presets[t.dataset.plist].options=t.value.split('\n').map(s=>s.trim()).filter(Boolean);
+    savePresets(); renderForm();
+  }
+});
+presetEditor.addEventListener('click',e=>{
+  const t=e.target;
+  if(t.dataset.pdel!==undefined){
+    if(confirm(`Remove the quick-pick dropdown for “${presets[t.dataset.pdel].name}”?`)){
+      presets.splice(t.dataset.pdel,1); savePresets(); renderPresets(); renderForm();
+    }
+  } else if(t.id==='addPresetBtn'){
+    const inp=document.getElementById('newPresetName'), name=inp.value.trim();
+    if(!name){ inp.focus(); return; }
+    if(presets.some(p=>normName(p.name)===normName(name))){ toast('That book already has a dropdown'); return; }
+    presets.push({name, options:[]}); savePresets(); renderPresets(); renderForm();
+    const tas=presetEditor.querySelectorAll('textarea[data-plist]'); tas[tas.length-1]?.focus();
+  }
+});
+
 /* ---------- Code generation ---------- */
 const BAR='═'.repeat(27);
 function buildBlock(){
@@ -537,6 +628,7 @@ document.getElementById('copyBtn').onclick=async()=>{
 };
 
 renderRoster();
+renderPresets();
 renderForm();
 </script>
 </body>
