@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Progress Report · Logan English</title>
+<style>
+:root{color-scheme:light}
+body{margin:0; background:#f1eceb; min-height:100vh}
+.msg{max-width:520px; margin:12vh auto; padding:28px 22px; background:#fff; border-radius:14px; text-align:center; color:#3d3536;
+  font-family:"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.6}
+@media (min-width:600px){ #app{padding:24px 0} #app .wv{border-radius:16px; box-shadow:0 2px 14px rgba(20,30,40,.08)} }
+/* Palette: Sanzo Wada, A Dictionary of Color Combinations, No. 191 — Blue #006eb8, Light Brown Drab #b59392, Yellow Ocher #e2b540 */
+/* logo lockup: icon image + "LOGAN ENGLISH" as text (size it with font-size on .le-logo) */
+.le-logo{display:inline-flex; align-items:center; gap:.22em; line-height:1; color:#006eb8; white-space:nowrap; vertical-align:middle}
+.le-logo img{height:1.02em; width:auto; display:block; position:relative; top:-.09em}
+.le-logo span{font-family:"DIN Condensed","Avenir Next Condensed","Bebas Neue","Oswald","Roboto Condensed","Arial Narrow",sans-serif-condensed,sans-serif;
+  font-weight:700; font-stretch:condensed; letter-spacing:0; font-size:1em; position:relative; top:.06em}
+/* where supported, trim the text to its capital letters so the icon centres exactly on them */
+@supports (text-box: trim-both cap alphabetic){
+  .le-logo span{text-box:trim-both cap alphabetic; top:0}
+  .le-logo img{top:0}
+}
+
+/* parent web page (scoped to .wv) */
+.wv{--wb:#006eb8; --wbd:#00528a; --wbt:#e8f1f9; --wd:#b59392; --wdd:#7a5c5b; --wdt:#f6eeed; --wo:#e2b540; --wot:#fcf4e1;
+  --wline:#e3d6d4; --wi:#17202b; --wm:#6a5d5e;
+  max-width:560px; margin:0 auto; padding:22px 18px 28px; background:#fff; color:var(--wi);
+  font-family:"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR","Noto Sans CJK KR",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px; line-height:1.5; word-break:keep-all; overflow-wrap:break-word}
+.wv *{box-sizing:border-box}
+.wv-top{display:flex; flex-wrap:wrap-reverse; justify-content:flex-end; align-items:center; gap:10px 12px; padding-bottom:12px; margin-bottom:14px;
+  border-bottom:3px solid var(--wb); border-image:linear-gradient(90deg,var(--wb) 0%,var(--wd) 62%,var(--wo) 100%) 1}
+.wv-top .le-logo{font-size:23px; margin-right:auto}
+.wv h1{font-size:30px; font-weight:800; color:var(--wb); margin:0; line-height:1.1; letter-spacing:-.01em}
+.wv .per{margin:4px 0 0; color:var(--wm); font-size:15px}
+.wv-lang{display:inline-flex; flex:none}
+.wv-lang button{font:inherit; font-size:13px; padding:5px 10px; border:1px solid var(--wline); background:#fff; color:var(--wi); cursor:pointer; border-radius:0}
+.wv-lang button:first-child{border-radius:7px 0 0 7px} .wv-lang button:last-child{border-radius:0 7px 7px 0; margin-left:-1px}
+.wv-lang button[aria-pressed="true"]{background:var(--wb); border-color:var(--wb); color:#fff}
+.wv-ids{margin:18px 0 6px}
+.wv-ids .lab{font-weight:700; font-size:14px; margin:12px 0 5px; color:var(--wdd)}
+.wv-ids .box{border:2px solid var(--wb); border-radius:11px; padding:9px 14px; font-size:20px; min-height:48px}
+.wv-ids .kr{margin-right:10px}
+.wv-hero{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:18px 0 4px}
+.wv-hero.one{grid-template-columns:1fr}
+.wv-hero .card{border-radius:13px; padding:12px 14px; border-top:3px solid var(--wo); background:linear-gradient(165deg,var(--wbt) 0%,#fff 75%)}
+.wv-hero .card.avg{border-top-color:var(--wd); background:linear-gradient(165deg,var(--wdt) 0%,#fff 75%)}
+.wv-hero .lab{font-size:13px; font-weight:700; color:var(--wdd)}
+.wv-hero .big{font-size:40px; font-weight:800; color:var(--wbd); line-height:1.1; font-variant-numeric:tabular-nums}
+.wv-hero .avg .big{color:var(--wdd)}
+.wv-hero .sub{font-size:13px; color:var(--wm)}
+.wv-sec{margin-top:22px}
+.wv-sec h2{font-size:18px; font-weight:800; color:var(--wbd); margin:0 0 10px}
+.wv-bk{margin-bottom:12px}
+.wv-bk .hd{display:flex; align-items:center; gap:8px; font-size:16px}
+.wv-bk .pc{margin-left:auto; font-weight:800; font-size:20px; font-variant-numeric:tabular-nums}
+.wv-bk .bar{height:10px; border-radius:5px; background:var(--wdt); overflow:hidden; margin:5px 0 3px}
+.wv-bk .bar i{display:block; height:100%; border-radius:5px}
+.wv-bk .bar i.s{background:linear-gradient(90deg,var(--wbd),var(--wb) 70%,#3f93cc)} .wv-bk .bar i.o{background:linear-gradient(90deg,#c4921f,var(--wo))}
+.wv-bk .sub{font-size:13px; color:var(--wm)}
+.wv .dot{display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:7px; vertical-align:1px; flex:none}
+.wv .dot.s{background:var(--wb)} .wv .dot.o{background:var(--wo)}
+table.wv-t{width:100%; border-collapse:collapse; table-layout:fixed; font-size:15px}
+.wv-t col.no{width:36px} .wv-t col.sc{width:60px}
+.wv-t th,.wv-t td{border:1px solid var(--wline); padding:8px 8px; vertical-align:middle}
+.wv-t th.banner{background:var(--wb); border-color:var(--wb); color:#fff; font-size:19px; text-align:left; padding:10px 12px}
+.wv-t tr.cols th{font-size:13px; font-weight:700; text-align:left; background:#fff; color:var(--wdd)}
+.wv-t tr.cols th:first-child{background:var(--wdt)}
+.wv-t .c{text-align:center; font-variant-numeric:tabular-nums}
+.wv-t td.no{background:var(--wdt); text-align:center; font-size:13px; color:var(--wdd)}
+.wv-t tr.nd td{color:#9a8e8f}
+.wv-t .nd-mark{color:#b3a7a8}
+.wv .note{font-size:13px; color:var(--wm); margin:8px 0 0}
+.wv-cmt{border:1px solid #dcc8c6; background:linear-gradient(180deg,var(--wdt),#fff); border-radius:12px; padding:12px 14px; white-space:pre-wrap}
+.wv-cmt .sig{display:block; text-align:right; color:var(--wm); font-size:13px; margin-top:6px}
+.wv-foot{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-top:26px; padding-top:12px; border-top:1px solid var(--wline); color:var(--wm); font-size:13px}
+.wv-foot .le-logo{font-size:17px}
+@media (max-width:380px){ .wv{padding:18px 12px 24px} .wv-hero .big{font-size:34px} .wv-t{font-size:14px} .wv-t col.sc{width:52px} .wv-t th,.wv-t td{padding:7px 6px} }
+@media print{ .wv-lang{display:none} }
+
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script>
+/* ===== parent web page: shared by the hosted viewer and the maker's preview ===== */
+const VIEW = (() => {
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = n => { if(n === null || n === undefined || n === "") return ""; const v = Math.round(Number(n)*10)/10; return Number.isInteger(v) ? String(v) : v.toFixed(1); };
+const MON = {jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
+const monthNo = w => MON[w.slice(0,3).toLowerCase()];
+function periodText(p, y, en){
+  p = String(p || "").trim(); y = String(y || "").trim();
+  if(en) return [p, y].filter(Boolean).join(" ");
+  const ko = p.replace(/[A-Za-z]+/g, w => monthNo(w) ? monthNo(w) + "월" : w).replace(/월\s*[-–]\s*(\d+)월/, "–$1월");
+  return y ? (ko ? `${y}년 ${ko}` : `${y}년`) : ko;
+}
+function dateText(d, en){
+  if(!d) return ""; const x = new Date(d + "T00:00:00"); if(isNaN(x)) return "";
+  return en ? x.toLocaleDateString("en-GB", {day:"numeric", month:"long", year:"numeric"}) : `${x.getFullYear()}. ${x.getMonth()+1}. ${x.getDate()}.`;
+}
+
+/* ----- link encoding: JSON → deflate → base64url, kept after the # so it never reaches the server ----- */
+const b64u = u8 => { let s = ""; for(let i = 0; i < u8.length; i += 0x8000) s += String.fromCharCode.apply(null, u8.subarray(i, i + 0x8000));
+  return btoa(s).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, ""); };
+const unb64u = s => { s = s.replace(/-/g, "+").replace(/_/g, "/"); while(s.length % 4) s += "=";
+  const b = atob(s), u = new Uint8Array(b.length); for(let i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); return u; };
+async function pipe(u8, ts){ return new Uint8Array(await new Response(new Blob([u8]).stream().pipeThrough(ts)).arrayBuffer()); }
+async function encode(P){
+  const raw = new TextEncoder().encode(JSON.stringify(P));
+  if(typeof CompressionStream !== "undefined"){ try { return "z" + b64u(await pipe(raw, new CompressionStream("deflate-raw"))); } catch(e){} }
+  return "j" + b64u(raw);
+}
+async function decode(code){
+  code = String(code || "").replace(/^#/, "").replace(/^r=/, "");
+  if(!code) return null;
+  const kind = code[0], u = unb64u(code.slice(1)); let raw;
+  if(kind === "z"){
+    if(typeof DecompressionStream === "undefined") throw new Error("old-browser");
+    raw = await pipe(u, new DecompressionStream("deflate-raw"));
+  } else if(kind === "j") raw = u; else throw new Error("bad-link");
+  const P = JSON.parse(new TextDecoder().decode(raw));
+  if(!P || P.v !== 1 || !Array.isArray(P.i)) throw new Error("bad-link");
+  return P;
+}
+
+/* ----- logo: icon image + "LOGAN ENGLISH" as text ----- */
+const logo = icon => `<span class="le-logo"><img src="${icon}" alt=""><span>LOGAN ENGLISH</span></span>`;
+
+/* ----- the page ----- */
+function render(P, en, icon){
+  const tx = (e, k) => en ? e : k;
+  const pc = x => x === null || x === undefined ? "—" : Math.round(x) + "%";
+  const weighted = P.m === "w";
+  const cmt = en ? (P.k?.[1] || "") : (P.k?.[0] || P.k?.[1] || "");
+  const [done, total] = [P.e?.[2] ?? 0, P.e?.[3] ?? P.i.length];
+  let diff = "";
+  if(P.a !== null && P.a !== undefined && P.o !== null){
+    const d = Math.round(P.o) - Math.round(P.a);
+    diff = d > 0 ? tx(`▲ ${d} points above the average`, `▲ 반 평균보다 ${d}점 높음`)
+         : d < 0 ? tx(`▼ ${-d} points below the average`, `▼ 반 평균보다 ${-d}점 낮음`)
+         : tx("Same as the class average", "반 평균과 같음");
+  }
+  const hasAvg = P.a !== null && P.a !== undefined;
+  const hero = `<div class="wv-hero${hasAvg ? "" : " one"}">
+      <div class="card"><div class="lab">${tx("Overall score", "종합 점수")}</div><div class="big">${pc(P.o)}</div>
+        <div class="sub">${tx(`${done} of ${total} assignments completed`, `과제 ${total}개 중 ${done}개 완료`)}</div></div>
+      ${hasAvg ? `<div class="card avg"><div class="lab">${tx("Class average", "반 평균")}</div><div class="big">${pc(P.a)}</div><div class="sub">${diff}</div></div>` : ""}
+    </div>`;
+  let brk;
+  if(weighted){
+    const row = (cls, lab, v, w, dn, tot) => `<div class="wv-bk"><div class="hd"><span class="dot ${cls}"></span><b>${lab}</b><span class="pc">${pc(v)}</span></div>
+        <div class="bar"><i class="${cls}" style="width:${v === null || v === undefined ? 0 : Math.max(0, Math.min(100, v))}%"></i></div>
+        <div class="sub">${tx(`Counts ${w}% of the overall score · ${dn} of ${tot} completed`, `종합 점수의 ${w}% 반영 · ${tot}개 중 ${dn}개 완료`)}</div></div>`;
+    brk = `<section class="wv-sec"><h2>${tx("Score breakdown", "영역별 점수")}</h2>
+      ${row("s", tx("Spelling & Vocabulary", "철자·어휘"), P.s?.[0], P.w, P.s?.[1] ?? 0, P.s?.[2] ?? 0)}
+      ${row("o", tx("Tests & Assignments", "시험·과제"), P.x?.[0], 100 - P.w, P.x?.[1] ?? 0, P.x?.[2] ?? 0)}</section>`;
+  } else {
+    brk = `<section class="wv-sec"><h2>${tx("Score breakdown", "영역별 점수")}</h2><div class="wv-bk"><div class="hd"><b>${tx("Points earned", "획득 점수")}</b>
+      <span class="pc">${fmt(P.e?.[0])} / ${fmt(P.e?.[1])}</span></div><div class="sub">${tx("On the completed assignments", "완료한 과제 기준")}</div></div></section>`;
+  }
+  const rows = P.i.map((it, k) => {
+    const [name, pos, sc, cat] = it;
+    return `<tr${sc === null || sc === undefined ? ' class="nd"' : ""}><td class="no">${k+1}</td>
+      <td>${weighted && cat ? `<span class="dot ${cat === "S" ? "s" : "o"}"></span>` : ""}${esc(name)}</td>
+      <td class="c">${sc === null || sc === undefined ? `<span class="nd-mark">—</span>` : fmt(sc)}</td><td class="c">${fmt(pos)}</td></tr>`;
+  }).join("");
+  const how = weighted ? tx(`Overall score = ${P.w}% Spelling & Vocabulary + ${100 - P.w}% Tests & Assignments.`, `종합 점수 = 철자·어휘 ${P.w}% + 시험·과제 ${100 - P.w}%.`)
+                       : tx("Overall score = points earned ÷ points possible.", "종합 점수 = 획득 점수 ÷ 만점 합계.");
+  return `<div class="wv">
+    <div class="wv-top">${icon ? logo(icon) : ""}
+      <div class="wv-lang" role="group" aria-label="Language"><button type="button" data-lang="ko" aria-pressed="${!en}">한국어</button><button type="button" data-lang="en" aria-pressed="${en}">English</button></div></div>
+    <h1>Progress Report</h1><p class="per">${esc(periodText(P.p, P.y, en))}${en ? "" : " · 학습 성취 보고서"}</p>
+    <div class="wv-ids">
+      <div class="lab">${tx("This report card is for", "학생")}</div><div class="box">${P.n?.[0] ? `<span class="kr">${esc(P.n[0])}</span>` : ""}${esc(P.n?.[1] || "")}</div>
+      <div class="lab">${tx("Class", "반")}</div><div class="box">${esc(P.c || "")}</div>
+    </div>
+    ${hero}${brk}
+    <section class="wv-sec"><table class="wv-t"><colgroup><col class="no"><col><col class="sc"><col class="sc"></colgroup>
+      <thead><tr><th colspan="4" class="banner">${tx("Grades", "과제별 점수")}</th></tr>
+      <tr class="cols"><th></th><th>${tx("Assignment", "과제")}</th><th class="c">${tx("Score", "점수")}</th><th class="c">${tx("Out of", "만점")}</th></tr></thead>
+      <tbody>${rows}</tbody></table>
+      <p class="note">${weighted ? `<span class="dot s"></span>${tx("Spelling & Vocabulary", "철자·어휘")} &nbsp; <span class="dot o"></span>${tx("Tests & Assignments", "시험·과제")}<br>` : ""}
+        ${tx("— = not completed, so not counted. ", "— = 미완료 과제로, 점수에 포함되지 않습니다. ")}${how}</p></section>
+    ${cmt ? `<section class="wv-sec"><h2>${tx("Teacher’s comment", "선생님 코멘트")}</h2><div class="wv-cmt">${esc(cmt)}<span class="sig">${esc(P.t || "")}</span></div></section>` : ""}
+    <footer class="wv-foot"><span>${esc(dateText(P.d, en))}</span>${icon ? logo(icon) : ""}</footer>
+  </div>`;
+}
+return {esc, fmt, periodText, dateText, encode, decode, render, logo};
+})();
+if(typeof module !== "undefined") module.exports = VIEW;
+
+</script>
+<script>
+(function(){
+const ICON = "data:image/png;base64,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";
+const app = document.getElementById("app");
+let P = null, en = false;
+function msg(ko, enText){
+  app.innerHTML = `<div class="msg"><div style="font-size:26px;margin-bottom:14px">${VIEW.logo(ICON)}</div><p>${ko}</p><p>${enText}</p></div>`;
+}
+function draw(){
+  app.innerHTML = VIEW.render(P, en, ICON);
+  document.title = `${P.n?.[1] || P.n?.[0] || ""} · Progress Report`;
+  document.documentElement.lang = en ? "en" : "ko";
+  app.querySelectorAll(".wv-lang button").forEach(b => b.addEventListener("click", () => { en = b.dataset.lang === "en"; draw(); }));
+}
+async function load(){
+  try {
+    P = await VIEW.decode(location.hash);
+    if(!P){ msg("성적표 링크로 접속해 주세요.", "Please open this page from your child's report link."); return; }
+    en = P.l === "en"; draw();
+  } catch(e){
+    if(e.message === "old-browser") msg("이 브라우저에서는 성적표를 열 수 없습니다. 브라우저를 최신 버전으로 업데이트하거나 다른 브라우저로 열어 주세요.", "This browser is too old to open the report. Please update it or try another browser.");
+    else msg("링크가 올바르지 않습니다. 받으신 링크 전체가 복사되었는지 확인해 주세요.", "This link looks incomplete. Please make sure the whole link was copied.");
+  }
+}
+window.addEventListener("hashchange", load);
+load();
+})();
+</script>
+</body>
+</html>
