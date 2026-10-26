@@ -1,4 +1,7 @@
 title: Logan English Academy
+# Canonical address. Used for <link rel="canonical">, og:url and feed links,
+# so search engines treat www as the one true copy of the site.
+url: "https://www.loganenglishacademy.com"
 author:
   name: Logan Leeder
   email: freshevryday@gmail.com
