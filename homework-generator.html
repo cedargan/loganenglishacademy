@@ -229,7 +229,7 @@ const DEFAULT_ROSTER = [
     audio:{enabled:true, label:'V is for Vampire', url:'https://loganenglishacademy.com/readingaudio/dominoes/level-2/v-is-for-vampire'} },
   { id:'honor', name:'Honor',
     books:[
-      {name:'Wordlywise 6', task:''},
+      {name:'Wordly Wise 6', task:''},
       {name:'Hatchet', task:''}
     ],
     audio:{enabled:true, label:'Hatchet', url:'https://loganenglishacademy.com/readingaudio/hatchet'} }
@@ -242,10 +242,28 @@ let roster = load();
 function load(){
   try{
     const raw = localStorage.getItem(STORE_KEY);
-    if(raw){ const p = JSON.parse(raw); if(Array.isArray(p)&&p.length) return p; }
+    if(raw){
+      const p = JSON.parse(raw);
+      if(Array.isArray(p)&&p.length){
+        // Correct known misspellings carried over from older saved rosters.
+        p.forEach(c=>{
+          (c.books||[]).forEach(b=>{ b.name=fixTypos(b.name); if(b.last) b.last=fixTypos(b.last); });
+          if(c.audio) c.audio.label=fixTypos(c.audio.label);
+        });
+        return p;
+      }
+    }
   }catch(e){}
   return structuredClone(DEFAULT_ROSTER);
 }
+function fixTypos(s){
+  return typeof s==='string'
+    ? s.replace(/Everbody/g,'Everybody').replace(/Wordlywise/g,'Wordly Wise').replace(/Get's a Little/g,'Gets a Little')
+    : s;
+}
+// Links to this site are written root-relative ("/readingaudio/…") so they work
+// on both www and non-www addresses and never bounce between the two.
+function siteRelative(u){ return String(u).replace(/^https?:\/\/(?:www\.)?loganenglishacademy\.com(?=\/)/i,''); }
 function save(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(roster)); }catch(e){} }
 function slug(s){ return s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')||'class'; }
 function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
@@ -569,7 +587,7 @@ function buildBlock(){
       out+=`          <div class="assignment"><strong>${ex.name.trim()}:</strong> ${ex.task.trim()}</div>\n`;
     });
     if(st.audio.enabled && (st.audio.url||'').trim()){
-      out+=`          <a class="audio-link" href="${st.audio.url.trim()}" target="_blank">▶ ${(st.audio.label||'Listen').trim()}</a>\n`;
+      out+=`          <a class="audio-link" href="${siteRelative(st.audio.url.trim())}" target="_blank">▶ ${(st.audio.label||'Listen').trim()}</a>\n`;
     }
     out+=`        </div>\n      </div>\n\n`;
   });
