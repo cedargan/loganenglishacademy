@@ -53,17 +53,12 @@
   .page-head {
     margin-top: 16px; border-radius: 28px; background: var(--navy); color: #fff;
     padding: clamp(28px, 4vw, 44px) clamp(22px, 3.5vw, 44px);
-    display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 20px; align-items: end;
   }
   .page-kicker { font-size: .78rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
   .page-head h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: .95; letter-spacing: -.035em; margin-bottom: 14px; }
   .page-lede { color: #c6d0e4; font-size: 1.05rem; line-height: 1.55; max-width: 52ch; }
-  .page-latest { display: flex; flex-direction: column; gap: 2px; background: rgba(255, 255, 255, .08); border-radius: 16px; padding: 14px 18px; text-align: right; }
-  .page-latest span { font-size: .72rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--gold); }
-  .page-latest b { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; letter-spacing: -.01em; white-space: nowrap; }
   @media (max-width: 640px) {
-    .page-head { grid-template-columns: minmax(0, 1fr); border-radius: 22px; }
-    .page-latest { text-align: left; align-self: start; }
+    .page-head { border-radius: 22px; }
   }
 
   /* ── Class filter: stays at the top while scrolling ── */
@@ -174,7 +169,6 @@
       <h1>Homework</h1>
       <p class="page-lede">Posted after every lesson, with page numbers and listen-along links. Choose your class to see only its work.</p>
     </div>
-    <p class="page-latest" id="page-latest" hidden><span>Latest</span><b id="page-latest-day"></b></p>
   </div>
 
   <!-- FILTER BAR -->
@@ -7357,16 +7351,13 @@
     a.setAttribute('aria-label', 'Listen to ' + label);
   });
 
-  // Mark the newest day and show its date in the title band.
+  // Mark the newest day.
   const newest = dayBlocks[0] && dayBlocks[0].querySelector('.day-heading');
   if (newest) {
-    const day = newest.textContent.trim();
     const badge = document.createElement('span');
     badge.className = 'day-latest';
     badge.textContent = 'Latest';
     newest.append(badge);
-    document.getElementById('page-latest-day').textContent = day;
-    document.getElementById('page-latest').hidden = false;
   }
 })();
 </script>
