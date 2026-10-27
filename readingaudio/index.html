@@ -51,19 +51,13 @@
     .page-head {
       margin-top: 16px; border-radius: 28px; background: var(--navy); color: #fff;
       padding: clamp(28px, 4vw, 44px) clamp(22px, 3.5vw, 44px);
-      display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: end;
     }
     .page-kicker { font-size: .78rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
     .page-head h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: .95; letter-spacing: -.035em; margin-bottom: 14px; text-wrap: balance; }
     .page-lede[lang="ko"] { word-break: keep-all; }
     .page-lede { color: #c6d0e4; font-size: 1.05rem; line-height: 1.55; max-width: 50ch; }
-    .hero-stats { display: flex; gap: 10px; }
-    .hero-stat { background: rgba(255, 255, 255, .08); border-radius: 16px; padding: 14px 16px; min-width: 92px; }
-    .hero-stat-n { font-family: var(--font-display); font-weight: 800; font-size: 1.9rem; line-height: 1; letter-spacing: -.03em; color: var(--gold); font-variant-numeric: tabular-nums; }
-    .hero-stat-l { font-size: .72rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #c6d0e4; margin-top: 4px; }
     @media (max-width: 760px) {
-      .page-head { grid-template-columns: minmax(0, 1fr); border-radius: 22px; }
-      .hero-stat { flex: 1; min-width: 0; }
+      .page-head { border-radius: 22px; }
     }
 
     /* ── Search + series jump, pinned while scrolling ── */
@@ -100,12 +94,11 @@
     /* ── Series and levels ── */
     .main { max-width: 1180px; margin: 0 auto; padding: 8px var(--gutter) 24px; }
     .series-block { margin-top: 40px; scroll-margin-top: 140px; }
-    .series-hdr { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+    .series-hdr { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
     .series-hdr::before { content: ""; width: 14px; height: 40px; border-radius: 4px; background: var(--sc); flex-shrink: 0; }
     .series-emoji { display: none; }
     .series-name { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.5rem, 2.6vw, 1.9rem); letter-spacing: -.03em; line-height: 1.05; }
     .series-desc { font-size: .92rem; color: var(--muted); margin-top: 3px; }
-    .series-count { font-size: .82rem; font-weight: 700; color: var(--sc); background: var(--wash); padding: 5px 12px; border-radius: 99px; white-space: nowrap; }
     .level-label {
       display: inline-flex; align-items: center; gap: 8px; margin: 22px 0 12px; padding: 6px 12px 6px 14px;
       border-radius: 99px; background: var(--wash); cursor: pointer; user-select: none;
@@ -144,8 +137,8 @@
       text-wrap: balance; overflow-wrap: anywhere;
       display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;
     }
-    .book-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-    .track-count { font-size: .78rem; font-weight: 600; opacity: .92; }
+    .book-card-footer { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
+    .track-count { display: none; }
     .arrow { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: rgba(255, 255, 255, .92); color: var(--sc, var(--navy)); font-size: .85rem; font-weight: 800; transition: transform .15s; }
     .book-card:hover .arrow { transform: translateX(2px); }
     .no-results { text-align: center; padding: 3rem 1rem; color: var(--muted); font-size: 1rem; display: none; }
@@ -197,11 +190,6 @@
       <h1>Reading Library</h1>
       <p class="page-lede" lang="ko">모든 리더스북과 소설의 음원을 제공합니다. 책을 선택하면 학교나 집에서 챕터별로 들을 수 있습니다.</p>
     </div>
-    <div class="hero-stats">
-      <div class="hero-stat"><div class="hero-stat-n" id="stat-books">—</div><div class="hero-stat-l">Books</div></div>
-      <div class="hero-stat"><div class="hero-stat-n" id="stat-tracks">—</div><div class="hero-stat-l">Audio tracks</div></div>
-      <div class="hero-stat"><div class="hero-stat-n" id="stat-series">—</div><div class="hero-stat-l">Series</div></div>
-    </div>
   </div>
 </div>
 
@@ -231,7 +219,6 @@
           <div class="series-name">Classics Tales</div>
           <div class="series-desc">Classic folk tales and fairy stories at graded reading levels</div>
         </div>
-        <div class="series-count">18 books</div>
       </div><div class="level-label">Level 1</div><div class="book-grid">
           <a class="book-card" href="classics-tales/level-1/lownu-mends-the-sky.html">
             <div class="book-card-top">
@@ -402,7 +389,6 @@
           <div class="series-name">Dominoes</div>
           <div class="series-desc">Oxford Dominoes graded readers — Level 1 & 2</div>
         </div>
-        <div class="series-count">50 books</div>
       </div><div class="level-label">Level 1</div><div class="book-grid">
           <a class="book-card" href="dominoes/level-1/football-forever.html">
             <div class="book-card-top">
@@ -909,7 +895,6 @@
           <div class="series-name">Read and Discover</div>
           <div class="series-desc">Oxford Read and Discover non-fiction readers</div>
         </div>
-        <div class="series-count">18 books</div>
       </div><div class="level-label">Level 1</div><div class="book-grid">
           <a class="book-card" href="readanddiscover/level-1/at-the-beach.html">
             <div class="book-card-top">
@@ -1089,7 +1074,6 @@
           <div class="series-name">Read and Imagine</div>
           <div class="series-desc">Oxford Read and Imagine fiction readers</div>
         </div>
-        <div class="series-count">37 books</div>
       </div><div class="level-label">Beginner</div><div class="book-grid">
           <a class="book-card" href="readandimagine/beginner/a-nice-book-audio-us-english.html">
             <div class="book-card-top">
@@ -1469,7 +1453,6 @@
           <div class="series-name">Wayside School</div>
           <div class="series-desc">Come visit Mrs. Jewls class in the thirtieth story of Wayside School.</div>
         </div>
-        <div class="series-count">1 book</div>
       </div><div class="level-label">Wayside School</div><div class="book-grid">
           <a class="book-card" href="waysideschool/wayside-school-gets-a-little-stranger.html">
             <div class="book-card-top">
@@ -1487,7 +1470,6 @@
           <div class="series-name">Other</div>
           <div class="series-desc">Additional books and audio resources</div>
         </div>
-        <div class="series-count">1 book</div>
       </div><div class="level-label">Other</div><div class="book-grid">
           <a class="book-card" href="https://loganenglishacademy.com/readingaudio/hatchet">
             <div class="book-card-top">
@@ -1574,26 +1556,6 @@ document.querySelectorAll('.level-label').forEach(label => {
   });
 });
 filterBooks('');
-
-// Live library stats, computed from the page so they never go stale.
-(function computeStats() {
-  const books  = document.querySelectorAll('.book-card').length;
-  const series = document.querySelectorAll('.series-block').length;
-  let tracks = 0;
-  document.querySelectorAll('.track-count').forEach(tc => {
-    const n = parseInt(tc.textContent, 10);
-    if (!isNaN(n)) tracks += n;
-  });
-  document.getElementById('stat-books').textContent  = books.toLocaleString('en-US');
-  document.getElementById('stat-tracks').textContent = tracks.toLocaleString('en-US');
-  document.getElementById('stat-series').textContent = series;
-  // Each series header counts its own books, so it stays right as books are added.
-  document.querySelectorAll('.series-block').forEach(block => {
-    const n = block.querySelectorAll('.book-card').length;
-    const label = block.querySelector('.series-count');
-    if (label) label.textContent = n + (n === 1 ? ' book' : ' books');
-  });
-})();
 
 document.getElementById('footer-year').textContent = new Date().getFullYear();
 

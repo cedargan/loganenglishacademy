@@ -197,19 +197,9 @@
         background: var(--wash);
         padding: 36px clamp(20px, 3vw, 40px);
         display: grid;
-        grid-template-columns: auto minmax(0, 1fr);
-        gap: 32px;
-        align-items: center;
+        grid-template-columns: minmax(0, 1fr);
       }
-      .big {
-        font-family: var(--font-display);
-        font-weight: 800;
-        font-size: clamp(3.4rem, 6vw, 4.4rem);
-        line-height: .9;
-        letter-spacing: -.04em;
-        font-variant-numeric: tabular-nums;
-      }
-      .big span { display: block; font-family: var(--font-body); font-size: .95rem; font-weight: 600; letter-spacing: 0; color: var(--muted); margin-top: 8px; }
+      .lib h2 { margin: 0 0 10px; font-family: var(--font-display); font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.05; letter-spacing: -.03em; }
       .lib-copy p { margin: 0 0 14px; color: var(--muted); max-width: 52ch; }
       .series { display: flex; flex-wrap: wrap; gap: 8px; }
       .series a {
@@ -229,7 +219,7 @@
         .fan { height: 280px; }
         .path { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 22px; }
         .path::before { display: none; }
-        .lib { grid-template-columns: minmax(0, 1fr); margin-inline: clamp(10px, 1.4vw, 16px); max-width: none; }
+        .lib { margin-inline: clamp(10px, 1.4vw, 16px); max-width: none; }
       }
       @media (max-width: 540px) {
         .hero { border-radius: 24px; }
@@ -246,7 +236,7 @@
 
       <section class="hero">
         <div>
-          <p class="hero-kicker">Reading Library · <span data-stat="tracks">1,103</span> audio tracks</p>
+          <p class="hero-kicker">Book-based English for young learners</p>
           <h1>Every class reads a real book. Listen along at home.</h1>
           <p class="hero-sub" lang="ko">첫 단어부터 고전 소설까지 6단계로 배웁니다. 매 수업 후 숙제를 올리고, 모든 챕터의 음원을 제공합니다.</p>
           <div class="hero-actions">
@@ -258,15 +248,15 @@
           </div>
         </div>
         <div class="fan">
-          <a class="cover p-arc" style="--c:var(--virtue-dk);--x:-70%;--r:-12deg" href="{{ '/readingaudio/readanddiscover/level-1/wild-cats' | relative_url }}" aria-label="Wild Cats, 10 tracks">
-            <span class="ser">Read and Discover</span><span class="ti">Wild Cats</span><span class="tr">10 tracks</span>
+          <a class="cover p-arc" style="--c:var(--virtue-dk);--x:-70%;--r:-12deg" href="{{ '/readingaudio/readanddiscover/level-1/wild-cats' | relative_url }}" aria-label="Listen to Wild Cats">
+            <span class="ser">Read and Discover</span><span class="ti">Wild Cats</span><span class="tr">Listen</span>
           </a>
-          <a class="cover right p-dots" style="--c:var(--truth-dk);--x:70%;--r:10deg" href="{{ '/readingaudio/dominoes/quickstarter/the-selfish-giant' | relative_url }}" aria-label="The Selfish Giant, 6 tracks">
-            <span class="ser">Dominoes</span><span class="ti">The Selfish Giant</span><span class="tr">6 tracks</span>
+          <a class="cover right p-dots" style="--c:var(--truth-dk);--x:70%;--r:10deg" href="{{ '/readingaudio/dominoes/quickstarter/the-selfish-giant' | relative_url }}" aria-label="Listen to The Selfish Giant">
+            <span class="ser">Dominoes</span><span class="ti">The Selfish Giant</span><span class="tr">Listen</span>
           </a>
-          <a class="cover p-sun" style="--c:var(--brave-dk);--x:0%;--r:-1deg" href="{{ '/readingaudio/dominoes/level-3/conan-the-barbarian-red-nails' | relative_url }}" aria-label="Conan the Barbarian: Red Nails, 10 tracks">
+          <a class="cover p-sun" style="--c:var(--brave-dk);--x:0%;--r:-1deg" href="{{ '/readingaudio/dominoes/level-3/conan-the-barbarian-red-nails' | relative_url }}" aria-label="Listen to Conan the Barbarian: Red Nails">
             <span class="ser">Dominoes · Level 3</span><span class="ti">Conan the Barbarian: Red Nails</span>
-            <span class="tr"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z" fill="currentColor"/></svg></span>10 tracks</span>
+            <span class="tr"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z" fill="currentColor"/></svg></span>Listen</span>
           </a>
         </div>
       </section>
@@ -293,9 +283,8 @@
       </section>
 
       <section class="lib" aria-labelledby="lib-title">
-        <div class="big"><span data-stat="books">135</span><span>books with audio, in six series</span></div>
         <div class="lib-copy">
-          <h2 id="lib-title" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Reading Library</h2>
+          <h2 id="lib-title">Reading Library</h2>
           <p>Every assigned reader has chapter-by-chapter audio that students can stream or download, at school or at home.</p>
           <div class="series">
             <a href="{{ '/readingaudio/#s-classics-tales' | relative_url }}">Classics Tales</a>
@@ -394,18 +383,6 @@
         var when = day.querySelector('.day-heading');
         if (when) document.getElementById('week-when').textContent = 'From the homework for ' + when.textContent.trim() + '.';
       }).catch(function () { /* keep the fallback link */ });
-
-      // Library totals, counted from the Reading Library page so they never go stale.
-      load('{{ "/readingaudio/" | relative_url }}').then(function (doc) {
-        var books = doc.querySelectorAll('.book-card').length, tracks = 0;
-        Array.prototype.forEach.call(doc.querySelectorAll('.track-count'), function (t) {
-          var n = parseInt(t.textContent, 10);
-          if (!isNaN(n)) tracks += n;
-        });
-        if (!books) return;
-        Array.prototype.forEach.call(document.querySelectorAll('[data-stat="books"]'), function (e) { e.textContent = books.toLocaleString('en-US'); });
-        Array.prototype.forEach.call(document.querySelectorAll('[data-stat="tracks"]'), function (e) { e.textContent = tracks.toLocaleString('en-US'); });
-      }).catch(function () {});
     })();
     </script>
 
