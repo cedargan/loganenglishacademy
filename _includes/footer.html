@@ -1,9 +1,9 @@
-<footer class="site-footer">
+<footer class="site-footer" id="contact">
   <div class="footer-inner">
     <div class="footer-brand">
       <span class="footer-name">{{ site.title | escape }}</span>
-      <p>Book-based English instruction for young learners.</p>
-      <p><a href="mailto:logan@loganenglishacademy.com">logan@loganenglishacademy.com</a></p>
+      <p>Book-based English for young learners.</p>
+      <p><a class="footer-mail" href="mailto:logan@loganenglishacademy.com">logan@loganenglishacademy.com</a></p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
       <a href="{{ '/' | relative_url }}">Home</a>
@@ -11,5 +11,5 @@
       <a href="{{ '/readingaudio/' | relative_url }}">Reading Library</a>
     </nav>
   </div>
-  <div class="footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}. All rights reserved.</div>
+  <div class="footer-copy">&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}. Audio files are for enrolled students only.</div>
 </footer>

@@ -8,431 +8,301 @@
     {%- include header.html -%}
 
     <style>
-      /* ── Homepage-only styles (design tokens match custom-styles.scss) ── */
+      /* ── Face-out homepage. Tokens come from _sass/minima/custom-styles.scss ── */
       .home-page main { display: block; }
 
-      .home-section-inner {
-        max-width: 1060px;
-        margin: 0 auto;
-        padding: 0 24px;
-      }
-
-      /* ── Hero ── */
+      /* Hero: navy panel with three book covers fanned out */
       .hero {
-        background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
-        border-bottom: 2px solid var(--border);
-        padding: 72px 0 76px;
-      }
-      .hero .home-section-inner {
+        margin: 16px clamp(10px, 1.4vw, 16px) 0;
+        border-radius: 32px;
+        background: var(--navy);
+        color: #fff;
+        padding: clamp(36px, 5vw, 64px) clamp(22px, 4vw, 56px);
         display: grid;
-        grid-template-columns: 1.15fr 0.85fr;
-        gap: 56px;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+        gap: 24px;
         align-items: center;
+        overflow: hidden;
       }
       .hero-kicker {
-        display: inline-block;
-        font-size: 0.78rem;
-        font-weight: 800;
-        letter-spacing: 0.12em;
+        margin: 0 0 18px;
+        font-size: .8rem;
+        font-weight: 600;
+        letter-spacing: .07em;
         text-transform: uppercase;
-        color: var(--accent);
-        background: var(--accent-light);
-        border-radius: 99px;
-        padding: 6px 14px;
-        margin-bottom: 18px;
+        color: var(--gold);
       }
       .hero h1 {
-        font-family: 'Lora', serif;
-        font-size: clamp(2.1rem, 4.5vw, 3.1rem);
-        font-weight: 700;
-        line-height: 1.15;
-        color: var(--text);
-        margin: 0 0 18px;
-      }
-      .hero h1 em {
-        font-style: normal;
-        color: var(--accent);
+        font-family: var(--font-display);
+        font-weight: 800;
+        font-size: clamp(2.4rem, 5.2vw, 4.4rem);
+        line-height: .95;
+        letter-spacing: -.035em;
+        color: #fff;
+        margin: 0 0 20px;
       }
       .hero-sub {
-        font-size: 1.08rem;
-        line-height: 1.65;
-        color: var(--muted);
-        max-width: 34em;
         margin: 0 0 30px;
+        font-size: 1.1rem;
+        line-height: 1.55;
+        color: #c6d0e4;
+        max-width: 40ch;
       }
-      .hero-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-      }
-      .btn-primary,
-      .btn-ghost {
-        font-family: 'Nunito', sans-serif;
-        font-weight: 800;
-        font-size: 0.95rem;
-        text-decoration: none;
-        border-radius: 10px;
-        padding: 13px 26px;
-        transition: background 0.15s, color 0.15s;
-      }
-      .btn-primary {
-        background: var(--accent);
-        color: #ffffff;
-        border: 2px solid var(--accent);
-      }
-      .btn-primary:hover { background: #2f5740; border-color: #2f5740; color: #ffffff; }
-      .btn-ghost {
-        background: transparent;
-        color: var(--accent);
-        border: 2px solid var(--accent);
-      }
-      .btn-ghost:hover { background: var(--accent-light); color: var(--accent); }
-
-      /* Hero class-tile mosaic */
-      .hero-panel {
-        background: var(--card);
-        border: 2px solid var(--border);
-        border-radius: 18px;
-        padding: 22px;
-        box-shadow: 0 18px 40px -28px rgba(45, 42, 38, 0.45);
-      }
-      .hero-panel-label {
-        font-size: 0.72rem;
-        font-weight: 800;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-bottom: 14px;
-      }
-      .hero-tiles {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-      }
-      .hero-tile {
-        display: block;
-        border-radius: 12px;
-        padding: 14px 16px;
-        font-family: 'Lora', serif;
-        font-weight: 700;
-        font-size: 1.02rem;
-        color: #ffffff;
-        text-decoration: none;
-        transition: transform 0.15s, box-shadow 0.15s;
-      }
-      .hero-tile:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 22px -12px rgba(45, 42, 38, 0.55);
-      }
-      .hero-tile span {
-        display: block;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 700;
-        font-size: 0.72rem;
-        opacity: 0.9;
-        margin-top: 3px;
-      }
-      .tile-kind     { background: var(--kind, #4a7fcb); }
-      .tile-brave    { background: var(--brave, #c0572a); }
-      .tile-truth    { background: var(--truth, #7a5cbf); }
-      .tile-virtue   { background: var(--virtue, #2e9e7a); }
-      .tile-patience { background: var(--patience, #b88a10); }
-      .tile-honor    { background: var(--honor, #b84c6e); }
-
-      /* ── Section shell ── */
-      .home-section { padding: 68px 0; }
-      .home-section.alt {
-        background: var(--card);
-        border-top: 2px solid var(--border);
-        border-bottom: 2px solid var(--border);
-      }
-      .section-kicker {
-        font-size: 0.75rem;
-        font-weight: 800;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--accent);
-        margin-bottom: 10px;
-      }
-      .section-title {
-        font-family: 'Lora', serif;
-        font-size: 1.85rem;
-        font-weight: 700;
-        color: var(--text);
-        margin: 0 0 12px;
-      }
-      .section-lede {
-        font-size: 1rem;
-        line-height: 1.65;
-        color: var(--muted);
-        max-width: 44em;
-        margin: 0 0 38px;
-      }
-
-      /* ── Pillars ── */
-      .pillar-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 16px;
-      }
-      .pillar {
-        background: var(--bg);
-        border: 2px solid var(--border);
-        border-radius: 14px;
-        padding: 22px 20px;
-      }
-      .pillar-icon {
-        width: 42px;
-        height: 42px;
-        border-radius: 10px;
-        background: var(--accent-light);
-        display: flex;
+      .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+      .btn {
+        display: inline-flex;
         align-items: center;
-        justify-content: center;
-        font-size: 20px;
-        margin-bottom: 14px;
-      }
-      .pillar h3 {
-        font-family: 'Lora', serif;
-        font-size: 1.05rem;
+        gap: 10px;
         font-weight: 700;
-        margin: 0 0 8px;
-        color: var(--text);
-      }
-      .pillar p {
-        font-size: 0.9rem;
-        line-height: 1.6;
-        color: var(--muted);
-        margin: 0;
-      }
-
-      /* ── Programs ── */
-      .program-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-      }
-      .program-card {
-        background: var(--card);
-        border: 2px solid var(--border);
-        border-radius: 14px;
-        padding: 22px 20px;
-        border-top-width: 5px;
-      }
-      .program-card.kind     { border-top-color: var(--kind, #4a7fcb); }
-      .program-card.brave    { border-top-color: var(--brave, #c0572a); }
-      .program-card.truth    { border-top-color: var(--truth, #7a5cbf); }
-      .program-card.virtue   { border-top-color: var(--virtue, #2e9e7a); }
-      .program-card.patience { border-top-color: var(--patience, #b88a10); }
-      .program-card.honor    { border-top-color: var(--honor, #b84c6e); }
-      .program-card h3 {
-        font-family: 'Lora', serif;
-        font-size: 1.15rem;
-        font-weight: 700;
-        margin: 0 0 4px;
-        color: var(--text);
-      }
-      .program-stage {
-        font-size: 0.72rem;
-        font-weight: 800;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-bottom: 10px;
-      }
-      .program-card p {
-        font-size: 0.9rem;
-        line-height: 1.6;
-        color: var(--muted);
-        margin: 0;
-      }
-
-      /* ── Resources ── */
-      .resource-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-      }
-      .resource-card {
-        display: block;
+        font-size: 1rem;
         text-decoration: none;
-        background: var(--bg);
-        border: 2px solid var(--border);
-        border-radius: 16px;
-        padding: 28px 26px;
-        transition: border-color 0.15s, box-shadow 0.15s;
+        border-radius: 14px;
+        padding: 13px 20px;
+        transition: background .15s;
       }
-      .resource-card:hover {
-        border-color: var(--accent);
-        box-shadow: 0 14px 30px -24px rgba(45, 42, 38, 0.5);
+      .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+      .btn-gold { background: var(--gold); color: var(--navy); padding-left: 14px; }
+      .btn-gold:hover { background: #f5cf77; color: var(--navy); }
+      .btn-ghost { background: rgba(255, 255, 255, .1); color: #fff; }
+      .btn-ghost:hover { background: rgba(255, 255, 255, .18); color: #fff; }
+      .play {
+        display: inline-grid;
+        place-items: center;
+        flex-shrink: 0;
+        border-radius: 50%;
       }
-      .resource-card .pillar-icon { margin-bottom: 16px; }
-      .resource-card h3 {
-        font-family: 'Lora', serif;
-        font-size: 1.3rem;
-        font-weight: 700;
-        color: var(--text);
-        margin: 0 0 8px;
-      }
-      .resource-card p {
-        font-size: 0.93rem;
-        line-height: 1.6;
-        color: var(--muted);
-        margin: 0 0 16px;
-      }
-      .resource-cta {
-        font-weight: 800;
-        font-size: 0.9rem;
-        color: var(--accent);
-      }
+      .play svg { width: 42%; height: 42%; margin-left: 8%; }
+      .btn-gold .play { width: 28px; height: 28px; background: var(--navy); color: var(--gold); }
 
-      /* ── Responsive ── */
-      @media (max-width: 900px) {
-        .hero .home-section-inner { grid-template-columns: 1fr; gap: 40px; }
-        .pillar-grid { grid-template-columns: 1fr 1fr; }
-        .program-grid { grid-template-columns: 1fr 1fr; }
+      .fan { --k: 1; position: relative; height: clamp(270px, 30vw, 370px); }
+      .fan .cover {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: min(42%, 200px);
+        transform: translate(-50%, -50%) translateX(calc(var(--x) * var(--k))) rotate(var(--r));
+        box-shadow: 0 24px 40px -18px rgba(0, 0, 0, .6);
+        transition: transform .25s ease;
       }
-      @media (max-width: 600px) {
-        .hero { padding: 48px 0 52px; }
-        .home-section { padding: 52px 0; }
-        .pillar-grid,
-        .program-grid,
-        .resource-grid { grid-template-columns: 1fr; }
-        .hero-tiles { grid-template-columns: 1fr 1fr; }
+      .fan .cover:hover,
+      .fan .cover:focus-visible { transform: translate(-50%, -56%) translateX(calc(var(--x) * var(--k))) rotate(var(--r)); }
+      .fan .cover.right { align-items: flex-end; text-align: right; }
+
+      /* Book cover: series colour plus a light pattern, title set large */
+      .cover {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        aspect-ratio: 3 / 4;
+        border-radius: 16px;
+        padding: 14px;
+        background: var(--pat, none), var(--c, var(--navy));
+        color: #fff;
+        text-decoration: none;
+        overflow: hidden;
+      }
+      a.cover:hover { color: #fff; }
+      a.cover:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+      .cover .ser { font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; opacity: .9; }
+      .cover .ti {
+        font-family: var(--font-display);
+        font-weight: 800;
+        font-size: clamp(1.1rem, 1.7vw, 1.5rem);
+        line-height: 1;
+        letter-spacing: -.02em;
+        text-wrap: balance;
+        overflow-wrap: anywhere;
+      }
+      .cover .tr { display: flex; align-items: center; gap: 7px; font-size: .8rem; font-weight: 600; }
+      .cover .tr .play { width: 24px; height: 24px; background: rgba(255, 255, 255, .92); color: var(--c, var(--navy)); }
+      .cover.plain { --c: var(--wash); color: var(--text); border: 1px dashed var(--border); }
+      .p-dots   { --pat: radial-gradient(rgba(255,255,255,.22) 2px, transparent 2.5px) 0 0 / 14px 14px; }
+      .p-stripe { --pat: repeating-linear-gradient(135deg, rgba(255,255,255,.14) 0 10px, transparent 10px 22px); }
+      .p-arc    { --pat: radial-gradient(circle at 110% 110%, transparent 0 34%, rgba(255,255,255,.18) 34% 38%, transparent 38% 48%, rgba(255,255,255,.14) 48% 52%, transparent 52%); }
+      .p-sun    { --pat: radial-gradient(circle at 96% 100%, rgba(255,255,255,.26) 0 26%, transparent 26.5%); }
+      .p-grid   { --pat: linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px) 0 0 / 18px 18px, linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px) 0 0 / 18px 18px; }
+
+      /* Sections */
+      .sec {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: clamp(48px, 6vw, 72px) clamp(16px, 3vw, 32px) 0;
+      }
+      .sec h2 {
+        font-size: clamp(1.8rem, 3vw, 2.3rem);
+        line-height: 1.05;
+        margin: 0 0 6px;
+      }
+      .sec .sub { margin: 0 0 22px; color: var(--muted); }
+
+      /* This week in class — filled from the latest homework */
+      .week {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(170px, 1fr);
+        gap: 16px;
+        overflow-x: auto;
+        padding-bottom: 8px;
+        scrollbar-width: thin;
+      }
+      .week-item { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+      .tag { display: flex; align-items: center; gap: 7px; font-size: .88rem; font-weight: 700; }
+      .tag::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--cls, var(--accent)); }
+      .week-item .lines { list-style: none; margin: 0; padding: 0; font-size: .85rem; line-height: 1.45; color: var(--muted); display: grid; gap: 3px; }
+      .week-fallback { grid-column: 1 / -1; margin: 0; color: var(--muted); }
+
+      /* Six levels as one path */
+      .path {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        position: relative;
+      }
+      .path::before {
+        content: "";
+        position: absolute;
+        left: 8%;
+        right: 8%;
+        top: 21px;
+        height: 3px;
+        border-radius: 3px;
+        background: linear-gradient(90deg, var(--kind), var(--brave), var(--truth), var(--virtue), var(--patience), var(--honor));
+      }
+      .path li { position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; padding-inline: 4px; }
+      .path .dot {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--card);
+        border: 3px solid var(--cls);
+        display: grid;
+        place-items: center;
+        font-family: var(--font-display);
+        font-weight: 800;
+        font-size: 1.05rem;
+        color: var(--cls);
+        margin-bottom: 8px;
+      }
+      .path b { font-family: var(--font-display); font-weight: 700; font-size: 1.08rem; letter-spacing: -.01em; }
+      .path small { font-size: .82rem; color: var(--muted); }
+
+      /* Library band */
+      .lib {
+        max-width: calc(1180px - 2 * clamp(16px, 3vw, 32px));
+        margin: clamp(48px, 6vw, 72px) auto 0;
+        border-radius: 32px;
+        background: var(--wash);
+        padding: 36px clamp(20px, 3vw, 40px);
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 32px;
+        align-items: center;
+      }
+      .big {
+        font-family: var(--font-display);
+        font-weight: 800;
+        font-size: clamp(3.4rem, 6vw, 4.4rem);
+        line-height: .9;
+        letter-spacing: -.04em;
+        font-variant-numeric: tabular-nums;
+      }
+      .big span { display: block; font-family: var(--font-body); font-size: .95rem; font-weight: 600; letter-spacing: 0; color: var(--muted); margin-top: 8px; }
+      .lib-copy p { margin: 0 0 14px; color: var(--muted); max-width: 52ch; }
+      .series { display: flex; flex-wrap: wrap; gap: 8px; }
+      .series a {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 99px;
+        padding: 7px 14px;
+        font-size: .88rem;
+        font-weight: 600;
+        color: var(--text);
+        text-decoration: none;
+      }
+      .series a:hover { border-color: var(--navy); }
+
+      @media (max-width: 860px) {
+        .hero { grid-template-columns: minmax(0, 1fr); padding-bottom: 12px; }
+        .fan { height: 280px; }
+        .path { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 22px; }
+        .path::before { display: none; }
+        .lib { grid-template-columns: minmax(0, 1fr); margin-inline: clamp(10px, 1.4vw, 16px); max-width: none; }
+      }
+      @media (max-width: 540px) {
+        .hero { border-radius: 24px; }
+        .fan { height: 230px; --k: .84; }
+        .fan .cover { width: 44%; }
+        .lib { border-radius: 24px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .fan .cover, .btn { transition: none; }
       }
     </style>
 
-    <main aria-label="Content">
+    <main id="main" aria-label="Content">
 
-      <!-- Hero -->
       <section class="hero">
-        <div class="home-section-inner">
-          <div>
-            <span class="hero-kicker">English Academy for Young Learners</span>
-            <h1>Building confident readers, writers, and <em>English speakers</em>.</h1>
-            <p class="hero-sub">
-              Logan English Academy offers structured, book-based English instruction for
-              children — combining trusted course books, graded readers with full audio,
-              and daily homework that families can follow at home.
-            </p>
-            <div class="hero-actions">
-              <a class="btn-primary" href="{{ '/homework.html' | relative_url }}">View Today's Homework</a>
-              <a class="btn-ghost" href="{{ '/readingaudio/' | relative_url }}">Browse the Reading Library</a>
-            </div>
-          </div>
-          <div class="hero-panel">
-            <div class="hero-panel-label">Our Classes</div>
-            <div class="hero-tiles">
-              <a class="hero-tile tile-kind" href="{{ '/homework.html#kind' | relative_url }}">Kind <span>Foundations</span></a>
-              <a class="hero-tile tile-brave" href="{{ '/homework.html#brave' | relative_url }}">Brave <span>Early Readers</span></a>
-              <a class="hero-tile tile-truth" href="{{ '/homework.html#truth' | relative_url }}">Truth <span>Developing</span></a>
-              <a class="hero-tile tile-virtue" href="{{ '/homework.html#virtue' | relative_url }}">Virtue <span>Intermediate</span></a>
-              <a class="hero-tile tile-patience" href="{{ '/homework.html#patience' | relative_url }}">Patience <span>Advanced</span></a>
-              <a class="hero-tile tile-honor" href="{{ '/homework.html#honor' | relative_url }}">Honor <span>Mastery</span></a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Pillars -->
-      <section class="home-section alt">
-        <div class="home-section-inner">
-          <div class="section-kicker">Why Logan English Academy</div>
-          <h2 class="section-title">A complete approach to English</h2>
-          <p class="section-lede">
-            Every class follows a clear curriculum, and every student reads real books —
-            with listening, writing, and vocabulary practice built into each week.
-          </p>
-          <div class="pillar-grid">
-            <div class="pillar">
-              <div class="pillar-icon" aria-hidden="true">📚</div>
-              <h3>Book-Based Curriculum</h3>
-              <p>Lessons built on trusted series such as Oxford Discover, Everybody Up, Starlight, and Wordly Wise — matched to each student's level.</p>
-            </div>
-            <div class="pillar">
-              <div class="pillar-icon" aria-hidden="true">🎧</div>
-              <h3>Reading with Audio</h3>
-              <p>Students read graded readers and classic novels with full listen-along audio, building fluency, pronunciation, and comprehension together.</p>
-            </div>
-            <div class="pillar">
-              <div class="pillar-icon" aria-hidden="true">📝</div>
-              <h3>Daily Homework</h3>
-              <p>Assignments are posted online after every class, so students and parents always know exactly what to practice at home.</p>
-            </div>
-            <div class="pillar">
-              <div class="pillar-icon" aria-hidden="true">🌱</div>
-              <h3>Steady Progress</h3>
-              <p>Reading diaries, book reports, presentations, and regular review help each student move up level by level with confidence.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Programs -->
-      <section class="home-section">
-        <div class="home-section-inner">
-          <div class="section-kicker">Programs</div>
-          <h2 class="section-title">Six levels, one clear path</h2>
-          <p class="section-lede">
-            Classes are named for the character we hope to build. Students advance from
-            first words and phonics all the way to reading classic English novels.
-          </p>
-          <div class="program-grid">
-            <div class="program-card kind">
-              <h3>Kind</h3>
-              <div class="program-stage">Level 1 · Foundations</div>
-              <p>First vocabulary, phonics, and everyday English through songs, stories, and picture dictionaries.</p>
-            </div>
-            <div class="program-card brave">
-              <h3>Brave</h3>
-              <div class="program-stage">Level 2 · Early Readers</div>
-              <p>Beginning readers start their first story books with audio support, plus core grammar and writing practice.</p>
-            </div>
-            <div class="program-card truth">
-              <h3>Truth</h3>
-              <div class="program-stage">Level 3 · Developing</div>
-              <p>Growing readers expand grammar and vocabulary while reading non-fiction and fiction readers every week.</p>
-            </div>
-            <div class="program-card virtue">
-              <h3>Virtue</h3>
-              <div class="program-stage">Level 4 · Intermediate</div>
-              <p>Students strengthen academic vocabulary and writing, working through longer texts and word-study books.</p>
-            </div>
-            <div class="program-card patience">
-              <h3>Patience</h3>
-              <div class="program-stage">Level 5 · Advanced</div>
-              <p>Confident readers take on chapter books and novel studies with reading diaries, reviews, and discussion.</p>
-            </div>
-            <div class="program-card honor">
-              <h3>Honor</h3>
-              <div class="program-stage">Level 6 · Mastery</div>
-              <p>Our highest level reads classic English literature and tackles advanced grammar, writing, and presentations.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Resources -->
-      <section class="home-section alt">
-        <div class="home-section-inner">
-          <div class="section-kicker">For Students &amp; Parents</div>
-          <h2 class="section-title">Everything you need, online</h2>
-          <p class="section-lede">
-            Homework and reading materials are always available — at school or at home.
-          </p>
-          <div class="resource-grid">
-            <a class="resource-card" href="{{ '/homework.html' | relative_url }}">
-              <div class="pillar-icon" aria-hidden="true">🗓️</div>
-              <h3>Homework Board</h3>
-              <p>Daily assignments for every class, posted after each lesson with page numbers and links to reading materials.</p>
-              <span class="resource-cta">Check homework&nbsp;&rarr;</span>
+        <div>
+          <p class="hero-kicker">Reading Library · <span data-stat="tracks">1,103</span> audio tracks</p>
+          <h1>Every class reads a real book. Listen along at home.</h1>
+          <p class="hero-sub">Six levels from first words to classic novels, with homework after every lesson and audio for every chapter.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="{{ '/readingaudio/' | relative_url }}">
+              <span class="play" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z" fill="currentColor"/></svg></span>
+              Start listening
             </a>
-            <a class="resource-card" href="{{ '/readingaudio/' | relative_url }}">
-              <div class="pillar-icon" aria-hidden="true">🎧</div>
-              <h3>Reading Library</h3>
-              <p>Listen-along audio for our graded readers and novels, so students can read and listen anywhere.</p>
-              <span class="resource-cta">Open the library&nbsp;&rarr;</span>
-            </a>
+            <a class="btn btn-ghost" href="{{ '/homework.html' | relative_url }}">Today's homework</a>
+          </div>
+        </div>
+        <div class="fan">
+          <a class="cover p-arc" style="--c:var(--virtue-dk);--x:-70%;--r:-12deg" href="{{ '/readingaudio/readanddiscover/level-1/wild-cats' | relative_url }}" aria-label="Wild Cats, 10 tracks">
+            <span class="ser">Read and Discover</span><span class="ti">Wild Cats</span><span class="tr">10 tracks</span>
+          </a>
+          <a class="cover right p-dots" style="--c:var(--truth-dk);--x:70%;--r:10deg" href="{{ '/readingaudio/dominoes/quickstarter/the-selfish-giant' | relative_url }}" aria-label="The Selfish Giant, 6 tracks">
+            <span class="ser">Dominoes</span><span class="ti">The Selfish Giant</span><span class="tr">6 tracks</span>
+          </a>
+          <a class="cover p-sun" style="--c:var(--brave-dk);--x:0%;--r:-1deg" href="{{ '/readingaudio/dominoes/level-3/conan-the-barbarian-red-nails' | relative_url }}" aria-label="Conan the Barbarian: Red Nails, 10 tracks">
+            <span class="ser">Dominoes · Level 3</span><span class="ti">Conan the Barbarian: Red Nails</span>
+            <span class="tr"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z" fill="currentColor"/></svg></span>10 tracks</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="sec" aria-labelledby="week-title">
+        <h2 id="week-title">This week in class</h2>
+        <p class="sub" id="week-when">Each class's current reader, from the latest homework.</p>
+        <div class="week" id="week-list">
+          <p class="week-fallback">See <a href="{{ '/homework.html' | relative_url }}">today's homework</a> for each class's reading and listening.</p>
+        </div>
+      </section>
+
+      <section class="sec" id="classes" aria-labelledby="levels-title">
+        <h2 id="levels-title">Six levels, one path</h2>
+        <p class="sub">Each class is named for a quality of character we hope to build.</p>
+        <ol class="path">
+          <li style="--cls:var(--kind)"><span class="dot">1</span><b>Kind</b><small>Foundations</small></li>
+          <li style="--cls:var(--brave)"><span class="dot">2</span><b>Brave</b><small>Early readers</small></li>
+          <li style="--cls:var(--truth)"><span class="dot">3</span><b>Truth</b><small>Developing</small></li>
+          <li style="--cls:var(--virtue)"><span class="dot">4</span><b>Virtue</b><small>Intermediate</small></li>
+          <li style="--cls:var(--patience)"><span class="dot">5</span><b>Patience</b><small>Advanced</small></li>
+          <li style="--cls:var(--honor)"><span class="dot">6</span><b>Honor</b><small>Mastery</small></li>
+        </ol>
+      </section>
+
+      <section class="lib" aria-labelledby="lib-title">
+        <div class="big"><span data-stat="books">135</span><span>books with audio, in six series</span></div>
+        <div class="lib-copy">
+          <h2 id="lib-title" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Reading Library</h2>
+          <p>Every assigned reader has chapter-by-chapter audio that students can stream or download, at school or at home.</p>
+          <div class="series">
+            <a href="{{ '/readingaudio/#s-classics-tales' | relative_url }}">Classics Tales</a>
+            <a href="{{ '/readingaudio/#s-dominoes' | relative_url }}">Dominoes</a>
+            <a href="{{ '/readingaudio/#s-readanddiscover' | relative_url }}">Read and Discover</a>
+            <a href="{{ '/readingaudio/#s-readandimagine' | relative_url }}">Read and Imagine</a>
+            <a href="{{ '/readingaudio/#s-wayside-school' | relative_url }}">Wayside School</a>
+            <a href="{{ '/readingaudio/#s-other' | relative_url }}">Other titles</a>
           </div>
         </div>
       </section>
@@ -441,7 +311,102 @@
 
     {%- include footer.html -%}
 
-    {%- include sub-footer.html -%}
+    <script>
+    (function () {
+      var PLAY = '<svg viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z" fill="currentColor"/></svg>';
+      var SERIES = { 'classics-tales': 'Classics Tales', dominoes: 'Dominoes', readanddiscover: 'Read and Discover',
+                     readandimagine: 'Read and Imagine', waysideschool: 'Wayside School' };
+      var PATTERNS = ['p-dots', 'p-arc', 'p-stripe', 'p-grid', 'p-sun', 'p-dots'];
+
+      function el(tag, cls, text) {
+        var e = document.createElement(tag);
+        if (cls) e.className = cls;
+        if (text != null) e.textContent = text;
+        return e;
+      }
+      function levelName(s) {
+        if (/^quickstarter$/i.test(s)) return 'Quick Starter';
+        var m = s.match(/^level-?(\d)$/i);
+        return m ? 'Level ' + m[1] : s.charAt(0).toUpperCase() + s.slice(1);
+      }
+      // "/readingaudio/dominoes/level-1/x" → "Dominoes · Level 1"
+      function seriesOf(href) {
+        var m = href.match(/\/readingaudio\/(.+)$/);
+        if (!m) return 'Listen online';
+        var segs = m[1].split('/').filter(Boolean);
+        var name = SERIES[segs[0]];
+        if (!name) return 'Reading Library';
+        return segs.length >= 3 ? name + ' · ' + levelName(segs[1]) : name;
+      }
+      function load(url) {
+        return fetch(url, { cache: 'no-cache' }).then(function (r) {
+          if (!r.ok) throw new Error(r.status);
+          return r.text();
+        }).then(function (html) { return new DOMParser().parseFromString(html, 'text/html'); });
+      }
+
+      // This week in class: one entry per class from the newest day on the homework page.
+      load('{{ "/homework.html" | relative_url }}').then(function (doc) {
+        var day = doc.querySelector('.day-block');
+        if (!day) return;
+        var cards = day.querySelectorAll('.class-card');
+        if (!cards.length) return;
+        var list = document.getElementById('week-list');
+        list.textContent = '';
+        Array.prototype.forEach.call(cards, function (card, i) {
+          var cls = card.getAttribute('data-class') || '';
+          var name = (card.querySelector('.card-name') || {}).textContent || cls;
+          var lines = Array.prototype.map.call(card.querySelectorAll('.assignment'), function (a) {
+            return a.textContent.replace(/\s+/g, ' ').trim();
+          }).filter(Boolean);
+          var link = card.querySelector('a.audio-link');
+          var item = el('div', 'week-item');
+          item.style.setProperty('--cls', 'var(--' + cls + ', var(--accent))');
+          item.appendChild(el('span', 'tag', name.trim()));
+          var cover;
+          if (link) {
+            var href = link.getAttribute('href');
+            var title = link.textContent.replace(/^\s*▶\s*/, '').trim();
+            cover = el('a', 'cover ' + PATTERNS[i % PATTERNS.length]);
+            cover.href = href;
+            if (/^https?:/i.test(href) && !/loganenglishacademy\.com/i.test(href)) { cover.target = '_blank'; cover.rel = 'noopener'; }
+            cover.style.setProperty('--c', 'var(--' + cls + '-dk, var(--accent))');
+            cover.setAttribute('aria-label', 'Listen to ' + title + ' (' + name.trim() + ')');
+            cover.appendChild(el('span', 'ser', seriesOf(href)));
+            cover.appendChild(el('span', 'ti', title));
+            var tr = el('span', 'tr');
+            var p = el('span', 'play'); p.setAttribute('aria-hidden', 'true'); p.innerHTML = PLAY;
+            tr.appendChild(p); tr.appendChild(document.createTextNode('Listen'));
+            cover.appendChild(tr);
+          } else {
+            cover = el('div', 'cover plain');
+            cover.appendChild(el('span', 'ser', 'No audio tonight'));
+            cover.appendChild(el('span', 'ti', (lines[0] || name).split(':')[0]));
+            cover.appendChild(el('span', 'tr', ''));
+          }
+          item.appendChild(cover);
+          var ul = el('ul', 'lines');
+          lines.slice(0, 3).forEach(function (l) { ul.appendChild(el('li', null, l)); });
+          item.appendChild(ul);
+          list.appendChild(item);
+        });
+        var when = day.querySelector('.day-heading');
+        if (when) document.getElementById('week-when').textContent = 'From the homework for ' + when.textContent.trim() + '.';
+      }).catch(function () { /* keep the fallback link */ });
+
+      // Library totals, counted from the Reading Library page so they never go stale.
+      load('{{ "/readingaudio/" | relative_url }}').then(function (doc) {
+        var books = doc.querySelectorAll('.book-card').length, tracks = 0;
+        Array.prototype.forEach.call(doc.querySelectorAll('.track-count'), function (t) {
+          var n = parseInt(t.textContent, 10);
+          if (!isNaN(n)) tracks += n;
+        });
+        if (!books) return;
+        Array.prototype.forEach.call(document.querySelectorAll('[data-stat="books"]'), function (e) { e.textContent = books.toLocaleString('en-US'); });
+        Array.prototype.forEach.call(document.querySelectorAll('[data-stat="tracks"]'), function (e) { e.textContent = tracks.toLocaleString('en-US'); });
+      }).catch(function () {});
+    })();
+    </script>
 
   </body>
 

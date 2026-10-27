@@ -6,349 +6,175 @@
 <title>Homework | Logan English Academy</title>
 <meta name="description" content="Daily homework assignments for every class at Logan English Academy — posted after each lesson with page numbers and listen-along links.">
 <link rel="icon" type="image/png" href="/assets/images/logo80px.png">
-<meta name="theme-color" content="#3d6b4f">
+<meta name="theme-color" content="#1b2b4b">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Logan English Academy">
 <meta property="og:title" content="Homework | Logan English Academy">
 <meta property="og:description" content="Daily homework assignments for every class — posted after each lesson with page numbers and listen-along links.">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+  /* Face-out design — same tokens as _sass/minima/custom-styles.scss */
   :root {
-    --bg: #faf8f5;
-    --card: #ffffff;
-    --border: #e8e2d9;
-    --text: #2d2a26;
-    --muted: #6e6659;
-    --accent: #3d6b4f;
-    --accent-light: #eaf2ed;
-
-    --kind:     #4a7fcb;
-    --brave:    #c0572a;
-    --truth:    #7a5cbf;
-    --virtue:   #2e9e7a;
-    --patience: #b88a10;
-    --honor:    #b84c6e;
+    --bg: #ffffff; --card: #ffffff; --wash: #f3f4f8; --border: #e4e7ee;
+    --text: #111a2e; --muted: #596276; --accent: #1b2b4b; --accent-light: #eef1f7;
+    --navy: #1b2b4b; --gold: #f0c35c;
+    --font-display: "Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+    --font-body: "Albert Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --kind: #4a7fcb;  --brave: #c0572a;  --truth: #7a5cbf;  --virtue: #2e9e7a;  --patience: #b88a10;  --honor: #b84c6e;
+    --kind-dk: #3d6cb2; --brave-dk: #ad4b22; --truth-dk: #6a4daa; --virtue-dk: #23866a; --patience-dk: #8f6a0c; --honor-dk: #a33f5e;
+    --gutter: clamp(16px, 3vw, 32px);
   }
-
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  [hidden] { display: none !important; }
+  body { font-family: var(--font-body); background: var(--bg); color: var(--text); min-height: 100vh; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); }
 
-  body {
-    font-family: 'Nunito', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-  }
-
-  /* ── Site header ── */
-  .site-header {
-    background: var(--card);
-    border-bottom: 2px solid var(--border);
-    padding: 14px 28px;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-  }
-  .site-header img { height: 40px; }
-  .site-header .site-brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-  }
-  .site-header .site-name {
-    font-family: 'Lora', serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--accent);
-    text-decoration: none;
-    line-height: 1.2;
-  }
-  .site-header nav {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .site-header nav a {
-    font-weight: 700;
-    font-size: 0.9rem;
-    color: var(--accent);
-    text-decoration: none;
-    padding: 6px 14px;
-    border-radius: 8px;
-    background: var(--accent-light);
-    transition: background 0.15s;
-  }
-  .site-header nav a:hover { background: #d0e8d8; }
-
-  /* ── Layout ── */
-  main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 36px 20px 80px;
+  /* ── Site header (matches the homepage) ── */
+  .site-header { display: flex; align-items: center; gap: 14px; padding: 14px var(--gutter); background: var(--card); border-bottom: 1px solid var(--border); line-height: 1.4; }
+  .site-brand { display: flex; align-items: center; gap: 10px; min-width: 0; text-decoration: none; }
+  .site-header img { height: 31px; width: auto; }
+  .site-name { font-family: var(--font-display); font-weight: 700; font-size: 1.08rem; letter-spacing: -.01em; color: var(--text); white-space: nowrap; }
+  .site-header nav { margin-left: auto; display: flex; align-items: center; gap: 4px; }
+  .site-header nav a { font-weight: 500; font-size: .92rem; color: var(--muted); text-decoration: none; padding: 8px 13px; border-radius: 10px; white-space: nowrap; }
+  .site-header nav a:hover, .site-header nav a[aria-current="page"] { background: var(--wash); color: var(--text); }
+  :focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+  @media (max-width: 640px) { .site-header nav .nav-optional { display: none; } .site-header nav a { padding: 8px 10px; } }
+  @media (max-width: 540px) {
+    .site-header { flex-wrap: wrap; row-gap: 8px; padding-block: 12px 10px; }
+    .site-header nav { margin-left: 0; width: 100%; }
+    .site-header nav a { background: var(--wash); color: var(--text); }
   }
 
-  /* ── Page head ── */
-  .page-head { margin-bottom: 30px; }
-  .page-kicker {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 800;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--accent);
-    background: var(--accent-light);
-    border-radius: 99px;
-    padding: 5px 13px;
-    margin-bottom: 14px;
+  main { max-width: 1180px; margin: 0 auto; padding: 0 var(--gutter) 24px; }
+
+  /* ── Title band ── */
+  .page-head {
+    margin-top: 16px; border-radius: 28px; background: var(--navy); color: #fff;
+    padding: clamp(28px, 4vw, 44px) clamp(22px, 3.5vw, 44px);
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 20px; align-items: end;
   }
-  h1 {
-    font-family: 'Lora', serif;
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .page-lede {
-    font-size: 1rem;
-    line-height: 1.65;
-    color: var(--muted);
-    max-width: 42em;
+  .page-kicker { font-size: .78rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+  .page-head h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: .95; letter-spacing: -.035em; margin-bottom: 14px; }
+  .page-lede { color: #c6d0e4; font-size: 1.05rem; line-height: 1.55; max-width: 52ch; }
+  .page-latest { display: flex; flex-direction: column; gap: 2px; background: rgba(255, 255, 255, .08); border-radius: 16px; padding: 14px 18px; text-align: right; }
+  .page-latest span { font-size: .72rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--gold); }
+  .page-latest b { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; letter-spacing: -.01em; white-space: nowrap; }
+  @media (max-width: 640px) {
+    .page-head { grid-template-columns: minmax(0, 1fr); border-radius: 22px; }
+    .page-latest { text-align: left; align-self: start; }
   }
 
-  /* ── Filter bar ── */
+  /* ── Class filter: stays at the top while scrolling ── */
   .filter-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 36px;
-    padding: 16px 20px;
-    background: var(--card);
-    border: 2px solid var(--border);
-    border-radius: 14px;
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+    display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+    margin: 16px 0 4px; padding: 12px 0;
+    background: rgba(255, 255, 255, .94); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
   }
-  .filter-label {
-    font-size: 0.75rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-    align-self: center;
-    margin-right: 4px;
-  }
+  .filter-label { font-size: .75rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
   .filter-btn {
-    padding: 7px 16px;
-    border-radius: 99px;
-    border: 2px solid var(--border);
-    background: var(--bg);
-    color: var(--muted);
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.88rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.15s ease;
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 8px 14px; border-radius: 99px; border: 1.5px solid var(--border); background: var(--card);
+    color: var(--text); font-family: var(--font-body); font-size: .9rem; font-weight: 600; cursor: pointer;
+    transition: background .15s, border-color .15s, color .15s;
   }
-  .filter-btn:hover { border-color: #aaa; color: var(--text); }
-  .filter-btn.active[data-class="all"]      { background: var(--accent);   border-color: var(--accent);   color: #fff; }
-  .filter-btn.active[data-class="kind"]     { background: var(--kind);     border-color: var(--kind);     color: #fff; }
-  .filter-btn.active[data-class="brave"]    { background: var(--brave);    border-color: var(--brave);    color: #fff; }
-  .filter-btn.active[data-class="truth"]    { background: var(--truth);    border-color: var(--truth);    color: #fff; }
-  .filter-btn.active[data-class="virtue"]   { background: var(--virtue);   border-color: var(--virtue);   color: #fff; }
-  .filter-btn.active[data-class="patience"] { background: var(--patience); border-color: var(--patience); color: #fff; }
-  .filter-btn.active[data-class="honor"]    { background: var(--honor);    border-color: var(--honor);    color: #fff; }
+  .filter-btn:hover { border-color: var(--cls, var(--navy)); }
+  .filter-btn:not([data-class="all"])::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--cls); }
+  .filter-btn.active { background: var(--cls, var(--navy)); border-color: var(--cls, var(--navy)); color: #fff; }
+  .filter-btn.active::before { background: #fff; }
+  .filter-btn[data-class="kind"], .class-card[data-class="kind"]         { --cls: var(--kind);     --cls-dk: var(--kind-dk); }
+  .filter-btn[data-class="brave"], .class-card[data-class="brave"]       { --cls: var(--brave);    --cls-dk: var(--brave-dk); }
+  .filter-btn[data-class="truth"], .class-card[data-class="truth"]       { --cls: var(--truth);    --cls-dk: var(--truth-dk); }
+  .filter-btn[data-class="virtue"], .class-card[data-class="virtue"]     { --cls: var(--virtue);   --cls-dk: var(--virtue-dk); }
+  .filter-btn[data-class="patience"], .class-card[data-class="patience"] { --cls: var(--patience); --cls-dk: var(--patience-dk); }
+  .filter-btn[data-class="honor"], .class-card[data-class="honor"]       { --cls: var(--honor);    --cls-dk: var(--honor-dk); }
+  @media (max-width: 640px) {
+    .filter-bar { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter); }
+    .filter-bar::-webkit-scrollbar { display: none; }
+    .filter-label { display: none; }
+    .filter-btn { flex-shrink: 0; }
+  }
 
-  /* ── Day block ── */
-  .day-block { margin-bottom: 36px; }
+  /* ── Days and class cards ── */
+  .day-block { margin-top: 34px; scroll-margin-top: 80px; }
   .day-block.day-hidden { display: none; }
-
-  .day-heading {
-    font-family: 'Lora', serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 14px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--border);
-    color: var(--text);
-  }
-
-  .class-cards {
-    display: grid;
-    gap: 12px;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  }
-
-  /* ── Class card ── */
-  .class-card {
-    background: var(--card);
-    border: 1.5px solid var(--border);
-    border-radius: 14px;
-    overflow: hidden;
-    transition: box-shadow 0.2s;
-  }
-  .class-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+  .day-heading { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-family: var(--font-display); font-weight: 800; font-size: clamp(1.35rem, 2.4vw, 1.7rem); letter-spacing: -.025em; margin-bottom: 14px; }
+  .day-latest { font-family: var(--font-body); font-size: .7rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; background: var(--gold); color: var(--navy); padding: 4px 10px; border-radius: 99px; }
+  .class-cards { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); }
+  .class-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 10px; transition: box-shadow .2s; min-width: 0; }
+  .class-card:hover { box-shadow: 0 12px 28px -20px rgba(17, 26, 46, .4); }
   .class-card.hidden { display: none; }
-
-  .card-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 11px 16px;
-    border-bottom: 1.5px solid var(--border);
-  }
-  .card-dot {
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-  .card-name {
-    font-weight: 800;
-    font-size: 0.95rem;
-    letter-spacing: 0.02em;
-  }
-
-  /* Per-class colours */
-  .class-card[data-class="kind"]     .card-dot { background: var(--kind); }
-  .class-card[data-class="brave"]    .card-dot { background: var(--brave); }
-  .class-card[data-class="truth"]    .card-dot { background: var(--truth); }
-  .class-card[data-class="virtue"]   .card-dot { background: var(--virtue); }
-  .class-card[data-class="patience"] .card-dot { background: var(--patience); }
-  .class-card[data-class="honor"]    .card-dot { background: var(--honor); }
-
-  .class-card[data-class="kind"]     .card-name { color: var(--kind); }
-  .class-card[data-class="brave"]    .card-name { color: var(--brave); }
-  .class-card[data-class="truth"]    .card-name { color: var(--truth); }
-  .class-card[data-class="virtue"]   .card-name { color: var(--virtue); }
-  .class-card[data-class="patience"] .card-name { color: var(--patience); }
-  .class-card[data-class="honor"]    .card-name { color: var(--honor); }
-
-  .card-body {
-    padding: 12px 16px 14px;
-  }
-  .assignment {
-    font-size: 0.88rem;
-    line-height: 1.65;
-    color: var(--text);
-    margin-bottom: 1px;
-  }
+  .card-header { display: flex; align-items: center; gap: 8px; }
+  .card-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--cls, var(--navy)); flex-shrink: 0; }
+  .card-name { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; letter-spacing: -.01em; color: var(--cls-dk, var(--text)); }
+  .card-body { display: flex; flex-direction: column; gap: 4px; }
+  .assignment { font-size: .92rem; line-height: 1.5; color: var(--text); overflow-wrap: anywhere; }
   .assignment strong { font-weight: 700; }
-
   .audio-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 10px;
-    font-size: 0.83rem;
-    font-weight: 700;
-    color: var(--accent);
-    text-decoration: none;
-    padding: 5px 12px;
-    border-radius: 8px;
-    background: var(--accent-light);
-    transition: background 0.15s;
+    align-self: flex-start; display: inline-flex; align-items: center; gap: 9px; margin-top: 8px;
+    padding: 6px 14px 6px 6px; border-radius: 99px;
+    background: var(--wash); background: color-mix(in srgb, var(--cls, var(--navy)) 12%, #fff);
+    color: var(--cls-dk, var(--navy)); font-weight: 700; font-size: .86rem; line-height: 1.3; text-decoration: none;
+    transition: background .15s;
   }
-  .audio-link:hover { background: #d0e8d8; }
+  .audio-link:hover { background: color-mix(in srgb, var(--cls, var(--navy)) 20%, #fff); }
+  .audio-link .play { width: 26px; height: 26px; border-radius: 50%; background: var(--cls-dk, var(--navy)); color: #fff; display: inline-grid; place-items: center; flex-shrink: 0; }
+  .audio-link .play svg { width: 42%; height: 42%; margin-left: 8%; }
 
-  /* ── Footer ── */
-  .site-footer {
-    padding: 36px 28px 26px;
-    font-size: 0.88rem;
-    color: var(--muted);
-    border-top: 2px solid var(--border);
-    background: var(--card);
-    margin-top: 20px;
-  }
-  .site-footer a { color: var(--accent); text-decoration: none; }
-  .footer-inner {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  .footer-name {
-    font-family: 'Lora', serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--accent);
-    display: block;
-    margin-bottom: 4px;
-  }
-  .footer-brand p { margin: 0; }
-  .footer-brand a { font-weight: 700; }
-  .footer-nav { display: flex; flex-wrap: wrap; gap: 8px; }
-  .footer-nav a {
-    font-weight: 700;
-    font-size: 0.85rem;
-    padding: 6px 14px;
-    border-radius: 8px;
-    background: var(--accent-light);
-    transition: background 0.15s;
-  }
-  .footer-nav a:hover { background: #d0e8d8; }
-  .footer-copy {
-    max-width: 900px;
-    margin: 24px auto 0;
-    padding-top: 18px;
-    border-top: 1.5px solid var(--border);
-    font-size: 0.8rem;
-  }
+  /* ── Earlier weeks ── */
+  body.collapse-older .day-block.is-older { display: none; }
+  .show-older-wrap { text-align: center; margin: 36px 0 8px; }
+  .show-older-wrap.hidden { display: none; }
+  .show-older-btn { font-family: var(--font-body); font-weight: 700; font-size: .95rem; color: #fff; background: var(--navy); border: 0; border-radius: 14px; padding: 12px 22px; cursor: pointer; }
+  .show-older-btn:hover { background: #24365c; }
 
   /* ── Scroll fade-in ── */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  .fade-in.visible {
-    opacity: 1;
-    transform: none;
-  }
+  .fade-in { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+  .fade-in.visible { opacity: 1; transform: none; }
   @media (prefers-reduced-motion: reduce) {
-    .fade-in {
-      opacity: 1;
-      transform: none;
-      transition: none;
-    }
+    .fade-in { opacity: 1; transform: none; transition: none; }
+    .class-card, .audio-link, .filter-btn { transition: none; }
   }
 
-  /* ── Earlier-weeks collapse ── */
-  body.collapse-older .day-block.is-older { display: none; }
-  .show-older-wrap { text-align: center; margin: 8px 0 40px; }
-  .show-older-btn {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 0.9rem;
-    color: var(--accent);
-    background: var(--accent-light);
-    border: 2px solid var(--accent);
-    border-radius: 10px;
-    padding: 11px 24px;
-    cursor: pointer;
-    transition: background 0.15s, color 0.15s;
-  }
-  .show-older-btn:hover { background: var(--accent); color: #fff; }
-  .show-older-wrap.hidden { display: none; }
+  /* ── Footer (matches the homepage) ── */
+  .site-footer { margin-top: 64px; padding: 32px var(--gutter) 26px; border-top: 1px solid var(--border); color: var(--muted); font-size: .9rem; }
+  .site-footer a { color: var(--text); }
+  .footer-inner { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 20px; }
+  .footer-name { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; letter-spacing: -.02em; color: var(--text); display: block; margin-bottom: 4px; }
+  .footer-mail { font-weight: 600; text-decoration: none; }
+  .footer-mail:hover { text-decoration: underline; }
+  .footer-nav { display: flex; flex-wrap: wrap; gap: 6px; }
+  .footer-nav a { font-weight: 500; font-size: .88rem; text-decoration: none; padding: 7px 13px; border-radius: 10px; background: var(--wash); }
+  .footer-nav a:hover { background: var(--accent-light); }
+  .footer-copy { max-width: 1180px; margin: 22px auto 0; padding-top: 16px; border-top: 1px solid var(--border); font-size: .82rem; }
 </style>
 </head>
 <body>
 
 <header class="site-header">
   <a href="/" class="site-brand">
-    <img src="/assets/images/logo80px.png" onerror="this.style.display='none'" alt="Logan English Academy Logo">
+    <img src="/assets/images/logo80px.png" alt="" width="28" height="31" onerror="this.style.display='none'">
     <span class="site-name">Logan English Academy</span>
   </a>
   <nav aria-label="Primary">
-    <a href="/homework.html">Homework</a>
+    <a class="nav-optional" href="/#classes">Classes</a>
+    <a href="/homework.html" aria-current="page">Homework</a>
     <a href="/readingaudio/">Reading Library</a>
+    <a class="nav-optional" href="#contact">Contact</a>
   </nav>
 </header>
 
 <main>
   <div class="page-head">
-    <span class="page-kicker">For Students &amp; Parents</span>
-    <h1>Homework Board</h1>
-    <p class="page-lede">Daily assignments for every class, posted after each lesson — with page numbers and listen-along links for assigned readers. Use the filter to see just your class.</p>
+    <div>
+      <p class="page-kicker">For students &amp; parents</p>
+      <h1>Homework</h1>
+      <p class="page-lede">Posted after every lesson, with page numbers and listen-along links. Choose your class to see only its work.</p>
+    </div>
+    <p class="page-latest" id="page-latest" hidden><span>Latest</span><b id="page-latest-day"></b></p>
   </div>
 
   <!-- FILTER BAR -->
@@ -376,7 +202,7 @@
           <div class="assignment"><strong>The Little Red Hen:</strong> Pages 8-9</div>
           <div class="assignment"><strong>Activity Book:</strong> Page 6</div>
           <div class="assignment"><strong>Picture Dictionary:</strong> Write 4 Words 5x</div>
-          <a class="audio-link" href="https://www.loganenglishacademy.com/readingaudio/classics-tales/level-1/the-little-red-hen" target="_blank">▶ The Little Red Hen</a>
+          <a class="audio-link" href="/readingaudio/classics-tales/level-1/the-little-red-hen" target="_blank">▶ The Little Red Hen</a>
         </div>
       </div>
 
@@ -386,7 +212,7 @@
           <div class="assignment"><strong>The Heron:</strong> Pages 6-7</div>
           <div class="assignment"><strong>Activity Book:</strong> Pages 6</div>
           <div class="assignment"><strong>Picture Dictionary:</strong> Write 8 Words 5x</div>
-          <a class="audio-link" href="https://www.loganenglishacademy.com/readingaudio/classics-tales/level-3/the-heron-and-the-hummingbird" target="_blank">▶ The Heron</a>
+          <a class="audio-link" href="/readingaudio/classics-tales/level-3/the-heron-and-the-hummingbird" target="_blank">▶ The Heron</a>
         </div>
       </div>
 
@@ -396,7 +222,7 @@
           <div class="assignment"><strong>Oxford Discover 3:</strong> Grammar Book 50-52</div>
           <div class="assignment"><strong>The Skateboarder:</strong> Pages 1-3</div>
           <div class="assignment"><strong>Wordlist:</strong> Write 10 Words 5x</div>
-          <a class="audio-link" href="https://www.loganenglishacademy.com/readingaudio/dominoes/quickstarter/the-skateboarder" target="_blank">▶ The Skateboarder</a>
+          <a class="audio-link" href="/readingaudio/dominoes/quickstarter/the-skateboarder" target="_blank">▶ The Skateboarder</a>
         </div>
       </div>
 
@@ -406,7 +232,7 @@
           <div class="assignment"><strong>Oxford Discover 4:</strong> Workbook Pages 18-19</div>
           <div class="assignment"><strong>Wordlist:</strong> Write Words 1-10 5x; Definitions</div>
           <div class="assignment"><strong>Grammar Worksheet:</strong> Pages 37-38</div>
-          <a class="audio-link" href="https://www.loganenglishacademy.com/readingaudio/dominoes/level-1/the-wrong-trousers" target="_blank">▶ The Real Mccoy And Other Ghost Stories</a>
+          <a class="audio-link" href="/readingaudio/dominoes/level-1/the-wrong-trousers" target="_blank">▶ The Real Mccoy And Other Ghost Stories</a>
         </div>
       </div>
 
@@ -416,7 +242,7 @@
           <div class="assignment"><strong>Reading Explorer:</strong> 5B Worksheets</div>
           <div class="assignment"><strong>Conan the Barbarian:</strong> Reading Activities; Correction & Converting 5 direct speech sentences into reported speech sentences.</div>
           <div class="assignment"><strong>Wordlist:</strong> Write Words 1-12 5x; Definitions</div>
-          <a class="audio-link" href="https://www.loganenglishacademy.com/readingaudio/dominoes/level-3/conan-the-barbarian-red-nails" target="_blank">▶ Conan the Barbarian</a>
+          <a class="audio-link" href="/readingaudio/dominoes/level-3/conan-the-barbarian-red-nails" target="_blank">▶ Conan the Barbarian</a>
         </div>
       </div>
 
@@ -7340,12 +7166,12 @@
 
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer" id="contact">
   <div class="footer-inner">
     <div class="footer-brand">
       <span class="footer-name">Logan English Academy</span>
-      <p>Book-based English instruction for young learners.</p>
-      <p><a href="mailto:logan@loganenglishacademy.com">logan@loganenglishacademy.com</a></p>
+      <p>Book-based English for young learners.</p>
+      <p><a class="footer-mail" href="mailto:logan@loganenglishacademy.com">logan@loganenglishacademy.com</a></p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
       <a href="/">Home</a>
@@ -7353,7 +7179,7 @@
       <a href="/readingaudio/">Reading Library</a>
     </nav>
   </div>
-  <div class="footer-copy">&copy; <span id="footer-year">2026</span> Logan English Academy. All rights reserved.</div>
+  <div class="footer-copy">&copy; <span id="footer-year">2026</span> Logan English Academy. Audio files are for enrolled students only.</div>
 </footer>
 
 <!-- FILTER + VIEW SCRIPT -->
@@ -7462,6 +7288,30 @@
   window.addEventListener('scroll', revealOnScroll, { passive: true });
   window.addEventListener('resize', revealOnScroll);
   revealOnScroll();
+  // Show each listening link as a play button. The pasted homework keeps its
+  // plain "▶ Title" text, so the homework generator needs no changes.
+  const PLAY = '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1l7 4-7 4z" fill="currentColor"/></svg>';
+  document.querySelectorAll('a.audio-link').forEach(a => {
+    const label = a.textContent.replace(/^\s*▶\s*/, '').trim();
+    a.textContent = '';
+    const p = document.createElement('span');
+    p.className = 'play';
+    p.innerHTML = PLAY;
+    a.append(p, document.createTextNode(label));
+    a.setAttribute('aria-label', 'Listen to ' + label);
+  });
+
+  // Mark the newest day and show its date in the title band.
+  const newest = dayBlocks[0] && dayBlocks[0].querySelector('.day-heading');
+  if (newest) {
+    const day = newest.textContent.trim();
+    const badge = document.createElement('span');
+    badge.className = 'day-latest';
+    badge.textContent = 'Latest';
+    newest.append(badge);
+    document.getElementById('page-latest-day').textContent = day;
+    document.getElementById('page-latest').hidden = false;
+  }
 })();
 </script>
 

@@ -6,181 +6,218 @@
   <title>Reading Library — Logan English Academy</title>
   <meta name="description" content="Listen-along audio for Logan English Academy's graded readers and novels — Oxford Dominoes, Read and Discover, Read and Imagine, Classics Tales and more."/>
   <link rel="icon" type="image/png" href="/assets/images/logo80px.png"/>
-  <meta name="theme-color" content="#3d6b4f"/>
+  <meta name="theme-color" content="#1b2b4b"/>
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="Logan English Academy"/>
   <meta property="og:title" content="Reading Library — Logan English Academy"/>
   <meta property="og:description" content="Listen-along audio for our graded readers and novels — read and listen anywhere."/>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Lora:wght@600;700&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Albert+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{
-      --bg:#faf8f5;--card:#ffffff;--border:#e8e2d9;
-      --text:#2d2a26;--muted:#6e6659;
-      --accent:#3d6b4f;--accent-light:#eaf2ed;--r:12px
+    /* Face-out design — same tokens as _sass/minima/custom-styles.scss */
+    :root {
+      --bg: #ffffff; --card: #ffffff; --wash: #f3f4f8; --border: #e4e7ee;
+      --text: #111a2e; --muted: #596276; --accent: #1b2b4b; --accent-light: #eef1f7;
+      --navy: #1b2b4b; --gold: #f0c35c;
+      --font-display: "Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+      --font-body: "Albert Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --gutter: clamp(16px, 3vw, 32px);
     }
-    body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    [hidden] { display: none !important; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--text); min-height: 100vh; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); }
+    :focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
 
-    /* ── Site header (matches site-wide design) ── */
-    .site-header{background:var(--card);border-bottom:2px solid var(--border);padding:14px 28px;display:flex;align-items:center;gap:14px}
-    .site-header img{height:40px;width:auto}
-    .site-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-    .site-name{font-family:'Lora',serif;font-size:1.1rem;font-weight:700;color:var(--accent);line-height:1.2}
-    .site-header nav{margin-left:auto;display:flex;align-items:center;gap:8px}
-    .site-header nav a{font-weight:700;font-size:0.9rem;color:var(--accent);text-decoration:none;padding:6px 14px;border-radius:8px;background:var(--accent-light);transition:background .15s}
-    .site-header nav a:hover{background:#d0e8d8}
+    /* ── Site header (matches the homepage) ── */
+    .site-header { display: flex; align-items: center; gap: 14px; padding: 14px var(--gutter); background: var(--card); border-bottom: 1px solid var(--border); line-height: 1.4; }
+    .site-brand { display: flex; align-items: center; gap: 10px; min-width: 0; text-decoration: none; }
+    .site-header img { height: 31px; width: auto; }
+    .site-name { font-family: var(--font-display); font-weight: 700; font-size: 1.08rem; letter-spacing: -.01em; color: var(--text); white-space: nowrap; }
+    .site-header nav { margin-left: auto; display: flex; align-items: center; gap: 4px; }
+    .site-header nav a { font-weight: 500; font-size: .92rem; color: var(--muted); text-decoration: none; padding: 8px 13px; border-radius: 10px; white-space: nowrap; }
+    .site-header nav a:hover, .site-header nav a[aria-current="page"] { background: var(--wash); color: var(--text); }
+    @media (max-width: 640px) { .site-header nav .nav-optional { display: none; } .site-header nav a { padding: 8px 10px; } }
+    @media (max-width: 540px) {
+      .site-header { flex-wrap: wrap; row-gap: 8px; padding-block: 12px 10px; }
+      .site-header nav { margin-left: 0; width: 100%; }
+      .site-header nav a { background: var(--wash); color: var(--text); }
+    }
 
-    /* ── Header (Variant B) ── */
-    .header{background:var(--card);border-bottom:2px solid var(--border);padding:14px 28px;display:flex;align-items:center;gap:14px}
-    .header-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-    .header-name{font-family:'Lora',serif;font-size:1.1rem;font-weight:700;color:var(--accent);line-height:1.2}
-    .header-name span{display:none}
-    .back-link{margin-left:auto;font-size:0.9rem;font-weight:700;color:var(--accent);text-decoration:none;padding:6px 14px;border-radius:8px;background:var(--accent-light);display:flex;align-items:center;gap:5px;transition:background .15s}
-    .back-link:hover{background:#d0e8d8}
+    .shell { max-width: 1180px; margin: 0 auto; padding-inline: var(--gutter); }
 
-    /* ── Book banner (Variant A) ── */
-    .ban{background:var(--card);border-bottom:2px solid var(--border);padding:1.5rem;display:flex;align-items:center;gap:1.25rem}
-    .bdg{width:52px;height:52px;border-radius:10px;background:var(--accent-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:26px}
-    .bt{font-family:'Lora',serif;font-size:1.35rem;font-weight:700;color:var(--text)}
-    .bs{font-size:14px;color:var(--muted);margin-top:2px}
-    .bm{margin-left:auto;text-align:right;flex-shrink:0}
-    .mn{font-size:1.6rem;font-weight:800;color:var(--accent);line-height:1}
-    .ml{font-size:12px;color:var(--muted);font-weight:600}
+    /* ── Title band ── */
+    .page-head {
+      margin-top: 16px; border-radius: 28px; background: var(--navy); color: #fff;
+      padding: clamp(28px, 4vw, 44px) clamp(22px, 3.5vw, 44px);
+      display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: end;
+    }
+    .page-kicker { font-size: .78rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .page-head h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: .95; letter-spacing: -.035em; margin-bottom: 14px; text-wrap: balance; }
+    .page-lede { color: #c6d0e4; font-size: 1.05rem; line-height: 1.55; max-width: 50ch; }
+    .hero-stats { display: flex; gap: 10px; }
+    .hero-stat { background: rgba(255, 255, 255, .08); border-radius: 16px; padding: 14px 16px; min-width: 92px; }
+    .hero-stat-n { font-family: var(--font-display); font-weight: 800; font-size: 1.9rem; line-height: 1; letter-spacing: -.03em; color: var(--gold); font-variant-numeric: tabular-nums; }
+    .hero-stat-l { font-size: .72rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #c6d0e4; margin-top: 4px; }
+    @media (max-width: 760px) {
+      .page-head { grid-template-columns: minmax(0, 1fr); border-radius: 22px; }
+      .hero-stat { flex: 1; min-width: 0; }
+    }
 
-    /* ── Book banner (Variant B) ── */
-    .banner{background:var(--card);border-bottom:2px solid var(--border);padding:1.5rem;display:flex;align-items:center;gap:1.25rem}
-    .banner-badge{width:52px;height:52px;border-radius:10px;background:var(--accent-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:26px}
-    .banner-title{font-family:'Lora',serif;font-size:1.35rem;font-weight:700;color:var(--text);line-height:1.2}
-    .banner-author{font-size:14px;color:var(--muted);margin-top:2px}
-    .banner-meta{margin-left:auto;text-align:right;flex-shrink:0}
-    .meta-num{font-size:1.6rem;font-weight:800;color:var(--accent);line-height:1}
-    .meta-label{font-size:12px;color:var(--muted);font-weight:600}
+    /* ── Search + series jump, pinned while scrolling ── */
+    .search-wrap {
+      position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+      background: rgba(255, 255, 255, .94); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border); margin-top: 16px;
+    }
+    .search-inner { display: flex; gap: 12px; align-items: center; padding-block: 12px; }
+    .search-box { display: flex; align-items: center; gap: 10px; flex: 0 1 320px; min-width: 0; background: var(--wash); border: 1.5px solid transparent; border-radius: 12px; padding: 9px 14px; transition: border-color .15s; }
+    .search-box:focus-within { border-color: var(--navy); background: var(--card); }
+    .search-box svg { color: var(--muted); flex-shrink: 0; width: 18px; height: 18px; }
+    .search-box input { flex: 1; min-width: 0; border: none; outline: none; font-family: var(--font-body); font-size: 1rem; color: var(--text); background: transparent; }
+    .search-box input::placeholder { color: var(--muted); }
+    .jump { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; min-width: 0; }
+    .jump::-webkit-scrollbar { display: none; }
+    .jump a { flex-shrink: 0; display: inline-flex; align-items: center; gap: 7px; padding: 8px 13px; border-radius: 99px; border: 1.5px solid var(--border); font-size: .88rem; font-weight: 600; color: var(--text); text-decoration: none; }
+    .jump a::before { content: ""; width: 9px; height: 9px; border-radius: 3px; background: var(--sc); }
+    .jump a:hover { border-color: var(--sc); }
+    @media (max-width: 760px) {
+      .search-inner { flex-direction: column; align-items: stretch; gap: 10px; }
+      .search-box { flex-basis: auto; }
+      .jump { margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter); }
+    }
 
-    /* ── Track list (Variant A) ── */
-    .lst{max-width:720px;margin:1.5rem auto;padding:0 1rem 3rem;display:flex;flex-direction:column;gap:10px}
-    .ch{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
-    .ct{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem}
-    .cn{width:36px;height:36px;border-radius:8px;background:var(--accent-light);color:var(--accent);font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-    .cti{font-size:15px;font-weight:700;flex:1;color:var(--text)}
-    .cdl{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--accent);text-decoration:none;padding:6px 14px;border-radius:8px;border:2px solid var(--accent);transition:all .15s;white-space:nowrap;flex-shrink:0}
-    .cdl:hover{background:var(--accent);color:#fff}
-    .cdl svg{width:14px;height:14px}
-    .cp{padding:0 1.25rem 1rem}
-    .cp audio{width:100%;height:40px;border-radius:8px;display:block}
+    /* Series colours, used by the jump chips, series headers and covers */
+    [data-s="classics"], #s-classics-tales       { --sc: #9a4a2a; }
+    [data-s="dominoes"], #s-dominoes             { --sc: #2c4a7a; }
+    [data-s="discover"], #s-readanddiscover      { --sc: #23866a; }
+    [data-s="imagine"], #s-readandimagine        { --sc: #6a4daa; }
+    [data-s="wayside"], #s-wayside-school        { --sc: #a33f5e; }
+    [data-s="other"], #s-other                   { --sc: #8f6a0c; }
 
-    /* ── Track list (Variant B) ── */
-    .track-list{max-width:720px;margin:1.5rem auto;padding:0 1rem 3rem;display:flex;flex-direction:column;gap:10px}
-    .track-item{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
-    .track-top{display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem}
-    .track-num{width:36px;height:36px;border-radius:8px;background:var(--accent-light);color:var(--accent);font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-    .track-title{font-size:15px;font-weight:700;flex:1;color:var(--text)}
-    .download-btn{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--accent);text-decoration:none;padding:6px 14px;border-radius:8px;border:2px solid var(--accent);transition:all .15s;white-space:nowrap;flex-shrink:0}
-    .download-btn:hover{background:var(--accent);color:#fff}
-    .download-btn svg{width:14px;height:14px}
-    .track-player{padding:0 1.25rem 1rem}
-    .track-player audio{width:100%;height:40px;border-radius:8px;display:block}
+    /* ── Series and levels ── */
+    .main { max-width: 1180px; margin: 0 auto; padding: 8px var(--gutter) 24px; }
+    .series-block { margin-top: 40px; scroll-margin-top: 140px; }
+    .series-hdr { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+    .series-hdr::before { content: ""; width: 14px; height: 40px; border-radius: 4px; background: var(--sc); flex-shrink: 0; }
+    .series-emoji { display: none; }
+    .series-name { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.5rem, 2.6vw, 1.9rem); letter-spacing: -.03em; line-height: 1.05; }
+    .series-desc { font-size: .92rem; color: var(--muted); margin-top: 3px; }
+    .series-count { font-size: .82rem; font-weight: 700; color: var(--sc); background: var(--wash); padding: 5px 12px; border-radius: 99px; white-space: nowrap; }
+    .level-label {
+      display: inline-flex; align-items: center; gap: 8px; margin: 22px 0 12px; padding: 6px 12px 6px 14px;
+      border-radius: 99px; background: var(--wash); cursor: pointer; user-select: none;
+      font-size: .78rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--text);
+    }
+    .level-label:hover { background: var(--accent-light); }
+    .level-label .toggle-icon { font-style: normal; font-size: .8rem; transition: transform .15s; }
+    .level-label[data-collapsed="true"] .toggle-icon { transform: rotate(-90deg); }
+    .level-label[data-collapsed="true"] { color: var(--muted); }
 
-    /* ── Footer (matches site-wide design) ── */
-    .site-footer{padding:36px 28px 26px;font-size:.88rem;color:var(--muted);border-top:2px solid var(--border);background:var(--card);margin-top:20px}
-    .site-footer a{color:var(--accent);text-decoration:none}
-    .footer-inner{max-width:860px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:20px}
-    .footer-name{font-family:'Lora',serif;font-size:1.05rem;font-weight:700;color:var(--accent);display:block;margin-bottom:4px}
-    .footer-brand p{margin:0}
-    .footer-brand a{font-weight:700}
-    .footer-nav{display:flex;flex-wrap:wrap;gap:8px}
-    .footer-nav a{font-weight:700;font-size:.85rem;padding:6px 14px;border-radius:8px;background:var(--accent-light);transition:background .15s}
-    .footer-nav a:hover{background:#d0e8d8}
-    .footer-copy{max-width:860px;margin:24px auto 0;padding-top:18px;border-top:1.5px solid var(--border);font-size:.8rem}
+    /* ── Book covers ── */
+    .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+    .book-card {
+      position: relative; display: flex; flex-direction: column; justify-content: space-between;
+      aspect-ratio: 3 / 4; border-radius: 14px; padding: 13px 13px 12px;
+      background: var(--pat, none), var(--sc, var(--navy)); color: #fff; text-decoration: none; overflow: hidden;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .book-card:hover { transform: translateY(-4px); box-shadow: 0 18px 30px -18px rgba(17, 26, 46, .6); }
+    .book-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .book-grid .book-card:nth-child(5n+1) { --pat: radial-gradient(rgba(255,255,255,.2) 2px, transparent 2.5px) 0 0 / 14px 14px; }
+    .book-grid .book-card:nth-child(5n+2) { --pat: radial-gradient(circle at 110% 110%, transparent 0 34%, rgba(255,255,255,.16) 34% 38%, transparent 38% 48%, rgba(255,255,255,.12) 48% 52%, transparent 52%); }
+    .book-grid .book-card:nth-child(5n+3) { --pat: repeating-linear-gradient(135deg, rgba(255,255,255,.12) 0 10px, transparent 10px 22px); }
+    .book-grid .book-card:nth-child(5n+4) { --pat: linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px) 0 0 / 18px 18px, linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px) 0 0 / 18px 18px; }
+    .book-grid .book-card:nth-child(5n)   { --pat: radial-gradient(circle at 96% 100%, rgba(255,255,255,.22) 0 26%, transparent 26.5%); }
+    .book-card-top { display: flex; flex-direction: column; gap: 8px; }
+    .book-card-top::before { content: var(--sname, ""); font-size: .62rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+    #s-classics-tales  { --sname: "Classics Tales"; }
+    #s-dominoes        { --sname: "Dominoes"; }
+    #s-readanddiscover { --sname: "Read and Discover"; }
+    #s-readandimagine  { --sname: "Read and Imagine"; }
+    #s-wayside-school  { --sname: "Wayside School"; }
+    #s-other           { --sname: "Other"; }
+    .book-title {
+      font-family: var(--font-display); font-weight: 800; font-size: 1.12rem; line-height: 1.02; letter-spacing: -.02em;
+      text-wrap: balance; overflow-wrap: anywhere;
+      display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .book-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .track-count { font-size: .78rem; font-weight: 600; opacity: .92; }
+    .arrow { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: rgba(255, 255, 255, .92); color: var(--sc, var(--navy)); font-size: .85rem; font-weight: 800; transition: transform .15s; }
+    .book-card:hover .arrow { transform: translateX(2px); }
+    .no-results { text-align: center; padding: 3rem 1rem; color: var(--muted); font-size: 1rem; display: none; }
+    @media (max-width: 540px) {
+      .book-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
+      .book-title { font-size: 1rem; }
+    }
 
     /* ── Scroll fade-in ── */
-    .fade-in{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
-    .fade-in.visible{opacity:1;transform:none}
-    @media(prefers-reduced-motion:reduce){
-      .fade-in{opacity:1;transform:none;transition:none}
+    .fade-in { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .fade-in { opacity: 1; transform: none; transition: none; }
+      .book-card, .arrow, .level-label .toggle-icon { transition: none; }
     }
 
-    /* ── Index page: page head ── */
-    .page-head{padding:36px 20px 0}
-    .page-head-inner{max-width:860px;margin:0 auto}
-    .page-kicker{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);background:var(--accent-light);border-radius:99px;padding:5px 13px;margin-bottom:14px}
-    .page-head h1{font-family:'Lora',serif;font-size:2.2rem;font-weight:700;color:var(--text);line-height:1.2;margin-bottom:10px}
-    .page-lede{font-size:1rem;line-height:1.65;color:var(--muted);max-width:42em}
-    .hero-stats{display:flex;gap:12px;margin-top:1.25rem;flex-wrap:wrap}
-    .hero-stat{background:var(--card);border:2px solid var(--border);border-radius:12px;padding:.75rem 1.1rem;min-width:96px}
-    .hero-stat-n{font-size:1.5rem;font-weight:800;line-height:1;color:var(--accent)}
-    .hero-stat-l{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:3px}
-
-    /* ── Index page: search ── */
-    .search-wrap{max-width:860px;margin:1.5rem auto 0;padding:0 1rem}
-    .search-box{display:flex;align-items:center;gap:10px;background:var(--card);border:1.5px solid var(--border);border-radius:10px;padding:.625rem 1rem;transition:border-color .15s}
-    .search-box:focus-within{border-color:var(--accent)}
-    .search-box svg{color:var(--muted);flex-shrink:0;width:18px;height:18px}
-    .search-box input{flex:1;border:none;outline:none;font-family:'Nunito',sans-serif;font-size:15px;color:var(--text);background:transparent}
-    .search-box input::placeholder{color:#aaa}
-
-    /* ── Index page: grid ── */
-    .main{max-width:860px;margin:1.25rem auto;padding:0 1rem 4rem}
-    .series-block{margin-bottom:2rem}
-    .series-hdr{display:flex;align-items:center;gap:.875rem;margin-bottom:1rem;padding-bottom:.75rem;border-bottom:2px solid var(--border)}
-    .series-emoji{font-size:1.75rem;flex-shrink:0}
-    .series-name{font-size:1.1rem;font-weight:800;color:var(--text)}
-    .series-desc{font-size:13px;color:var(--muted);margin-top:1px}
-    .series-count{margin-left:auto;background:var(--accent-light);color:var(--accent);font-size:12px;font-weight:800;padding:4px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0}
-    .level-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:.875rem 0 .5rem;padding-left:2px;cursor:pointer;display:flex;align-items:center;gap:6px;user-select:none}
-    .level-label:hover{color:var(--text)}
-    .level-label .toggle-icon{font-style:normal;font-size:10px;transition:transform .15s}
-    .level-label[data-collapsed="true"] .toggle-icon{transform:rotate(-90deg)}
-    .book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:10px}
-    .book-card{background:var(--card);border:1.5px solid var(--border);border-radius:var(--r);padding:1rem;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:.5rem;transition:all .15s;cursor:pointer}
-    .book-card:hover{border-color:var(--accent);box-shadow:0 2px 12px rgba(61,107,79,.15);transform:translateY(-1px)}
-    .book-card-top{flex:1}
-    .book-title{font-size:14px;font-weight:700;line-height:1.35;color:var(--text)}
-    .book-card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:.25rem}
-    .track-count{font-size:12px;color:var(--muted);font-weight:600}
-    .arrow{font-size:14px;color:var(--accent);font-weight:800;transition:transform .15s}
-    .book-card:hover .arrow{transform:translateX(3px)}
-    .no-results{text-align:center;padding:3rem 1rem;color:var(--muted);font-size:15px;display:none}
-
-    @media(max-width:560px){
-      .cdl span,.download-btn span{display:none}
-      .cdl,.download-btn{padding:6px 10px}
-      .page-head{padding:28px 16px 0}
-      .book-grid{grid-template-columns:repeat(auto-fill,minmax(145px,1fr))}
-      .filter-bar{padding:12px 16px}
-    }
+    /* ── Footer (matches the homepage) ── */
+    .site-footer { margin-top: 64px; padding: 32px var(--gutter) 26px; border-top: 1px solid var(--border); color: var(--muted); font-size: .9rem; }
+    .site-footer a { color: var(--text); }
+    .footer-inner { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 20px; }
+    .footer-name { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; letter-spacing: -.02em; color: var(--text); display: block; margin-bottom: 4px; }
+    .footer-mail { font-weight: 600; text-decoration: none; }
+    .footer-mail:hover { text-decoration: underline; }
+    .footer-nav { display: flex; flex-wrap: wrap; gap: 6px; }
+    .footer-nav a { font-weight: 500; font-size: .88rem; text-decoration: none; padding: 7px 13px; border-radius: 10px; background: var(--wash); }
+    .footer-nav a:hover { background: var(--accent-light); }
+    .footer-copy { max-width: 1180px; margin: 22px auto 0; padding-top: 16px; border-top: 1px solid var(--border); font-size: .82rem; }
   </style>
 </head>
 <body>
 
 <header class="site-header">
   <a class="site-brand" href="/">
-    <img src="/assets/images/logo80px.png" alt="Logan English Academy Logo" onerror="this.style.display='none'"/>
+    <img src="/assets/images/logo80px.png" alt="" width="28" height="31" onerror="this.style.display='none'"/>
     <span class="site-name">Logan English Academy</span>
   </a>
   <nav aria-label="Primary">
+    <a class="nav-optional" href="/#classes">Classes</a>
     <a href="/homework.html">Homework</a>
-    <a href="/readingaudio/">Reading Library</a>
+    <a href="/readingaudio/" aria-current="page">Reading Library</a>
+    <a class="nav-optional" href="#contact">Contact</a>
   </nav>
 </header>
 
-<div class="page-head">
-  <div class="page-head-inner">
-    <span class="page-kicker">For Students &amp; Parents</span>
-    <h1>Reading Library</h1>
-    <p class="page-lede">Listen-along audio for our graded readers and novels. Select a book to listen chapter by chapter — at school or at home.</p>
+<div class="shell">
+  <div class="page-head">
+    <div>
+      <p class="page-kicker">For students &amp; parents</p>
+      <h1>Reading Library</h1>
+      <p class="page-lede">Listen-along audio for every graded reader and novel. Choose a book to listen chapter by chapter, at school or at home.</p>
+    </div>
     <div class="hero-stats">
       <div class="hero-stat"><div class="hero-stat-n" id="stat-books">—</div><div class="hero-stat-l">Books</div></div>
-      <div class="hero-stat"><div class="hero-stat-n" id="stat-tracks">—</div><div class="hero-stat-l">Audio Tracks</div></div>
+      <div class="hero-stat"><div class="hero-stat-n" id="stat-tracks">—</div><div class="hero-stat-l">Audio tracks</div></div>
       <div class="hero-stat"><div class="hero-stat-n" id="stat-series">—</div><div class="hero-stat-l">Series</div></div>
     </div>
   </div>
 </div>
 
-
 <div class="search-wrap">
-  <div class="search-box">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-    <input type="text" id="search" placeholder="Search books..." oninput="filterBooks(this.value)"/>
+  <div class="shell search-inner">
+    <label class="search-box" for="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="search" placeholder="Search books or series" aria-label="Search books or series" oninput="filterBooks(this.value)"/>
+    </label>
+    <nav class="jump" aria-label="Jump to a series">
+      <a data-s="classics" href="#s-classics-tales">Classics Tales</a>
+      <a data-s="dominoes" href="#s-dominoes">Dominoes</a>
+      <a data-s="discover" href="#s-readanddiscover">Read and Discover</a>
+      <a data-s="imagine" href="#s-readandimagine">Read and Imagine</a>
+      <a data-s="wayside" href="#s-wayside-school">Wayside School</a>
+      <a data-s="other" href="#s-other">Other</a>
+    </nav>
   </div>
 </div>
 
@@ -1463,12 +1500,12 @@
   <div class="no-results" id="no-results">No books match your search.</div>
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer" id="contact">
   <div class="footer-inner">
     <div class="footer-brand">
       <span class="footer-name">Logan English Academy</span>
-      <p>Book-based English instruction for young learners.</p>
-      <p><a href="mailto:logan@loganenglishacademy.com">logan@loganenglishacademy.com</a></p>
+      <p>Book-based English for young learners.</p>
+      <p><a class="footer-mail" href="mailto:logan@loganenglishacademy.com">logan@loganenglishacademy.com</a></p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
       <a href="/">Home</a>
@@ -1476,13 +1513,14 @@
       <a href="/readingaudio/">Reading Library</a>
     </nav>
   </div>
-  <div class="footer-copy">&copy; <span id="footer-year">2026</span> Logan English Academy. All rights reserved. Audio files are for enrolled students only.</div>
+  <div class="footer-copy">&copy; <span id="footer-year">2026</span> Logan English Academy. Audio files are for enrolled students only.</div>
 </footer>
 
 <script>
 function toggleLevel(label) {
   const collapsed = label.dataset.collapsed === 'true';
   label.dataset.collapsed = collapsed ? 'false' : 'true';
+  label.setAttribute('aria-expanded', String(collapsed));
   filterBooks(document.getElementById('search').value);
 }
 
@@ -1518,14 +1556,21 @@ function filterBooks(q) {
   document.getElementById('no-results').style.display = any ? 'none' : 'block';
 }
 
-// Initialise collapsible level labels
+// Level labels: open by default so the covers are visible; click (or Enter/Space) to collapse.
 document.querySelectorAll('.level-label').forEach(label => {
-  label.dataset.collapsed = 'true';
+  label.dataset.collapsed = 'false';
+  label.setAttribute('role', 'button');
+  label.setAttribute('tabindex', '0');
+  label.setAttribute('aria-expanded', 'true');
   const icon = document.createElement('span');
   icon.className = 'toggle-icon';
+  icon.setAttribute('aria-hidden', 'true');
   icon.textContent = '▾';
   label.appendChild(icon);
   label.addEventListener('click', () => toggleLevel(label));
+  label.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleLevel(label); }
+  });
 });
 filterBooks('');
 
@@ -1538,9 +1583,15 @@ filterBooks('');
     const n = parseInt(tc.textContent, 10);
     if (!isNaN(n)) tracks += n;
   });
-  document.getElementById('stat-books').textContent  = books;
-  document.getElementById('stat-tracks').textContent = tracks;
+  document.getElementById('stat-books').textContent  = books.toLocaleString('en-US');
+  document.getElementById('stat-tracks').textContent = tracks.toLocaleString('en-US');
   document.getElementById('stat-series').textContent = series;
+  // Each series header counts its own books, so it stays right as books are added.
+  document.querySelectorAll('.series-block').forEach(block => {
+    const n = block.querySelectorAll('.book-card').length;
+    const label = block.querySelector('.series-count');
+    if (label) label.textContent = n + (n === 1 ? ' book' : ' books');
+  });
 })();
 
 document.getElementById('footer-year').textContent = new Date().getFullYear();
@@ -1548,7 +1599,7 @@ document.getElementById('footer-year').textContent = new Date().getFullYear();
 // Scroll fade-in: reveal sections as they enter the viewport.
 // Elements at or above the current scroll position are revealed too,
 // so jumping down the page never leaves earlier sections invisible.
-const faders = document.querySelectorAll('.page-head, .search-wrap, .series-block');
+const faders = document.querySelectorAll('.page-head, .series-block');
 faders.forEach(el => el.classList.add('fade-in'));
 
 function revealOnScroll() {
