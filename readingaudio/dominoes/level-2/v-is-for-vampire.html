@@ -116,6 +116,8 @@ a { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   .ch, .track-item, .chapter-card, .cdl, .download-btn, .ch-download { transition: none; }
 }
+/* Download buttons are turned off; chapters play in the page only. */
+.cdl, .download-btn, .ch-download { display: none !important; }
   </style>
 </head>
 <body>
