@@ -6,15 +6,41 @@ author:
   name: Logan Leeder
   email: freshevryday@gmail.com
 
+# Short line used after the site name in the browser-tab title of the homepage.
+tagline: "전주 원어민 영어 학원 · Genuine English"
+lang: ko
+
 description: >
-  Structured, book-based English instruction for young learners — daily
-  homework postings, graded readers with audio, and a clear path from
-  first words to classic novels.
+  로건원어민영어는 전주의 원어민 영어 학원입니다. 목표는 하나, 영어 유창성.
+  English Only 수업과 소수 정예 맞춤 지도로 듣고, 말하고, 읽고, 토론하며
+  영어를 일상의 언어로 만듭니다.
 
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Social-preview image for every page (KakaoTalk, Messenger, search results).
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og-image.png
+
+# This repo started as the Minima theme itself; keep its own files off the site.
+exclude:
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - LICENSE.txt
+  - minima.gemspec
+  - readme_banner.svg
+  - script/
+  - _config_theme-dev.yml
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
 
 sass:
   quiet_deps: true
