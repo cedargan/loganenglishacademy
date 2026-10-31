@@ -44,6 +44,15 @@ description: >
   .ph::before { content: "📷"; font-size: 1.4rem; }
   .ph.wide { min-height: 220px; }
   .ph.row { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+  .photo { display: block; width: 100%; height: auto; border-radius: 18px; margin: 18px 0 26px; }
+  .photos { display: grid; gap: 12px; margin: 18px 0 26px; }
+  .photos .photo { margin: 0; }
+  .map-card { margin: 10px 0 18px; border: 1px solid var(--border); border-radius: 22px; overflow: hidden; }
+  .map-card .photo { border-radius: 0; margin: 0; }
+  .map-card .map-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 18px; }
+  .map-card .map-foot p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .map-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 12px; background: var(--navy); color: #fff; font-weight: 700; text-decoration: none; white-space: nowrap; }
+  .map-btn:hover { background: #2a3f6b; color: #fff; }
 
   /* Classes */
   .classes { list-style: none; margin: 10px 0 18px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
@@ -73,8 +82,8 @@ description: >
 
 <article class="about">
 
-  <!-- 사진을 넣을 때는 아래 div 를 <img src="/assets/images/about/파일명.jpg" alt="설명"> 으로 바꿔 주세요. -->
-  <div class="ph wide">대표 단체 사진 1장<br>첫 화면에서 학원 분위기를 바로 보여 주는 사진</div>
+  <!-- 남은 사진 자리(점선 상자)는 <img class="photo" src="/assets/images/about/파일명.webp" alt="설명"> 으로 바꿔 주세요. -->
+  <img class="photo" src="{{ '/assets/images/about/lobby.webp' | relative_url }}" width="1280" height="960" alt="로건원어민영어 로비: 간판 아래 그림책 책장과 소파, 빈백">
 
   <h2 id="logan"><span class="en">About Logan</span>원장 소개</h2>
   <div class="ph">로건 원장님 사진<br>아이들과 함께 있는 사진이면 더 좋아요</div>
@@ -90,19 +99,22 @@ description: >
 
   <h3><span class="en">English Only</span><span class="ko">영어 몰입 환경</span></h3>
   <p>수업의 모든 설명과 소통은 영어로 이루어집니다. 미국인 원장선생님과 영어로 듣고, 묻고, 답하는 것은 기본이고 친구들끼리도 영어로 이야기해요. 배운 표현을 많이 써 봐야 비로소 내 실력이 되니까요!</p>
-  <div class="ph">수업 활동 사진<br>발표하거나 원장님과 영어로 대화하는 모습</div>
+  <img class="photo" src="{{ '/assets/images/about/classroom.webp' | relative_url }}" width="1280" height="960" alt="ENGLISH ONLY PLACE 표지판이 붙은 교실에서 활동지를 하는 아이들" loading="lazy">
 
   <h3><span class="en">Active Personalization</span><span class="ko">소수 정예 맞춤 지도</span></h3>
   <p>소수 그룹으로 수업하기 때문에 매일 친구들 한 명 한 명의 강점과 어려움을 살피고 그 친구에게 꼭 맞는 코칭을 해 줄 수 있습니다. 1:1 스피킹 테스트로 배운 내용을 실제로 말할 수 있는지도 꼼꼼히 확인하고 있어요.</p>
 
   <h3><span class="en">Reading at the Core</span><span class="ko">읽기 중심 커리큘럼</span></h3>
   <p>읽기는 우리 커리큘럼의 핵심입니다. 수준에 맞춘 단계별 읽기책(Graded Readers)으로 시작해 실력이 쌓이면 원어민 아이들이 읽는 책까지 읽어 나가요. 집에서는 오디오와 함께 읽고, 수업에서는 질문과 대화로 이해를 확인하며, 책을 다 읽은 뒤에는 토론과 Book Test로 마무리합니다.</p>
-  <div class="ph">책 읽기나 토론 활동 모습, 또는 Reading Diary</div>
+  <img class="photo" src="{{ '/assets/images/about/speaking.webp' | relative_url }}" width="1544" height="1214" alt="원장님과 1:1 수업, 칠판에 단어를 쓰는 아이들, 책을 읽고 챕터를 토론하는 모습" loading="lazy">
 
   <h3><span class="en">Learning Through Play</span><span class="ko">즐겁게 참여하는 수업</span></h3>
   <p>노래, 챈트, 게임, 연극, 프로젝트 발표까지! 우리 친구들이 직접 참여하는 활동으로 수업이 이루어집니다. 코스튬을 입고 다 함께 즐기는 특별한 이벤트 날도 있답니다.^^</p>
   <p>공부의 압박감보다 즐거움이 있을 때 아이들은 더 오래, 더 깊이 배우거든요.</p>
-  <div class="ph row"><span>게임, 연극 등 활동 사진 2~3장</span><span>코스튬을 입고 사진 찍는 친구들 2~3장</span></div>
+  <div class="photos">
+    <img class="photo" src="{{ '/assets/images/about/activities.webp' | relative_url }}" width="1544" height="1118" alt="게임, 프로젝트 발표, 만들기, 가면을 쓴 연극 활동" loading="lazy">
+    <img class="photo" src="{{ '/assets/images/about/roleplay.webp' | relative_url }}" width="1544" height="1192" alt="옷 가게 역할극, 사자 가면을 쓴 아이들, 손을 든 아이들과 원장님" loading="lazy">
+  </div>
 
   <h3><span class="en">Clear Levels and Rewards</span><span class="ko">체계적인 단계와 보상</span></h3>
   <blockquote class="quote">"Great things are done when men and mountains meet." — William Blake</blockquote>
@@ -132,7 +144,10 @@ description: >
     <p>주소: 전주시 만성중앙로 17-8, 2층</p>
     <p>홈페이지: <a class="site" href="{{ '/' | relative_url }}">loganenglishacademy.com</a></p>
   </div>
-  <div class="ph">지도<br>네이버 지도 또는 카카오맵 링크를 넣어 주세요</div>
+  <div class="map-card">
+    <img class="photo" src="{{ '/assets/images/about/building.webp' | relative_url }}" width="1280" height="960" alt="로건원어민영어 간판이 있는 건물 외관, 2층" loading="lazy">
+    <div class="map-foot"><p>2층에 로건원어민영어 간판이 보여요.</p><a class="map-btn" href="https://naver.me/GlGNAbaA" target="_blank" rel="noopener">네이버 지도에서 보기 ↗</a></div>
+  </div>
   <div class="ph wide">마무리 사진<br>코스튬 단체 사진이나 활짝 웃는 단체 사진</div>
 
   <p class="signoff">Genuine English<small>Logan English</small></p>
