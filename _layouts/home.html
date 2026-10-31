@@ -18,10 +18,6 @@
         background: var(--navy);
         color: #fff;
         padding: clamp(36px, 5vw, 64px) clamp(22px, 4vw, 56px);
-        display: grid;
-        grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
-        gap: 24px;
-        align-items: center;
         overflow: hidden;
       }
       .hero-kicker {
@@ -46,7 +42,7 @@
         font-size: 1.1rem;
         line-height: 1.6;
         color: #c6d0e4;
-        max-width: 42ch;
+        max-width: 48ch;
       }
       .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
       .btn {
@@ -74,20 +70,6 @@
         border-radius: 50%;
       }
       .play svg { width: 42%; height: 42%; margin-left: 8%; }
-
-      .fan { --k: 1; position: relative; height: clamp(270px, 30vw, 370px); }
-      .fan .cover {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: min(42%, 200px);
-        transform: translate(-50%, -50%) translateX(calc(var(--x) * var(--k))) rotate(var(--r));
-        box-shadow: 0 24px 40px -18px rgba(0, 0, 0, .6);
-        transition: transform .25s ease;
-      }
-      .fan .cover:hover,
-      .fan .cover:focus-visible { transform: translate(-50%, -56%) translateX(calc(var(--x) * var(--k))) rotate(var(--r)); }
-      .fan .cover.right { align-items: flex-end; text-align: right; }
 
       /* Book cover: series colour plus a light pattern, title set large */
       .cover {
@@ -253,8 +235,6 @@
       .cta-card .more { color: #fff; margin-top: 6px; }
 
       @media (max-width: 860px) {
-        .hero { grid-template-columns: minmax(0, 1fr); padding-bottom: 12px; }
-        .fan { height: 280px; }
         .path { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 22px; }
         .path::before { display: none; }
         .lib, .cta { margin-inline: clamp(10px, 1.4vw, 16px); max-width: none; }
@@ -262,12 +242,10 @@
       }
       @media (max-width: 540px) {
         .hero { border-radius: 24px; }
-        .fan { height: 230px; --k: .84; }
-        .fan .cover { width: 44%; }
         .lib, .cta { border-radius: 24px; }
       }
       @media (prefers-reduced-motion: reduce) {
-        .fan .cover, .btn { transition: none; }
+        .btn { transition: none; }
       }
     </style>
 
@@ -285,18 +263,6 @@
             </a>
             <a class="btn btn-ghost" href="{{ '/about/' | relative_url }}">학원 소개</a>
           </div>
-        </div>
-        <div class="fan">
-          <a class="cover p-arc" style="--c:var(--virtue-dk);--x:-70%;--r:-12deg" href="{{ '/readingaudio/readanddiscover/level-1/wild-cats' | relative_url }}" aria-label="Listen to Wild Cats">
-            <span class="ser">Read and Discover</span><span class="ti">Wild Cats</span><span class="tr">Listen</span>
-          </a>
-          <a class="cover right p-dots" style="--c:var(--truth-dk);--x:70%;--r:10deg" href="{{ '/readingaudio/dominoes/quickstarter/the-selfish-giant' | relative_url }}" aria-label="Listen to The Selfish Giant">
-            <span class="ser">Dominoes</span><span class="ti">The Selfish Giant</span><span class="tr">Listen</span>
-          </a>
-          <a class="cover p-sun" style="--c:var(--brave-dk);--x:0%;--r:-1deg" href="{{ '/readingaudio/dominoes/level-3/conan-the-barbarian-red-nails' | relative_url }}" aria-label="Listen to Conan the Barbarian: Red Nails">
-            <span class="ser">Dominoes · Level 3</span><span class="ti">Conan the Barbarian: Red Nails</span>
-            <span class="tr"><span class="play" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z" fill="currentColor"/></svg></span>Listen</span>
-          </a>
         </div>
       </section>
 
