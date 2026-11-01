@@ -1,0 +1,45 @@
+---
+layout: article
+---
+{%- assign cls = site.data.classes | where: "slug", page.slug | first -%}
+{%- assign books = site.data.books[page.slug] -%}
+<p class="class-facts">
+  <span><b>수준</b> {{ cls.level }}</span>
+  <span><b>이런 친구들</b> {{ cls.grade }}</span>
+  <span><b>CEFR</b> 약 {{ cls.cefr }}</span>
+</p>
+
+{{ content }}
+
+{%- if books.course.size > 0 %}
+<h2>지금 쓰는 책</h2>
+<ul class="course-list">
+  {%- for b in books.course %}
+  <li><b>{{ b.title }}</b><small>{{ b.series }}</small></li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+
+{%- if books.readers.size > 0 %}
+<h2>읽고 듣는 책</h2>
+<p class="muted">수업에서 함께 읽고, 집에서는 <a href="{{ '/readingaudio/' | relative_url }}">Reading Library</a>의 음원으로 다시 들어요. 제목을 누르면 음원 페이지로 갑니다.</p>
+<ul class="reader-list">
+  {%- for b in books.readers %}
+  <li>
+    {%- if b.url %}<a href="{{ b.url | relative_url }}">{{ b.title }}</a>{% else %}<span class="t">{{ b.title }}</span>{% endif %}
+    <small>{{ b.series }}</small>
+    {%- if b.ko %}<p>{{ b.ko }}</p>{% endif %}
+  </li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+
+<div class="class-next">
+  {%- if cls.next %}
+  {%- assign n = site.data.classes | where: "slug", cls.next | first %}
+  <a class="next" href="{{ '/classes/' | append: n.slug | append: '/' | relative_url }}" style="--cls: var(--{{ n.slug }}); --cls-dk: var(--{{ n.slug }}-dk)"><small>다음 반</small><b>{{ n.emoji }} {{ n.name }}</b><span>{{ n.level }}</span></a>
+  {%- else %}
+  <a class="next" href="{{ '/classes/' | relative_url }}"><small>모든 반 보기</small><b>Classes</b><span>Kind부터 Patience까지</span></a>
+  {%- endif %}
+  <a class="consult" href="{{ '/about/#contact' | relative_url }}"><small>우리 아이는 어느 반일까요?</small><b>상담 문의 →</b><span>레벨 테스트와 상담으로 알맞은 반을 안내해 드려요</span></a>
+</div>

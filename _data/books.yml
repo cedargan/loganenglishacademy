@@ -1,0 +1,197 @@
+# Class book lists. Keyed by class slug.
+# course = coursebooks/workbooks (class + homework); readers = home reading via the Reading Library.
+
+kind:
+  course:
+    - { title: "Beehive 1", series: "Oxford" }
+    - { title: "Starlight 1", series: "Oxford" }
+    - { title: "Everybody Up 2", series: "Oxford" }
+    - { title: "Picture Dictionary", series: "Oxford" }
+    - { title: "Activity Book", series: "Oxford" }
+  readers:
+    - title: "Hello, Goodbye"
+      series: "Read and Imagine · Starter"
+      url: /readingaudio/readandimagine/starter/hello-goodbye-us-english
+      ko: "만나서 반가운 인사, 헤어질 때의 인사, 첫 문장부터 입이 열려요"
+    - title: "The New Dinosaur"
+      series: "Read and Imagine · Starter"
+      url: /readingaudio/readandimagine/starter/the-new-dinosaur-audio-us
+      ko: "새로 온 공룡, 과연 어떤 친구일까요?"
+    - title: "At the Zoo"
+      series: "Read and Imagine · Starter"
+      url: /readingaudio/readandimagine/starter/at-the-zoo-us-english
+      ko: "동물원에서 만나는 동물들을 영어로 불러 봐요"
+    - title: "I Can See You"
+      series: "Read and Imagine · Beginner"
+      url: /readingaudio/readandimagine/beginner/i-can-see-you-us-english
+      ko: "숨어도 소용없어요. 다 보여요!"
+    - title: "It's Hot!"
+      series: "Read and Imagine · Beginner"
+      url: /readingaudio/readandimagine/beginner/it-s-hot
+      ko: "더워도 너무 더운 날, 우리는 어떻게 했을까요?"
+    - title: "The Cake Machine"
+      series: "Read and Imagine · Beginner"
+      url: /readingaudio/readandimagine/beginner/the-cake-machine
+      ko: "버튼만 누르면 케이크가 나오는 기계가 있다면?"
+    - title: "Crocodile in the House"
+      series: "Read and Imagine · Beginner"
+      url: /readingaudio/readandimagine/beginner/crocodile-in-the-house
+      ko: "집 안에 악어가 들어왔다고요? 큰일 났어요!"
+    - title: "I'm Sorry"
+      series: "Read and Imagine · Beginner"
+      url: /readingaudio/readandimagine/beginner/i-m-sorry
+      ko: "미안해, 라고 말하는 가장 쉬운 방법"
+    - title: "A Rainy Day"
+      series: "Read and Imagine · Beginner"
+      url: /readingaudio/readandimagine/beginner/a-rainy-day
+      ko: "비 오는 날에도 신나게 놀 수 있어요"
+    - title: "A Nice Book"
+      series: "Read and Imagine · Beginner"
+      url: /readingaudio/readandimagine/beginner/a-nice-book-audio-us-english
+      ko: "책 한 권이 이렇게 반가운 선물이 될 줄이야"
+    - title: "The Little Red Hen"
+      series: "Classic Tales · Level 1"
+      url: /readingaudio/classics-tales/level-1/the-little-red-hen
+      ko: "빨간 암탉이 빵을 굽는 동안 게으른 친구들은 뭘 했을까요?"
+
+brave:
+  course:
+    - { title: "Oxford Discover 2", series: "Oxford" }
+    - { title: "Oxford Discover 1", series: "Oxford" }
+    - { title: "Everybody Up 3", series: "Oxford" }
+    - { title: "Picture Dictionary", series: "Oxford" }
+    - { title: "Activity Book", series: "Oxford" }
+  readers:
+    - title: "The New Glasses"
+      series: "Read and Imagine · Level 1"
+      url: /readingaudio/readandimagine/level1/the-new-glasses
+      ko: "안경을 쓰자 세상이 달라 보이기 시작해요"
+    - title: "Robbers at the Museum"
+      series: "Read and Imagine · Level 1"
+      url: /readingaudio/readandimagine/level1/robbers-at-the-museum
+      ko: "박물관에 도둑이 들었다! 과연 잡을 수 있을까요?"
+    - title: "The Race"
+      series: "Read and Imagine · Level 2"
+      url: /readingaudio/readandimagine/level2/the-race
+      ko: "준비, 시작! 끝까지 달려야 이겨요"
+    - title: "In the Big City"
+      series: "Read and Imagine · Level 2"
+      url: /readingaudio/readandimagine/level2/readandimagine2-in-the-big-city
+      ko: "높은 건물과 북적이는 거리, 큰 도시 탐험"
+    - title: "Can You See Lions?"
+      series: "Read and Imagine · Level 2"
+      url: /readingaudio/readandimagine/level2/readandimagine2-can-you-see-lions
+      ko: "사파리에서 사자를 찾아라, 어디에 숨었을까요?"
+    - title: "Clunk's New Job"
+      series: "Read and Imagine · Level 2"
+      url: /readingaudio/readandimagine/level2/readandimagine2-clunks-new-job
+      ko: "로봇 클렁크에게 새 일자리가 생겼어요"
+    - title: "Wild Cats"
+      series: "Read and Discover · Level 1"
+      url: /readingaudio/readanddiscover/level-1/wild-cats
+      ko: "사자, 호랑이, 치타. 야생 고양이의 세계로!"
+    - title: "King Arthur and the Sword"
+      series: "Classic Tales · Level 2"
+      url: /readingaudio/classics-tales/level-2/king-arthur-and-the-sword
+      ko: "바위에 꽂힌 검을 뽑는 사람이 왕이 된다고요?"
+    - title: "The Heron and the Hummingbird"
+      series: "Classic Tales · Level 3"
+      url: /readingaudio/classics-tales/level-3/the-heron-and-the-hummingbird
+      ko: "덩치 큰 왜가리와 작은 벌새, 진짜 승자는 누구일까요?"
+
+truth:
+  course:
+    - { title: "Oxford Discover 3", series: "Oxford" }
+    - { title: "Starlight 3", series: "Oxford" }
+    - { title: "Wordlist", series: "주간 단어 리스트" }
+    - { title: "Grammar Worksheet", series: "문법 워크시트" }
+  readers:
+    - title: "Pebbles on the Beach"
+      series: "Dominoes · Quick Starter"
+      url: /readingaudio/dominoes/quickstarter/pebbles-on-the-beach
+      ko: "해변의 조약돌 하나가 이야기를 시작해요"
+    - title: "Perseus"
+      series: "Dominoes · Quick Starter"
+      url: /readingaudio/dominoes/quickstarter/perseus-2
+      ko: "눈을 마주치면 돌이 되는 괴물 메두사에 맞선 영웅"
+    - title: "Ali Baba and the Forty Thieves"
+      series: "Dominoes · Quick Starter"
+      url: /readingaudio/dominoes/quickstarter/ali-baba-and-the-forty-thieves
+      ko: "열려라 참깨! 도둑들의 보물 동굴 이야기"
+    - title: "The Selfish Giant"
+      series: "Dominoes · Quick Starter"
+      url: /readingaudio/dominoes/quickstarter/the-selfish-giant
+      ko: "아이들을 쫓아낸 거인의 정원에 겨울만 계속돼요"
+    - title: "Crying Wolf and Other Tales"
+      series: "Dominoes · Quick Starter"
+      url: /readingaudio/dominoes/quickstarter/crying-wolf
+      ko: "거짓말쟁이 양치기와 이솝 이야기 모음"
+    - title: "The Skateboarder"
+      series: "Dominoes · Quick Starter"
+      url: /readingaudio/dominoes/quickstarter/the-skateboarder
+      ko: "보드 위에서 펼쳐지는 짜릿한 이야기"
+    - title: "Wonderful Water"
+      series: "Read and Discover · Level 3"
+      url: /readingaudio/readanddiscover/level-3/wonderful-water
+      ko: "비, 강, 바다. 물은 어디서 와서 어디로 갈까요?"
+    - title: "Super Structures"
+      series: "Read and Discover · Level 3"
+      url: /readingaudio/readanddiscover/level-3/super-structures
+      ko: "다리와 탑, 거대한 건물은 어떻게 지을까요?"
+    - title: "Danger! Bugs!"
+      series: "Read and Imagine · Level 3"
+      url: /readingaudio/readandimagine/level3/level3-danger-bugs
+      ko: "작은 벌레들이 만드는 아슬아슬한 위기"
+
+virtue:
+  course:
+    - { title: "Oxford Discover 4", series: "Oxford" }
+    - { title: "Starlight 4", series: "Oxford" }
+    - { title: "Wordlist", series: "주간 단어 리스트" }
+    - { title: "Grammar Worksheet", series: "문법 워크시트" }
+  readers:
+    - title: "The Wrong Trousers"
+      series: "Dominoes · Level 1"
+      url: /readingaudio/dominoes/level-1/the-wrong-trousers
+      ko: "월레스와 그로밋, 수상한 로봇 바지와 펭귄 사건"
+    - title: "Journey to the West"
+      series: "Dominoes · Level 1"
+      url: /readingaudio/dominoes/level-1/journey-to-the-west
+      ko: "손오공과 함께 떠나는 서쪽으로의 대모험"
+    - title: "Jake's Parrot"
+      series: "Dominoes · Level 1"
+      url: /readingaudio/dominoes/level-1/jakes-parrot
+      ko: "말하는 앵무새가 비밀을 알고 있다면?"
+    - title: "The Swiss Family Robinson"
+      series: "Dominoes · Level 1"
+      url: /readingaudio/dominoes/level-1/the-swiss-family-robinson
+      ko: "배가 난파되고, 가족은 무인도에서 살아남아야 해요"
+    - title: "Football Forever"
+      series: "Dominoes · Level 1"
+      url: /readingaudio/dominoes/level-1/football-forever
+      ko: "축구를 향한 뜨거운 마음 이야기"
+    - title: "The Real McCoy and Other Ghost Stories"
+      series: "Dominoes · Level 1"
+      url: /readingaudio/dominoes/level-1/the-real-mccoy-and-other-ghost-stories
+      ko: "한여름 밤에 읽기 좋은 으스스한 유령 이야기"
+
+patience:
+  course:
+    - { title: "Reading Explorer 1", series: "National Geographic Learning" }
+    - { title: "Reading Explorer 2", series: "National Geographic Learning" }
+    - { title: "Great Writing 1", series: "National Geographic Learning" }
+    - { title: "Starlight 5", series: "Oxford" }
+    - { title: "Wordlist", series: "주간 단어 리스트" }
+  readers:
+    - title: "Wayside School Gets a Little Stranger"
+      series: "Louis Sachar · Chapter Book"
+      url: /readingaudio/waysideschool/wayside-school-gets-a-little-stranger
+      ko: "30층짜리 이상한 학교, 웃음이 끊이지 않는 미국 인기 동화"
+    - title: "V is for Vampire"
+      series: "Dominoes · Level 2"
+      url: /readingaudio/dominoes/level-2/v-is-for-vampire
+      ko: "뱀파이어가 나타났다! 오싹하고 흥미진진한 한 편"
+    - title: "Conan the Barbarian: Red Nails"
+      series: "Dominoes · Level 3"
+      url: /readingaudio/dominoes/level-3/conan-the-barbarian-red-nails
+      ko: "전사 코난이 잃어버린 도시의 비밀에 뛰어들어요"

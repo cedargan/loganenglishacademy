@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+  {%- include head.html -%}
+
+  <body class="wide-page article-page">
+
+    {%- include header.html -%}
+
+    <main id="main" aria-label="Content">
+      <div class="post-head"{% if page.color %} style="--cls: var(--{{ page.color }}); --cls-dk: var(--{{ page.color }}-dk)"{% endif %}>
+        {%- if page.kicker %}<p class="kicker">{{ page.kicker }}</p>{% endif %}
+        <h1>{% if page.emoji %}<span class="emoji" aria-hidden="true">{{ page.emoji }}</span> {% endif %}{{ page.title }}</h1>
+        {%- if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+      </div>
+      <article class="article">
+        {{ content }}
+      </article>
+    </main>
+
+    {%- include footer.html -%}
+
+    {%- include sub-footer.html -%}
+
+  </body>
+
+</html>
