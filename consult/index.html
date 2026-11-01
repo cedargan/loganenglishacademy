@@ -51,15 +51,13 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
   .btn-navy:hover { background: #2a3f6b; color: #fff; }
   .err { margin: 0 0 12px; padding: 10px 14px; border-radius: 12px; background: #fdecec; color: #8a1c1c; font-weight: 600; display: none; }
   .err.show { display: block; }
-  .intro ul { margin: 0 0 20px; padding-left: 0; list-style: none; display: grid; gap: 8px; }
-  .intro li { display: flex; gap: 10px; align-items: flex-start; line-height: 1.5; }
-  .intro li::before { content: "✓"; color: #1f8a5b; font-weight: 800; }
   .done { text-align: center; padding: 10px 0; }
   .done .big { font-size: 3rem; line-height: 1; margin-bottom: 12px; }
   .done p { line-height: 1.65; }
   .done .tel { display: block; margin: 14px 0 4px; font-family: var(--font-display); font-weight: 800; font-size: 1.8rem; color: var(--navy); text-decoration: none; }
   .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
   .ts { margin: 0 0 14px; }
+  .post-head .lead a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
   @media (max-width: 480px) { .opts.two { grid-template-columns: 1fr; } .opt small { display: none; } }
   @media (prefers-reduced-motion: reduce) { .bar i, .opt { transition: none; } }
 </style>
@@ -67,7 +65,7 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
 <div class="post-head">
   <p class="kicker">Consultation · 상담 신청</p>
   <h1>3분이면 끝나요</h1>
-  <p class="lead">아이의 영어 경험과 성격을 몇 가지 질문으로 알려 주세요. 답을 보고 미리 준비한 뒤, 남겨 주신 번호로 전화드립니다. 정답은 없으니 가장 가까운 답을 골라 주세요.</p>
+  <p class="lead">아이의 영어 경험과 성격을 몇 가지 질문으로 알려 주세요. 답을 보고 미리 준비한 뒤, 남겨 주신 번호로 전화드립니다. 정답은 없으니 가장 가까운 답을 골라 주세요. 수업료나 시간 같은 궁금한 점은 <a href="{{ '/faq/' | relative_url }}">자주 묻는 질문</a>에 있어요.</p>
 </div>
 
 <div class="quiz-wrap">
@@ -106,8 +104,8 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
       ['virtue', 'Virtue', '중급 · 챕터북 토론', '#2e9e7a'], ['patience', 'Patience', '중상급 · 원서 토론', '#b88a10']] }
   ];
   var SOURCE = [['naver', '네이버 검색·지도'], ['friend', '지인 소개'], ['sign', '간판·동네'], ['instagram', '인스타그램·SNS'], ['other', '기타']];
-  var TOTAL = Q.length + 3;   // intro, contact, questions…, final
-  var KEY = 'lea-consult';
+  var TOTAL = Q.length + 2;   // contact, questions…, final
+  var KEY = 'lea-consult-v2';
   var state = { step: 0, parentName: '', phone: '', childName: '', answers: {}, note: '', source: '' };
   try { var saved = JSON.parse(sessionStorage.getItem(KEY) || 'null'); if (saved && saved.answers) state = saved; } catch (e) {}
 
@@ -120,7 +118,7 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
     return e;
   }
   function showErr(msg) { err.textContent = msg || ''; err.classList.toggle('show', !!msg); if (msg) err.scrollIntoView({ block: 'nearest' }); }
-  var TYPES_STEP = 2 + Q.map(function (q) { return q.id; }).indexOf('academyTypes');   // skipped when the child never attended an academy
+  var TYPES_STEP = 1 + Q.map(function (q) { return q.id; }).indexOf('academyTypes');   // skipped when the child never attended an academy
   function go(n) {
     if (n === TYPES_STEP && state.answers.academyYears === 'none') { delete state.answers.academyTypes; n = n > state.step ? n + 1 : n - 1; }
     state.step = Math.max(0, Math.min(TOTAL - 1, n)); save(); showErr(''); render(); form.scrollIntoView({ block: 'start', behavior: 'smooth' });
@@ -146,44 +144,31 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
   }
   function render() {
     stage.textContent = '';
-    bar.style.width = Math.round(100 * state.step / (TOTAL - 1)) + '%';
+    bar.style.width = Math.round(100 * (state.step + 1) / TOTAL) + '%';
     var s = state.step;
     if (s === 0) {
-      stage.appendChild(h('div', { class: 'intro' }, [
-        h('h2', { text: '시작하기 전에' }),
-        h('ul', {}, [
-          h('li', {}, [h('span', {}, ['질문은 ', h('b', { text: Q.length + '개' }), ', 대부분 보기에서 고르기만 하면 돼요.'])]),
-          h('li', {}, [h('span', {}, ['답을 보고 ', h('b', { text: '1~2일 안에 전화' }), '드려요. 영업일 기준이에요.'])]),
-          h('li', {}, [h('span', {}, ['레벨 테스트가 아니에요. 아이를 미리 알아 두려는 것뿐이니 편하게 답해 주세요.'])]),
-          h('li', {}, [h('span', {}, ['수업료, 수업 시간, 보충 같은 궁금한 점은 ', h('a', { href: '/faq/', target: '_blank', rel: 'noopener' }, ['자주 묻는 질문']), '에 정리해 두었어요.'])])
-        ]),
-        h('div', { class: 'nav-row' }, [h('span'), h('button', { type: 'button', class: 'btn btn-gold', onclick: function () { go(1); } }, ['시작하기 →'])])
-      ]));
-      return;
-    }
-    if (s === 1) {
       var pn = h('input', { type: 'text', id: 'parentName', name: 'parentName', value: state.parentName, autocomplete: 'name', placeholder: '예: 김지은', maxlength: '40' });
       var ph = h('input', { type: 'tel', id: 'phone', name: 'phone', value: state.phone, autocomplete: 'tel', inputmode: 'numeric', placeholder: '010-1234-5678', maxlength: '13', oninput: function () { ph.value = fmtPhone(ph.value); } });
       var cn = h('input', { type: 'text', id: 'childName', name: 'childName', value: state.childName, autocomplete: 'off', placeholder: '예: 김하준', maxlength: '40' });
       stage.appendChild(h('div', {}, [
-        h('p', { class: 'step-no', text: '1 / ' + (TOTAL - 1) }),
+        h('p', { class: 'step-no', text: '1 / ' + TOTAL }),
         h('h2', { text: '연락처를 남겨 주세요' }),
         h('p', { class: 'hint', text: '전화드릴 때 필요한 것만 여쭤봐요.' }),
         h('div', { class: 'field' }, [h('label', { for: 'parentName', text: '학부모 성함' }), pn]),
         h('div', { class: 'field' }, [h('label', { for: 'phone', text: '휴대폰 번호' }), ph]),
         h('div', { class: 'field' }, [h('label', { for: 'childName', text: '아이 이름' }), cn]),
-        navRow(true, h('button', { type: 'button', class: 'btn btn-gold', onclick: function () {
+        navRow(false, h('button', { type: 'button', class: 'btn btn-gold', onclick: function () {
           state.parentName = pn.value.trim(); state.phone = ph.value.trim(); state.childName = cn.value.trim();
           if (!state.parentName) return showErr('학부모 성함을 적어 주세요.');
           if (!/^01[016789]-\d{3,4}-\d{4}$/.test(state.phone)) return showErr('휴대폰 번호를 확인해 주세요. (예: 010-1234-5678)');
           if (!state.childName) return showErr('아이 이름을 적어 주세요.');
-          go(2);
+          go(1);
         } }, ['다음 →']))
       ]));
       setTimeout(function () { pn.focus(); }, 50);
       return;
     }
-    var qi = s - 2;
+    var qi = s - 1;
     if (qi < Q.length) {
       var q = Q[qi];
       var cur = state.answers[q.id];
@@ -205,7 +190,7 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
         }));
       });
       stage.appendChild(h('div', {}, [
-        h('p', { class: 'step-no', text: (s) + ' / ' + (TOTAL - 1) }),
+        h('p', { class: 'step-no', text: (s + 1) + ' / ' + TOTAL }),
         h('h2', { text: q.title }),
         h('p', { class: 'hint', html: q.hint || (q.multi ? '' : '하나를 고르면 다음으로 넘어가요.') }),
         list,
@@ -230,7 +215,7 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
       var consent = h('input', { type: 'checkbox', id: 'consent' });
       var submit = h('button', { type: 'submit', class: 'btn btn-gold' }, ['상담 신청하기 →']);
       stage.appendChild(h('div', {}, [
-        h('p', { class: 'step-no', text: (TOTAL - 1) + ' / ' + (TOTAL - 1) }),
+        h('p', { class: 'step-no', text: TOTAL + ' / ' + TOTAL }),
         h('h2', { text: '마지막이에요' }),
         h('p', { class: 'hint', text: '아래는 모두 선택 사항이에요. 동의만 눌러 주시면 끝!' }),
         h('div', { class: 'field' }, [h('label', { text: '로건원어민영어를 어떻게 알게 되셨나요?' }), srcList]),
