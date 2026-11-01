@@ -16,6 +16,10 @@ description: >
   영어를 일상의 언어로 만듭니다.
 
 
+# Cloudflare Turnstile site key for the /consult/ form (optional; the Worker
+# needs the matching TURNSTILE_SECRET). Empty = no challenge shown.
+turnstile_site_key: ""
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
