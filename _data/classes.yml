@@ -1,0 +1,52 @@
+# The five classes shown on the site (Honor, the Tue/Fri graduate class, is left off on purpose).
+# Used by the homepage tiles, /classes/, the About page chips and each class page.
+- slug: kind
+  color: "#4a7fcb"
+  name: Kind
+  emoji: "🌱"
+  level: "파닉스 · 첫 문장"
+  grade: "영어를 처음 시작하는 친구들"
+  cefr: "Pre-A1"
+  tagline: "알파벳 소리에서 첫 문장까지"
+  blurb: "a, b, c부터 시작해 그림책을 소리 내어 읽고, 짧은 문장으로 묻고 답하는 첫 번째 반이에요."
+  next: brave
+- slug: brave
+  color: "#c0572a"
+  name: Brave
+  emoji: "🦁"
+  level: "초급 · 문장으로 말하기"
+  grade: "기초 읽기가 되는 친구들"
+  cefr: "A1"
+  tagline: "문장으로 말하고, 짧은 이야기를 읽어요"
+  blurb: "쉬운 이야기책과 논픽션 리더를 읽고, 배운 문장을 수업에서 실제로 써 보는 반이에요."
+  next: truth
+- slug: truth
+  color: "#7a5cbf"
+  name: Truth
+  emoji: "🔭"
+  level: "초중급 · 짧은 챕터북"
+  grade: "문장 읽기가 편해진 친구들"
+  cefr: "A1–A2"
+  tagline: "첫 챕터북과 단어장이 시작돼요"
+  blurb: "Dominoes 시리즈의 짧은 챕터북을 읽고 토론하며, 단어장과 문법으로 말하기를 단단히 받치는 반이에요."
+  next: virtue
+- slug: virtue
+  color: "#2e9e7a"
+  name: Virtue
+  emoji: "🧭"
+  level: "중급 · 챕터북 토론"
+  grade: "영어로 생각을 말하기 시작한 친구들"
+  cefr: "A2"
+  tagline: "챕터북을 읽고 영어로 이야기해요"
+  blurb: "한 권을 몇 주에 걸쳐 읽고 줄거리와 생각을 영어로 나누며, 문법과 쓰기가 더해지는 반이에요."
+  next: patience
+- slug: patience
+  color: "#b88a10"
+  name: Patience
+  emoji: "🏔️"
+  level: "중상급 · 원서 토론"
+  grade: "5~6학년 · 원서를 읽는 친구들"
+  cefr: "B1"
+  tagline: "원어민 아이들이 읽는 책으로 토론해요"
+  blurb: "Wayside School 같은 미국 챕터북을 읽고 토론하며, 글쓰기와 논픽션 읽기까지 나아가는 반이에요."
+  next:

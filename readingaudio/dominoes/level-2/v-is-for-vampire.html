@@ -35,19 +35,26 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
 a { color: var(--accent); }
 :focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
 
-/* ── Site header (matches the rest of the site) ── */
-.site-header { display: flex; align-items: center; gap: 14px; padding: 14px var(--gutter); background: var(--card); border-bottom: 1px solid var(--border); line-height: 1.4; }
-.site-brand { display: flex; align-items: center; gap: 10px; min-width: 0; text-decoration: none; }
-.site-header img { height: 31px; width: auto; }
-.site-name { font-family: var(--font-display); font-weight: 700; font-size: 1.08rem; letter-spacing: -.01em; color: var(--text); white-space: nowrap; }
-.site-header nav { margin-left: auto; display: flex; align-items: center; gap: 4px; }
-.site-header nav a { font-weight: 500; font-size: .92rem; color: var(--muted); text-decoration: none; padding: 8px 13px; border-radius: 10px; white-space: nowrap; }
-.site-header nav a:hover { background: var(--wash); color: var(--text); }
-@media (max-width: 540px) {
-  .site-header { flex-wrap: wrap; row-gap: 8px; padding-block: 12px 10px; }
-  .site-header nav { margin-left: 0; width: 100%; }
-  .site-header nav a { background: var(--wash); color: var(--text); padding: 8px 10px; }
-}
+/* ── Site header (canonical; keep identical on every page) ── */
+.site-header{display:flex;align-items:center;gap:14px;padding:14px max(var(--gutter),calc((100% - 1180px) / 2));background:var(--card);border-bottom:1px solid var(--border);line-height:1.4}
+.site-header .site-brand{display:flex;align-items:center;gap:10px;min-width:0;text-decoration:none}
+.site-header img{height:31px;width:auto}
+.site-header .site-name{font-family:var(--font-display);font-size:1.08rem;font-weight:700;letter-spacing:-.01em;color:var(--text);white-space:nowrap}
+.site-header nav{margin-left:auto;display:flex;align-items:center;gap:4px}
+.site-header nav a{font-weight:500;font-size:.92rem;color:var(--muted);text-decoration:none;padding:8px 13px;border-radius:10px;white-space:nowrap}
+.site-header nav a:hover,.site-header nav a[aria-current=page]{background:var(--wash);color:var(--text)}
+.site-header nav a:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+.site-header .nav-menu{position:relative;display:flex}
+.site-header .nav-menu>a .chev{width:10px;height:6px;margin-left:5px;vertical-align:1px}
+.site-header .nav-drop{position:absolute;top:100%;left:0;z-index:60;min-width:250px;margin-top:6px;padding:8px;display:none;flex-direction:column;gap:2px;background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:0 16px 44px rgba(27,43,75,.16)}
+.site-header .nav-drop::before{content:"";position:absolute;top:-8px;left:0;right:0;height:8px}
+.site-header .nav-menu:hover .nav-drop,.site-header .nav-menu:focus-within .nav-drop{display:flex}
+.site-header .nav-drop a{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;color:var(--text);font-weight:600;font-size:.92rem}
+.site-header .nav-drop a .dot{width:10px;height:10px;border-radius:50%;background:var(--cls,var(--navy));flex-shrink:0}
+.site-header .nav-drop a small{margin-left:auto;padding-left:14px;font-weight:500;font-size:.78rem;color:var(--muted)}
+.site-header .nav-drop a.all{justify-content:center;margin-top:4px;padding-top:10px;border-top:1px solid var(--border);border-radius:0 0 10px 10px;color:var(--navy)}
+@media(max-width:640px){.site-header nav .nav-optional{display:none}.site-header nav a{padding:8px 10px}}
+@media(max-width:540px){.site-header{flex-wrap:wrap;row-gap:8px;padding-block:12px 10px}.site-header nav{margin-left:0;width:100%}.site-header nav a{background:var(--wash);color:var(--text)}.site-header .nav-drop{display:none!important}.site-header .nav-menu>a .chev{display:none}}
 
 /* ── Book title band ── */
 .ban, .banner {
@@ -123,13 +130,26 @@ a { color: var(--accent); }
 <body>
 
 <header class="site-header">
-  <a class="site-brand" href="/">
-    <img src="/assets/images/logo80px.png" alt="Logan English Academy Logo" onerror="this.style.display='none'"/>
+  <a href="/" class="site-brand">
+    <img src="/assets/images/logo80px.png" alt="" width="28" height="31" onerror="this.style.display='none'">
     <span class="site-name">Logan English Academy</span>
   </a>
-  <nav aria-label="Primary">
+  <nav class="primary-nav" aria-label="Primary">
+    <a href="/about/">About</a>
+    <div class="nav-menu">
+      <a href="/classes/">Classes<svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <div class="nav-drop">
+        <a href="/classes/kind/" style="--cls:#4a7fcb"><span class="dot" aria-hidden="true"></span>Kind<small>파닉스 · 첫 문장</small></a>
+        <a href="/classes/brave/" style="--cls:#c0572a"><span class="dot" aria-hidden="true"></span>Brave<small>초급 · 문장으로 말하기</small></a>
+        <a href="/classes/truth/" style="--cls:#7a5cbf"><span class="dot" aria-hidden="true"></span>Truth<small>초중급 · 짧은 챕터북</small></a>
+        <a href="/classes/virtue/" style="--cls:#2e9e7a"><span class="dot" aria-hidden="true"></span>Virtue<small>중급 · 챕터북 토론</small></a>
+        <a href="/classes/patience/" style="--cls:#b88a10"><span class="dot" aria-hidden="true"></span>Patience<small>중상급 · 원서 토론</small></a>
+        <a class="all" href="/classes/">모든 반 보기 →</a>
+      </div>
+    </div>
     <a href="/homework.html">Homework</a>
-    <a href="/readingaudio/">Reading Library</a>
+    <a href="/readingaudio/" aria-current="page">Reading Library</a>
+    <a class="nav-optional" href="/about/#contact">Contact</a>
   </nav>
 </header>
 

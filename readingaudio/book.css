@@ -20,19 +20,26 @@ body { font-family: var(--font-body); background: var(--bg); color: var(--text);
 a { color: var(--accent); }
 :focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
 
-/* ── Site header (matches the rest of the site) ── */
-.site-header { display: flex; align-items: center; gap: 14px; padding: 14px var(--gutter); background: var(--card); border-bottom: 1px solid var(--border); line-height: 1.4; }
-.site-brand { display: flex; align-items: center; gap: 10px; min-width: 0; text-decoration: none; }
-.site-header img { height: 31px; width: auto; }
-.site-name { font-family: var(--font-display); font-weight: 700; font-size: 1.08rem; letter-spacing: -.01em; color: var(--text); white-space: nowrap; }
-.site-header nav { margin-left: auto; display: flex; align-items: center; gap: 4px; }
-.site-header nav a { font-weight: 500; font-size: .92rem; color: var(--muted); text-decoration: none; padding: 8px 13px; border-radius: 10px; white-space: nowrap; }
-.site-header nav a:hover { background: var(--wash); color: var(--text); }
-@media (max-width: 540px) {
-  .site-header { flex-wrap: wrap; row-gap: 8px; padding-block: 12px 10px; }
-  .site-header nav { margin-left: 0; width: 100%; }
-  .site-header nav a { background: var(--wash); color: var(--text); padding: 8px 10px; }
-}
+/* ── Site header (canonical; keep identical on every page) ── */
+.site-header{display:flex;align-items:center;gap:14px;padding:14px max(var(--gutter),calc((100% - 1180px) / 2));background:var(--card);border-bottom:1px solid var(--border);line-height:1.4}
+.site-header .site-brand{display:flex;align-items:center;gap:10px;min-width:0;text-decoration:none}
+.site-header img{height:31px;width:auto}
+.site-header .site-name{font-family:var(--font-display);font-size:1.08rem;font-weight:700;letter-spacing:-.01em;color:var(--text);white-space:nowrap}
+.site-header nav{margin-left:auto;display:flex;align-items:center;gap:4px}
+.site-header nav a{font-weight:500;font-size:.92rem;color:var(--muted);text-decoration:none;padding:8px 13px;border-radius:10px;white-space:nowrap}
+.site-header nav a:hover,.site-header nav a[aria-current=page]{background:var(--wash);color:var(--text)}
+.site-header nav a:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+.site-header .nav-menu{position:relative;display:flex}
+.site-header .nav-menu>a .chev{width:10px;height:6px;margin-left:5px;vertical-align:1px}
+.site-header .nav-drop{position:absolute;top:100%;left:0;z-index:60;min-width:250px;margin-top:6px;padding:8px;display:none;flex-direction:column;gap:2px;background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:0 16px 44px rgba(27,43,75,.16)}
+.site-header .nav-drop::before{content:"";position:absolute;top:-8px;left:0;right:0;height:8px}
+.site-header .nav-menu:hover .nav-drop,.site-header .nav-menu:focus-within .nav-drop{display:flex}
+.site-header .nav-drop a{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;color:var(--text);font-weight:600;font-size:.92rem}
+.site-header .nav-drop a .dot{width:10px;height:10px;border-radius:50%;background:var(--cls,var(--navy));flex-shrink:0}
+.site-header .nav-drop a small{margin-left:auto;padding-left:14px;font-weight:500;font-size:.78rem;color:var(--muted)}
+.site-header .nav-drop a.all{justify-content:center;margin-top:4px;padding-top:10px;border-top:1px solid var(--border);border-radius:0 0 10px 10px;color:var(--navy)}
+@media(max-width:640px){.site-header nav .nav-optional{display:none}.site-header nav a{padding:8px 10px}}
+@media(max-width:540px){.site-header{flex-wrap:wrap;row-gap:8px;padding-block:12px 10px}.site-header nav{margin-left:0;width:100%}.site-header nav a{background:var(--wash);color:var(--text)}.site-header .nav-drop{display:none!important}.site-header .nav-menu>a .chev{display:none}}
 
 /* ── Book title band ── */
 .ban, .banner {

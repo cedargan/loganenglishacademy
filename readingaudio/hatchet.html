@@ -66,13 +66,26 @@ const CONFIG = {
      ════════════════════════════════════════ -->
 
 <header class="site-header">
-  <a class="site-brand" href="/">
-    <img src="/assets/images/logo80px.png" alt="Logan English Academy Logo" onerror="this.style.display='none'"/>
+  <a href="/" class="site-brand">
+    <img src="/assets/images/logo80px.png" alt="" width="28" height="31" onerror="this.style.display='none'">
     <span class="site-name">Logan English Academy</span>
   </a>
-  <nav aria-label="Primary">
+  <nav class="primary-nav" aria-label="Primary">
+    <a href="/about/">About</a>
+    <div class="nav-menu">
+      <a href="/classes/">Classes<svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <div class="nav-drop">
+        <a href="/classes/kind/" style="--cls:#4a7fcb"><span class="dot" aria-hidden="true"></span>Kind<small>파닉스 · 첫 문장</small></a>
+        <a href="/classes/brave/" style="--cls:#c0572a"><span class="dot" aria-hidden="true"></span>Brave<small>초급 · 문장으로 말하기</small></a>
+        <a href="/classes/truth/" style="--cls:#7a5cbf"><span class="dot" aria-hidden="true"></span>Truth<small>초중급 · 짧은 챕터북</small></a>
+        <a href="/classes/virtue/" style="--cls:#2e9e7a"><span class="dot" aria-hidden="true"></span>Virtue<small>중급 · 챕터북 토론</small></a>
+        <a href="/classes/patience/" style="--cls:#b88a10"><span class="dot" aria-hidden="true"></span>Patience<small>중상급 · 원서 토론</small></a>
+        <a class="all" href="/classes/">모든 반 보기 →</a>
+      </div>
+    </div>
     <a href="/homework.html">Homework</a>
-    <a href="/readingaudio/">Reading Library</a>
+    <a href="/readingaudio/" aria-current="page">Reading Library</a>
+    <a class="nav-optional" href="/about/#contact">Contact</a>
   </nav>
 </header>
 

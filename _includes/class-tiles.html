@@ -1,0 +1,13 @@
+{%- comment -%} Five class tiles (Honor is intentionally left off). Used on the homepage and /classes/. {%- endcomment -%}
+<ul class="tiles" aria-label="반 소개">
+{%- for c in site.data.classes %}
+  <li style="--cls: var(--{{ c.slug }}); --cls-dk: var(--{{ c.slug }}-dk)">
+    <a class="tile" href="{{ '/classes/' | append: c.slug | append: '/' | relative_url }}">
+      <span class="tile-emoji" aria-hidden="true">{{ c.emoji }}</span>
+      <span class="tile-name">{{ c.name }}</span>
+      <span class="tile-level">{{ c.level }}</span>
+    </a>
+    <p class="tile-blurb">{{ c.tagline }}</p>
+  </li>
+{%- endfor %}
+</ul>
