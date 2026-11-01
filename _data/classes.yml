@@ -1,6 +1,7 @@
 # The five classes shown on the site (Honor, the Tue/Fri graduate class, is left off on purpose).
 # Used by the homepage tiles, /classes/, the About page chips and each class page.
 - slug: kind
+  color: "#4a7fcb"
   name: Kind
   emoji: "🌱"
   level: "파닉스 · 첫 문장"
@@ -10,6 +11,7 @@
   blurb: "a, b, c부터 시작해 그림책을 소리 내어 읽고, 짧은 문장으로 묻고 답하는 첫 번째 반이에요."
   next: brave
 - slug: brave
+  color: "#c0572a"
   name: Brave
   emoji: "🦁"
   level: "초급 · 문장으로 말하기"
@@ -19,6 +21,7 @@
   blurb: "쉬운 이야기책과 논픽션 리더를 읽고, 배운 문장을 수업에서 실제로 써 보는 반이에요."
   next: truth
 - slug: truth
+  color: "#7a5cbf"
   name: Truth
   emoji: "🔭"
   level: "초중급 · 짧은 챕터북"
@@ -28,6 +31,7 @@
   blurb: "Dominoes 시리즈의 짧은 챕터북을 읽고 토론하며, 단어장과 문법으로 말하기를 단단히 받치는 반이에요."
   next: virtue
 - slug: virtue
+  color: "#2e9e7a"
   name: Virtue
   emoji: "🧭"
   level: "중급 · 챕터북 토론"
@@ -37,6 +41,7 @@
   blurb: "한 권을 몇 주에 걸쳐 읽고 줄거리와 생각을 영어로 나누며, 문법과 쓰기가 더해지는 반이에요."
   next: patience
 - slug: patience
+  color: "#b88a10"
   name: Patience
   emoji: "🏔️"
   level: "중상급 · 원서 토론"

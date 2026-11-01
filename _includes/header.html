@@ -5,7 +5,15 @@
   </a>
   <nav class="primary-nav" aria-label="Primary">
     <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
-    <a href="{{ '/classes/' | relative_url }}"{% if page.url contains '/classes/' %} aria-current="page"{% endif %}>Classes</a>
+    <div class="nav-menu">
+      <a href="{{ '/classes/' | relative_url }}"{% if page.url contains '/classes/' %} aria-current="page"{% endif %}>Classes<svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <div class="nav-drop">
+        {%- for c in site.data.classes %}
+        <a href="{{ '/classes/' | append: c.slug | append: '/' | relative_url }}" style="--cls:{{ c.color }}"><span class="dot" aria-hidden="true"></span>{{ c.name }}<small>{{ c.level }}</small></a>
+        {%- endfor %}
+        <a class="all" href="{{ '/classes/' | relative_url }}">모든 반 보기 →</a>
+      </div>
+    </div>
     <a href="{{ '/homework.html' | relative_url }}">Homework</a>
     <a href="{{ '/readingaudio/' | relative_url }}">Reading Library</a>
     <a class="nav-optional" href="{{ '/about/#contact' | relative_url }}">Contact</a>
