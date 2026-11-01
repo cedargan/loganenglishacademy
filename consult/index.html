@@ -90,6 +90,7 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
   'use strict';
   // Keep in step with shared/src/inquiry.ts in LEA Systems: the Worker only accepts these codes.
   var Q = [
+    { id: 'callTime', title: '언제 전화드리면 편하세요?', hint: '남겨 주신 번호로 1~2일 안에 전화드려요.', opts: [['morning', '평일 오전'], ['afternoon', '평일 오후'], ['evening', '평일 저녁'], ['any', '아무 때나 괜찮아요']] },
     { id: 'grade', title: '아이는 몇 학년인가요?', two: true, opts: [
       ['k', '7세 이하'], ['e1', '초1'], ['e2', '초2'], ['e3', '초3'], ['e4', '초4'], ['e5', '초5'], ['e6', '초6'], ['m', '중학생 이상']] },
     { id: 'kinder', title: '영어 유치원을 다녔나요?', opts: [['none', '아니요'], ['lt1', '1년 미만'], ['y1_2', '1~2년'], ['gt2', '2년 이상']] },
@@ -102,8 +103,7 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
     { id: 'personality', title: '아이의 성격은 어떤가요?', opts: [['outgoing', '활발하고 말하기를 좋아해요'], ['quiet', '조용하지만 꼼꼼해요'], ['shy', '처음엔 낯을 가려요']] },
     { id: 'classGuess', title: '어느 반이 맞을 것 같나요?', hint: '<a href="/classes/" target="_blank" rel="noopener">반 소개 ↗</a>를 보고 골라 주세요. 정확하지 않아도 괜찮아요.', opts: [
       ['kind', 'Kind', '파닉스 · 첫 문장', '#4a7fcb'], ['brave', 'Brave', '초급 · 문장으로 말하기', '#c0572a'], ['truth', 'Truth', '초중급 · 짧은 챕터북', '#7a5cbf'],
-      ['virtue', 'Virtue', '중급 · 챕터북 토론', '#2e9e7a'], ['patience', 'Patience', '중상급 · 원서 토론', '#b88a10']] },
-    { id: 'callTime', title: '언제 전화드리면 편하세요?', opts: [['morning', '평일 오전'], ['afternoon', '평일 오후'], ['evening', '평일 저녁'], ['any', '아무 때나 괜찮아요']] }
+      ['virtue', 'Virtue', '중급 · 챕터북 토론', '#2e9e7a'], ['patience', 'Patience', '중상급 · 원서 토론', '#b88a10']] }
   ];
   var SOURCE = [['naver', '네이버 검색·지도'], ['friend', '지인 소개'], ['sign', '간판·동네'], ['instagram', '인스타그램·SNS'], ['other', '기타']];
   var TOTAL = Q.length + 3;   // intro, contact, questions…, final
@@ -120,7 +120,7 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
     return e;
   }
   function showErr(msg) { err.textContent = msg || ''; err.classList.toggle('show', !!msg); if (msg) err.scrollIntoView({ block: 'nearest' }); }
-  var TYPES_STEP = 2 + 3;   // the "어떤 수업이었나요?" step; skipped when the child never attended an academy
+  var TYPES_STEP = 2 + Q.map(function (q) { return q.id; }).indexOf('academyTypes');   // skipped when the child never attended an academy
   function go(n) {
     if (n === TYPES_STEP && state.answers.academyYears === 'none') { delete state.answers.academyTypes; n = n > state.step ? n + 1 : n - 1; }
     state.step = Math.max(0, Math.min(TOTAL - 1, n)); save(); showErr(''); render(); form.scrollIntoView({ block: 'start', behavior: 'smooth' });
