@@ -135,6 +135,28 @@
       .more { display: inline-block; margin-top: 18px; font-weight: 700; text-decoration: none; color: var(--navy); }
       .more:hover { text-decoration: underline; }
 
+      /* Teacher card */
+      .teacher {
+        display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 22px; align-items: center;
+        margin-top: 18px; padding: 18px 24px 18px 18px; border-radius: 24px;
+        background: var(--wash); border: 1px solid var(--border); color: var(--text); text-decoration: none;
+        transition: background .15s;
+      }
+      .teacher:hover { background: #eceef5; color: var(--text); }
+      .teacher:hover .more { text-decoration: underline; }
+      .teacher-pic {
+        display: block; width: 132px; height: 132px; border-radius: 50%; overflow: hidden; background: var(--gold); flex-shrink: 0;
+      }
+      .teacher-pic img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; transform: translateY(6%) scale(1.08); }
+      .teacher-text { display: grid; gap: 4px; }
+      .teacher-text .kicker { margin: 0; }
+      .teacher-text strong { font-family: var(--font-display); font-size: clamp(1.15rem, 2.2vw, 1.45rem); line-height: 1.2; letter-spacing: -.01em; color: var(--navy); }
+      .teacher-sub { color: var(--muted); font-size: .95rem; line-height: 1.6; max-width: 60ch; }
+      .teacher .more { margin-top: 6px; }
+      @media (max-width: 540px) {
+        .teacher { grid-template-columns: minmax(0, 1fr); justify-items: start; gap: 14px; }
+      }
+
       /* This week in class — filled from the latest homework */
       .week {
         display: grid;
@@ -278,7 +300,15 @@
           <li class="pillar"><span class="num">05</span><span class="en">Clear Levels and Rewards</span><span class="ko">체계적인 단계와 보상</span><p>파닉스부터 고급 단계까지 국제 기준 CEFR에 맞춘 커리큘럼. 단계를 넘을 때마다 성취감을 느낄 수 있도록 보상도 함께합니다.</p></li>
           <li class="pillar"><span class="num">06</span><span class="en">Time With English</span><span class="ko">가정과 함께하는 영어 노출</span><p>영어 실력은 영어와 함께한 시간만큼 자랍니다. 집에서도 영어 책, 영상, 놀이가 이어지도록 학부모님과 함께 방법을 찾아요.</p></li>
         </ol>
-        <a class="more" href="{{ '/about/' | relative_url }}">원장 소개와 수업 이야기 더 보기 →</a>
+        <a class="teacher" href="{{ '/about/#logan' | relative_url }}">
+          <span class="teacher-pic" aria-hidden="true"><img src="{{ '/assets/images/about/logan-cutout.webp' | relative_url }}" width="900" height="906" alt="" loading="lazy"></span>
+          <span class="teacher-text">
+            <span class="kicker">About Logan · 원장 소개</span>
+            <strong>미국 시애틀 출신 원어민 원장, 로건입니다.</strong>
+            <span class="teacher-sub">한국에서 영어를 가르친 지 14년. 2022년 전주에 로건원어민영어를 열고, 한 명 한 명의 영어가 자라는 모습을 직접 지켜보고 있습니다.</span>
+            <span class="more">원장 소개와 수업 이야기 더 보기 →</span>
+          </span>
+        </a>
       </section>
 
       <section class="sec" aria-labelledby="week-title">

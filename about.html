@@ -45,6 +45,9 @@ description: >
   .ph.wide { min-height: 220px; }
   .ph.row { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
   .photo { display: block; width: 100%; height: auto; border-radius: 18px; margin: 18px 0 26px; }
+  .portrait { float: right; width: min(250px, 42%); height: auto; border-radius: 22px; margin: 4px 0 14px 22px; box-shadow: 0 10px 30px rgba(27, 43, 75, .15); }
+  .about h2 { clear: both; }
+  @media (max-width: 540px) { .portrait { float: none; display: block; width: min(100%, 280px); margin: 6px auto 20px; } }
   .photos { display: grid; gap: 12px; margin: 18px 0 26px; }
   .photos .photo { margin: 0; }
   .map-card { margin: 10px 0 18px; border: 1px solid var(--border); border-radius: 22px; overflow: hidden; }
@@ -86,7 +89,7 @@ description: >
   <img class="photo" src="{{ '/assets/images/about/lobby.webp' | relative_url }}" width="1280" height="960" alt="로건원어민영어 로비: 간판 아래 그림책 책장과 소파, 빈백">
 
   <h2 id="logan"><span class="en">About Logan</span>원장 소개</h2>
-  <div class="ph">로건 원장님 사진<br>아이들과 함께 있는 사진이면 더 좋아요</div>
+  <img class="portrait" src="{{ '/assets/images/about/logan.webp' | relative_url }}" width="1000" height="1000" alt="로건원어민영어 원장 로건 (Logan)" loading="lazy">
   <p>안녕하세요, 로건원어민영어 원장 로건입니다.</p>
   <p>저는 2022년, 제 이름을 건 로건원어민영어를 이곳 전주에 열었습니다. 개원 이후 해마다 꾸준히 성장하며 더 나은 수업을 만들어 왔고, 우리 친구들도 그만큼 멋지게 자라고 발전해 왔어요.</p>
   <p>a, b, c부터 시작한 친구들이 영어로 자기 생각을 말하고 원어민 아이들이 읽는 책까지 척척 읽어 내는 모습을 보면 참.. 기특하고 뿌듯합니다.^^</p>
