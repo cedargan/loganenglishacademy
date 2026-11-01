@@ -12,8 +12,8 @@
   --navy:         #1b2b4b;
   --gold:         #f0c35c;
 
-  --font-display: "Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
-  --font-body:    "Albert Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Bricolage Grotesque", "Noto Sans KR", "Arial Narrow", system-ui, sans-serif;
+  --font-body:    "Albert Sans", "Noto Sans KR", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   // class colours (shared with homework.html)
   --kind:     #4a7fcb;
@@ -128,6 +128,9 @@ body {
     padding: 36px 20px 80px;
   }
 }
+
+// Korean text wraps between words, not inside them
+html[lang="ko"] body, [lang="ko"] { word-break: keep-all; }
 
 // ── Typography ──
 h1, h2 {
