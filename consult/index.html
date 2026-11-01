@@ -74,13 +74,13 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
     <p class="err" id="err" role="alert"></p>
     <div id="stage" aria-live="polite"></div>
     <input class="hp" type="text" name="website" id="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-    {%- if site.turnstile_site_key %}
+    {%- if site.turnstile_site_key and site.turnstile_site_key != "" %}
     <div class="ts cf-turnstile" data-sitekey="{{ site.turnstile_site_key }}" data-size="flexible"></div>
     {%- endif %}
   </form>
 </div>
 
-{%- if site.turnstile_site_key %}
+{%- if site.turnstile_site_key and site.turnstile_site_key != "" %}
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 {%- endif %}
 <script>
@@ -231,6 +231,9 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
         ])]),
         navRow(true, submit)
       ]));
+      function turnstileToken() {
+        try { return (window.turnstile && typeof window.turnstile.getResponse === 'function') ? (window.turnstile.getResponse() || '') : ''; } catch (e) { return ''; }
+      }
       form.onsubmit = function (ev) {
         ev.preventDefault();
         if (!consent.checked) return showErr('개인정보 수집·이용에 동의해 주세요.');
@@ -238,7 +241,7 @@ description: "로건원어민영어 온라인 상담 신청. 3분 설문으로 �
         if (state.source) answers.source = state.source;
         var payload = { parentName: state.parentName, phone: state.phone, childName: state.childName, answers: answers, note: state.note, consent: true,
           website: document.getElementById('website').value, page: location.pathname,
-          turnstile: (window.turnstile && typeof window.turnstile.getResponse === 'function') ? (window.turnstile.getResponse() || '') : '' };
+          turnstile: turnstileToken() };
         submit.disabled = true; submit.textContent = '보내는 중…'; showErr('');
         fetch('/inquiry', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
           .then(function (r) { return r.text().then(function (t) { var d = null; try { d = JSON.parse(t); } catch (e) {} return { ok: r.ok && d && d.ok, d: d }; }); })
