@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clunk In the Clouds — Logan English Academy</title>
+  <meta name="description" content="Listen-along audio for Clunk In the Clouds — read and listen chapter by chapter at Logan English Academy's Reading Library." />
+  <link rel="icon" type="image/png" href="/assets/images/logo80px.png" />
+  <meta name="theme-color" content="#1b2b4b" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Logan English Academy" />
+  <meta property="og:title" content="Clunk In the Clouds — Logan English Academy" />
+  <meta property="og:description" content="Listen-along audio for Clunk In the Clouds — read and listen chapter by chapter at Logan English Academy's Reading Library." />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Albert+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/readingaudio/book.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="site-brand">
+    <img src="/assets/images/logo80px.png" alt="" width="28" height="31" onerror="this.style.display='none'">
+    <span class="site-name">Logan English Academy</span>
+  </a>
+  <nav class="primary-nav" aria-label="Primary">
+    <a href="/about/">About</a>
+    <div class="nav-menu">
+      <a href="/classes/">Classes<svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <div class="nav-drop">
+        <a href="/classes/kind/" style="--cls:#4a7fcb"><span class="dot" aria-hidden="true"></span>Kind<small>파닉스 · 첫 문장</small></a>
+        <a href="/classes/brave/" style="--cls:#c0572a"><span class="dot" aria-hidden="true"></span>Brave<small>초급 · 문장으로 말하기</small></a>
+        <a href="/classes/truth/" style="--cls:#7a5cbf"><span class="dot" aria-hidden="true"></span>Truth<small>초중급 · 짧은 챕터북</small></a>
+        <a href="/classes/virtue/" style="--cls:#2e9e7a"><span class="dot" aria-hidden="true"></span>Virtue<small>중급 · 챕터북 토론</small></a>
+        <a href="/classes/patience/" style="--cls:#b88a10"><span class="dot" aria-hidden="true"></span>Patience<small>중상급 · 원서 토론</small></a>
+        <a class="all" href="/classes/">모든 반 보기 →</a>
+      </div>
+    </div>
+    <a href="/homework.html">Homework</a>
+    <a href="/readingaudio/" aria-current="page">Reading Library</a>
+    <a class="nav-optional" href="/about/#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="banner">
+  <div class="banner-badge" aria-hidden="true">☁️</div>
+  <div>
+    <div class="banner-title">Clunk In the Clouds</div>
+    <div class="banner-author">Paul Shipton</div>
+  </div>
+  <div class="banner-meta">
+    <div class="meta-num">10</div>
+    <div class="meta-label">Tracks</div>
+  </div>
+</div>
+
+<div class="chapter-list" id="chapter-list"></div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-name">로건원어민영어 · Logan English Academy</span>
+      <p>Genuine English. 전주 원어민 영어 학원, 목표는 하나 — 영어 유창성.</p>
+      <p><a href="tel:+821025967060">010-2596-7060</a> · <a href="https://naver.me/GlGNAbaA" target="_blank" rel="noopener">전주시 만성중앙로 17-8, 2층</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/classes/">Classes</a>
+      <a href="/homework.html">Homework</a>
+      <a href="/readingaudio/">Reading Library</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/consult/">상담 신청</a>
+    </nav>
+  </div>
+  <div class="footer-copy">&copy; <span id="footer-year">2026</span> Logan English Academy. Audio files are for enrolled students only.</div>
+</footer>
+<script>var _fy=document.getElementById('footer-year');if(_fy)_fy.textContent=new Date().getFullYear();</script>
+
+<script>
+const chapters = [
+    { title: "Pages 2–5", url: "https://audio.loganenglishacademy.com/readandimagine/level2/ORI%202%20Clunk%20in%20the%20Clouds/readandimagine2_clunk_in_the_clouds_american_01_page_2_5.mp3" },
+    { title: "Pages 6–7", url: "https://audio.loganenglishacademy.com/readandimagine/level2/ORI%202%20Clunk%20in%20the%20Clouds/readandimagine2_clunk_in_the_clouds_american_02_page_6_7.mp3" },
+    { title: "Pages 8–9", url: "https://audio.loganenglishacademy.com/readandimagine/level2/ORI%202%20Clunk%20in%20the%20Clouds/readandimagine2_clunk_in_the_clouds_american_03_page_8_9.mp3" },
+    { title: "Pages 10–11", url: "https://audio.loganenglishacademy.com/readandimagine/level2/ORI%202%20Clunk%20in%20the%20Clouds/readandimagine2_clunk_in_the_clouds_american_04_page_10_11.mp3" },
+    { title: "Pages 12–13", url: "https://audio.loganenglishacademy.com/readandimagine/level2/ORI%202%20Clunk%20in%20the%20Clouds/readandimagine2_clunk_in_the_clouds_american_05_page_12_13.mp3" },
+    { title: "Pages 14–15", url: "https://audio.loganenglishacademy.com/readandimagine/level2/ORI%202%20Clunk%20in%20the%20Clouds/readandimagine2_clunk_in_the_clouds_american_06_page_14_15.mp3" },
+    { title: "Pages 16–17", url: "https://audio.loganenglishacademy.com/readandimagine/level2/ORI%202%20Clunk%20in%20the%20Clouds/readandimagine2_clunk_in_the_clouds_american_07_page_16_17.mp3" },
+    { title: "Pages 18–19", url: "https://audio.loganenglishacademy.com/readandimagine/level2/ORI%202%20Clunk%20in%20the%20Clouds/readandimagine2_clunk_in_the_clouds_american_08_page_18_19.mp3" },
+    { title: "Picture Dictionary", url: "https://audio.loganenglishacademy.com/readandimagine/level2/ORI%202%20Clunk%20in%20the%20Clouds/readandimagine2_clunk_in_the_clouds_american_09_picture_dictionary.mp3" },
+    { title: "Full Recording", url: "https://audio.loganenglishacademy.com/readandimagine/level2/ORI%202%20Clunk%20in%20the%20Clouds/readandimagine2_clunk_in_the_clouds_american_10_all.mp3" }
+];
+const dlIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13M7 11l5 5 5-5M3 20h18"/></svg>`;
+const list = document.getElementById('chapter-list');
+chapters.forEach((ch, i) => {
+  const card = document.createElement('div');
+  card.className = 'chapter-card';
+  const filename = ch.url.split('/').pop();
+  card.innerHTML = `
+    <div class="chapter-top">
+      <div class="ch-num">${i + 1}</div>
+      <div class="ch-title">${ch.title}</div>
+      <a class="ch-download" href="${ch.url}" download="${decodeURIComponent(filename)}" aria-label="Download ${ch.title}">
+        ${dlIcon}<span>Download</span>
+      </a>
+    </div>
+    <div class="ch-player">
+      <audio controls preload="none" src="${ch.url}" aria-label="${ch.title}"></audio>
+    </div>`;
+  list.appendChild(card);
+});
+</script>
+
+</body>
+</html>
