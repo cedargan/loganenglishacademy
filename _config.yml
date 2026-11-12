@@ -45,6 +45,7 @@ exclude:
   - Gemfile.lock
   - vendor/
   - node_modules/
+  - tools/
 
 sass:
   quiet_deps: true
